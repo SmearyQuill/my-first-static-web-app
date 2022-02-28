@@ -6,6 +6,34 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./versiones.component.css'],
 })
 export class VersionesComponent implements OnInit {
+  testimonyCardList = [
+    {
+      businessName: 'VOLKSWAGEN Y SEAT POTOSINA',
+      location: 'San Luis Potosí',
+      personName: 'Marco Espinosa',
+      personPosition: 'Volkswagen y seat potosina',
+      message:
+        '"RADAR me ayuda a hacer mi planeación diaria, me dice donde enfocar mis esfuerzos, desde la carga de trabajo por operario, asignar la nómina, hasta detectar autos con problemas para dar solución oportuna."',
+      imageSrc: '/assets/MarcoEspinosa.png',
+    },
+    {
+      businessName: 'VW RAFEDHER',
+      location: 'Aguascalientes',
+      personName: 'Mauricio Herrera',
+      personPosition: 'Director de VW Rafedher, Aguascalientes',
+      message: '"Radar es control a tu alcance"',
+      imageSrc: '/assets/MauricioHerrera.png',
+    },
+    {
+      businessName: 'CONSULTOR PPG',
+      location: 'Programa MVP',
+      personName: 'Walter Arcusin',
+      personPosition: 'Consultor PPG, programa MVP',
+      message:
+        '"Una herramienta ágil, intuitiva y completa con la que se puede controlar y medir todo el proceso de un CDR desde la recepción hasta la entrega de los vehículos, asegurando la interacción con los clientes, proveedores y aseguradoras."',
+      imageSrc: '/assets/WalterArcusin.png',
+    },
+  ];
   CardsList = [
     {
       specialCaseText: '¿SABÍAS QUE…',

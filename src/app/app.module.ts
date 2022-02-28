@@ -9,6 +9,7 @@ import { TestimoniosComponent } from './Componentes/testimonios/testimonios.comp
 import { ContactanosComponent } from './Componentes/contactanos/contactanos.component';
 import { MenuComponent } from './Componentes/menu/menu.component';
 import { SabiasQueCardComponent } from './Componentes/sabias-que-card/sabias-que-card.component';
+import { TestimonioCardComponent } from './Componentes/testimonio-card/testimonio-card.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SabiasQueCardComponent } from './Componentes/sabias-que-card/sabias-que
     TestimoniosComponent,
     ContactanosComponent,
     MenuComponent,
-    SabiasQueCardComponent
+    SabiasQueCardComponent,
+    TestimonioCardComponent
   ],
   imports: [
     BrowserModule,

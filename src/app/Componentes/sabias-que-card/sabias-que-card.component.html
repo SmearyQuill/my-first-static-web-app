@@ -7,10 +7,12 @@
     </div>
 
     <!-- Este div se muestra en caso de que la pregunta se muestre completa con el mismo formato (tamaño, color) -->
-    <p *ngIf="!specialCaseText" class="normalQuestionText">{{ questionText }}</p>
+    <p *ngIf="!specialCaseText" class="normalQuestionText">
+      {{ questionText }}
+    </p>
     <!-- Texto con la información de la card -->
     <p class="informationText">{{ informationText }}</p>
-    <button class="button">{{ buttonText }}</button>
+    <button *ngIf="buttonText" class="button">{{ buttonText }}</button>
   </div>
   <div class="imgDiv">
     <img

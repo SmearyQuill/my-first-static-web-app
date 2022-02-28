@@ -7,12 +7,22 @@
     align-items: center;
   "
 >
+  <app-testimonio-card
+    *ngFor="let card of testimonyCardList"
+    [businessName]="card.businessName"
+    [location]="card.location"
+    [personName]="card.personName"
+    [personPosition]="card.personPosition"
+    [message]="card.message"
+    [imageSrc]="card.imageSrc"
+    style="width: 50%"
+  ></app-testimonio-card>
   <app-sabias-que-card
     *ngFor="let card of CardsList"
-    [specialCaseText]=card.specialCaseText
-    [questionText]=card.questionText
-    [informationText]=card.informationText
-    [buttonText]=card.buttonText
-    [imageSrc]=card.imageSrc
+    [specialCaseText]="card.specialCaseText"
+    [questionText]="card.questionText"
+    [informationText]="card.informationText"
+    [buttonText]="card.buttonText"
+    [imageSrc]="card.imageSrc"
   ></app-sabias-que-card>
 </div>
