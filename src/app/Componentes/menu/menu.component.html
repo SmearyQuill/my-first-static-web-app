@@ -6,15 +6,36 @@
         </button>
         <div class="collapse navbar-collapse text-sm-center justify-content-end" id="navbarNavAltMarkup">
             <ul class="navbar-nav  mr-auto">
-                <li class="nav-item"><a class="nav-link" routerLink="" routerLinkActive="active" href="#"
-                    [routerLinkActiveOptions]="{exact : true}">VERSIONES</a></li>
-                <li class="nav-item"><a class="nav-link" routerLink="herramientas" routerLinkActive="active" href="#"
-                    [routerLinkActiveOptions]="{exact : true}">HERRAMIENTAS</a></li>
+                <!-- Versiones -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarVersionesDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        VERSIONES
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarVersionesDropdown">
+                        <a class="dropdown-item" routerLink="versiones">Radar Control Total</a>
+                        <a class="dropdown-item" routerLink="versiones/radarLite">Radar Lite</a>
+                    </div>
+                </li>
+                <!-- Herrramientas -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarHerramientasDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        HERRAMIENTAS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarHerramientasDropdown">
+                        <a class="dropdown-item" routerLink="herramientas">Radar Consulting</a>
+                        <a class="dropdown-item" routerLink="herramientas/radarAcademy">Radar Academy</a>
+                        <a class="dropdown-item" routerLink="herramientas/radarConnect">Radar Connect</a>
+                    </div>
+                </li>
+                <!-- Testimonios -->
                 <li class="nav-item"><a class="nav-link" routerLink="testimonios" routerLinkActive="active" href="#"
-                    [routerLinkActiveOptions]="{exact : true}">TESTIMONIOS</a></li>
+                        [routerLinkActiveOptions]="{exact : true}">TESTIMONIOS</a></li>
+                <!-- Contactanos -->
                 <li class="nav-item"><a class="nav-link" routerLink="contactanos" routerLinkActive="active"
-                    [routerLinkActiveOptions]="{exact : true}">CONTACTANOS</a></li>
-            </ul>            
+                        [routerLinkActiveOptions]="{exact : true}">CONTACTANOS</a></li>
+            </ul>
         </div>
     </div>
 </nav>
