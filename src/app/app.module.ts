@@ -11,7 +11,6 @@ import { MenuComponent } from './Componentes/menu/menu.component';
 import { SabiasQueCardComponent } from './Componentes/sabias-que-card/sabias-que-card.component';
 import { TestimonioCardComponent } from './Componentes/testimonio-card/testimonio-card.component';
 import { HomeComponent } from './home/home.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -25,7 +24,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     TestimonioCardComponent,
     HomeComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
