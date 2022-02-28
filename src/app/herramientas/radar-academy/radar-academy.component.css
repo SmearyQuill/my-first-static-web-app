@@ -1,0 +1,17 @@
+#intro{
+    height: 856px;
+    /* UI Properties */
+    background: transparent url('/assets/Grupo 541.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.mb-5{
+    position: absolute;
+    top: 314px;
+    left: 278px;
+    transform: translate(0, 0);
+    color: white;
+}
