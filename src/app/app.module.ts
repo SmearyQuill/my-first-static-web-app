@@ -8,6 +8,7 @@ import { HerramientasComponent } from './Componentes/herramientas/herramientas.c
 import { TestimoniosComponent } from './Componentes/testimonios/testimonios.component';
 import { ContactanosComponent } from './Componentes/contactanos/contactanos.component';
 import { MenuComponent } from './Componentes/menu/menu.component';
+import { SabiasQueCardComponent } from './Componentes/sabias-que-card/sabias-que-card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MenuComponent } from './Componentes/menu/menu.component';
     HerramientasComponent,
     TestimoniosComponent,
     ContactanosComponent,
-    MenuComponent
+    MenuComponent,
+    SabiasQueCardComponent
   ],
   imports: [
     BrowserModule,

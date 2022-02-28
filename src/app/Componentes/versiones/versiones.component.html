@@ -1,3 +1,18 @@
-<div class="pageContainer" style="display: flex; flex-direction: column;">
-    <p> Componente Versiones </p>
+<div
+  class="pageContainer"
+  style="
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  "
+>
+  <app-sabias-que-card
+    *ngFor="let card of CardsList"
+    [specialCaseText]=card.specialCaseText
+    [questionText]=card.questionText
+    [informationText]=card.informationText
+    [buttonText]=card.buttonText
+    [imageSrc]=card.imageSrc
+  ></app-sabias-que-card>
 </div>
