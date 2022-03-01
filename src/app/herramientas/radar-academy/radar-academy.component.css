@@ -2,16 +2,65 @@
     height: 856px;
     /* UI Properties */
     background: transparent url('/assets/Grupo 541.png') 0% 0% no-repeat padding-box;
-    opacity: 1;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+    top: 0px;
+left: 0px;
+width: 1920px;
+height: 856px;
+/* UI Properties */
+opacity: 1;
 }
-.mb-5{
+#title{
     position: absolute;
     top: 314px;
     left: 278px;
-    transform: translate(0, 0);
-    color: white;
+    width: 871px;
+    height: 207px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    /* UI Properties */
+    text-align: left;
+    letter-spacing: 2.88px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+}
+#title h1 {
+    top: 0px;
+    left: 0px;
+    width: 871px;
+    height: 64px;
+    text-align: left;
+    font: normal normal 600 48px/64px Segoe UI;
+    letter-spacing: 2.88px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+#title h2 {
+    top: 64px;
+    left: 0px;
+    width: 871px;
+    height: 64px;
+    text-align: left;
+    font: normal normal 300 48px/64px Segoe UI;
+    letter-spacing: 2.88px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+#solicitar-demo{
+    top: 485px;
+    left: 278px;
+    width: 268px;
+    height: 58px;
+    background: #AFD625 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    opacity: 1;
+
+}
+#solicitar-demo span{
+    text-align: center;
+    font: normal normal 600 22px/30px Segoe UI;
+    letter-spacing: 0.66px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
 }
