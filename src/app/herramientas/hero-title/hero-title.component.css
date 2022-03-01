@@ -1,14 +1,11 @@
-#intro{
+#hero-title{
     height: 856px;
-    /* UI Properties */
-    background: transparent url('/assets/Grupo 541.png') 0% 0% no-repeat padding-box;
-    top: 0px;
-left: 0px;
-width: 100%;
-height: 856px;
-/* UI Properties */
-opacity: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
+
 #title{
     position: absolute;
     top: 314px;
@@ -24,8 +21,6 @@ opacity: 1;
     opacity: 1;
 }
 #title h1 {
-    top: 0px;
-    left: 0px;
     width: 871px;
     height: 64px;
     text-align: left;
@@ -45,8 +40,7 @@ opacity: 1;
     color: #FFFFFF;
     text-transform: uppercase;
 }
-
-#solicitar-demo{
+#fst-btn{
     position: absolute;
     top: 485px;
     left: 278px;
@@ -57,7 +51,7 @@ opacity: 1;
     opacity: 1;
     border: none;
 }
-#conoce-radar-total{
+#snd-btn{
     position: absolute;
     top: 485px;
     left: 579px;
