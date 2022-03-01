@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-hero-title',
@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hero-title.component.css']
 })
 export class HeroTitleComponent implements OnInit {
+  @Input() title1: string = '';
+  @Input() title2: string = '';
+  @Input() btn1Text: string = '';
+  @Input() btn2: boolean = false;
+  @Input() btn2Text: string = '';
 
   constructor() { }
 
