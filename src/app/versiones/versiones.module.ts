@@ -6,6 +6,7 @@ import { RadarControlTotalComponent } from './radar-control-total/radar-control-
 import { RadarLiteComponent } from './radar-lite/radar-lite.component';
 import { HeroVersionesComponent } from './hero-versiones/hero-versiones.component';
 import { InformacionVersionComponent } from './informacion-version/informacion-version.component';
+import { ProcesoImplementacionComponent } from './proceso-implementacion/proceso-implementacion.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { InformacionVersionComponent } from './informacion-version/informacion-v
     RadarLiteComponent,
     HeroVersionesComponent,
     InformacionVersionComponent,
+    ProcesoImplementacionComponent,
   ],
   imports: [
     CommonModule,
