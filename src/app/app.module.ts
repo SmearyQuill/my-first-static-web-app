@@ -11,6 +11,7 @@ import { MenuComponent } from './Componentes/menu/menu.component';
 import { SabiasQueCardComponent } from './Componentes/sabias-que-card/sabias-que-card.component';
 import { TestimonioCardComponent } from './Componentes/testimonio-card/testimonio-card.component';
 import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './Componentes/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { HomeComponent } from './home/home.component';
     SabiasQueCardComponent,
     TestimonioCardComponent,
     HomeComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

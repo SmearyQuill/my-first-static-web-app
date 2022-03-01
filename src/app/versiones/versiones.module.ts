@@ -7,6 +7,7 @@ import { RadarLiteComponent } from './radar-lite/radar-lite.component';
 import { HeroVersionesComponent } from './hero-versiones/hero-versiones.component';
 import { InformacionVersionComponent } from './informacion-version/informacion-version.component';
 import { ProcesoImplementacionComponent } from './proceso-implementacion/proceso-implementacion.component';
+import { ComparativaVersionesComponent } from './comparativa-versiones/comparativa-versiones.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { ProcesoImplementacionComponent } from './proceso-implementacion/proceso
     HeroVersionesComponent,
     InformacionVersionComponent,
     ProcesoImplementacionComponent,
+    ComparativaVersionesComponent,
   ],
   imports: [
     CommonModule,
