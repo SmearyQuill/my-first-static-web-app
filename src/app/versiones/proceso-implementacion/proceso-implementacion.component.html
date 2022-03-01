@@ -1,0 +1,13 @@
+<section>
+    <div class="container-fluid" style="border:1px solid red;">
+
+        <div *ngFor="let processInformation of processList" class="col" style="border:1px solid blue;">
+            <p>{{processInformation.processNumber}}</p>
+            <p> {{processInformation.processName}}</p>
+            <p> {{processInformation.processInformation}}</p>
+            <p> {{processInformation.processDuration}}</p>
+            <br>
+            <br>
+        </div>
+    </div>
+</section>

@@ -1,1 +1,19 @@
-<p>radar-control-total works!</p>
+<!-- Sección general -->
+<section class="pageContainer">
+    <div class="containerFluid">
+        <!-- Hero de la página de versiones-->
+        <app-hero-versiones></app-hero-versiones>
+        <!-- Información de Radar Control Total -->
+        <app-informacion-version [informationText]="informationObject.informationText"
+            [informationPoints]="informationObject.informationPoints" [imageSrc]="informationObject.imageSrc">
+        </app-informacion-version>
+        <!-- Componente con las funciones de Radar -->
+        <div> Trabajo Pendiente </div>
+        <!-- Procesos de Implementación -->
+        <app-proceso-implementacion [processList]=processList></app-proceso-implementacion>
+        <!-- Compromiso -->
+        <div> Compromiso en proceso </div>
+        <!-- Tabla de precios -->
+        <div> Precios en proceso </div>
+    </div>
+</section>
