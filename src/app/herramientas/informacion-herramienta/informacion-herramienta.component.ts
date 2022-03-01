@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-informacion-herramienta',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./informacion-herramienta.component.css']
 })
 export class InformacionHerramientaComponent implements OnInit {
+  @Input() infoTitle: string = '';
+  @Input() infoText: string = '';
+  @Input() infoVideo: boolean = false;
 
   constructor() { }
 

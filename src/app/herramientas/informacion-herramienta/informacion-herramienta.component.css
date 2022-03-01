@@ -1,0 +1,38 @@
+#info-herramienta{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0%;
+}
+#info-herramienta .row{
+    margin: 0%;
+}
+#info-title{
+    font: normal normal bold 48px/64px Segoe UI;
+    color: #022644;
+    letter-spacing: 1.92px;
+    text-transform: uppercase;
+    opacity: 1;
+}
+#info-text{
+    /* UI Properties */
+    text-align: center;
+    font: normal normal normal 22px/30px Segoe UI;
+    letter-spacing: 0px;
+    color: #191919;
+    opacity: 1;
+}
+#info-btn{
+    height: 58px;
+    background: #AFD625 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    opacity: 1;
+    border: none;
+}
+#info-btn span{
+    text-align: center;
+font: normal normal 600 22px/30px Segoe UI;
+letter-spacing: 0.66px;
+color: #FFFFFF;
+text-transform: uppercase;
+opacity: 1;
+}
