@@ -1,32 +1,17 @@
 <section class="sectionContainer">
-    <div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col d-flex justify-content-center">
-                    <p class="title" style="text-align: center;"> ¿CÓMO ES EL PROCESO DE IMPLEMENTACIÓN?</p>
-                </div>
-            </div>
-
-            <div class="row">
-
-                <div class="col-md imageColumn d-flex align-items-center justify-content-center" *ngFor="let processInformation of processList">
-                    <img class="process-image"src="assets/Proceso-Configuracion.png" style="max-height:100%; object-fit:cover;">
-                </div>
-                <!-- Div que se muestra en caso de que haya 5 procesos
-                <ng-container *ngIf="processList.length == 5">
-                    <div class="col-lg" *ngFor="let processInformation of processList">
-                        XD
-                    </div>
-                </ng-container> -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col d-flex justify-content-center title-column">
+                <p class="title" style="text-align: center;"> ¿CÓMO ES EL PROCESO DE IMPLEMENTACIÓN?</p>
             </div>
         </div>
-        <!-- <div *ngFor="let processInformation of processList" class="col" style="border:1px solid blue;">
-            <p>{{processInformation.processNumber}}</p>
-            <p> {{processInformation.processName}}</p>
-            <p> {{processInformation.processInformation}}</p>
-            <p> {{processInformation.processDuration}}</p>
-            <br>
-            <br>
-        </div> -->
+        <div class="row images-row">
+            <div class="col-md imageColumn d-flex align-items-center justify-content-center"
+                *ngFor="let processInformation of processList">
+                <img class="process-image" src="assets/Proceso-Configuracion.png"
+                    style="max-height:100%; object-fit:cover;">
+            </div>
+            <!-- <div class="col-12 d-none d-lg-block" style="height:2%; color:#AFD625"></div> -->
+        </div>
     </div>
 </section>

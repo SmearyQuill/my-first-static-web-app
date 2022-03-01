@@ -12,8 +12,7 @@
   padding: 0;
 }
 
-.imageColumn 
-{
+.imageColumn {
   padding: 0;
 }
 .process-image {
@@ -21,15 +20,35 @@
   height: auto;
   object-fit: cover;
 }
-@media (min-width: 960px) {
-  .sectionContainer {
-    min-height: 600px;
-    padding: 4% 0 0 0;
+
+@media (max-width: 991px) {
+  .imageColumn {
+    max-height: 800px;
   }
 }
 
-@media (max-width: 959px) {
-  .imageColumn {
-    max-height: 700px;
+@media (min-width: 992px) {
+  .sectionContainer {
+    min-height: 600px;
+  }
+}
+
+@media (min-width: 768px) {
+  .images-row {
+    border-bottom: 1em solid #afd625;
+  }
+
+  .sectionContainer {
+    padding: 5% 0 8% 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .title-column {
+    padding: 15% 7%;
+  }
+
+  .title {
+    font-size: 28px;
   }
 }

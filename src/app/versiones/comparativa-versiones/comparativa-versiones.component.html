@@ -1,0 +1,88 @@
+<section id="price-section">
+    <div class="container-fluid">
+        <div class="row">
+            <p class="title"> PRECIOS </p>
+        </div>
+        <div class="row justify-content-center">
+            <!-- Sección con la lista de opciones -->
+            <div class="col-lg-10 option-list">
+                <div class="row justify-content-center">
+                    <div class="col-3 d-flex justify-content-center section-div"
+                        [ngClass]="{'selected-section-div' : selectedOption == 'LITE'}" (click)="selectOption('LITE')">
+                        <p class="section-title"> RADAR LITE </p>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center section-div"
+                        [ngClass]="{'selected-section-div' : selectedOption == 'TOTAL'}"
+                        (click)="selectOption('TOTAL')">
+                        <p class="section-title"> RADAR CONTROL TOTAL </p>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center section-div"
+                        [ngClass]="{'selected-section-div' : selectedOption == 'COMPARATIVO'}"
+                        (click)="selectOption('COMPARATIVO')">
+                        <span class="span-comparative">
+                            <p class="section-title">COMPARATIVO</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <ng-container *ngIf="selectedOption == 'LITE'">
+                    <!-- Sección de Consultoría e Implementación -->
+                    <div class="col-lg-4 card-column">
+                        <div class="card-container">
+                            <!-- Titulo de la tarjeta -->
+                            <div class="card-header">
+                                <p class="card-header__text"> Consultoría e implementación </p>
+                            </div>
+                            <!-- Información de la tarjeta -->
+                            <div class="card-content">
+                                <ul>
+                                    <li>- Seguimiento y presentaciones semanales de resultados</li>
+                                    <li>- Instalación e implementación del sistema</li>
+                                    <li>- Acceso a Radar Academy - Know How de operación de taller</li>
+                                    <li>- Acompañamiento personalizado con un experto durante 6 semanas</li>
+                                    <li>- Estrategias para incrementar volumen de venta.</li>
+                                    <li>- Sin costo por viáticos</li>
+                                </ul>
+                            </div>
+                            <!-- Separador de la tarjeta -->
+                            <hr class="card-separator">
+                            <!-- Costo del servicio en la tarjeta -->
+                            <div class="price-content">
+                                <p class="price-content__number">$75,000 MXN</p>
+                                <p class="price-content__currency">+IVA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sección de Mensualidad -->
+                    <div class="col-lg-4 card-column">
+                        <div class="card-container">
+                            <!-- Titulo de la tarjeta -->
+                            <div class="card-header">
+                                <p class="card-header__text"> Mensualidad </p>
+                            </div>
+                            <!-- Información de la tarjeta -->
+                            <div class="card-content">
+                                <ul>
+                                    <li>- Licencia de uso del sistema sin límite de usuarios</li>
+                                    <li>- Espacio de almacenamiento en la nube</li>
+                                    <li>- Carga y descarga de archivos</li>
+                                    <li>- Uso de interfaces - Mantenimiento y soporte</li>
+                                    <li>- Actualizaciones</li>
+                                    <li>- App de Radar Connect</li>
+                                </ul>
+                            </div>
+                            <!-- Separador de la tarjeta -->
+                            <hr class="card-separator">
+                            <!-- Costo del servicio en la tarjeta -->
+                            <div class="price-content">
+                                <p class="price-content__number">$75,000 MXN</p>
+                                <p class="price-content__currency">+IVA</p>
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+</section>
