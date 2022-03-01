@@ -23,6 +23,7 @@
 }
 #info-btn{
     height: 58px;
+    width: 95%;
     background: #AFD625 0% 0% no-repeat padding-box;
     border-radius: 6px;
     opacity: 1;
