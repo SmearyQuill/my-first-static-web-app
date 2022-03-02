@@ -1,3 +1,10 @@
+#radar-academy-visitar{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#radar-academy-visitar .row{
+    margin: 0%;
+}
 .resolver-dudas{
     width: 80%;
     text-align: left;
@@ -19,7 +26,7 @@
 }
 #visitar-academy button span{
     text-align: center;
-    font: normal normal 600 22px/30px Segoe UI;
+    font: normal normal 600 20px/28px Segoe UI;
     letter-spacing: 0.66px;
     color: #FFFFFF;
     text-transform: uppercase;
@@ -29,9 +36,18 @@
     margin: auto;
     display: block;
 }
+#movil.resolver-dudas{
+    font: normal normal normal 18px/30px Segoe UI;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
 @media screen and (min-width: 992px){
     #visitar-academy button{
         width: 60%;
         display: inline;
+    }
+    #visitar-academy button span{
+        font: normal normal 600 22px/30px Segoe UI;
     }
 }
