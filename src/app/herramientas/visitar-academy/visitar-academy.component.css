@@ -72,8 +72,8 @@
     #visitar-academy button{
         
         height: 58px;
-        width: 100%;
-        display: inline;
+        width: 70%;
+        display: block;
     }
     #radar-academy-visitar{
         padding-top: 30px;
