@@ -8,6 +8,7 @@ import * as radarModel from '../modelos';
 export class RadarControlTotalComponent implements OnInit {
   informationObject = radarModel.RadarControlTotalInformationObject;
   processList = radarModel.RadarControlTotalProcessList;
+  selectedComparativeColumn = 'TOTAL';
   constructor() {}
 
   ngOnInit(): void {}

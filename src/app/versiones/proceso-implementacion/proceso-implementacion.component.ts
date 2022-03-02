@@ -11,12 +11,14 @@ export class ProcesoImplementacionComponent implements OnInit {
     processName: string;
     processInformation: string;
     processDuration: string;
+    imageSrc: string;
   }[] = [
     {
       processNumber: '',
       processName: '',
       processInformation: '',
       processDuration: '',
+      imageSrc: '',
     },
   ];
 

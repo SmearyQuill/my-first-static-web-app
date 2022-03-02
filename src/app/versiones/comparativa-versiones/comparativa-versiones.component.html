@@ -4,8 +4,8 @@
             <p class="title"> PRECIOS </p>
         </div>
         <div class="row justify-content-center">
-            <!-- Sección con la lista de opciones -->
-            <div class="col-lg-10 option-list">
+            <!-- Sección con la lista de opciones (Se oculta cuando el dispositivo es un celular)-->
+            <div class="col-lg-10 option-list d-none d-md-block">
                 <div class="row justify-content-center">
                     <div class="col-3 d-flex justify-content-center section-div"
                         [ngClass]="{'selected-section-div' : selectedOption == 'LITE'}" (click)="selectOption('LITE')">
@@ -25,59 +25,103 @@
                     </div>
                 </div>
             </div>
+            <!-- Sección con la lista de opciones en movil (Se oculta cuando el dispositivo es una tablet / computadora) -->
+            <div class="col-11 d-md-none dropdown-content-selector"
+                [ngClass]="{'dropdown-selected' : selectedOption == 'LITE'}" (click)="selectOption('LITE')">
+                RADAR LITE</div>
+            <div class="col-11 d-md-none dropdown-content-selector"
+                [ngClass]="{'dropdown-selected' : selectedOption == 'TOTAL'}" (click)="selectOption('TOTAL')">
+                RADAR CONTROL TOTAL</div>
+            <div class="col-11 d-md-none dropdown-content-selector"
+                [ngClass]="{'dropdown-selected' : selectedOption == 'COMPARATIVO'}"
+                (click)="selectOption('COMPARATIVO')">COMPARATIVO</div>
+
+            <!-- Contenedor de contenido de la opción seleccionada -->
             <div class="row justify-content-center">
-                <ng-container *ngIf="selectedOption == 'LITE'">
-                    <!-- Sección de Consultoría e Implementación -->
-                    <div class="col-lg-4 card-column">
+                <!-- Div de tarjetas con los precios de la versión LITE o la versión completa -->
+                <ng-container *ngIf="selectedOption == 'LITE' || selectedOption == 'TOTAL'">
+                    <!-- Sección de tarjetas -->
+                    <div *ngFor="let card of selectedCard" class="col-lg-4 card-column">
                         <div class="card-container">
                             <!-- Titulo de la tarjeta -->
                             <div class="card-header">
-                                <p class="card-header__text"> Consultoría e implementación </p>
+                                <p class="card-header__text"> {{card.cardHeader}} </p>
                             </div>
                             <!-- Información de la tarjeta -->
                             <div class="card-content">
                                 <ul>
-                                    <li>- Seguimiento y presentaciones semanales de resultados</li>
-                                    <li>- Instalación e implementación del sistema</li>
-                                    <li>- Acceso a Radar Academy - Know How de operación de taller</li>
-                                    <li>- Acompañamiento personalizado con un experto durante 6 semanas</li>
-                                    <li>- Estrategias para incrementar volumen de venta.</li>
-                                    <li>- Sin costo por viáticos</li>
+                                    <li *ngFor="let listElement of card.cardContent">{{listElement}}</li>
                                 </ul>
                             </div>
                             <!-- Separador de la tarjeta -->
                             <hr class="card-separator">
                             <!-- Costo del servicio en la tarjeta -->
                             <div class="price-content">
-                                <p class="price-content__number">$75,000 MXN</p>
-                                <p class="price-content__currency">+IVA</p>
+                                <p class="price-content__number">{{card.price}}</p>
+                                <p class="price-content__currency">{{card.currency}}</p>
                             </div>
                         </div>
                     </div>
-                    <!-- Sección de Mensualidad -->
-                    <div class="col-lg-4 card-column">
-                        <div class="card-container">
-                            <!-- Titulo de la tarjeta -->
-                            <div class="card-header">
-                                <p class="card-header__text"> Mensualidad </p>
+                </ng-container>
+                <!-- Div de la tabla de comparativo entre las diferentes versiones de Radar -->
+                <ng-container *ngIf="selectedOption == 'COMPARATIVO'">
+                    <div class="col-lg-8 col-md-10  table-container">
+                        <!-- Tabla -->
+                        <table class="table table-borderless">
+                            <thead>
+                                <th scope="col" class="table-header-empty"></th>
+                                <th class="table-header table-header-complete" scope="col">RADAR LITE</th>
+                                <th class="table-header table-header-empty-left" scope="col">RADAR CONTROL TOTAL</th>
+                            </thead>
+                            <tbody>
+                                <!-- Renglones con los valores  -->
+                                <tr *ngFor="let row of tableRows">
+                                    <th class="table-row__title table-header-empty" scope="row">{{row.rowTitle}}</th>
+                                    <td class="table-row__check table-header-complete checkMark"><span
+                                            *ngIf="row.lite">&#10004;</span></td>
+                                    <td class="table-row__check col- table-last-column checkMark"><span
+                                            *ngIf="row.total">&#10004;</span></td>
+                                </tr>
+                                <!-- Renglón con los precios de Radar Lite y Total en versión web -->
+                                <tr class="d-none d-lg-table-row">
+                                    <th></th>
+                                    <td class="table__price-column table-middle-cost-column">
+                                        <p class="table__price-column__total">$3,000 MXN <span
+                                                class="table__price-column__iva">+IVA</span></p>
+                                    </td>
+                                    <td class="table__price-column">
+                                        <p class="table__price-column__total">$5,000 MXN <span
+                                                class="table__price-column__iva">+IVA</span></p>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <!-- Columnas con los precios de Radar Lite y Total en versión movil -->
+                        <div class="row justify-content-center d-lg-none">
+                            <div class="col-10">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="price-mobile-title">RADAR LITE</p>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="price-mobile-column">
+                                            $3,000 MXN <span class="price-mobile-column__iva">+IVA</span>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- Información de la tarjeta -->
-                            <div class="card-content">
-                                <ul>
-                                    <li>- Licencia de uso del sistema sin límite de usuarios</li>
-                                    <li>- Espacio de almacenamiento en la nube</li>
-                                    <li>- Carga y descarga de archivos</li>
-                                    <li>- Uso de interfaces - Mantenimiento y soporte</li>
-                                    <li>- Actualizaciones</li>
-                                    <li>- App de Radar Connect</li>
-                                </ul>
-                            </div>
-                            <!-- Separador de la tarjeta -->
-                            <hr class="card-separator">
-                            <!-- Costo del servicio en la tarjeta -->
-                            <div class="price-content">
-                                <p class="price-content__number">$75,000 MXN</p>
-                                <p class="price-content__currency">+IVA</p>
+                            <div class="col-10">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="price-mobile-title">RADAR CONTROL TOTAL</p>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="price-mobile-column">
+                                            $5,000 MXN <span class="price-mobile-column__iva">+IVA</span>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

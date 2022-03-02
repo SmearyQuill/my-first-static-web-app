@@ -12,6 +12,17 @@ export const RadarControlTotalInformationObject = {
   imageSrc: 'assets/RadarControlTotal.png',
 };
 
+export const RadarLiteInformationObject = {
+  informationText:
+    'Es la opción perfecta para talleres de bajo volumen con personal administrativo limitado, ya que no sobrecarga de actividades dentro del sistema a los pocos usuarios que operan en el taller.',
+  informationPoints: [
+    'Volumen de rep: 0-50 Unidades mensuales',
+    'Poco personal',
+    'Multifuncionales',
+  ],
+  imageSrc: 'assets/RadarControlTotal.png',
+};
+
 export const RadarControlTotalProcessList = [
   {
     processNumber: '01',
@@ -19,6 +30,7 @@ export const RadarControlTotalProcessList = [
     processInformation:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     processDuration: '1 Semana',
+    imageSrc: 'assets/Grupo-751.png',
   },
   {
     processNumber: '02',
@@ -26,6 +38,7 @@ export const RadarControlTotalProcessList = [
     processInformation:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     processDuration: '1 Semana',
+    imageSrc: 'assets/Grupo-750.png',
   },
   {
     processNumber: '03',
@@ -33,6 +46,7 @@ export const RadarControlTotalProcessList = [
     processInformation:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     processDuration: '1 Semana',
+    imageSrc: 'assets/Grupo-749.png',
   },
   {
     processNumber: '04',
@@ -40,6 +54,7 @@ export const RadarControlTotalProcessList = [
     processInformation:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     processDuration: '1 Semana',
+    imageSrc: 'assets/Grupo-748.png',
   },
   {
     processNumber: '05',
@@ -47,5 +62,41 @@ export const RadarControlTotalProcessList = [
     processInformation:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     processDuration: '1 Semana',
+    imageSrc: 'assets/Grupo-747.png',
+  },
+];
+
+export const RadarLiteProcessList = [
+  {
+    processNumber: '01',
+    processName: 'LEVANTAMIENTO',
+    processInformation:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    processDuration: '1 Semana',
+    imageSrc: 'assets/Grupo-751.png',
+  },
+  {
+    processNumber: '02',
+    processName: 'CONFIGURACION',
+    processInformation:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    processDuration: '1 Semana',
+    imageSrc: 'assets/Grupo-750.png',
+  },
+  {
+    processNumber: '04',
+    processName: 'IMPLEMENTACION',
+    processInformation:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    processDuration: '1 Semana',
+    imageSrc: 'assets/Grupo-748.png',
+  },
+  {
+    processNumber: '05',
+    processName: 'CONSULTORIA',
+    processInformation:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    processDuration: '1 Semana',
+    imageSrc: 'assets/Grupo-747.png',
   },
 ];
