@@ -7,6 +7,9 @@ import { RadarAcademyComponent } from './radar-academy/radar-academy.component';
 import { RadarConnectComponent } from './radar-connect/radar-connect.component';
 import { HeroTitleComponent } from './hero-title/hero-title.component';
 import { InformacionHerramientaComponent } from './informacion-herramienta/informacion-herramienta.component';
+import { VisitarAcademyComponent } from './visitar-academy/visitar-academy.component';
+import { CapacitacionAcademyComponent } from './capacitacion-academy/capacitacion-academy.component';
+import { CertificacionAcademyComponent } from './certificacion-academy/certificacion-academy.component';
 
 
 @NgModule({
@@ -15,7 +18,10 @@ import { InformacionHerramientaComponent } from './informacion-herramienta/infor
     RadarAcademyComponent,
     RadarConnectComponent,
     HeroTitleComponent,
-    InformacionHerramientaComponent
+    InformacionHerramientaComponent,
+    VisitarAcademyComponent,
+    CapacitacionAcademyComponent,
+    CertificacionAcademyComponent
   ],
   imports: [
     CommonModule,

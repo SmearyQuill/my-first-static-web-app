@@ -1,14 +1,16 @@
-<div id="hero-title" style="background: transparent url('/assets/Grupo 541.png') center top no-repeat;">
-        <div id="title-hero">
-            <div id="title">
-                <h1>CAPACITA A TUS COLABORADORES</h1>
-                <h2>EN CUESTIÓN DE HORAS</h2>
+<div class="container-flluid" id="hero" style="background: transparent url('/assets/Grupo 541.png') center top no-repeat; background-size: cover;">
+        <div id="content-hero">
+            <div id="titles">
+                <h1>{{title1}}</h1>
+                <h2>{{title2}}</h2>
             </div>
-            <button id="fst-btn">
-                <span class="hero">SOLICITAR UN DEMO</span>            
-            </button>
-            <button id="snd-btn"> 
-                <span class="hero">CONOCE LA VERSION RADAR CONTROL TOTAL</span>            
-            </button>
+            <div id="btns">
+                <button id="fst-btn">
+                    <span class="hero-btn">{{btn1Text}}</span>            
+                </button>
+                <button id="snd-btn" *ngIf="btn2" class="d-none d-xl-inline"> 
+                    <span class="hero-btn">{{btn2Text}}</span>            
+                </button>
+            </div>
         </div>
 </div>
