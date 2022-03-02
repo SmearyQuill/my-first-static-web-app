@@ -235,7 +235,7 @@ p {
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
-  background-image: url('../../../assets/Arrow-down.svg');
+  background-image: url("../../../assets/Arrow-down.svg");
   background-size: 25px;
   background-repeat: no-repeat;
   background-position: 95% 50%;
@@ -256,6 +256,9 @@ p {
   .card-container {
     height: 700px;
   }
+  #price-section {
+    padding: 5% 0 0 0;
+  }
 }
 
 @media (max-width: 1200px) and (min-width: 992px) {
@@ -267,6 +270,10 @@ p {
   }
   .price-content__currency {
     font-size: 12px;
+  }
+
+  #price-section{
+    padding:5% 0 3% 0;
   }
 }
 
@@ -294,6 +301,6 @@ p {
     font-size: 32px;
   }
   #price-section {
-    padding: 12% 0%;
+    padding: 10% 0%;
   }
 }

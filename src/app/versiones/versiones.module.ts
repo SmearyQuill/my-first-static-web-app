@@ -8,6 +8,7 @@ import { HeroVersionesComponent } from './hero-versiones/hero-versiones.componen
 import { InformacionVersionComponent } from './informacion-version/informacion-version.component';
 import { ProcesoImplementacionComponent } from './proceso-implementacion/proceso-implementacion.component';
 import { ComparativaVersionesComponent } from './comparativa-versiones/comparativa-versiones.component';
+import { CompromisoComponent } from './compromiso/compromiso.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { ComparativaVersionesComponent } from './comparativa-versiones/comparati
     InformacionVersionComponent,
     ProcesoImplementacionComponent,
     ComparativaVersionesComponent,
+    CompromisoComponent,
   ],
   imports: [
     CommonModule,

@@ -17,7 +17,7 @@
 }
 .process-image {
   max-width: 100%;
-  height: auto;
+  max-height: 100%;
   object-fit: cover;
 }
 
@@ -36,6 +36,7 @@
 @media (min-width: 768px) {
   .images-row {
     border-bottom: 1em solid #afd625;
+    background-color: #022644;
   }
 
   .sectionContainer {
