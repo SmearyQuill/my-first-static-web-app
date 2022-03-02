@@ -1,7 +1,8 @@
 #hero-title{
-    height: 80vh;
+    height: 544px;
     background-position: center top;
     background-repeat: no-repeat;
+    background-size: auto 100%;
 }
 #title-hero{
     /* Layout Properties */
@@ -79,6 +80,9 @@ button .hero{
 
 
 @media only screen and (min-width: 768px) and (min-height: 600px ) {
+    #hero-title{
+        height: 85vh;
+    }
     #title h1 {
         font: normal normal 600 48px/64px Segoe UI;
     }
