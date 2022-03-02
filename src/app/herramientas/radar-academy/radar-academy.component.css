@@ -1,0 +1,37 @@
+.resolver-dudas{
+    width: 80%;
+    text-align: left;
+    font: normal normal normal 28px/40px Segoe UI;
+    letter-spacing: 1.4px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+#visitar-academy button{
+    display: block;
+    height: 58px;
+    width: 80%;
+    margin:auto;
+    margin-top: 1rem;
+    background: #AFD625 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    opacity: 1;
+    border: none;
+}
+#visitar-academy button span{
+    text-align: center;
+    font: normal normal 600 22px/30px Segoe UI;
+    letter-spacing: 0.66px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+}
+#visitar-academy-img{
+    margin: auto;
+    display: block;
+}
+@media screen and (min-width: 992px){
+    #visitar-academy button{
+        width: 60%;
+        display: inline;
+    }
+}
