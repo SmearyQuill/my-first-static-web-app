@@ -1,18 +1,42 @@
 #equipo-titles h1{
-    width: 120%;
+    width: auto;
     text-align: left;
-    font: normal normal 300 35px/47px Segoe UI;
+    font: normal normal 300 20px/28px Segoe UI;
     letter-spacing: 0.35px;
     color: #0A3B64;
 }
 #equipo-titles h2{
-    width: 120%;
+    width: auto;
     text-align: left;
-    font: normal normal 600 35px/47px Segoe UI;
+    font: normal normal 600 20px/28px Segoe UI;
     letter-spacing: 0.35px;
     color: #0A3B64;
 }
-#img-col{
+
+#equipo-titles{
+    padding-left: 10%;
+    margin-top: 76px;
 }
-#equipo-img{
+@media screen and (min-width: 576px) {
+    #equipo-titles h1{        
+        font: normal normal 300 30px/40px Segoe UI;
+    }
+    #equipo-titles h1{  
+        font: normal normal 600 30px/40px Segoe UI;
+    }
+}
+@media screen and (min-width:992px){
+    
+    #equipo-titles{
+        padding-left: 12px;
+    }
+    #equipo-titles h2{
+        
+        font: normal normal 600 35px/47px Segoe UI;
+        width: 120%;
+    }
+    #equipo-titles h1{
+        font: normal normal 300 35px/47px Segoe UI;
+        width: 120%;
+    }
 }
