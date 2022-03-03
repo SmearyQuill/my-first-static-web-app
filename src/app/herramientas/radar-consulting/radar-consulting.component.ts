@@ -11,8 +11,14 @@ export class RadarConsultingComponent implements OnInit {
   btn1Text = "SOLICITAR UN DEMO"
   btn2Text = "CONOCE LA VERSION RADAR CONTROL TOTAL"
   btn2 = true
-  bgImg = ""
-  
+  bgImg = "/assets/campaign-creators-pypeCEaJeZY-unsplash.png"
+  btn1Route = ""
+  btn2Route = ""
+
+  infoTitle = "RADAR CONSULTING"
+  infoText = "Te damos 12 semanas de consultoría para asegurarnos de que se están obteniendo los resultados proyectados , enfocándonos en la productividad de tu taller o de lo contrario te regresamos tu dinero."
+  infoVideo = false
+  btnText = "QUIERO AGENDAR UNA DEMO"
   constructor() { }
 
   ngOnInit(): void {

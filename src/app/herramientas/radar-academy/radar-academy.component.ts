@@ -16,6 +16,8 @@ export class RadarAcademyComponent implements OnInit {
   infoTitle = "RADAR ACADEMY"
   infoText = "Radar Academy es una plataforma para la capacitación de todos los colaboradores de tu taller de HyP, donde obtendrás una certificación para el uso completo del sistema."
   infoVideo = true
+  btnText = "AGENDA UNA REUNIÓN WEB"
+
   constructor() { }
 
   ngOnInit(): void {

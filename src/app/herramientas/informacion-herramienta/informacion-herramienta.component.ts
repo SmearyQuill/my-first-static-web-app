@@ -6,9 +6,11 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./informacion-herramienta.component.css']
 })
 export class InformacionHerramientaComponent implements OnInit {
-  @Input() infoTitle: string = '';
-  @Input() infoText: string = '';
-  @Input() infoVideo: boolean = false;
+  @Input() infoTitle: string = ''
+  @Input() infoText: string = ''
+  @Input() infoVideo: boolean = false
+  @Input() videoLink: string = ''
+  @Input() btnText: string = ''
 
   constructor() { }
 

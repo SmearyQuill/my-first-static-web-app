@@ -1,16 +1,18 @@
-<div class="container-flluid" id="hero" style="background: transparent url('{{backgroundImage}}') center top no-repeat; background-size: cover;">
-        <div id="content-hero">
-            <div id="titles">
-                <h1>{{title1}}</h1>
-                <h2>{{title2}}</h2>
+<div id="gradient-bg" style="background: transparent url('{{backgroundImage}}') center top no-repeat; background-size: cover;">
+    <div class="container-flluid" id="hero" >
+            <div id="content-hero">
+                <div id="titles">
+                    <h1>{{title1}}</h1>
+                    <h2>{{title2}}</h2>
+                </div>
+                <div id="btns">
+                    <button id="fst-btn" routerLink="{{btn1Route}}">
+                        <span class="hero-btn">{{btn1Text}}</span>            
+                    </button>
+                    <button id="snd-btn" *ngIf="btn2" class="d-none d-xl-inline" routerLink="{{btn2Route}}">  
+                        <span class="hero-btn">{{btn2Text}}</span>            
+                    </button>
+                </div>
             </div>
-            <div id="btns">
-                <button id="fst-btn">
-                    <span class="hero-btn">{{btn1Text}}</span>            
-                </button>
-                <button id="snd-btn" *ngIf="btn2" class="d-none d-xl-inline"> 
-                    <span class="hero-btn">{{btn2Text}}</span>            
-                </button>
-            </div>
-        </div>
+    </div>
 </div>

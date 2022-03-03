@@ -3,6 +3,8 @@
     padding-right: 10vw; 
     padding-top: 154px;
     padding-bottom: 154px;
+    background: transparent linear-gradient(90deg, #022644 0%, #02264400 100%) 0% 0% no-repeat padding-box;
+
 }
 #content-hero{
     width: 100%;
