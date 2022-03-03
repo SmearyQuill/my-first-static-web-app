@@ -12,7 +12,9 @@
     letter-spacing: 0.35px;
     color: #0A3B64;
 }
-
+#img-col{
+    padding:0%;
+}
 #equipo-titles{
     padding-left: 10%;
     margin-top: 76px;
