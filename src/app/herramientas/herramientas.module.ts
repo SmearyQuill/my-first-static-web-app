@@ -14,6 +14,7 @@ import { EquipoAcademyComponent } from './equipo-academy/equipo-academy.componen
 import { SeguimientoSemanalComponent } from './seguimiento-semanal/seguimiento-semanal.component';
 import { BannerResultadosComponent } from './banner-resultados/banner-resultados.component';
 import { SeccionCompromisosComponent } from './seccion-compromisos/seccion-compromisos.component';
+import { AppFuncionesComponent } from './app-funciones/app-funciones.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { SeccionCompromisosComponent } from './seccion-compromisos/seccion-compr
     EquipoAcademyComponent,
     SeguimientoSemanalComponent,
     BannerResultadosComponent,
-    SeccionCompromisosComponent
+    SeccionCompromisosComponent,
+    AppFuncionesComponent
   ],
   imports: [
     CommonModule,
