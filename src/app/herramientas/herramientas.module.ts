@@ -13,6 +13,7 @@ import { CertificacionAcademyComponent } from './certificacion-academy/certifica
 import { EquipoAcademyComponent } from './equipo-academy/equipo-academy.component';
 import { SeguimientoSemanalComponent } from './seguimiento-semanal/seguimiento-semanal.component';
 import { BannerResultadosComponent } from './banner-resultados/banner-resultados.component';
+import { SeccionCompromisosComponent } from './seccion-compromisos/seccion-compromisos.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { BannerResultadosComponent } from './banner-resultados/banner-resultados
     CertificacionAcademyComponent,
     EquipoAcademyComponent,
     SeguimientoSemanalComponent,
-    BannerResultadosComponent
+    BannerResultadosComponent,
+    SeccionCompromisosComponent
   ],
   imports: [
     CommonModule,
