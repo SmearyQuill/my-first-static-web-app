@@ -1,0 +1,11 @@
+#funciones-app-container{
+    padding-top: 139px;
+    padding-bottom: 139px;
+    background: transparent url('/assets/fondo_herramientas.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+#funciones-app-container col{
+    border-radius: 9px;
+    opacity: 1;
+}
