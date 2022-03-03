@@ -28,6 +28,9 @@ import { EquipoAcademyComponent } from './equipo-academy/equipo-academy.componen
   imports: [
     CommonModule,
     HerramientasRoutingModule
+  ],
+  exports: [
+    HeroTitleComponent 
   ]
 })
 export class HerramientasModule { }
