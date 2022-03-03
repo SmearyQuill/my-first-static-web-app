@@ -10,6 +10,7 @@ import { InformacionHerramientaComponent } from './informacion-herramienta/infor
 import { VisitarAcademyComponent } from './visitar-academy/visitar-academy.component';
 import { CapacitacionAcademyComponent } from './capacitacion-academy/capacitacion-academy.component';
 import { CertificacionAcademyComponent } from './certificacion-academy/certificacion-academy.component';
+import { EequipoAcademyComponent } from './eequipo-academy/eequipo-academy.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { CertificacionAcademyComponent } from './certificacion-academy/certifica
     InformacionHerramientaComponent,
     VisitarAcademyComponent,
     CapacitacionAcademyComponent,
-    CertificacionAcademyComponent
+    CertificacionAcademyComponent,
+    EequipoAcademyComponent
   ],
   imports: [
     CommonModule,

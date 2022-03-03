@@ -1,0 +1,18 @@
+#equipo-titles h1{
+    width: 120%;
+    text-align: left;
+    font: normal normal 300 35px/47px Segoe UI;
+    letter-spacing: 0.35px;
+    color: #0A3B64;
+}
+#equipo-titles h2{
+    width: 120%;
+    text-align: left;
+    font: normal normal 600 35px/47px Segoe UI;
+    letter-spacing: 0.35px;
+    color: #0A3B64;
+}
+#img-col{
+}
+#equipo-img{
+}
