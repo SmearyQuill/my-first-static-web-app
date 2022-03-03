@@ -1,6 +1,8 @@
 #certificacion-container{
-    padding-bottom: 50px;
-    padding-top: 140px;
+    padding-bottom: 0px;
+    padding-top: 70px;
+    padding-left: 0%;
+    padding-right: 0%;
 }
 #visitar-certificacion{
     padding: 0%;
@@ -28,10 +30,10 @@
     height: 100%;
 }
 .certificacion-card.left{
-    padding-right: 43px;
+    padding-right: 0%;
 }
 .certificacion-card.right{
-    padding-left: 43px;
+    padding-left: 0%;
 }
 .certificacion-card img{
     width: 100%;
@@ -39,17 +41,44 @@
 }
 .bottom-text h1{
     text-align: center;
-    font: normal normal bold 28px/37px Segoe UI;
+    font: normal normal bold 16px/22px Segoe UI;
     letter-spacing: 0.28px;
     color: #FFFFFF;
     opacity: 1;
 }
 .bottom-text{
-
-    border: 1px solid #3F51B5;
-    border-radius: 0px 0px 27px 27px;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    border: none;
+    padding-top: 36px;
+    padding-bottom: 36px;
     padding-left: 8.5%;
     padding-right: 8.5%;
+}
+@media screen and (min-width: 576px) {
+    .bottom-text h1{
+        font: normal normal bold 28px/37px Segoe UI;
+    }
+    #certificacion-container{
+        padding-bottom: 50px;
+        padding-top: 140px;
+    }
+    
+    .bottom-text{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+@media screen and (min-width: 992px) {
+    
+    .certificacion-card.left{
+        padding-right: 43px;
+    }
+    .certificacion-card.right{
+        padding-left: 43px;
+    }
+    .bottom-text{
+
+        border: 1px solid #3F51B5;
+        border-radius: 0px 0px 27px 27px;
+    }
+
 }

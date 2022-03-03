@@ -11,6 +11,7 @@ export class RadarAcademyComponent implements OnInit {
   btn1Text = "SOLICITAR UN DEMO"
   btn2Text = "CONOCE LA VERSION RADAR CONTROL TOTAL"
   btn2 = true
+  bgImg = '/assets/Grupo 541.png'
 
   infoTitle = "RADAR ACADEMY"
   infoText = "Radar Academy es una plataforma para la capacitación de todos los colaboradores de tu taller de HyP, donde obtendrás una certificación para el uso completo del sistema."
