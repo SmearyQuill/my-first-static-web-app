@@ -129,6 +129,7 @@ p {
   background-color: #f9f9f9;
   border-radius: 15px;
   box-shadow: 4px 1px 30px #00000029;
+  margin-bottom: 4%;
 }
 
 .table-header,
@@ -235,8 +236,8 @@ p {
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
-  background-image: url("../../../assets/Arrow-down.svg");
-  background-size: 25px;
+  background-image: url("../../../assets/Arrow-down.png");
+  background-size: 35px;
   background-repeat: no-repeat;
   background-position: 95% 50%;
 }
@@ -244,12 +245,10 @@ p {
 .dropdown-selected {
   background-color: #afd625;
   color: #ffffff;
-}
-
-.dropdown-content-selector__arrow {
-}
-
-.dropdown-selected__arrow {
+  background-image: url("../../../assets/Arrow-up.png");
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
 }
 
 @media (min-width: 1280px) {
@@ -272,8 +271,8 @@ p {
     font-size: 12px;
   }
 
-  #price-section{
-    padding:5% 0 3% 0;
+  #price-section {
+    padding: 5% 0 3% 0;
   }
 }
 

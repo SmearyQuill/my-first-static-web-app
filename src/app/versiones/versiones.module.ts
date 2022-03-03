@@ -10,7 +10,6 @@ import { ProcesoImplementacionComponent } from './proceso-implementacion/proceso
 import { ComparativaVersionesComponent } from './comparativa-versiones/comparativa-versiones.component';
 import { CompromisoComponent } from './compromiso/compromiso.component';
 
-
 @NgModule({
   declarations: [
     RadarControlTotalComponent,
