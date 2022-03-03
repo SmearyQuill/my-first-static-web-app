@@ -11,8 +11,8 @@ export class RadarConsultingComponent implements OnInit {
   btn1Text = "SOLICITAR UN DEMO"
   btn2Text = "CONOCE LA VERSION RADAR CONTROL TOTAL"
   btn2 = true
-  bgImg = ""
-  
+  bgImg = "/assets/campaign-creators-pypeCEaJeZY-unsplash.png"
+
   constructor() { }
 
   ngOnInit(): void {
