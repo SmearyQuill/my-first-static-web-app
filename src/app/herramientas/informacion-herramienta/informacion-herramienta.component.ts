@@ -11,6 +11,7 @@ export class InformacionHerramientaComponent implements OnInit {
   @Input() infoVideo: boolean = false
   @Input() videoLink: string = ''
   @Input() btnText: string = ''
+  @Input() btnRoute: string = ''
 
   constructor() { }
 
