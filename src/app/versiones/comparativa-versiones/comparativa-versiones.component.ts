@@ -9,6 +9,10 @@ export class ComparativaVersionesComponent implements OnInit {
   @Input() initialOption = '';
   selectedOption = '';
 
+  // Banderas para saber que información se muestra en la versión de movil.
+  liteVersionActive = false;
+  totalVersionActive = false;
+  tableActive = false;
   cardsLite = [
     {
       cardHeader: 'Consultoría e implementación',
@@ -157,6 +161,7 @@ export class ComparativaVersionesComponent implements OnInit {
       total: true,
     },
   ];
+
   selectedCard = this.cardsLite;
 
   constructor() {}
@@ -178,5 +183,27 @@ export class ComparativaVersionesComponent implements OnInit {
     }
 
     console.log(this.selectedCard);
+  }
+
+  checkLiteVersion() {
+    if (this.liteVersionActive) {
+      this.liteVersionActive = false;
+    } else {
+      this.liteVersionActive = true;
+    }
+  }
+  checkTotalVersion() {
+    if (this.totalVersionActive) {
+      this.totalVersionActive = false;
+    } else {
+      this.totalVersionActive = true;
+    }
+  }
+  checkTable() {
+    if (this.tableActive) {
+      this.tableActive = false;
+    } else {
+      this.tableActive = true;
+    }
   }
 }

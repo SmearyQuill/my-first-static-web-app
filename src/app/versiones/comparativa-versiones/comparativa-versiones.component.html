@@ -3,7 +3,8 @@
         <div class="row">
             <p class="title"> PRECIOS </p>
         </div>
-        <div class="row justify-content-center">
+        <!-- Sección de comparativa para tablets / computadoras -->
+        <div class="row justify-content-center d-none d-md-flex">
             <!-- Sección con la lista de opciones (Se oculta cuando el dispositivo es un celular)-->
             <div class="col-lg-10 option-list d-none d-md-block">
                 <div class="row justify-content-center">
@@ -25,16 +26,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Sección con la lista de opciones en movil (Se oculta cuando el dispositivo es una tablet / computadora) -->
-            <div class="col-11 d-md-none dropdown-content-selector"
-                [ngClass]="{'dropdown-selected' : selectedOption == 'LITE'}" (click)="selectOption('LITE')">
-                RADAR LITE</div>
-            <div class="col-11 d-md-none dropdown-content-selector"
-                [ngClass]="{'dropdown-selected' : selectedOption == 'TOTAL'}" (click)="selectOption('TOTAL')">
-                RADAR CONTROL TOTAL</div>
-            <div class="col-11 d-md-none dropdown-content-selector"
-                [ngClass]="{'dropdown-selected' : selectedOption == 'COMPARATIVO'}"
-                (click)="selectOption('COMPARATIVO')">COMPARATIVO</div>
 
             <!-- Contenedor de contenido de la opción seleccionada -->
             <div class="row justify-content-center">
@@ -63,6 +54,7 @@
                         </div>
                     </div>
                 </ng-container>
+
                 <!-- Div de la tabla de comparativo entre las diferentes versiones de Radar -->
                 <ng-container *ngIf="selectedOption == 'COMPARATIVO'">
                     <div class="col-lg-8 col-md-10  table-container">
@@ -126,6 +118,136 @@
                         </div>
                     </div>
                 </ng-container>
+            </div>
+
+        </div>
+        <!-- Sección de comparativa para celular -->
+        <div class="row justify-content-center d-md-none d-md-flex">
+            <!-- Botón para mostrar la tabla de Radar Lite en dispositivos moviles -->
+            <div class="col-11 dropdown-content-selector" [ngClass]="{'dropdown-selected' : liteVersionActive}"
+                (click)="checkLiteVersion()">
+                RADAR LITE</div>
+            <!-- Tabla de información de Radar Lite -->
+            <div *ngIf="liteVersionActive" class="row justify-content-center">
+                <!-- Sección de tarjetas -->
+                <div *ngFor="let card of cardsLite" class="col-lg-4 card-column">
+                    <div class="card-container">
+                        <!-- Titulo de la tarjeta -->
+                        <div class="card-header">
+                            <p class="card-header__text"> {{card.cardHeader}} </p>
+                        </div>
+                        <!-- Información de la tarjeta -->
+                        <div class="card-content">
+                            <ul>
+                                <li *ngFor="let listElement of card.cardContent">{{listElement}}</li>
+                            </ul>
+                        </div>
+                        <!-- Separador de la tarjeta -->
+                        <hr class="card-separator">
+                        <!-- Costo del servicio en la tarjeta -->
+                        <div class="price-content">
+                            <p class="price-content__number">{{card.price}}</p>
+                            <p class="price-content__currency">{{card.currency}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botón para mostrar la tabla de Radar Total en dispositivos moviles -->
+            <div class="col-11 dropdown-content-selector" [ngClass]="{'dropdown-selected' : totalVersionActive}"
+                (click)="checkTotalVersion()">
+                RADAR CONTROL TOTAL</div>
+            <!--  Tabla de información de Radar Total -->
+            <div *ngIf="totalVersionActive" class="row justify-content-center">
+                <div *ngFor="let card of cardsTotal" class="col-lg-4 card-column">
+                    <div class="card-container">
+                        <!-- Titulo de la tarjeta -->
+                        <div class="card-header">
+                            <p class="card-header__text"> {{card.cardHeader}} </p>
+                        </div>
+                        <!-- Información de la tarjeta -->
+                        <div class="card-content">
+                            <ul>
+                                <li *ngFor="let listElement of card.cardContent">{{listElement}}</li>
+                            </ul>
+                        </div>
+                        <!-- Separador de la tarjeta -->
+                        <hr class="card-separator">
+                        <!-- Costo del servicio en la tarjeta -->
+                        <div class="price-content">
+                            <p class="price-content__number">{{card.price}}</p>
+                            <p class="price-content__currency">{{card.currency}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botón para mostrar la tabla comparativa en dispositivos moviles -->
+            <div class="col-11 dropdown-content-selector" [ngClass]="{'dropdown-selected' : tableActive}"
+                (click)="checkTable()">
+                COMPARATIVO</div>
+            <!-- Tabla Comparativa -->
+            <div *ngIf="tableActive" class="row justify-content-center">
+                <div class="col-lg-8 col-md-10  table-container">
+                    <!-- Tabla -->
+                    <table class="table table-borderless">
+                        <thead>
+                            <th scope="col" class="table-header-empty"></th>
+                            <th class="table-header table-header-complete" scope="col">RADAR LITE</th>
+                            <th class="table-header table-header-empty-left" scope="col">RADAR CONTROL TOTAL</th>
+                        </thead>
+                        <tbody>
+                            <!-- Renglones con los valores  -->
+                            <tr *ngFor="let row of tableRows">
+                                <th class="table-row__title table-header-empty" scope="row">{{row.rowTitle}}</th>
+                                <td class="table-row__check table-header-complete checkMark"><span
+                                        *ngIf="row.lite">&#10004;</span></td>
+                                <td class="table-row__check col- table-last-column checkMark"><span
+                                        *ngIf="row.total">&#10004;</span></td>
+                            </tr>
+                            <!-- Renglón con los precios de Radar Lite y Total en versión web -->
+                            <tr class="d-none d-lg-table-row">
+                                <th></th>
+                                <td class="table__price-column table-middle-cost-column">
+                                    <p class="table__price-column__total">$3,000 MXN <span
+                                            class="table__price-column__iva">+IVA</span></p>
+                                </td>
+                                <td class="table__price-column">
+                                    <p class="table__price-column__total">$5,000 MXN <span
+                                            class="table__price-column__iva">+IVA</span></p>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <!-- Columnas con los precios de Radar Lite y Total en versión movil -->
+                    <div class="row justify-content-center d-lg-none">
+                        <div class="col-10">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="price-mobile-title">RADAR LITE</p>
+                                </div>
+                                <div class="col-12">
+                                    <p class="price-mobile-column">
+                                        $3,000 MXN <span class="price-mobile-column__iva">+IVA</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="price-mobile-title">RADAR CONTROL TOTAL</p>
+                                </div>
+                                <div class="col-12">
+                                    <p class="price-mobile-column">
+                                        $5,000 MXN <span class="price-mobile-column__iva">+IVA</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
 import * as radarModel from '../modelos';
 @Component({
   selector: 'app-radar-lite',
@@ -6,10 +7,17 @@ import * as radarModel from '../modelos';
   styleUrls: ['./radar-lite.component.css'],
 })
 export class RadarLiteComponent implements OnInit {
+  heroInformation = radarModel.versionesHero;
   informationObject = radarModel.RadarLiteInformationObject;
+  functionalitiesList = radarModel.RadarLiteFunctionalities;
   processList = radarModel.RadarLiteProcessList;
   selectedComparativeColumn = 'LITE';
-  constructor() {}
+
+  constructor(private viewPortScroller: ViewportScroller) {}
 
   ngOnInit(): void {}
+
+  public onClick(elementId: string): void {
+    this.viewPortScroller.scrollToAnchor(elementId);
+  }
 }

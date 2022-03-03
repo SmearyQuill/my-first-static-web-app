@@ -1,14 +1,17 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-lg-6">
-            <img src="assets/ImagenPrincipalVersiones.png" class="img-fluid">
-            <div>
-                <p> ESCOGE LA VERSIÓN QUE MÁS SE ADAPTE A TU TALLER </p>
-                <button>
-                    Solicitar un demo
+<div id="gradient-bg"
+    style="background: transparent url('{{backgroundImage}}') center top no-repeat; background-size: cover;">
+    <div class="container-flluid" id="hero">
+        <div id="content-hero">
+            <div id="titles">
+                <h1>{{title1}}</h1>
+                <h2>{{title2}}</h2>
+            </div>
+            <div id="btns">
+                <button id="fst-btn" routerLink="{{btn1Route}}">
+                    <span class="hero-btn">{{btn1Text}}</span>
                 </button>
-                <button>
-                    Comparar Versiones
+                <button id="snd-btn" class="d-none d-xl-inline" (click)="onClick('price-section')">
+                    <span class="hero-btn">{{btn2Text}}</span>
                 </button>
             </div>
         </div>
