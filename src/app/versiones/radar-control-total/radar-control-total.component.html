@@ -2,7 +2,9 @@
 <section class="pageContainer">
     <div class="containerFluid">
         <!-- Hero de la página de versiones-->
-        <app-hero-versiones></app-hero-versiones>
+        <app-hero-title [title1]="heroInformation.title1" [title2]="heroInformation.title2"
+            [btn1Text]="heroInformation.btn1Text" [btn2]="heroInformation.btn2" [btn2Text]="heroInformation.btn2Text"
+            [backgroundImage]="heroInformation.backgroundImage"></app-hero-title>
         <!-- Información de Radar Control Total -->
         <app-informacion-version [informationText]="informationObject.informationText"
             [informationPoints]="informationObject.informationPoints" [imageSrc]="informationObject.imageSrc">

@@ -9,6 +9,7 @@ import { InformacionVersionComponent } from './informacion-version/informacion-v
 import { ProcesoImplementacionComponent } from './proceso-implementacion/proceso-implementacion.component';
 import { ComparativaVersionesComponent } from './comparativa-versiones/comparativa-versiones.component';
 import { CompromisoComponent } from './compromiso/compromiso.component';
+import { HerramientasModule } from '../herramientas/herramientas.module';
 
 @NgModule({
   declarations: [
@@ -20,9 +21,6 @@ import { CompromisoComponent } from './compromiso/compromiso.component';
     ComparativaVersionesComponent,
     CompromisoComponent,
   ],
-  imports: [
-    CommonModule,
-    VersionesRoutingModule
-  ]
+  imports: [CommonModule, VersionesRoutingModule, HerramientasModule],
 })
-export class VersionesModule { }
+export class VersionesModule {}

@@ -1,5 +1,14 @@
 // Archivo donde se declaran todos los objetos que se utilizan para darle estructura a componentes ( Cards, numero de subprocesos, etc)
 
+export const versionesHero = {
+  title1 : 'ESCOGE LA VERSIÓN QUE MÁS SE',
+  title2 : 'ADAPTE A TU TALLER',
+  btn1Text : 'SOLICITAR UN DEMO',
+  btn2 : true,
+  btn2Text : 'COMPARAR VERSIONES',
+  backgroundImage : 'assets/ImagenPrincipalVersiones.png'
+};
+
 export const RadarControlTotalInformationObject = {
   informationText:
     'Es la opción perfecta para talleres de bajo volumen con personal administrativo limitado, ya que no sobrecarga de actividades dentro del sistema a los pocos usuarios que operan en el taller.',
@@ -20,7 +29,7 @@ export const RadarLiteInformationObject = {
     'Poco personal',
     'Multifuncionales',
   ],
-  imageSrc: 'assets/RadarControlTotal.png',
+  imageSrc: 'assets/RadarLite.png',
 };
 
 export const RadarControlTotalProcessList = [

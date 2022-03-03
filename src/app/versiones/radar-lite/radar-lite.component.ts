@@ -6,6 +6,7 @@ import * as radarModel from '../modelos';
   styleUrls: ['./radar-lite.component.css'],
 })
 export class RadarLiteComponent implements OnInit {
+  heroInformation = radarModel.versionesHero;
   informationObject = radarModel.RadarLiteInformationObject;
   processList = radarModel.RadarLiteProcessList;
   selectedComparativeColumn = 'LITE';
