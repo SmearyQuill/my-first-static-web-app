@@ -4,13 +4,14 @@
         <!-- Hero de la página de versiones-->
         <app-hero-versiones [title1]="heroInformation.title1" [title2]="heroInformation.title2"
             [btn1Text]="heroInformation.btn1Text" [btn2Text]="heroInformation.btn2Text"
-            [backgroundImage]="heroInformation.backgroundImage" [btn1Route]="heroInformation.btn1Route"></app-hero-versiones>
+            [backgroundImage]="heroInformation.backgroundImage" [btn1Route]="heroInformation.btn1Route">
+        </app-hero-versiones>
         <!-- Información de Radar Control Total -->
         <app-informacion-version [informationText]="informationObject.informationText"
             [informationPoints]="informationObject.informationPoints" [imageSrc]="informationObject.imageSrc">
         </app-informacion-version>
         <!-- Componente con las funciones de Radar -->
-        <div> Trabajo Pendiente </div>
+        <app-funcionalidades [list]="functionalitiesList"></app-funcionalidades>
         <!-- Procesos de Implementación -->
         <app-proceso-implementacion [processList]=processList></app-proceso-implementacion>
         <!-- Compromiso -->

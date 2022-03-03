@@ -8,6 +8,7 @@ import * as radarModel from '../modelos';
 export class RadarControlTotalComponent implements OnInit {
   heroInformation = radarModel.versionesHero;
   informationObject = radarModel.RadarControlTotalInformationObject;
+  functionalitiesList = radarModel.RadarTotalFunctionalities;
   processList = radarModel.RadarControlTotalProcessList;
   selectedComparativeColumn = 'TOTAL';
   constructor() {}

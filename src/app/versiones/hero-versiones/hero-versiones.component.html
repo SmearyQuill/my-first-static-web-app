@@ -10,8 +10,8 @@
                 <button id="fst-btn" routerLink="{{btn1Route}}">
                     <span class="hero-btn">{{btn1Text}}</span>
                 </button>
-                <button id="snd-btn" class="d-none d-xl-inline">
-                    <a (click)="onClick('price-section')"><span class="hero-btn">{{btn2Text}}</span></a>
+                <button id="snd-btn" class="d-none d-xl-inline" (click)="onClick('price-section')">
+                    <span class="hero-btn">{{btn2Text}}</span>
                 </button>
             </div>
         </div>

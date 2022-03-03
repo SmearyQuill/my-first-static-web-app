@@ -109,3 +109,117 @@ export const RadarLiteProcessList = [
     imageSrc: 'assets/Grupo-747.png',
   },
 ];
+
+export const RadarTotalFunctionalities = [
+  {
+    name: 'PANEL DE CLIENTE',
+    icon: 'assets/Panel-Cliente.svg',
+    gif: 'assets/panel-cliente2.png',
+    text: 'Mantén a tu cliente informado 24/7 con información en tiempo real.',
+  },
+  {
+    name: 'INFORMACION EN TIEMPO REAL',
+    icon: 'assets/Panel-Cliente.svg',
+    gif: 'assets/panel-cliente2.png',
+    text: 'Mantén a tu cliente informado 24/7 con información en tiempo real.',
+  },
+  {
+    name: 'ELECTROPLAN',
+    icon: 'assets/Panel-Cliente.svg',
+    gif: 'assets/panel-cliente2.png',
+    text: 'Mantén a tu cliente informado 24/7 con información en tiempo real.',
+  },
+  {
+    name: 'INTERFACES',
+    icon: 'assets/Panel-Cliente.svg',
+    gif: 'assets/panel-cliente2.png',
+    text: 'Mantén a tu cliente informado 24/7 con información en tiempo real.',
+  },
+  {
+    name: 'GESTIÓN DE REFACCIONES',
+    icon: 'assets/Panel-Cliente.svg',
+    gif: 'assets/panel-cliente2.png',
+    text: 'Mantén a tu cliente informado 24/7 con información en tiempo real.',
+  },
+  {
+    name: 'INVENTARIO',
+    icon: 'assets/Panel-Cliente.svg',
+    gif: 'assets/panel-cliente2.png',
+    text: 'Mantén a tu cliente informado 24/7 con información en tiempo real.',
+  },
+  {
+    name: 'NÓMINA',
+    icon: 'assets/Panel-Cliente.svg',
+    gif: 'assets/panel-cliente2.png',
+    text: 'Mantén a tu cliente informado 24/7 con información en tiempo real.',
+  },
+  {
+    name: 'LABORATORIO',
+    icon: 'assets/Panel-Cliente.svg',
+    gif: 'assets/panel-cliente2.png',
+    text: 'Mantén a tu cliente informado 24/7 con información en tiempo real.',
+  },
+  {
+    name: 'FACTURACIÓN',
+    icon: 'assets/Panel-Cliente.svg',
+    gif: 'assets/panel-cliente2.png',
+    text: 'Mantén a tu cliente informado 24/7 con información en tiempo real.',
+  },
+  {
+    name: 'E-TOOLS',
+    icon: 'assets/Panel-Cliente.svg',
+    gif: 'assets/panel-cliente2.png',
+    text: 'Mantén a tu cliente informado 24/7 con información en tiempo real.',
+  },
+  {
+    name: 'VALUACIÓN',
+    icon: 'assets/Panel-Cliente.svg',
+    gif: 'assets/panel-cliente2.png',
+    text: 'Mantén a tu cliente informado 24/7 con información en tiempo real.',
+  },
+];
+
+export const RadarLiteFunctionalities = [
+  {
+    name: 'PANEL DE CLIENTE',
+    icon: 'assets/Panel-Cliente.svg',
+    gif: 'assets/panel-cliente2.png',
+    text: 'Mantén a tu cliente informado 24/7 con información en tiempo real.',
+  },
+  {
+    name: 'CREACION DE REPORTES',
+    icon: 'assets/Panel-Cliente.svg',
+    gif: 'assets/panel-cliente2.png',
+    text: 'Mantén a tu cliente informado 24/7 con información en tiempo real.',
+  },
+  {
+    name: 'VSM',
+    icon: 'assets/Panel-Cliente.svg',
+    gif: 'assets/panel-cliente2.png',
+    text: 'Mantén a tu cliente informado 24/7 con información en tiempo real.',
+  },
+  {
+    name: 'MONTOS AUTORIZADOS',
+    icon: 'assets/Panel-Cliente.svg',
+    gif: 'assets/panel-cliente2.png',
+    text: 'Mantén a tu cliente informado 24/7 con información en tiempo real.',
+  },
+  {
+    name: 'INTERFACES',
+    icon: 'assets/Panel-Cliente.svg',
+    gif: 'assets/panel-cliente2.png',
+    text: 'Mantén a tu cliente informado 24/7 con información en tiempo real.',
+  },
+  {
+    name: 'E-TOOLS',
+    icon: 'assets/Panel-Cliente.svg',
+    gif: 'assets/panel-cliente2.png',
+    text: 'Mantén a tu cliente informado 24/7 con información en tiempo real.',
+  },
+  {
+    name: 'VALUACIÓN',
+    icon: 'assets/Panel-Cliente.svg',
+    gif: 'assets/panel-cliente2.png',
+    text: 'Mantén a tu cliente informado 24/7 con información en tiempo real.',
+  },
+];
