@@ -2,9 +2,9 @@
 <section class="pageContainer">
     <div class="containerFluid">
         <!-- Hero de la página de versiones-->
-        <app-hero-title [title1]="heroInformation.title1" [title2]="heroInformation.title2"
-            [btn1Text]="heroInformation.btn1Text" [btn2]="heroInformation.btn2" [btn2Text]="heroInformation.btn2Text"
-            [backgroundImage]="heroInformation.backgroundImage"></app-hero-title>
+        <app-hero-versiones [title1]="heroInformation.title1" [title2]="heroInformation.title2"
+            [btn1Text]="heroInformation.btn1Text" [btn2Text]="heroInformation.btn2Text"
+            [backgroundImage]="heroInformation.backgroundImage" [btn1Route]="heroInformation.btn1Route"></app-hero-versiones>
         <!-- Información de Radar Control Total -->
         <app-informacion-version [informationText]="informationObject.informationText"
             [informationPoints]="informationObject.informationPoints" [imageSrc]="informationObject.imageSrc">
@@ -16,6 +16,7 @@
         <!-- Compromiso -->
         <app-compromiso></app-compromiso>
         <!-- Tabla de precios -->
+        <a class="d-none" name="Price-Section"></a>
         <app-comparativa-versiones [initialOption]=selectedComparativeColumn></app-comparativa-versiones>
     </div>
 </section>

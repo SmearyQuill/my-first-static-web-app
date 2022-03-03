@@ -1,12 +1,12 @@
 // Archivo donde se declaran todos los objetos que se utilizan para darle estructura a componentes ( Cards, numero de subprocesos, etc)
 
 export const versionesHero = {
-  title1 : 'ESCOGE LA VERSIÓN QUE MÁS SE',
-  title2 : 'ADAPTE A TU TALLER',
-  btn1Text : 'SOLICITAR UN DEMO',
-  btn2 : true,
-  btn2Text : 'COMPARAR VERSIONES',
-  backgroundImage : 'assets/ImagenPrincipalVersiones.png'
+  title1: 'ESCOGE LA VERSIÓN QUE MÁS SE',
+  title2: 'ADAPTE A TU TALLER',
+  btn1Text: 'SOLICITAR UN DEMO',
+  btn2Text: 'COMPARAR VERSIONES',
+  btn1Route: '/contactanos',
+  backgroundImage: 'assets/ImagenPrincipalVersiones.png',
 };
 
 export const RadarControlTotalInformationObject = {
