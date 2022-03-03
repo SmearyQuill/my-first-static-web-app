@@ -12,6 +12,8 @@ export class HeroTitleComponent implements OnInit {
   @Input() btn2: boolean = false
   @Input() btn2Text: string = ''
   @Input() backgroundImage: string = ''
+  @Input() btn1Route: string = ''
+  @Input() btn2Route: string = ''
 
   constructor() { }
 
