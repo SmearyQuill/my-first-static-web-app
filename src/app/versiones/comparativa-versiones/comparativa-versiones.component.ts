@@ -30,9 +30,11 @@ export class ComparativaVersionesComponent implements OnInit {
     {
       cardHeader: 'Mensualidad',
       cardContent: [
-        '- Licencia de uso del sistema sin límite de usuarios - Espacio de almacenamiento en la nube',
+        '- Licencia de uso del sistema sin límite de usuarios',
+        '- Espacio de almacenamiento en la nube',
         '- Carga y descarga de archivos',
-        '- Uso de interfaces - Mantenimiento y soporte',
+        '- Uso de interfaces',
+        '- Mantenimiento y soporte',
         '- Actualizaciones',
         '- App de Radar Connect',
       ],
@@ -47,7 +49,8 @@ export class ComparativaVersionesComponent implements OnInit {
       cardContent: [
         '- Seguimiento y presentaciones semanales de resultados',
         '- Instalación e implementación del sistema',
-        '- Acceso a Radar Academy - Know How de operación de taller',
+        '- Acceso a Radar Academy ',
+        '- Know How de operación de taller',
         '- Acompañamiento personalizado con un experto durante 6 semanas',
         '- Estrategias para incrementar volumen de venta.',
         '- Sin costo por viáticos',
@@ -58,9 +61,11 @@ export class ComparativaVersionesComponent implements OnInit {
     {
       cardHeader: 'Mensualidad',
       cardContent: [
-        '- Licencia de uso del sistema sin límite de usuarios - Espacio de almacenamiento en la nube',
+        '- Licencia de uso del sistema sin límite de usuarios',
+        '- Espacio de almacenamiento en la nube',
         '- Carga y descarga de archivos',
-        '- Uso de interfaces - Mantenimiento y soporte',
+        '- Uso de interfaces',
+        '- Mantenimiento y soporte',
         '- Actualizaciones',
         '- App de Radar Connect',
       ],

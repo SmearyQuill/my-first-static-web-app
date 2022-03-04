@@ -57,7 +57,7 @@
 
                 <!-- Div de la tabla de comparativo entre las diferentes versiones de Radar -->
                 <ng-container *ngIf="selectedOption == 'COMPARATIVO'">
-                    <div class="col-lg-8 col-md-10  table-container">
+                    <div class="col-lg-7 col-md-10  table-container">
                         <!-- Tabla -->
                         <table class="table table-borderless">
                             <thead>
@@ -69,10 +69,12 @@
                                 <!-- Renglones con los valores  -->
                                 <tr *ngFor="let row of tableRows">
                                     <th class="table-row__title table-header-empty" scope="row">{{row.rowTitle}}</th>
-                                    <td class="table-row__check table-header-complete checkMark"><span
-                                            *ngIf="row.lite">&#10004;</span></td>
-                                    <td class="table-row__check col- table-last-column checkMark"><span
-                                            *ngIf="row.total">&#10004;</span></td>
+                                    <td class="table-row__check table-header-complete checkMark">
+                                        <img *ngIf="row.lite" src="assets/paloma-tabla.svg">
+                                    </td>
+                                    <td class="table-row__check col- table-last-column checkMark">
+                                        <img *ngIf="row.total" src="assets/paloma-tabla.svg">
+                                    </td>
                                 </tr>
                                 <!-- Renglón con los precios de Radar Lite y Total en versión web -->
                                 <tr class="d-none d-lg-table-row">
@@ -200,10 +202,12 @@
                             <!-- Renglones con los valores  -->
                             <tr *ngFor="let row of tableRows">
                                 <th class="table-row__title table-header-empty" scope="row">{{row.rowTitle}}</th>
-                                <td class="table-row__check table-header-complete checkMark"><span
-                                        *ngIf="row.lite">&#10004;</span></td>
-                                <td class="table-row__check col- table-last-column checkMark"><span
-                                        *ngIf="row.total">&#10004;</span></td>
+                                <td class="table-row__check table-header-complete checkMark"> <img *ngIf="row.lite"
+                                        src="assets/paloma-tabla.svg">
+                                </td>
+                                <td class="table-row__check col- table-last-column checkMark"> <img *ngIf="row.total"
+                                        src="assets/paloma-tabla.svg">
+                                </td>
                             </tr>
                             <!-- Renglón con los precios de Radar Lite y Total en versión web -->
                             <tr class="d-none d-lg-table-row">
