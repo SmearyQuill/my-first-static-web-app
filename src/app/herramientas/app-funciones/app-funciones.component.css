@@ -4,8 +4,52 @@
     background: transparent url('/assets/fondo_herramientas.png') 0% 0% no-repeat padding-box;
     opacity: 1;
 }
-
-#funciones-app-container col{
+#funciones-app-container div.row{
+    margin: 0;
+}
+.funcion-card{
+    padding: 0%;
+    background: #022644 0% 0% no-repeat padding-box;
+    border: 1px solid #3F51B5;
     border-radius: 9px;
     opacity: 1;
+}
+.funcion-card .bg{
+    min-height: 307px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    border-radius: 9px;
+    opacity: 1;
+    height: 100%;
+}
+.funcion-card h1{
+    text-align: left;
+    font-size: normal;
+    font-variant: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 53px;
+    letter-spacing: 1.2px;
+    color: #AFD625;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.funcion-card p{
+    text-align: left;
+    font-size: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.72px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.funcion-card p:last-child{
+    font-weight: bold;
+}
+.funcion-card h1, .funcion-card p{
+    text-align: center;
 }
