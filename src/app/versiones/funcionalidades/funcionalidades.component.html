@@ -1,5 +1,6 @@
 <section id="funcionalidades">
-    <div class="container">
+    <div class="container d-none d-md-block">
+        <!-- Contenido que se muestra en caso de que sea una tableta o computadora-->
         <div class="row d-none d-md-flex justify-content-center">
             <div class="col-12 col-title">
                 <p class="section__title">TE PRESENTAMOS ALGUNAS DE LAS <span
@@ -44,6 +45,37 @@
                     <button class="principal-button">
                         <a routerLink="/contactanos">AGENDA UNA REUNIÓN WEB</a>
                     </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido que se muestra en caso de que sea un celular -->
+    <div class="container-fluid d-md-none">
+        <div class="row d-md-none justify-content-center">
+            <div class="col-11 d-flex align-items-center justify-content-center">
+                <p class="mobile-title">ÚNETE A LA REVOLUCIÓN DIGITAL </p>
+            </div>
+            <!-- Card de la funcionalidad seleccionada -->
+            <div class="col-11 mobile-card">
+                <div class="row">
+                    <!-- Texto e Icono -->
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 d-flex align-items-center">
+                                <img src="{{selectedFunctionality.icon}}">
+                                <p class="mobile-card__name">{{selectedFunctionality.name}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Imagen -->
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <img src="{{selectedFunctionality.gif}}" class="information-column__image">
+                    </div>
+                    <!-- Información -->
+                    <div class="col-12">
+                        <p class="mobile-card__text">{{selectedFunctionality.text}}</p>
+                    </div>
                 </div>
             </div>
         </div>
