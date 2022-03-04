@@ -5,7 +5,11 @@
     background-size: cover;
     opacity: 1;
 }
-#funciones-app-container div.row{
+
+.right, .left{
+    margin-bottom: 58px;
+}
+#funciones-app-container div.row div.row{
     margin: 0;
 }
 .funcion-card{
@@ -48,7 +52,7 @@
     margin-bottom: 0;
 }
 
-.funcion-card p:last-child{
+.funcion-card p:nth-child(3){
     font-weight: bold;
 }
 .funcion-card h1, .funcion-card p{
@@ -57,12 +61,62 @@
 
 @media screen and (min-width: 992px) {
     
-    .funcion-card .bg{
-        background: transparent url('/assets/captura.png') top right no-repeat padding-box;
-        background-size: cover;
+    .funciones-card-text{
+        padding-right: 2%;
+    }
+    .funcion-card h1, .funcion-card p{
+        text-align: left;
+    }    
+    .funcion-card h1{
+        font-size: 36px;
+        line-height: 48px;
+    }
+    .funcion-card p{
+        font-size: 22px;
+        line-height: 28px;        
     }
     .funcion-card .bg{
-        padding-bottom: 100px;
-        padding-top: 100px;
+        background-size: cover;
+    }
+    .bg.captura{        
+        background: transparent url('/assets/captura.png') top right no-repeat padding-box;
+    }
+    .bg.edita{
+        background: transparent url('/assets/edita_3.png') top left no-repeat padding-box;
+    }
+    .bg.comparte{
+        background: transparent url('/assets/comparte.png') top left no-repeat padding-box;
+    }
+    .funcion-card .bg{
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }    
+}
+
+@media screen and (min-width: 1200px) {
+    .funcion-card .bg{
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    
+    .funcion-card h1{
+        font-size: 40px;
+        line-height: 53px;
+    }
+    
+    .funcion-card p{
+        font-size: 24px;
+        line-height: 32px;        
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    
+    .funcion-card .bg{
+        padding-bottom: 150px;
+        padding-top: 150px;
+    }
+    .funciones-card-text{
+        padding-right: 5%;
     }
 }
