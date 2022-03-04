@@ -2,6 +2,7 @@
     padding-top: 139px;
     padding-bottom: 139px;
     background: transparent url('/assets/fondo_herramientas.png') 0% 0% no-repeat padding-box;
+    background-size: cover;
     opacity: 1;
 }
 #funciones-app-container div.row{
@@ -52,4 +53,16 @@
 }
 .funcion-card h1, .funcion-card p{
     text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+    
+    .funcion-card .bg{
+        background: transparent url('/assets/captura.png') top right no-repeat padding-box;
+        background-size: cover;
+    }
+    .funcion-card .bg{
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
 }
