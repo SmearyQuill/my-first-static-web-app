@@ -13,6 +13,7 @@ export class FuncionalidadesComponent implements OnInit {
     icon: '',
     gif: '',
     text: '',
+    id: 0,
   };
   constructor() {}
 
@@ -20,15 +21,28 @@ export class FuncionalidadesComponent implements OnInit {
     this.selectFunctionality(0);
   }
 
-  // {
-  //   name: 'PANEL DE CLIENTE',
-  //   icon: 'assets/Panel-Cliente.png',
-  //   gif: 'panel-cliente2.png',
-  //   text: 'Mantén a tu cliente informado 24/7 con información en tiempo real.',
-  // },
   // Función para seleccionar una funcionalidad
   selectFunctionality(index: number) {
     this.selectedFunctionality = this.list[index];
     console.log('Funcionalidad seleccionada: ', this.selectedFunctionality);
+  }
+
+  goToNextFunctionality() {
+    if (this.selectedFunctionality.id == this.list.length) {
+      this.selectFunctionality(0);
+    } else {
+      this.selectFunctionality(this.selectedFunctionality.id);
+    }
+  }
+
+  goToPreviousFunctionality() {
+    console.log('Khe vrg');
+    console.log(this.selectedFunctionality);
+    console.table(this.list);
+    if (this.selectedFunctionality.id == 1) {
+      this.selectFunctionality(this.list.length - 1);
+    } else {
+      this.selectFunctionality(this.selectedFunctionality.id - 2);
+    }
   }
 }
