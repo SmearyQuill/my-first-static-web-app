@@ -1,4 +1,19 @@
-
+#navbar{
+  height: 100%;
+}
+#navbarNavAltMarkup{
+  height: 100%;
+}
+#navbarNavAltMarkup ul{
+  height: 100%;
+}
+.nav-item{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 198px;
+}
 .navbar{
   z-index: 3;
   background-color: transparent !important;
@@ -7,9 +22,11 @@
   height: 73px;
   padding: 0;
 }
-.is-active{
-  background: #AFD625 center bottom no-repeat padding-box;
+li.is-active{
+  background-image: linear-gradient(rgb(175, 214, 37) , rgb(175, 214, 37));
+  background-repeat: no-repeat;
   background-size: 100% 3px;
+  background-position: center bottom;
 }
 .navbarLink{
   font-size: 16px;
