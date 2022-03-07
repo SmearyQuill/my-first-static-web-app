@@ -122,12 +122,12 @@
     #hero{
         width: 100%;
         height: auto;
-        padding-top: 217px;
+        padding-top: 290px;
         padding-bottom: 284px;
     }
     #video-bg{
         position: absolute;
-        top: -148px;
+        top: -56px;
         height: 1080px;
     }
     
