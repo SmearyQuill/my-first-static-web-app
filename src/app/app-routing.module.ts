@@ -1,8 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { VersionesComponent } from './Componentes/versiones/versiones.component';
-import { HerramientasComponent } from './Componentes/herramientas/herramientas.component';
-import { TestimoniosComponent } from './testimonios/testimonios.component';
 import { ContactanosComponent } from './Componentes/contactanos/contactanos.component';
 import { HomeComponent } from './home/home.component';
 const routes: Routes = [
@@ -26,7 +23,10 @@ const routes: Routes = [
   },
   {
     path: 'testimonios',
-    component: TestimoniosComponent,
+    loadChildren: () =>
+      import('./testimonios/testimonios.module').then(
+        (m) => m.TestimoniosModule
+      ),
   },
   {
     path: 'contactanos',
