@@ -1,14 +1,14 @@
-#hero{
+#gradient-bg{
     padding-left: 10vw; 
     padding-right: 10vw; 
     padding-top: 154px;
     padding-bottom: 154px;
-    background: transparent linear-gradient(90deg, #022644 0%, #02264400 100%) 0% 0% no-repeat padding-box;
-
+    background: transparent linear-gradient(90deg, #022644 0%, #02264400 83%) 0% 0% no-repeat padding-box;
 }
-#content-hero{
+#hero{
     width: 100%;
-    height: 100%;
+    height: auto;
+    padding: 0;
 }
 #title{
     
@@ -53,8 +53,8 @@
     border-radius: 6px;
     opacity: 1;
     border: none;
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-left: 0px;
+    padding-right: 0px;
     width: 100%;
 }
 #snd-btn{
@@ -76,7 +76,7 @@ button .hero-btn{
     opacity: 1;
 }
 @media screen and (min-width: 576px) {
-    #hero{
+    #gradient-bg{
         padding-left: 12vw; 
         padding-right: 12vw; 
         padding-top: 200px;
@@ -110,7 +110,7 @@ button .hero-btn{
         bottom: 0px;
         margin-top: 43px;
     }
-    #hero{
+    #gradient-bg{
         padding-left: 15vw; 
         padding-right: 15vw; 
         padding-top: 314px;
@@ -119,4 +119,9 @@ button .hero-btn{
     button .hero-btn{   
         font: normal normal 600 22px/30px Segoe UI;
     }
+}
+
+@media screen and (min-width: 992px) {
+}
+@media screen and (min-width: 1200px) {
 }

@@ -1,0 +1,122 @@
+#funciones-app-container{
+    padding-top: 139px;
+    padding-bottom: 139px;
+    background: transparent url('/assets/fondo_herramientas.png') 0% 0% no-repeat padding-box;
+    background-size: cover;
+    opacity: 1;
+}
+
+.right, .left{
+    margin-bottom: 58px;
+}
+#funciones-app-container div.row div.row{
+    margin: 0;
+}
+.funcion-card{
+    padding: 0%;
+    background: #022644 0% 0% no-repeat padding-box;
+    border: 1px solid #3F51B5;
+    border-radius: 9px;
+    opacity: 1;
+}
+.funcion-card .bg{
+    min-height: 307px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    border-radius: 9px;
+    opacity: 1;
+    height: 100%;
+}
+.funcion-card h1{
+    text-align: left;
+    font-size: normal;
+    font-variant: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 53px;
+    letter-spacing: 1.2px;
+    color: #AFD625;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.funcion-card p{
+    text-align: left;
+    font-size: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.72px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.funcion-card p:nth-child(3){
+    font-weight: bold;
+}
+.funcion-card h1, .funcion-card p{
+    text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+    
+    .funciones-card-text{
+        padding-right: 2%;
+    }
+    .funcion-card h1, .funcion-card p{
+        text-align: left;
+    }    
+    .funcion-card h1{
+        font-size: 36px;
+        line-height: 48px;
+    }
+    .funcion-card p{
+        font-size: 22px;
+        line-height: 28px;        
+    }
+    .funcion-card .bg{
+        background-size: cover;
+    }
+    .bg.captura{        
+        background: transparent url('/assets/captura.png') top right no-repeat padding-box;
+    }
+    .bg.edita{
+        background: transparent url('/assets/edita_3.png') top left no-repeat padding-box;
+    }
+    .bg.comparte{
+        background: transparent url('/assets/comparte.png') top left no-repeat padding-box;
+    }
+    .funcion-card .bg{
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }    
+}
+
+@media screen and (min-width: 1200px) {
+    .funcion-card .bg{
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    
+    .funcion-card h1{
+        font-size: 40px;
+        line-height: 53px;
+    }
+    
+    .funcion-card p{
+        font-size: 24px;
+        line-height: 32px;        
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    
+    .funcion-card .bg{
+        padding-bottom: 150px;
+        padding-top: 150px;
+    }
+    .funciones-card-text{
+        padding-right: 5%;
+    }
+}

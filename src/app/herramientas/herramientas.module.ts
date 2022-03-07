@@ -11,6 +11,10 @@ import { VisitarAcademyComponent } from './visitar-academy/visitar-academy.compo
 import { CapacitacionAcademyComponent } from './capacitacion-academy/capacitacion-academy.component';
 import { CertificacionAcademyComponent } from './certificacion-academy/certificacion-academy.component';
 import { EquipoAcademyComponent } from './equipo-academy/equipo-academy.component';
+import { SeguimientoSemanalComponent } from './seguimiento-semanal/seguimiento-semanal.component';
+import { BannerResultadosComponent } from './banner-resultados/banner-resultados.component';
+import { SeccionCompromisosComponent } from './seccion-compromisos/seccion-compromisos.component';
+import { AppFuncionesComponent } from './app-funciones/app-funciones.component';
 
 
 @NgModule({
@@ -23,7 +27,11 @@ import { EquipoAcademyComponent } from './equipo-academy/equipo-academy.componen
     VisitarAcademyComponent,
     CapacitacionAcademyComponent,
     CertificacionAcademyComponent,
-    EquipoAcademyComponent
+    EquipoAcademyComponent,
+    SeguimientoSemanalComponent,
+    BannerResultadosComponent,
+    SeccionCompromisosComponent,
+    AppFuncionesComponent
   ],
   imports: [
     CommonModule,

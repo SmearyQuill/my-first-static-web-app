@@ -1,11 +1,35 @@
 
+.navbar{
+  z-index: 3;
+  background-color: transparent !important;
+  width: 100%;
+  position: absolute !important;
+  height: 73px;
+  padding: 0;
+}
+.is-active{
+  background: #AFD625 center bottom no-repeat padding-box;
+  background-size: 100% 3px;
+}
+.navbarLink{
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  letter-spacing: 0.91px;
+  color: #FFFFFF !important;
+  text-transform: uppercase;
+  opacity: 1;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
 
 /* Color of the links AFTER scroll */
 .navbar-scrolled .nav-link,
 .navbar-scrolled .navbar-toggler-icon {
   color: #4f4f4f;
 }
-
 /* Color of the navbar AFTER scroll */
 .navbar-scrolled {
   background-color: #fff;
