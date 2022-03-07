@@ -4,8 +4,13 @@
   background-color: transparent !important;
   width: 100%;
   position: absolute !important;
+  height: 73px;
+  padding: 0;
 }
-
+.is-active{
+  background: #AFD625 center bottom no-repeat padding-box;
+  background-size: 100% 3px;
+}
 .navbarLink{
   font-size: 16px;
   line-height: 21px;
