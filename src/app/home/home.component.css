@@ -5,7 +5,7 @@
     object-fit: cover;
     z-index: -1;
     width: 100%;
-    height: 1080px;
+    height: 830px;
     left: 0;
 
 }
@@ -111,11 +111,10 @@
         background: none;
     }
     #video-bg{
-        display: block;
+        display: block;          
     }  
     #content-hero{
-        width: 812px;
-        
+        width: 812px;     
     }
     
 }
@@ -129,6 +128,7 @@
     #video-bg{
         position: absolute;
         top: -148px;
+        height: 1080px;
     }
     
     #content-hero h1{
