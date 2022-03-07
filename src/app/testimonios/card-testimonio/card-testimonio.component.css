@@ -7,14 +7,22 @@
   height: auto;
 }
 
-.first-card__text{
-  color:#464646;
+.normal-card__quotes{
+  max-width: 20%;
+  height: auto;
+}
+.first-card__text {
+  color: #464646;
   font-size: 38px;
   font-weight: 400;
   margin: 0;
 }
-.first-card__text > span{
+
+.first-card__second-text {
+  color: #464646;
+  font-size: 38px;
   font-weight: bold;
+  margin: 0;
 }
 .person-name,
 .person-position {

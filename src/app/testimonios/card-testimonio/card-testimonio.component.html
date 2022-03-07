@@ -3,10 +3,13 @@
         <!-- Información de la persona del testimonio -->
         <div class="col-md-3">
             <div class="row">
-                <div class="col-12 d-none d-lg-block" *ngIf="cardInformation.first">
+                <div class="col-12 d-none d-md-block" *ngIf="cardInformation.first">
                     <img class="main-card__quotes" src="assets/Trazado331@2x.png">
                     <p class="first-card__text">RESEÑAS DE</p>
-                    <p> CLIENTES </p>
+                    <p class="first-card__second-text"> CLIENTES </p>
+                </div>
+                <div class="col-12 d-none d-md-block" *ngIf="!cardInformation.first">
+                    <img class="normal-card__quotes" src="assets/Trazado331@2x.png">
                 </div>
                 <div class="col-12">
                     <p class="person-name">{{cardInformation.name}}</p>
