@@ -20,7 +20,13 @@
   width: 100%;
   position: absolute !important;
   height: 73px;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 140px;
+  padding-right: 132px;
+  opacity: 1;
+  backdrop-filter: blur(7px);
+  border-bottom: 1px solid #FFFFFF;
 }
 li.is-active{
   background-image: linear-gradient(rgb(175, 214, 37) , rgb(175, 214, 37));
@@ -50,4 +56,42 @@ li.is-active{
 /* Color of the navbar AFTER scroll */
 .navbar-scrolled {
   background-color: #fff;
+}
+.dropdown-menu{
+  top: 73px;
+  padding: 0;
+  border-radius: 0;
+  background-color: transparent;
+  opacity: 1;
+  backdrop-filter: blur(80px);
+  border: none;
+}
+.dropdown-menu::-webkit-backdrop-filter{
+  backdrop-filter: blur(80px);
+}
+.dropdown-toggle::after {
+  content: none;
+}
+.dropdown-menu a{
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.91px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  opacity: 1;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.dropdown-menu a:hover{
+  background: #000000 0% 0% no-repeat padding-box;
+  opacity: 0.24;
+}
+.navbar-brand{
+  background: transparent url('/assets/Grupo 2883.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+  width: 122px;
+  height: 52px;
 }
