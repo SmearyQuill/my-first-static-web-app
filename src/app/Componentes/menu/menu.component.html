@@ -7,7 +7,7 @@
         <div class="collapse navbar-collapse text-sm-center justify-content-end" id="navbarNavAltMarkup">
             <ul class="navbar-nav  mr-auto">
                 <!-- Versiones -->
-                <li class="nav-item dropdown is-active">
+                <li class="nav-item dropdown" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
                     <a class="nav-link dropdown-toggle navbarLink" id="navbarVersionesDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         VERSIONES
@@ -18,7 +18,7 @@
                     </div>
                 </li>
                 <!-- Herrramientas -->
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown"  routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
                     <a class="nav-link dropdown-toggle navbarLink" id="navbarHerramientasDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         HERRAMIENTAS
@@ -30,11 +30,15 @@
                     </div>
                 </li>
                 <!-- Testimonios -->
-                <li class="nav-item"><a class="nav-link navbarLink" routerLink="testimonios" routerLinkActive="active" href="#"
-                        [routerLinkActiveOptions]="{exact : true}">TESTIMONIOS</a></li>
+                <li class="nav-item" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
+                    <a class="nav-link navbarLink" routerLink="testimonios" routerLinkActive="is-active" href="#"
+                        [routerLinkActiveOptions]="{exact : true}">TESTIMONIOS</a>
+                </li>
                 <!-- Contactanos -->
-                <li class="nav-item"><a class="nav-link navbarLink" routerLink="contactanos" routerLinkActive="active"
-                        [routerLinkActiveOptions]="{exact : true}">CONTACTANOS</a></li>
+                <li class="nav-item" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
+                    <a class="nav-link navbarLink" routerLink="contactanos" routerLinkActive="is-active"
+                        [routerLinkActiveOptions]="{exact : true}">CONTACTANOS</a>
+                </li>
             </ul>
         </div>
     </div>

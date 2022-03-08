@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { RouterLinkActive } from '@angular/router';
 import { HostListener } from '@angular/core';
 
 
@@ -11,16 +12,16 @@ import { HostListener } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor(private _router : Router) { }
+  constructor(public _router : Router) { }
 
   ngOnInit(): void {
     this.checkCurrentPage();
   }
 
   checkCurrentPage(){
+    
     console.log(this._router.url);
   }
-
   @HostListener('window:scroll', ['$event']) onScroll() {
     let element = document.querySelector('.navbar') as HTMLElement;
     if (window.pageYOffset > element.clientHeight) {
