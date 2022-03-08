@@ -1,0 +1,35 @@
+.presentation-title,
+.presentation-title2 {
+  font-size: 28px;
+}
+
+.presentation-title {
+  color: #464646;
+  font-weight: 400;
+}
+
+.presentation-title2 {
+  color: #022644;
+  font-weight: bold;
+}
+
+.presentation-text {
+  color: #191919;
+  font-size: 18px;
+}
+
+.youtube-video {
+  max-width: 90%;
+  height: auto;
+}
+
+.presentation-container {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+@media (min-width: 1200px) {
+  .presentation-title, .presentation-title2{
+    font-size: 34px;
+  }
+}
