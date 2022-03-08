@@ -1,0 +1,42 @@
+#versiones {
+  background-image: url("/assets/Grupo476@2x.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-container {
+  padding: 9rem 3rem 9rem 3rem;
+}
+.text {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.text2 {
+  font-weight: bold;
+}
+
+.principal-button {
+  font-size: 20px;
+  width: 100%;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #afd625;
+  border-radius: 6px;
+  border: none;
+}
+
+@media (min-width: 1200px) {
+  .page-container {
+    padding: 13% 8%;
+  }
+
+  .text {
+    font-size: 50px;
+  }
+
+  .principal-button{
+    font-size: 28px;
+  }
+}
