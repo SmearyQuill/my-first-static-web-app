@@ -2,7 +2,8 @@
   height: 100%;
 }
 #navbarNavAltMarkup{
-  height: 100%;
+  height: 204px;
+  border: none;
 }
 #navbarNavAltMarkup ul{
   height: 100%;
@@ -12,28 +13,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
   width: 198px;
 }
 .navbar{
   z-index: 3;
-  background-color: transparent !important;
   width: 100%;
   position: absolute !important;
-  height: 73px;
+  height: 64px;
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: 140px;
-  padding-right: 132px;
+    
+  backdrop-filter: blur(7px); 
+  background: rgb(2, 38, 68,.15) !important;
+  padding-left: 0px;
+  padding-right: 0px;
   opacity: 1;
-  backdrop-filter: blur(7px);
-  border-bottom: 1px solid #FFFFFF;
 }
-li.is-active{
-  background-image: linear-gradient(rgb(175, 214, 37) , rgb(175, 214, 37));
-  background-repeat: no-repeat;
-  background-size: 100% 3px;
-  background-position: center bottom;
-}
+
+
 .navbarLink{
   font-size: 16px;
   line-height: 21px;
@@ -48,6 +46,15 @@ li.is-active{
   padding-bottom: 0 !important;
 }
 
+/* #navbarNavAltMarkup{
+  backdrop-filter: blur(7px);  
+  fill-opacity: 15%;
+  opacity: 1;
+  -webkit-backdrop-filter: blur(7px);
+  -moz-backdrop-filter: blur(7px);
+  -o-backdrop-filter: blur(7px);
+  background: rgb(2, 38, 68,.15) !important;
+} */
 /* Color of the links AFTER scroll */
 .navbar-scrolled .nav-link,
 .navbar-scrolled .navbar-toggler-icon {
@@ -58,16 +65,16 @@ li.is-active{
   background-color: #fff;
 }
 .dropdown-menu{
-  top: 73px;
+  top: 47.9px;
   padding: 0;
   border-radius: 0;
-  background-color: transparent;
+  background: rgb(2, 38, 68,.15);
   opacity: 1;
-  backdrop-filter: blur(80px);
+  backdrop-filter: blur(7px);
   border: none;
 }
 .dropdown-menu::-webkit-backdrop-filter{
-  backdrop-filter: blur(80px);
+  backdrop-filter: blur(7px);
 }
 .dropdown-toggle::after {
   content: none;
@@ -85,13 +92,70 @@ li.is-active{
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.dropdown-menu a:hover{
+.dropdown-item:hover{
   background: #000000 0% 0% no-repeat padding-box;
   opacity: 0.24;
 }
 .navbar-brand{
-  background: transparent url('/assets/Grupo 2883.png') 0% 0% no-repeat padding-box;
+  background: none;
   opacity: 1;
-  width: 122px;
-  height: 52px;
+  width: 0px;
+  height: 0px;
+}
+.navbar-toggler-icon{
+  width: 70%;
+}
+.navbar-toggler{
+  right: 10px;
+  border: none;
+  height: 100%;
+  width: 73px;
+}
+.navbar-nav.mr-auto{
+  align-items: center;
+  
+  border-top: 1px solid #AFD625;
+}
+@media screen and (min-width: 992px) {
+
+  li.is-active{
+    background-image: linear-gradient(rgb(175, 214, 37) , rgb(175, 214, 37));
+    background-repeat: no-repeat;
+    background-size: 100% 3px;
+    background-position: center bottom;
+  }
+  .dropdown-menu.show{
+    top: 73px;
+  }
+  #navbarNavAltMarkup{
+    height: 100%;
+    background: none;
+  }
+  .navbar-nav.mr-auto{
+    align-items: center;
+    
+    border-top: none;
+  }
+  .navbar{
+    border-bottom: 1px solid #FFFFFF;
+    height: 73px;
+  }
+  .navbar-brand{
+    background: transparent url('/assets/Grupo 2883.png') 0% 0% no-repeat padding-box;
+    width: 122px;
+    height: 52px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navbar{
+    padding-left: 100px;
+    padding-right: 80px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .navbar{
+    padding-left: 140px;
+    padding-right: 132px;
+  }
 }
