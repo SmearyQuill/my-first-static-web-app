@@ -21,11 +21,27 @@
   font-weight: bold;
 }
 
-.principal-button{
-    font-size: 18px;
-    font-weight: 500;
-    color:#FFFFFF;
-    background-color: #AFD625;
-    border-radius: 6px;
-    border: none;
+.principal-button {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #afd625;
+  border-radius: 6px;
+  border: none;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+@media (min-width: 1200px) {
+  .title1,
+  .title2 {
+    font-size: 40px;
+  }
+
+  .img {
+    width: 100%;
+  }
 }
