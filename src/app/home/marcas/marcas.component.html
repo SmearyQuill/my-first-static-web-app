@@ -1,0 +1,21 @@
+<section id="marcas">
+    <div class="container-fluid">
+        <!-- Texto -->
+        <div class="row justify-content-center py-3">
+            <div class="col-10">
+                <p class="text">GRANDES MARCAS CONFÍAN EN NOSOTROS</p>
+            </div>
+        </div>
+        <!-- Imagenes -->
+        <div class="row py-3 px-3 justify-content-around">
+            <div class="col-5 col-md justify-content-center my-4 mx-2 d-none d-md-flex"
+                *ngFor="let element of listaImagenes2">
+                <img class="imagen" src="{{element}}">
+            </div>
+            <div class="col-5 col-md justify-content-center my-4 mx-2 d-flex d-md-none"
+                *ngFor="let element of listaImagenes">
+                <img class="imagen" src="{{element}}">
+            </div>
+        </div>
+    </div>
+</section>

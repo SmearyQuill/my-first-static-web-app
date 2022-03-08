@@ -1,0 +1,15 @@
+#marcas {
+  padding: 4rem 0;
+}
+
+.text {
+  color: #6c6c6c;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.imagen{
+    max-width: 100%;
+    object-fit: contain;
+}
