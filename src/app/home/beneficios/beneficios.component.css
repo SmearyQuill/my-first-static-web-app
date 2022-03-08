@@ -1,0 +1,31 @@
+.title1,
+.title2 {
+  font-size: 32px;
+  color: #022644;
+  text-align: center;
+}
+
+.title2 {
+  font-weight: bold;
+}
+
+.separador {
+  border: 2px solid #afd625;
+  margin: 0.5rem 0;
+  border-color: #afd625;
+}
+
+.texto-beneficio {
+  color: #022644;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.principal-button{
+    font-size: 18px;
+    font-weight: 500;
+    color:#FFFFFF;
+    background-color: #AFD625;
+    border-radius: 6px;
+    border: none;
+}
