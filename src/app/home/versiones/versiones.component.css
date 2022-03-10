@@ -40,3 +40,9 @@
     font-size: 28px;
   }
 }
+
+@media (max-width : 768px){
+  #versiones{
+    background-image: url("/assets/VersionesHome-Movil.png");
+  }
+}

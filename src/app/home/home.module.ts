@@ -8,6 +8,7 @@ import { BeneficiosComponent } from './beneficios/beneficios.component';
 import { HerramientasComponent } from './herramientas/herramientas.component';
 import { MarcasComponent } from './marcas/marcas.component';
 import { VersionesComponent } from './versiones/versiones.component';
+import { FuncionalidadesComponent } from './funcionalidades/funcionalidades.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { VersionesComponent } from './versiones/versiones.component';
     BeneficiosComponent,
     HerramientasComponent,
     MarcasComponent,
-    VersionesComponent
+    VersionesComponent,
+    FuncionalidadesComponent
   ],
   imports: [
     CommonModule,

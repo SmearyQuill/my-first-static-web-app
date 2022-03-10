@@ -24,7 +24,6 @@ export class FuncionalidadesComponent implements OnInit {
   // Función para seleccionar una funcionalidad
   selectFunctionality(index: number) {
     this.selectedFunctionality = this.list[index];
-    console.log('Funcionalidad seleccionada: ', this.selectedFunctionality);
   }
 
   goToNextFunctionality() {
@@ -36,9 +35,6 @@ export class FuncionalidadesComponent implements OnInit {
   }
 
   goToPreviousFunctionality() {
-    console.log('Khe vrg');
-    console.log(this.selectedFunctionality);
-    console.table(this.list);
     if (this.selectedFunctionality.id == 1) {
       this.selectFunctionality(this.list.length - 1);
     } else {

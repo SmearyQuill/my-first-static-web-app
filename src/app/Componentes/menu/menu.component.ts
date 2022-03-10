@@ -19,8 +19,6 @@ export class MenuComponent implements OnInit {
   }
 
   checkCurrentPage(){
-    
-    console.log(this._router.url);
   }
   @HostListener('window:scroll', ['$event']) onScroll() {
     let element = document.querySelector('.navbar') as HTMLElement;
