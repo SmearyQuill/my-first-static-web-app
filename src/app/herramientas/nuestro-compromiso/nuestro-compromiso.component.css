@@ -58,10 +58,8 @@
 @media screen and (min-width: 992px) {
     #compromiso-title h1{
         font-size: 34px;
-        line-height: 48px;
-        
-    }
-    
+        line-height: 48px;        
+    }    
     .card-container{
         padding: 60px 2% 60px 2%;
     }

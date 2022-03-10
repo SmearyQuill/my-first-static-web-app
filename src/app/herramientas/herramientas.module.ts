@@ -16,6 +16,7 @@ import { BannerResultadosComponent } from './banner-resultados/banner-resultados
 import { SeccionCompromisosComponent } from './seccion-compromisos/seccion-compromisos.component';
 import { AppFuncionesComponent } from './app-funciones/app-funciones.component';
 import { NuestroCompromisoComponent } from './nuestro-compromiso/nuestro-compromiso.component';
+import { SeccionAndroidComponent } from './seccion-android/seccion-android.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { NuestroCompromisoComponent } from './nuestro-compromiso/nuestro-comprom
     BannerResultadosComponent,
     SeccionCompromisosComponent,
     AppFuncionesComponent,
-    NuestroCompromisoComponent
+    NuestroCompromisoComponent,
+    SeccionAndroidComponent
   ],
   imports: [
     CommonModule,
