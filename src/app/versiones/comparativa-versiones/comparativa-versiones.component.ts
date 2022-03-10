@@ -186,8 +186,6 @@ export class ComparativaVersionesComponent implements OnInit {
         this.selectedCard = this.cardsTotal;
         break;
     }
-
-    console.log(this.selectedCard);
   }
 
   checkLiteVersion() {
