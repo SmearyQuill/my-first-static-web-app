@@ -2,15 +2,16 @@
   height: 100%;
 }
 #navbarNavAltMarkup{
-  height: 204px;
+  min-height: 204px;
   border: none;
+  position: relative;
 }
 #navbarNavAltMarkup ul{
   height: 100%;
 }
 .nav-item{
   text-align: center;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -46,15 +47,6 @@
   padding-bottom: 0 !important;
 }
 
-/* #navbarNavAltMarkup{
-  backdrop-filter: blur(7px);  
-  fill-opacity: 15%;
-  opacity: 1;
-  -webkit-backdrop-filter: blur(7px);
-  -moz-backdrop-filter: blur(7px);
-  -o-backdrop-filter: blur(7px);
-  background: rgb(2, 38, 68,.15) !important;
-} */
 /* Color of the links AFTER scroll */
 .navbar-scrolled .nav-link,
 .navbar-scrolled .navbar-toggler-icon {
@@ -112,6 +104,22 @@
   
   border-top: 1px solid #AFD625;
 }
+.blur.navbar-bg{
+  position:absolute;
+  top: 0;
+  width: 100%;
+  height: 64px;
+}
+.blur.navbar-nav-bg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.blur.dropdown-menu-bg{
+  display: none;
+}
 @media screen and (min-width: 992px) {
 
   li.is-active{
@@ -123,6 +131,9 @@
   .dropdown-menu.show{
     top: 73px;
   }
+  .blur.navbar-bar-bg{
+    display: none;
+  }
   #navbarNavAltMarkup{
     height: 100%;
     background: none;
@@ -131,6 +142,9 @@
     align-items: center;
     
     border-top: none;
+  }
+  .blur.navbar-nav-bg{
+    display: none;
   }
   .navbar{
     border-bottom: 1px solid #FFFFFF;
@@ -143,6 +157,7 @@
     height: 73px;
   }
   .blur.dropdown-menu-bg{
+    display: block;
     z-index: -1;
     position:absolute;
     width: 100%;
