@@ -15,6 +15,7 @@ import { SeguimientoSemanalComponent } from './seguimiento-semanal/seguimiento-s
 import { BannerResultadosComponent } from './banner-resultados/banner-resultados.component';
 import { SeccionCompromisosComponent } from './seccion-compromisos/seccion-compromisos.component';
 import { AppFuncionesComponent } from './app-funciones/app-funciones.component';
+import { NuestroCompromisoComponent } from './nuestro-compromiso/nuestro-compromiso.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { AppFuncionesComponent } from './app-funciones/app-funciones.component';
     SeguimientoSemanalComponent,
     BannerResultadosComponent,
     SeccionCompromisosComponent,
-    AppFuncionesComponent
+    AppFuncionesComponent,
+    NuestroCompromisoComponent
   ],
   imports: [
     CommonModule,
