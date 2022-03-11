@@ -1,0 +1,84 @@
+#formulario-bg{
+    background: transparent url('/assets/Enmascarar grupo 52.png') 0% 0% no-repeat padding-box;
+    background-size: cover;
+    min-height: 459px;
+    width: 100%;
+}
+section{
+    width: 100%;
+}
+#formulario-form{
+    position: absolute;
+    top: 218px;
+}
+#formulario-form h1{
+    text-align: center;
+    font-weight: bold;
+    font-variant: normal;
+    font-style: normal;
+    letter-spacing: 2.88px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    
+    margin-bottom: 29px;
+}
+#form-card p{
+    text-align: left;
+    font: normal normal 300 24px/29px Montserrat;
+    letter-spacing: 0px;
+    color: #2E2D35;
+    opacity: 1;
+    margin-bottom: 66px;
+}
+::placeholder 
+{/* Firefox */
+    text-align: left;
+    font: normal normal 300 24px/29px Montserrat;
+    letter-spacing: 0px;
+    color: #2E2D35;
+    opacity: 1;
+}
+  
+:-ms-input-placeholder 
+{ /* Internet Explorer 10-11 */
+    text-align: left;
+    font: normal normal 300 24px/29px Montserrat;
+    letter-spacing: 0px;
+    color: #2E2D35;
+    opacity: 1;
+}
+
+::-ms-input-placeholder 
+{ /* Microsoft Edge */
+    text-align: left;
+    font: normal normal 300 24px/29px Montserrat;
+    letter-spacing: 0px;
+    color: #2E2D35;
+    opacity: 1;
+}
+.card{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 40px #0226444A;
+    padding-top: 60px;
+    padding-left: 42px;
+    padding-right: 42px;
+}
+.input-contactanos{
+    width: 100%;
+    margin-bottom: 64px;
+    min-height: 42px;
+    font: normal normal 300 24px/29px Montserrat;
+    border: none;
+    border-bottom: .5px solid #2E2D35 ;
+}
+#formulario-container{
+    min-height: 90vh;
+    padding: 0;
+}
+@media screen and (min-width: 1200px) {
+    #formulario-form h1{
+        font-size: 48px;
+        line-height: 64px;
+    }
+}

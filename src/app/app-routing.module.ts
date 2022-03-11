@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ContactanosComponent } from './Componentes/contactanos/contactanos.component';
+import { ContactanosComponent } from './contactanos/contactanos.component';
 const routes: Routes = [
   {
     path: '',
