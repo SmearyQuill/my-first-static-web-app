@@ -42,13 +42,13 @@
 .mobile__benefit-text {
   color: #ffffff;
   font-size: 16px;
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
 .mobile__benefit-text-long {
   color: #ffffff;
   font-size: 15px;
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
 .card__arrow-button {
@@ -57,6 +57,82 @@
   cursor: pointer;
 }
 
-.mobile-card__ellipsebutton{
+.mobile-card__ellipsebutton {
   margin: 0 8px;
+}
+
+.web__benefit-title {
+  margin: 0;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 1.44px;
+  text-align: center;
+}
+
+.web__icon {
+  max-width: 70%;
+  height: auto;
+}
+
+.web__benefit-container {
+  background-color: #022644;
+  border: 1.5px solid #3f51b5;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  padding: 8% 5%;
+  height: 390px;
+}
+
+.web__name {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.web__subtitle {
+  color: #afd625;
+  font-size: 31px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  margin-bottom: 0.5rem;
+}
+
+.web__text {
+  color: #ffffff;
+  font-size: 18px;
+  margin: 0;
+}
+@media (max-width: 1199px) {
+  .web__icon {
+    max-width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section__Title {
+    font-size: 34px;
+  }
+
+  .section__Subtitle {
+    font-size: 24px;
+  }
+}
+
+@media(min-width : 1000px) and (max-width : 1199px){
+  .web__benefit-container{
+    height: 290px;
+  }
+  .web__subtitle{
+    font-size: 25px;
+  }
+  .web__name{
+    font-size: 12px;
+  }
+
+  .web__text{
+    font-size: 15px;
+  }
 }
