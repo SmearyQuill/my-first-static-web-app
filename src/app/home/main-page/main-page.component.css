@@ -109,9 +109,15 @@
     
     #hero{
         background: none;
+        width: 100%;
+        height: auto;
+        padding-top: 290px;
+        padding-bottom: 284px;
     }
     #video-bg{
-        display: block;          
+        display: block;    
+        top: -56px;    
+        height: 1080px;  
     }  
     #content-hero{
         width: 812px;     
@@ -120,15 +126,9 @@
 }
 @media screen and (min-width: 1400px) {
     #hero{
-        width: 100%;
-        height: auto;
-        padding-top: 290px;
-        padding-bottom: 284px;
     }
     #video-bg{
         position: absolute;
-        top: -56px;
-        height: 1080px;
     }
     
     #content-hero h1{
