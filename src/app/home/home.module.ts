@@ -10,6 +10,7 @@ import { MarcasComponent } from './marcas/marcas.component';
 import { VersionesComponent } from './versiones/versiones.component';
 import { FuncionalidadesComponent } from './funcionalidades/funcionalidades.component';
 import { HeroComponent } from './hero/hero.component';
+import { MesaDeTrabajoCarouselComponent } from './mesa-de-trabajo-carousel/mesa-de-trabajo-carousel.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { HeroComponent } from './hero/hero.component';
     MarcasComponent,
     VersionesComponent,
     FuncionalidadesComponent,
-    HeroComponent
+    HeroComponent,
+    MesaDeTrabajoCarouselComponent
   ],
   imports: [
     CommonModule,
