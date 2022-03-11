@@ -17,6 +17,7 @@ import { SeccionCompromisosComponent } from './seccion-compromisos/seccion-compr
 import { AppFuncionesComponent } from './app-funciones/app-funciones.component';
 import { NuestroCompromisoComponent } from './nuestro-compromiso/nuestro-compromiso.component';
 import { SeccionAndroidComponent } from './seccion-android/seccion-android.component';
+import { FotografiasComponent } from './fotografias/fotografias.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { SeccionAndroidComponent } from './seccion-android/seccion-android.compo
     SeccionCompromisosComponent,
     AppFuncionesComponent,
     NuestroCompromisoComponent,
-    SeccionAndroidComponent
+    SeccionAndroidComponent,
+    FotografiasComponent
   ],
   imports: [
     CommonModule,
