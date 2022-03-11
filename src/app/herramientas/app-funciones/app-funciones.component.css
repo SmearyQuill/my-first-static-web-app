@@ -8,6 +8,8 @@
 
 .right, .left{
     margin-bottom: 58px;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 #funciones-app-container div.row div.row{
     margin: 0;
