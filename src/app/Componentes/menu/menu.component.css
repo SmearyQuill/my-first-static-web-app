@@ -21,6 +21,8 @@
   width: 100%;
   min-height: 50px;
   padding-left: 8.5%;
+
+  
 }
 .navbar{
   z-index: 3;
@@ -52,6 +54,9 @@
   opacity: 1;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+
+  width: 100%;
+  text-align: left;
 }
 
 /* Color of the links AFTER scroll */
@@ -135,9 +140,20 @@
 .blur.dropdown-menu-bg{
   display: none;
 }
+.nav-item img{
+  content: url('/assets/keyboard_arrow_down_black_-1.svg');
+  position: absolute;
+  right: 39px;
+}
 
+.nav-item.dropdown.show img{
+  content: url('/assets/keyboard_arrow_down_black_24dp (1).svg');
+}
 @media screen and (min-width: 992px) {
   .navbar-nav.mr-auto::before{
+    display: none;
+  }
+  .nav-item img{
     display: none;
   }
   .dropdown-menu{
@@ -148,6 +164,8 @@
     line-height: 21px;
     margin-top: 0;
     margin-bottom: 0;
+    width: auto;
+    text-align: center;
   }
   .nav-item{
     display: flex;
