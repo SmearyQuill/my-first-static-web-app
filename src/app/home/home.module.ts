@@ -9,6 +9,7 @@ import { HerramientasComponent } from './herramientas/herramientas.component';
 import { MarcasComponent } from './marcas/marcas.component';
 import { VersionesComponent } from './versiones/versiones.component';
 import { FuncionalidadesComponent } from './funcionalidades/funcionalidades.component';
+import { HeroComponent } from './hero/hero.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { FuncionalidadesComponent } from './funcionalidades/funcionalidades.comp
     HerramientasComponent,
     MarcasComponent,
     VersionesComponent,
-    FuncionalidadesComponent
+    FuncionalidadesComponent,
+    HeroComponent
   ],
   imports: [
     CommonModule,

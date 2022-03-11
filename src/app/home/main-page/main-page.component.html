@@ -1,25 +1,6 @@
 <section id="main-page">
     <!-- Hero -->
-    <div class="container-flluid" id="hero">
-        <video id="video-bg" loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true"
-            poster="/assets/webradra_video2.mp4">
-            <source src="/assets/webradra_video2.mp4" type="video/mp4">
-        </video>
-        <div id="content-hero">
-            <div>
-                <img src="/assets/Grupo 2883-1@2x.png" alt="">
-            </div>
-            <div id="titles">
-                <h1>CONVIERTE TU TALLER EN UNA</h1>
-                <h2>FÁBRICA DE REPARACIÓN POR COLISIÓN AUTOMOTRIZ</h2>
-            </div>
-            <div id="btns">
-                <button id="fst-btn" routerLink="">
-                    <span class="hero-btn">SOLICITAR UN DEMO</span>
-                </button>
-            </div>
-        </div>
-    </div>
+    <app-hero></app-hero>
     <!-- Presentación de Radar  -->
     <app-presentacion></app-presentacion>
     <!-- Beneficios de Radar -->
