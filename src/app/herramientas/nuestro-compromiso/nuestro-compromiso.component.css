@@ -55,6 +55,9 @@
     padding: 50px 6% 50px 6%;
     margin-bottom: 42px;
 }
+@media screen and (min-width: 576px) {
+    
+}
 @media screen and (min-width: 992px) {
     #compromiso-title h1{
         font-size: 34px;
