@@ -52,17 +52,24 @@ section{
 ::-ms-input-placeholder 
 { /* Microsoft Edge */
     text-align: left;
+    top: 0;
     font: normal normal 300 24px/29px Montserrat;
     letter-spacing: 0px;
     color: #2E2D35;
     opacity: 1;
 }
+input:focus::placeholder, textarea:focus::placeholder
+{
+    color:transparent;
+}
+
 .card{
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 0px 40px #0226444A;
     padding-top: 60px;
     padding-left: 42px;
     padding-right: 42px;
+    padding-bottom: 43px;
 }
 .input-contactanos{
     width: 100%;
@@ -70,11 +77,31 @@ section{
     min-height: 42px;
     font: normal normal 300 24px/29px Montserrat;
     border: none;
-    border-bottom: .5px solid #2E2D35 ;
+    border-bottom: 1px solid #B8B8B8;
 }
 #formulario-container{
-    min-height: 90vh;
+    min-height: 130vh;
     padding: 0;
+}
+.input-contactanos.mensaje{
+    min-height: 150px;
+}
+#contactanos-button{
+    background: #AFD625 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    border: none;
+    opacity: 1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+#contactanos-button span{
+    text-align: center;
+    font: normal normal 600 22px/30px Segoe UI;
+    letter-spacing: 0.66px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
 }
 @media screen and (min-width: 1200px) {
     #formulario-form h1{
