@@ -14,6 +14,7 @@ export class FuncionalidadesComponent implements OnInit {
     gif: '',
     text: '',
     id: 0,
+    hover: false,
   };
   constructor() {}
 
@@ -23,7 +24,9 @@ export class FuncionalidadesComponent implements OnInit {
 
   // Función para seleccionar una funcionalidad
   selectFunctionality(index: number) {
+    this.selectedFunctionality.hover = false;
     this.selectedFunctionality = this.list[index];
+    this.selectedFunctionality.hover = true;
   }
 
   goToNextFunctionality() {
@@ -39,6 +42,12 @@ export class FuncionalidadesComponent implements OnInit {
       this.selectFunctionality(this.list.length - 1);
     } else {
       this.selectFunctionality(this.selectedFunctionality.id - 2);
+    }
+  }
+
+  checkMouseOut(i: number) {
+    if (this.selectedFunctionality.id != this.list[i].id) {
+      this.list[i].hover = false;
     }
   }
 }

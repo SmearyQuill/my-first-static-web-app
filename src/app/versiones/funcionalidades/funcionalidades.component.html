@@ -11,12 +11,14 @@
                 <!-- Lista de funcionalidades del sistema -->
                 <div class="col-6 curved-div">
                     <ng-container *ngFor="let element of list; let i = index; ">
-                        <div class="row functionality-row" (click)="selectFunctionality(i)">
-                            <div class="col-2  d-flex align-items-center justify-content-end">
-                                <img src="{{element.icon}}" class="functionality-list__icon"
+                        <div class="row functionality-row" [ngStyle]="{'margin-left':element.margin}" (click)="selectFunctionality(i)"
+                            (mouseover)="element.hover = true;" (mouseout)="checkMouseOut(i)">
+                            <div class="col-3 col-lg-2  d-flex align-items-center justify-content-end">
+                                <img src="{{element.hover ? element.iconoActivo : element.icon}}"
+                                    class="functionality-list__icon"
                                     [ngClass]="{'functionality-list__icon-selected' : selectedFunctionality.id == element.id}">
                             </div>
-                            <div class="col-10 d-flex align-items-center p-2">
+                            <div class="col-md-9 col-lg-10 d-flex align-items-center p-2">
                                 <p class="functionality-list__name"
                                     [ngClass]="{'functionality-list__name-selected' : selectedFunctionality.id == element.id}">
                                     {{element.name}}</p>

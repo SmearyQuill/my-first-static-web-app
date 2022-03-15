@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90.997" height="99.926" viewBox="0 0 90.997 99.926">
+  <defs>
+    <filter id="Trazado_47" x="0" y="0" width="90.997" height="99.926" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Componente_46_2" data-name="Componente 46 – 2" transform="translate(9 6)">
+    <g id="Grupo_614" data-name="Grupo 614" transform="translate(0 0)">
+      <g id="Grupo_171" data-name="Grupo 171" transform="translate(0 0)">
+        <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Trazado_47)">
+          <path id="Trazado_47-2" data-name="Trazado 47" d="M-1076.453,310.285v33.322a7.642,7.642,0,0,0,3.819,6.615l28.855,16.661a7.638,7.638,0,0,0,7.645,0l28.855-16.661a7.638,7.638,0,0,0,3.822-6.615V310.285a7.643,7.643,0,0,0-3.822-6.619l-28.855-16.661a7.654,7.654,0,0,0-7.645,0l-28.855,16.661A7.647,7.647,0,0,0-1076.453,310.285Z" transform="translate(1085.45 -279.98)" fill="#022644"/>
+        </g>
+      </g>
+    </g>
+    <path id="Trazado_78117" data-name="Trazado 78117" d="M36.58,7.65a20,20,0,0,0-20,20H9.913l8.644,8.644.156.311,8.978-8.956H21.024A15.63,15.63,0,1,1,25.6,38.628l-3.156,3.156A19.995,19.995,0,1,0,36.58,7.65ZM34.357,18.761V29.872l9.511,5.644,1.6-2.689-7.778-4.622V18.761Z" transform="translate(3.252 13.313)" fill="#afd625"/>
+  </g>
+</svg>
