@@ -159,7 +159,7 @@ export const RadarTotalFunctionalities = [
     id: 5,
     iconoActivo: 'assets/versionesFuncionalidadRefacciones-activo.svg',
     hover: false,
-    margin: '30px',
+    margin: '35px',
   },
   {
     name: 'INVENTARIO',
@@ -179,7 +179,7 @@ export const RadarTotalFunctionalities = [
     id: 7,
     iconoActivo: 'assets/versionesFuncionalidadNomina-activo.svg',
     hover: false,
-    margin: '30px',
+    margin: '35px',
   },
   {
     name: 'LABORATORIO',
