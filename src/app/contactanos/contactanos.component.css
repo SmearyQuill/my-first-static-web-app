@@ -25,35 +25,26 @@ section{
 }
 #form-card p{
     text-align: left;
-    font: normal normal 300 24px/29px Montserrat;
+    font-family: Montserrat;
+    font-variant: normal;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
     letter-spacing: 0px;
     color: #2E2D35;
     opacity: 1;
     margin-bottom: 66px;
 }
-::placeholder 
+::placeholder,  :-ms-input-placeholder, ::-ms-input-placeholder 
 {/* Firefox */
     text-align: left;
-    font: normal normal 300 24px/29px Montserrat;
-    letter-spacing: 0px;
-    color: #2E2D35;
-    opacity: 1;
-}
-  
-:-ms-input-placeholder 
-{ /* Internet Explorer 10-11 */
-    text-align: left;
-    font: normal normal 300 24px/29px Montserrat;
-    letter-spacing: 0px;
-    color: #2E2D35;
-    opacity: 1;
-}
-
-::-ms-input-placeholder 
-{ /* Microsoft Edge */
-    text-align: left;
-    top: 0;
-    font: normal normal 300 24px/29px Montserrat;
+    font-family: Montserrat;
+    font-variant: normal;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
     letter-spacing: 0px;
     color: #2E2D35;
     opacity: 1;
@@ -75,12 +66,17 @@ input:focus::placeholder, textarea:focus::placeholder
     width: 100%;
     margin-bottom: 64px;
     min-height: 42px;
-    font: normal normal 300 24px/29px Montserrat;
+    font-family: Montserrat;
+    font-variant: normal;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
     border: none;
     border-bottom: 1px solid #B8B8B8;
 }
 #formulario-container{
-    min-height: 130vh;
+    min-height: 1400px;
     padding: 0;
 }
 .input-contactanos.mensaje{
@@ -97,15 +93,31 @@ input:focus::placeholder, textarea:focus::placeholder
 }
 #contactanos-button span{
     text-align: center;
-    font: normal normal 600 22px/30px Segoe UI;
+    font-variant: normal;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
     letter-spacing: 0.66px;
     color: #FFFFFF;
     text-transform: uppercase;
     opacity: 1;
 }
 @media screen and (min-width: 1200px) {
+    
+    .input-contactanos{  
+        font-size: 24px;
+        line-height: 29px;
+    }
     #formulario-form h1{
         font-size: 48px;
         line-height: 64px;
+    }
+    #form-card p{
+        font-size: 24px;
+        line-height: 29px;
+    }
+    #formulario-container{
+        min-height: 1200px;
     }
 }
