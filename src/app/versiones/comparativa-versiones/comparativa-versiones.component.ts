@@ -19,12 +19,13 @@ export class ComparativaVersionesComponent implements OnInit {
       cardContent: [
         '- Seguimiento y presentaciones semanales de resultados',
         '- Instalación e implementación del sistema',
-        '- Acceso a Radar Academy - Know How de operación de taller',
+        '- Acceso a Radar Academy',
+        '- Know How de operación de taller',
         '- Acompañamiento personalizado con un experto durante 6 semanas',
         '- Estrategias para incrementar volumen de venta.',
         '- Sin costo por viáticos',
       ],
-      price: '$75,000 MXM',
+      price: '$75,000 MXN',
       currency: '+IVA',
     },
     {
@@ -38,7 +39,7 @@ export class ComparativaVersionesComponent implements OnInit {
         '- Actualizaciones',
         '- App de Radar Connect',
       ],
-      price: '$3,000 MXM',
+      price: '$3,000 MXN',
       currency: '+IVA',
     },
   ];
@@ -55,7 +56,7 @@ export class ComparativaVersionesComponent implements OnInit {
         '- Estrategias para incrementar volumen de venta.',
         '- Sin costo por viáticos',
       ],
-      price: '$75,000 MXM',
+      price: '$75,000 MXN',
       currency: '+IVA',
     },
     {
@@ -69,7 +70,7 @@ export class ComparativaVersionesComponent implements OnInit {
         '- Actualizaciones',
         '- App de Radar Connect',
       ],
-      price: '$5,000 MXM',
+      price: '$5,000 MXN',
       currency: '+IVA',
     },
   ];
