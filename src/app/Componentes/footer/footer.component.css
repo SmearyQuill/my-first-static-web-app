@@ -34,7 +34,7 @@
   color: #ffffff;
 }
 
-.image-container > img{
+.image-container  img{
     max-width: 80%;
 }
 @media (max-width: 991px) {
