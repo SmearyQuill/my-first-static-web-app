@@ -1,7 +1,7 @@
 <section id="funcionalidades">
-    <div class="container d-none d-md-block">
+    <div class="container d-none d-lg-block container-funcionalidades">
         <!-- Contenido que se muestra en caso de que sea una tableta o computadora-->
-        <div class="row d-none d-md-flex justify-content-center">
+        <div class="row d-none d-lg-flex justify-content-center">
             <div class="col-12 col-title">
                 <p class="section__title">TE PRESENTAMOS ALGUNAS DE LAS <span
                         class="section__title-span">FUNCIONES</span></p>
@@ -14,6 +14,7 @@
                         <div class="row functionality-row" [ngStyle]="{'margin-left':element.margin}" (click)="selectFunctionality(i)"
                             (mouseover)="element.hover = true;" (mouseout)="checkMouseOut(i)">
                             <div class="col-3 col-lg-2  d-flex align-items-center justify-content-end">
+                                <img src="assets/Elipse338.svg" [ngClass]="{'ellipse' : selectedFunctionality.id == element.id}">
                                 <img src="{{element.hover ? element.iconoActivo : element.icon}}"
                                     class="functionality-list__icon"
                                     [ngClass]="{'functionality-list__icon-selected' : selectedFunctionality.id == element.id}">
@@ -53,8 +54,8 @@
     </div>
 
     <!-- Contenido que se muestra en caso de que sea un celular -->
-    <div class="container-fluid d-md-none">
-        <div class="row d-md-none justify-content-center">
+    <div class="container-fluid d-lg-none">
+        <div class="row d-lg-none justify-content-center">
             <div class="col-11 d-flex align-items-center justify-content-center">
                 <p class="mobile-title">ÚNETE A LA REVOLUCIÓN DIGITAL </p>
             </div>

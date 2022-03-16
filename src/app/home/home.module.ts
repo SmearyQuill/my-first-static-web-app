@@ -12,6 +12,7 @@ import { FuncionalidadesComponent } from './funcionalidades/funcionalidades.comp
 import { HeroComponent } from './hero/hero.component';
 import { SabiasQueCarouselComponent } from './sabias-que-carousel/sabias-que-carousel.component';
 import { SabiasQueCardComponent } from './sabias-que-card/sabias-que-card.component';
+import { TestimonioCardComponent } from './testimonio-card/testimonio-card.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { SabiasQueCardComponent } from './sabias-que-card/sabias-que-card.compon
     FuncionalidadesComponent,
     HeroComponent,
     SabiasQueCarouselComponent,
-    SabiasQueCardComponent
+    SabiasQueCardComponent,
+    TestimonioCardComponent
   ],
   imports: [
     CommonModule,

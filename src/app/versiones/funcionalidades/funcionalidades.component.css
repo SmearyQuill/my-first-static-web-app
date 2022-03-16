@@ -24,7 +24,7 @@
   cursor: pointer;
 }
 
-.functionality-row:hover p{
+.functionality-row:hover p {
   font-weight: bold;
 }
 
@@ -32,13 +32,13 @@
   font-size: 18px;
 } */
 .functionality-list__icon {
-  max-width: 100%;
-  height: auto;
+  width: 70px;
+  height: 80px;
 }
 
 .functionality-list__icon-selected {
-  max-width: 120%;
-  fill: #afd625;
+  width: 75px;
+  height: 85px;
 }
 
 .functionality-list__name {
@@ -83,6 +83,10 @@
   background-color: #afd625;
 }
 
+.ellipse {
+  width: 15px;
+  height: 15px;
+}
 .principal-button > a {
   display: inline-block;
   color: #ffffff;
@@ -133,7 +137,7 @@
   cursor: pointer;
 }
 
-.mobile-card__ellipsebutton{
+.mobile-card__ellipsebutton {
   margin: 0 8px;
 }
 
@@ -161,10 +165,10 @@
   .col-title {
     margin-bottom: 3%;
   }
-  .functionality-list__name{
+  .functionality-list__name {
     font-size: 16px;
   }
-  .functionality-list__name-selected{
+  .functionality-list__name-selected {
     font-size: 20px;
   }
 }

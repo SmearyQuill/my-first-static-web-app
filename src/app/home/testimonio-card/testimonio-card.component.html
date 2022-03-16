@@ -1,0 +1,33 @@
+<!-- El margen y el contenedor se pueden eliminar cuando se utilicen en el carrusel -->
+<div class="container-fluid my-4">
+    <div class="row justify-content-center">
+        <!-- Contenedor de la tarjeta -->
+        <div class="col-11 col-md-9 col-xl-7 card-container py-4 py-md-5">
+            <div class="row h-md-100">
+                <!-- Imagen -->
+                <div class="col-12 col-md-4 col-lg-3 d-flex justify-content-center mb-2">
+                    <img class="card__person-image" src="{{cardInformation.image2}}">
+                </div>
+                <!-- Informacion -->
+                <div class="col-12 col-md-8 col-lg-9">
+                    <div class="row">
+                        <div class="col-12 col-lg-10 px-4">
+                            <p class="card__title">{{cardInformation.TITLE}}</p>
+                        </div>
+                        <div class="col-12 px-4 mb-3">
+                            <p class="card__location">{{cardInformation.location}}</p>
+                        </div>
+                        <div class="col-12 col-lg-11 px-4 mb-2">
+                            <p class="card__text">{{cardInformation.text}}</p>
+                        </div>
+                        <div class="col-12 px-4">
+                            <p class="card__name text-center text-md-start">{{cardInformation.name + ' - '}}<span
+                                    style="font-weight: 500;">{{cardInformation.position}}</span></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
