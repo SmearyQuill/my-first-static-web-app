@@ -10,22 +10,22 @@
             <div class="blur navbar-nav-bg" ></div>
             <ul class="navbar-nav  mr-auto">
                 <!-- Versiones -->
-                <li class="nav-item dropdown" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
-                    <a class="nav-link dropdown-toggle navbarLink" id="navbarVersionesDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <li class="nav-item dropdown"  routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
+                    <a class="nav-link dropdown-toggle navbarLink"  id="navbarVersionesDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         VERSIONES
                         <img class="dropdown-icon">
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarVersionesDropdown">
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <div class="blur dropdown-menu-bg"></div>
-                        <a class="dropdown-item" routerLink="versiones">Radar Control Total</a>
-                        <a class="dropdown-item" routerLink="versiones/radarLite">Radar Lite</a>
-                    </div>
+                        <li><a class="dropdown-item" routerLink="versiones">Radar Control Total</a></li>
+                        <li><a class="dropdown-item" routerLink="versiones/radarLite">Radar Lite</a></li>
+                    </ul>
                 </li>
                 <!-- Herrramientas -->
                 <li class="nav-item dropdown"  routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
                     <a class="nav-link dropdown-toggle navbarLink" id="navbarHerramientasDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         HERRAMIENTAS               
                         <img class="dropdown-icon">
                     </a>     
