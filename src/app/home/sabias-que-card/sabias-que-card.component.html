@@ -1,23 +1,36 @@
-<div class="cardContainer">
-  <div class="textDiv">
-    <!-- Este div se muestra en caso de que la pregunta se muestre en formato "SABIAS QUE?.. " y más texto -->
-    <div *ngIf="specialCaseText">
-      <p class="specialCaseText">{{ specialCaseText }}</p>
-      <p class="specialQuestionText">{{ questionText }}</p>
+<!-- Este div hay que eliminarlo cuando se utilicen las card en el carrusel, solo lo puse para que se vea centrado -->
+<div style="width:100%; display:flex; justify-content: center; padding: 3% 0;">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <!-- Contenedor de la tarjeta -->
+      <div class="col-11 col-md-9 col-xl-7 cardContainer">
+        <div class="row justify-content-center justify-content-lg-between">
+          <!-- Sección con el texto -->
+          <div class="col-12 col-md-6  mb-4 mb-md-0 py-5 py-md-0 py-md-3 py-xxl-4 px-4">
+            <div class="row">
+              <!-- Pregunta -->
+              <div class="col-12">
+                <p class="specialCaseText" *ngIf="specialCaseText">{{specialCaseText}}</p>
+                <p [ngClass]="specialCaseText ? 'specialQuestionText' : 'normalQuestionText'">{{questionText}}</p>
+              </div>
+              <!-- Texto Informativo -->
+              <div class="col-12">
+                <p class="informationText">{{informationText}}</p>
+              </div>
+              <!-- Boton -->
+              <div class="col-12 mt-4 mt-md-2 mb-0 mb-md-3 d-flex justify-content-center justify-content-sm-start">
+                <a routerLink="contactanos">
+                  <button class="button">{{buttonText}}</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Seccion con la imagen -->
+          <div class="col-12 col-md-6 d-flex pe-md-0 justify-content-center">
+            <img src="{{imageSrc}}" class="card-image">
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- Este div se muestra en caso de que la pregunta se muestre completa con el mismo formato (tamaño, color) -->
-    <p *ngIf="!specialCaseText" class="normalQuestionText">
-      {{ questionText }}
-    </p>
-    <!-- Texto con la información de la card -->
-    <p class="informationText">{{ informationText }}</p>
-    <button *ngIf="buttonText" class="button">{{ buttonText }}</button>
-  </div>
-  <div class="imgDiv">
-    <img
-      style="max-width: 100%; height: 100%; object-fit: cover"
-      src= "{{ imageSrc }}"
-    />
   </div>
 </div>
