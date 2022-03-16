@@ -1,4 +1,6 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
+import * as model from '../modelos';
+import { ListaTestimonios } from 'src/app/testimonios/modelos';
 declare var $: any;
 @Component({
   selector: 'app-sabias-que-carousel',
@@ -27,26 +29,29 @@ export class SabiasQueCarouselComponent implements OnInit {
     buttonText : '',
     imgSrc : ''
   }
+  testimonios = ListaTestimonios;
+  sabiasQueList = model.SabiasQueCards;
   constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    
+  console.log(this.sabiasQueList)
+  }
     
   ngAfterViewInit():void {
 
-    $('.show-neighbors').click(function(this: HTMLElement){
-      $('.carousel-item', '.show-neighbors').each(function(this: HTMLElement){
-        var next = $(this).next();
-        if (! next.length) {
-          next = $(this).siblings(':first');
-        }
-        next.children(':first-child').clone().appendTo($(this));
-      }).each(function(this: HTMLElement){
-        var prev = $(this).prev();
-        if (! prev.length) {
-          prev = $(this).siblings(':last');
-        }
-        prev.children(':nth-last-child(2)').clone().prependTo($(this));
-      });
+    $('.carousel-item', '.show-neighbors').each(function(this: any){
+      var next = $(this).next();
+      if (! next.length) {
+        next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+    }).each(function(this: any){
+      var prev = $(this).prev();
+      if (! prev.length) {
+        prev = $(this).siblings(':last');
+      }
+      prev.children(':nth-last-child(2)').clone().prependTo($(this));
     });
   }
 

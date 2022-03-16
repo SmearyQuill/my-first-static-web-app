@@ -1,5 +1,5 @@
 ._item, .example{
-    height: 500px;
+    height: 540px;
 }
 ._red{
     background-color: red;
@@ -14,7 +14,9 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }
-
+.carousel-item{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+}
 .show-neighbors {
     overflow: hidden;
 }
@@ -23,24 +25,24 @@
 }
 @media (min-width: 500px) {
     .show-neighbors .carousel-indicators {
-        margin-right: 25%;
-        margin-left: 25%;
+        margin-right: 15%;
+        margin-left: 15%;
    }
     .show-neighbors .carousel-control-prev, .show-neighbors .carousel-control-next {
         background: rgba(255, 255, 255, 0.3);
-        width: 25%;
+        width: 15%;
         z-index: 11;
        /* .carousel-caption has z-index 10 */
    }
     .show-neighbors .carousel-inner {
-        width: 150%;
-        left: -25%;
+        width: 210%;
+        left: -55%;
    }
-    .show-neighbors .carousel-item-next:not(.carousel-item-left), .show-neighbors .carousel-item-right.active {
+    .show-neighbors .carousel-item-next:not(.carousel-item-start), .show-neighbors .carousel-item-end.active {
         -webkit-transform: translate3d(33%, 0, 0);
         transform: translate3d(33%, 0, 0);
    }
-    .show-neighbors .carousel-item-prev:not(.carousel-item-right), .show-neighbors .carousel-item-left.active {
+    .show-neighbors .carousel-item-prev:not(.carousel-item-end), .show-neighbors .carousel-item-start.active {
         -webkit-transform: translate3d(-33%, 0, 0);
         transform: translate3d(-33%, 0, 0);
    }
