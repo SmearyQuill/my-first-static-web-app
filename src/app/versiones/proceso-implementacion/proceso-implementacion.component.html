@@ -6,9 +6,18 @@
             </div>
         </div>
         <div class="row images-row">
-            <div class="col-md imageColumn d-flex align-items-center justify-content-center"
+            <div class="col-md imageColumn d-flex align-items-center justify-content-center" style="position: relative;"
                 *ngFor="let processInformation of processList">
                 <img class="process-image" src="{{processInformation.imageSrc}}">
+                <!-- Div con el texto -->
+                <div class="text-container" style="position: absolute;">
+                    <div class="text-information">
+                        <!-- Numero de proceso -->
+                        <p class="process-number">{{processInformation.processNumber}}</p>
+                        <!-- Nombre del proceso -->
+                        <p class="process-name">{{processInformation.processName}}</p>
+                    </div>
+                </div>
             </div>
             <!-- <div class="col-12 d-none d-lg-block" style="height:2%; color:#AFD625"></div> -->
         </div>
