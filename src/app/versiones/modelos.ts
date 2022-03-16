@@ -119,7 +119,7 @@ export const RadarTotalFunctionalities = [
     id: 1,
     iconoActivo: 'assets/versionesFuncionalidadPanelCliente-activo.svg',
     hover: false,
-    margin: '95px',
+    margin: '90px',
   },
   {
     name: 'INFORMACION EN TIEMPO REAL',
@@ -129,7 +129,7 @@ export const RadarTotalFunctionalities = [
     id: 2,
     iconoActivo: 'assets/versionesFuncionalidadTiempoReal-activo.svg',
     hover: false,
-    margin: '80px',
+    margin: '60px',
   },
   {
     name: 'ELECTROPLAN',
@@ -139,7 +139,7 @@ export const RadarTotalFunctionalities = [
     id: 3,
     iconoActivo: 'assets/versionesFuncionalidadElectroplan-activo.svg',
     hover: false,
-    margin: '65px',
+    margin: '45px',
   },
   {
     name: 'INTERFACES',
@@ -149,7 +149,7 @@ export const RadarTotalFunctionalities = [
     id: 4,
     iconoActivo: 'assets/versionesFuncionalidadInterfaces-activo.svg',
     hover: false,
-    margin: '50px',
+    margin: '30px',
   },
   {
     name: 'GESTIÓN DE REFACCIONES',
@@ -159,7 +159,7 @@ export const RadarTotalFunctionalities = [
     id: 5,
     iconoActivo: 'assets/versionesFuncionalidadRefacciones-activo.svg',
     hover: false,
-    margin: '35px',
+    margin: '15px',
   },
   {
     name: 'INVENTARIO',
@@ -179,7 +179,7 @@ export const RadarTotalFunctionalities = [
     id: 7,
     iconoActivo: 'assets/versionesFuncionalidadNomina-activo.svg',
     hover: false,
-    margin: '35px',
+    margin: '15px',
   },
   {
     name: 'LABORATORIO',
@@ -189,7 +189,7 @@ export const RadarTotalFunctionalities = [
     id: 8,
     iconoActivo: 'assets/versionesFuncionalidadLaboratorio-activo.svg',
     hover: false,
-    margin: '50px',
+    margin: '30px',
   },
   {
     name: 'FACTURACIÓN',
@@ -199,7 +199,7 @@ export const RadarTotalFunctionalities = [
     id: 9,
     iconoActivo: 'assets/versionesFuncionalidadFacturacion-activo.svg',
     hover: false,
-    margin: '65px',
+    margin: '45px',
   },
   {
     name: 'E-TOOLS',
@@ -209,7 +209,7 @@ export const RadarTotalFunctionalities = [
     id: 10,
     iconoActivo: 'assets/versionesFuncionalidadETools-activo.svg',
     hover: false,
-    margin: '80px',
+    margin: '60px',
   },
   {
     name: 'VALUACIÓN',
@@ -219,7 +219,7 @@ export const RadarTotalFunctionalities = [
     id: 11,
     iconoActivo: 'assets/versionesFuncionalidadValuacion-activo.svg',
     hover: false,
-    margin: '95px',
+    margin: '90px',
   },
 ];
 

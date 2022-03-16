@@ -29,7 +29,11 @@
 }
 
 @media (min-width: 1200px) {
-  .presentation-title, .presentation-title2{
-    font-size: 34px;
+  .presentation-title,
+  .presentation-title2 {
+    font-size: 45px;
+  }
+  .presentation-text {
+    font-size: 22px;
   }
 }
