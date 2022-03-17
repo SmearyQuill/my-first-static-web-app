@@ -163,7 +163,7 @@
 @media (min-width: 767px) and (max-width: 999px) {
   .process-information__text,
   .process-information__duration {
-    font-size: .8em;
+    font-size: 0.8em;
   }
   .process-information__optional {
     font-size: 0.6rem;
@@ -193,5 +193,30 @@
 
   .process-number {
     font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .process-number {
+    font-size: 6rem;
+  }
+  .process-name {
+    font-size: 1.8rem;
+  }
+
+  .process-information__text,
+  .process-information__duration {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .process-name {
+    font-size: 2rem;
+  }
+
+  .process-information__text,
+  .process-information__duration {
+    font-size: 2.2rem;
   }
 }
