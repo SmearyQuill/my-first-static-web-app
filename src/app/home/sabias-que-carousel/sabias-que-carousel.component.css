@@ -1,15 +1,6 @@
 ._item, .example{
     height: 651px;
 }
-._red{
-    background-color: red;
-}
-._blue{
-    background-color: blue;
-}
-._green{
-    background-color: green;
-}
 #sabias-que-carousel{
     padding-top: 60px;
     padding-bottom: 60px;
@@ -80,4 +71,5 @@
         width: 33.33333333%;
    }
 }
+/* Multi Item Carousel */
 
