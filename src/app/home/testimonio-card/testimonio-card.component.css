@@ -45,6 +45,7 @@ p {
 .card-row{
   padding-top: 20px;
   padding-bottom: 79px;
+  margin: 0;
 }
 
 .card__name{
