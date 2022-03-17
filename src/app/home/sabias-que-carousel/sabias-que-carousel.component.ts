@@ -1,6 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import * as model from '../modelos';
-import { ListaTestimonios } from 'src/app/testimonios/modelos';
 declare var $: any;
 @Component({
   selector: 'app-sabias-que-carousel',
@@ -29,7 +28,6 @@ export class SabiasQueCarouselComponent implements OnInit {
     buttonText : '',
     imgSrc : ''
   }
-  testimonios = ListaTestimonios;
   sabiasQueList = model.SabiasQueCards;
   constructor() { }
 

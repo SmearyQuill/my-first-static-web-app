@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ListaTestimonios } from 'src/app/testimonios/modelos';
 
 @Component({
   selector: 'app-testimonios-carousel',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestimoniosCarouselComponent implements OnInit {
 
+  testimonios = ListaTestimonios;
   constructor() { }
 
   ngOnInit(): void {
