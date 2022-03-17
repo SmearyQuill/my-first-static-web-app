@@ -7,14 +7,12 @@
         <div class="row h-100 justify-content-center justify-content-lg-between">
           <!-- Sección con el texto -->
           <div class="col-12 col-md-6  mb-4 mb-md-0 py-5 py-md-0 py-md-3 py-xxl-4 px-4">
-            <div class="row h-100">
+            <div class="row h-100 d-flex align-items-center ">
               <!-- Pregunta -->
-              <div class="col-12">
+              <div class="col-12 align-items-center">
                 <p class="specialCaseText" *ngIf="specialCaseText">{{specialCaseText}}</p>
                 <p [ngClass]="specialCaseText ? 'specialQuestionText' : 'normalQuestionText'">{{questionText}}</p>
-              </div>
               <!-- Texto Informativo -->
-              <div class="col-12">
                 <p class="informationText">{{informationText}}</p>
               </div>
               <!-- Boton -->

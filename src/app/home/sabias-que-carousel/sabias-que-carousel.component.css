@@ -23,6 +23,22 @@
 .show-neighbors .item__third:first-child, .show-neighbors .item__third:last-child {
     display: none;
 }
+.carousel-indicators{
+    margin-bottom: 0;
+}
+.carousel-indicators button {
+    border-top: none;
+    border-bottom: none;
+    margin-bottom: 0;
+    width: 34px;
+    height: 6px;
+    background: #BEBEBE 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    opacity: 1; 
+}
+.carousel-indicators .active {
+    background: #AFD625 0% 0% no-repeat padding-box;
+}
 @media (min-width: 500px) {
     .show-neighbors .carousel-indicators {
         margin-right: 15%;

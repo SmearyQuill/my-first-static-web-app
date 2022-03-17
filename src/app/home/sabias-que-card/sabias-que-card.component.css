@@ -82,22 +82,22 @@ p {
 }
 @media (min-width: 1400px) {
   .specialCaseText {
-    font-size: 30px;
+    font-size: 50px;
   }
 
   .specialQuestionText {
-    font-size: 22px;
+    font-size: 30px;
   }
 
   .normalQuestionText {
-    font-size: 23px;
+    font-size: 30px;
   }
 
   .informationText {
-    font-size: 19px;
+    font-size: 22px;
   }
 
   .button {
-    font-size: 16px;
+    font-size: 22px;
   }
 }
