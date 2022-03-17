@@ -34,6 +34,5 @@ export class ProcesoImplementacionComponent implements OnInit {
     this.processList[i].clicked == true
       ? (this.processList[i].clicked = false)
       : (this.processList[i].clicked = true);
-    console.log('TIPO PAPU: ', this.processList[i].clicked);
   }
 }
