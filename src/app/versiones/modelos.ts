@@ -37,41 +37,51 @@ export const RadarControlTotalProcessList = [
     processNumber: '01',
     processName: 'LEVANTAMIENTO',
     processInformation:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      'Lectura de datos como: usuarios, procesos, permisos, etc.',
     processDuration: '1 Semana',
+    optional: false,
     imageSrc: 'assets/Grupo-751.png',
+    clicked: false,
   },
   {
     processNumber: '02',
     processName: 'CONFIGURACION',
     processInformation:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      'Se realiza el alta del taller en RADAR, y se configura según las necesidades.',
     processDuration: '1 Semana',
+    optional: false,
     imageSrc: 'assets/Grupo-750.png',
+    clicked: false,
   },
   {
     processNumber: '03',
     processName: 'AMBIENTE DE PRUEBA',
     processInformation:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    processDuration: '1 Semana',
+      'Se realizan los cursos de capacitación y se activa una simulación del taller en el sistema.',
+    processDuration: '2 Semanas',
+    optional: false,
     imageSrc: 'assets/Grupo-749.png',
+    clicked: false,
   },
   {
     processNumber: '04',
     processName: 'IMPLEMENTACION',
     processInformation:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      'Se activa el ambiente de producción real, se dan de alta el 100% de órdenes en taller.',
     processDuration: '1 Semana',
+    optional: false,
     imageSrc: 'assets/Grupo-748.png',
+    clicked: false,
   },
   {
     processNumber: '05',
     processName: 'CONSULTORIA',
     processInformation:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    processDuration: '1 Semana',
+      'Monitoreo con desempeño con metas a cumplir. Acompañados por expertos en RADAR.',
+    processDuration: '6 Semanas',
+    optional: false,
     imageSrc: 'assets/Grupo-747.png',
+    clicked: false,
   },
 ];
 
@@ -80,33 +90,41 @@ export const RadarLiteProcessList = [
     processNumber: '01',
     processName: 'LEVANTAMIENTO',
     processInformation:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      'Lectura de datos como: usuarios, procesos, permisos, etc.',
     processDuration: '1 Semana',
+    optional: false,
     imageSrc: 'assets/Grupo-751.png',
+    clicked: false,
   },
   {
     processNumber: '02',
     processName: 'CONFIGURACION',
     processInformation:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      'Se realiza el alta del taller en RADAR, y se configura según las necesidades.',
     processDuration: '1 Semana',
+    optional: false,
     imageSrc: 'assets/Grupo-750.png',
+    clicked: false,
+  },
+  {
+    processNumber: '03',
+    processName: 'IMPLEMENTACION',
+    processInformation:
+      'Se activa el ambiente de producción real, se dan de alta el 100% de órdenes en taller.',
+    processDuration: '1 Semana',
+    optional: false,
+    imageSrc: 'assets/Grupo-748.png',
+    clicked: false,
   },
   {
     processNumber: '04',
-    processName: 'IMPLEMENTACION',
-    processInformation:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    processDuration: '1 Semana',
-    imageSrc: 'assets/Grupo-748.png',
-  },
-  {
-    processNumber: '05',
     processName: 'CONSULTORIA',
     processInformation:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    processDuration: '1 Semana',
+      'Monitoreo con desempeño con metas a cumplir. Acompañados por expertos en RADAR.',
+    processDuration: '6 Semanas',
+    optional: true,
     imageSrc: 'assets/Grupo-747.png',
+    clicked: false,
   },
 ];
 
@@ -295,5 +313,3 @@ export const RadarLiteFunctionalities = [
     margin: '60px',
   },
 ];
-
-

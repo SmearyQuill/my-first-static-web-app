@@ -6,20 +6,21 @@
             </div>
         </div>
         <div class="row images-row">
-            <div class="col-lg imageColumn d-flex align-items-center justify-content-center" style="position: relative;"
-                *ngFor="let processInformation of processList">
+            <div class="col-md imageColumn d-flex align-items-center justify-content-center"
+                style="position: relative; cursor: pointer;"
+                *ngFor="let processInformation of processList; let i = index;" (click)="changeView(i)">
                 <img class="process-image" src="{{processInformation.imageSrc}}">
                 <!-- Div con el texto -->
-                <!-- <div class="text-container" style="position: absolute;"> -->
-                <!-- <div class="text-information"> -->
-                <!-- Numero de proceso -->
-                <!-- <p class="process-number">{{processInformation.processNumber}}</p> -->
-                <!-- Nombre del proceso -->
-                <!-- <p class="process-name">{{processInformation.processName}}</p> -->
-                <!-- </div> -->
-                <!-- </div> -->
+                <div class="text-container" style="position: absolute;" *ngIf="!processInformation.clicked">
+                    <div class="text-information">
+                        <!-- Numero de proceso -->
+                        <p class="process-number">{{processInformation.processNumber}}</p>
+                        <!-- Nombre del proceso -->
+                        <p class="process-name">{{processInformation.processName}}</p>
+                    </div>
+                </div>
                 <!-- Informacion del proceso (Solo se muestra cuando se da click) -->
-                <div class="process-information px-3 py-3">
+                <div class="process-information px-3 py-3" *ngIf="processInformation.clicked">
                     <div>
                         <!-- Numero de proceso -->
                         <p class="process-number">{{processInformation.processNumber}}</p>
@@ -29,6 +30,7 @@
                     <div>
                         <p class="process-information__text">{{processInformation.processInformation}}</p>
                         <p class="process-information__duration">{{processInformation.processDuration}}</p>
+                        <p *ngIf="processInformation.optional" class="process-information__optional">Opcional*</p>
                     </div>
                 </div>
             </div>
