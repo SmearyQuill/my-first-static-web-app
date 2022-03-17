@@ -10,7 +10,7 @@
 }
 .card-row{
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 36px;
 }
 .textDiv {
   width: 45%;
@@ -61,13 +61,19 @@ p {
   border-radius: 5px;
   height: auto;
 }
-
+@media (max-width: 767px){
+  .card-row{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+  }
+}
 @media (min-width: 576px) and (max-width: 767px) {
   .card-image {
     max-width: 70%;
   }
   .button {
-    width: 80%;
+    width: 100%;
   }
 }
 

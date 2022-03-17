@@ -1,5 +1,5 @@
 ._item, .example{
-    height: 540px;
+    height: 651px;
 }
 ._red{
     background-color: red;
@@ -13,16 +13,13 @@
 #sabias-que-carousel{
     padding-top: 60px;
     padding-bottom: 60px;
+    padding-left: 0;
+    padding-right: 0;
 }
 .carousel-item{
     background: #FFFFFF 0% 0% no-repeat padding-box;
 }
-.show-neighbors {
-    overflow: hidden;
-}
-.show-neighbors .item__third:first-child, .show-neighbors .item__third:last-child {
-    display: none;
-}
+/* Carousel indicators */
 .carousel-indicators{
     margin-bottom: 0;
 }
@@ -39,7 +36,20 @@
 .carousel-indicators .active {
     background: #AFD625 0% 0% no-repeat padding-box;
 }
-@media (min-width: 500px) {
+
+/* Multi item carousel */
+.show-neighbors {
+    overflow: hidden;
+}
+.show-neighbors .item__third:first-child, .show-neighbors .item__third:last-child {
+    display: none;
+}
+
+@media (min-width: 767px) {
+
+    ._item, .example{
+        height: 550px;
+    }
     .show-neighbors .carousel-indicators {
         margin-right: 15%;
         margin-left: 15%;
