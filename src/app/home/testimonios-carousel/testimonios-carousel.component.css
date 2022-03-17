@@ -1,7 +1,7 @@
 ._item, .example{
     height: 651px;
 }
-#sabias-que-carousel{
+#testimonios-carousel{
     padding-top: 60px;
     padding-bottom: 60px;
     padding-left: 0;
@@ -39,7 +39,7 @@
 @media (min-width: 767px) {
 
     ._item, .example{
-        height: 550px;
+        height: 665px;
     }
     .show-neighbors .carousel-indicators {
         margin-right: 15%;
@@ -72,4 +72,3 @@
    }
 }
 /* Multi Item Carousel */
-

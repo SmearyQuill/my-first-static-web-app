@@ -13,6 +13,7 @@ import { HeroComponent } from './hero/hero.component';
 import { SabiasQueCarouselComponent } from './sabias-que-carousel/sabias-que-carousel.component';
 import { SabiasQueCardComponent } from './sabias-que-card/sabias-que-card.component';
 import { TestimonioCardComponent } from './testimonio-card/testimonio-card.component';
+import { TestimoniosCarouselComponent } from './testimonios-carousel/testimonios-carousel.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { TestimonioCardComponent } from './testimonio-card/testimonio-card.compo
     HeroComponent,
     SabiasQueCarouselComponent,
     SabiasQueCardComponent,
-    TestimonioCardComponent
+    TestimonioCardComponent,
+    TestimoniosCarouselComponent
   ],
   imports: [
     CommonModule,

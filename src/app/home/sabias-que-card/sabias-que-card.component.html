@@ -1,20 +1,18 @@
 <!-- Este div hay que eliminarlo cuando se utilicen las card en el carrusel, solo lo puse para que se vea centrado -->
-<div style="width:100%; display:flex; justify-content: center; padding: 3% 0;">
-  <div class="container-fluid">
-    <div class="row justify-content-center">
+
+  <div class="container-fluid slide-container">
+    <div class="row w-100 h-100 justify-content-center card-row">
       <!-- Contenedor de la tarjeta -->
-      <div class="col-11 col-md-9 col-xl-7 cardContainer">
-        <div class="row justify-content-center justify-content-lg-between">
+      <div class="col-12 cardContainer">
+        <div class="row h-100 justify-content-center justify-content-lg-between">
           <!-- Sección con el texto -->
           <div class="col-12 col-md-6  mb-4 mb-md-0 py-5 py-md-0 py-md-3 py-xxl-4 px-4">
-            <div class="row h-100">
+            <div class="row h-100 d-flex align-items-center ">
               <!-- Pregunta -->
-              <div class="col-12">
+              <div class="col-12 align-items-center">
                 <p class="specialCaseText" *ngIf="specialCaseText">{{specialCaseText}}</p>
                 <p [ngClass]="specialCaseText ? 'specialQuestionText' : 'normalQuestionText'">{{questionText}}</p>
-              </div>
               <!-- Texto Informativo -->
-              <div class="col-12">
                 <p class="informationText">{{informationText}}</p>
               </div>
               <!-- Boton -->
@@ -33,4 +31,3 @@
       </div>
     </div>
   </div>
-</div>

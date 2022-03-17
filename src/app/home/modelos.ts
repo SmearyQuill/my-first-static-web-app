@@ -15,7 +15,7 @@ export const SabiasQueCards = [
     informationText:
       'Somos el primer sistema que puede proporcionarte la utilidad bruta desde refacciones hasta materiales, por orden de trabajo.',
     buttonText: 'AGENDA UNA REUNIÓN WEB',
-    imageSrc: '/assets/Grupo 523@2x.png',
+    imageSrc: '/assets/Grupo 523@2x.png', 
   },
   {
     specialCaseText: '¿SABÍAS QUE…',

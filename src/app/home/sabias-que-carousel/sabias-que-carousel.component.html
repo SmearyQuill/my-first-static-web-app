@@ -1,7 +1,7 @@
 <section>
     <div class="container-fluid" id="sabias-que-carousel">
         <div class="example">
-            <div id="carouselExampleIndicators" class="carousel slide h-100 show-neighbors" data-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide h-100 show-neighbors" data-ride="carousel" data-bs-interval="false">
                 <!-- Carousel indicators -->
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -10,15 +10,13 @@
                 </div>
                 <!-- Carousel -->
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="_item _red item__third" alt="First slide"></div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="_item _blue item__third" alt="First slide"></div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="_item _green item__third" alt="First slide"></div>
-                    </div>
+                        <div class="carousel-item" *ngFor="let element of sabiasQueList; let i = index" [ngClass]="{'active': i==0}">
+                            <div class="_item item__third">
+                                <app-sabias-que-card [specialCaseText]="element.specialCaseText" [questionText]="element.questionText"
+                                    [informationText]="element.informationText" [buttonText]="element.buttonText" [imageSrc]="element.imageSrc">
+                                </app-sabias-que-card>
+                            </div>
+                        </div>
                 </div>               
                 <!-- Carousel arrows -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -34,18 +32,3 @@
                     
     </div>
 </section>
-<script>
-    $('.carousel-item', '.show-neighbors').each(function(){
-  var next = $(this).next();
-  if (! next.length) {
-    next = $(this).siblings(':first');
-  }
-  next.children(':first-child').clone().appendTo($(this));
-}).each(function(){
-  var prev = $(this).prev();
-  if (! prev.length) {
-    prev = $(this).siblings(':last');
-  }
-  prev.children(':nth-last-child(2)').clone().prependTo($(this));
-});
-</script>

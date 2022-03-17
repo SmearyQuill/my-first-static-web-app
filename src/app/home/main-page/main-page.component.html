@@ -6,7 +6,7 @@
     <!-- Beneficios de Radar -->
     <app-funcionalidades></app-funcionalidades>
     <!-- Carrusel de card  -->
-    <!-- <app-sabias-que-carousel></app-sabias-que-carousel> -->
+    <app-sabias-que-carousel></app-sabias-que-carousel>
     <!-- Beneficios en 4 pasos -->
     <app-beneficios></app-beneficios>
     <!-- Herramientas de Radar -->
@@ -16,15 +16,11 @@
     <!-- Ver Versiones -->
     <app-versiones>Trabajo en proceso</app-versiones>
     <!-- Carrusel de Testimonios -->
-    <div>Trabajo en proceso</div>
+    <app-testimonios-carousel></app-testimonios-carousel>
     <!-- Card de Sabias que (Solo se utiliza para pruebas por el momento) -->
-    <ng-container *ngFor="let element of sabiasQueList">
-        <app-sabias-que-card [specialCaseText]="element.specialCaseText" [questionText]="element.questionText"
-            [informationText]="element.informationText" [buttonText]="element.buttonText" [imageSrc]="element.imageSrc">
-        </app-sabias-que-card>
-    </ng-container>
+    
     <!-- Card de Testimonio (Solo se utiliza para pruebas por el momento) -->
-    <ng-container *ngFor="let element of testimonios">
+    <!-- <ng-container *ngFor="let element of testimonios">
         <app-testimonio-card [cardInformation]="element"></app-testimonio-card>
-    </ng-container>
+    </ng-container> -->
 </section>
