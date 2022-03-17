@@ -44,7 +44,6 @@ p {
     font-size: 12px;
     font-weight: bold;
 }
-
 @media (min-width:768px){
     .card__person-image{
         max-width: 80%;
