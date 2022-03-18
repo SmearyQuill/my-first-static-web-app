@@ -37,41 +37,51 @@ export const RadarControlTotalProcessList = [
     processNumber: '01',
     processName: 'LEVANTAMIENTO',
     processInformation:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      'Lectura de datos como: usuarios, procesos, permisos, etc.',
     processDuration: '1 Semana',
+    optional: false,
     imageSrc: 'assets/Grupo-751.png',
+    clicked: false,
   },
   {
     processNumber: '02',
     processName: 'CONFIGURACION',
     processInformation:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      'Se realiza el alta del taller en RADAR, y se configura según las necesidades.',
     processDuration: '1 Semana',
+    optional: false,
     imageSrc: 'assets/Grupo-750.png',
+    clicked: false,
   },
   {
     processNumber: '03',
     processName: 'AMBIENTE DE PRUEBA',
     processInformation:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    processDuration: '1 Semana',
+      'Se realizan los cursos de capacitación y se activa una simulación del taller en el sistema.',
+    processDuration: '2 Semanas',
+    optional: false,
     imageSrc: 'assets/Grupo-749.png',
+    clicked: false,
   },
   {
     processNumber: '04',
     processName: 'IMPLEMENTACION',
     processInformation:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      'Se activa el ambiente de producción real, se dan de alta el 100% de órdenes en taller.',
     processDuration: '1 Semana',
+    optional: false,
     imageSrc: 'assets/Grupo-748.png',
+    clicked: false,
   },
   {
     processNumber: '05',
     processName: 'CONSULTORIA',
     processInformation:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    processDuration: '1 Semana',
+      'Monitoreo con desempeño con metas a cumplir. Acompañados por expertos en RADAR.',
+    processDuration: '6 Semanas',
+    optional: false,
     imageSrc: 'assets/Grupo-747.png',
+    clicked: false,
   },
 ];
 
@@ -80,33 +90,41 @@ export const RadarLiteProcessList = [
     processNumber: '01',
     processName: 'LEVANTAMIENTO',
     processInformation:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      'Lectura de datos como: usuarios, procesos, permisos, etc.',
     processDuration: '1 Semana',
+    optional: false,
     imageSrc: 'assets/Grupo-751.png',
+    clicked: false,
   },
   {
     processNumber: '02',
     processName: 'CONFIGURACION',
     processInformation:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      'Se realiza el alta del taller en RADAR, y se configura según las necesidades.',
     processDuration: '1 Semana',
+    optional: false,
     imageSrc: 'assets/Grupo-750.png',
+    clicked: false,
+  },
+  {
+    processNumber: '03',
+    processName: 'IMPLEMENTACION',
+    processInformation:
+      'Se activa el ambiente de producción real, se dan de alta el 100% de órdenes en taller.',
+    processDuration: '1 Semana',
+    optional: false,
+    imageSrc: 'assets/Grupo-748.png',
+    clicked: false,
   },
   {
     processNumber: '04',
-    processName: 'IMPLEMENTACION',
-    processInformation:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    processDuration: '1 Semana',
-    imageSrc: 'assets/Grupo-748.png',
-  },
-  {
-    processNumber: '05',
     processName: 'CONSULTORIA',
     processInformation:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    processDuration: '1 Semana',
+      'Monitoreo con desempeño con metas a cumplir. Acompañados por expertos en RADAR.',
+    processDuration: '6 Semanas',
+    optional: true,
     imageSrc: 'assets/Grupo-747.png',
+    clicked: false,
   },
 ];
 
@@ -119,7 +137,7 @@ export const RadarTotalFunctionalities = [
     id: 1,
     iconoActivo: 'assets/versionesFuncionalidadPanelCliente-activo.svg',
     hover: false,
-    margin: '95px',
+    margin: '90px',
   },
   {
     name: 'INFORMACION EN TIEMPO REAL',
@@ -129,7 +147,7 @@ export const RadarTotalFunctionalities = [
     id: 2,
     iconoActivo: 'assets/versionesFuncionalidadTiempoReal-activo.svg',
     hover: false,
-    margin: '80px',
+    margin: '60px',
   },
   {
     name: 'ELECTROPLAN',
@@ -139,7 +157,7 @@ export const RadarTotalFunctionalities = [
     id: 3,
     iconoActivo: 'assets/versionesFuncionalidadElectroplan-activo.svg',
     hover: false,
-    margin: '65px',
+    margin: '45px',
   },
   {
     name: 'INTERFACES',
@@ -149,7 +167,7 @@ export const RadarTotalFunctionalities = [
     id: 4,
     iconoActivo: 'assets/versionesFuncionalidadInterfaces-activo.svg',
     hover: false,
-    margin: '50px',
+    margin: '30px',
   },
   {
     name: 'GESTIÓN DE REFACCIONES',
@@ -159,7 +177,7 @@ export const RadarTotalFunctionalities = [
     id: 5,
     iconoActivo: 'assets/versionesFuncionalidadRefacciones-activo.svg',
     hover: false,
-    margin: '35px',
+    margin: '15px',
   },
   {
     name: 'INVENTARIO',
@@ -179,7 +197,7 @@ export const RadarTotalFunctionalities = [
     id: 7,
     iconoActivo: 'assets/versionesFuncionalidadNomina-activo.svg',
     hover: false,
-    margin: '35px',
+    margin: '15px',
   },
   {
     name: 'LABORATORIO',
@@ -189,7 +207,7 @@ export const RadarTotalFunctionalities = [
     id: 8,
     iconoActivo: 'assets/versionesFuncionalidadLaboratorio-activo.svg',
     hover: false,
-    margin: '50px',
+    margin: '30px',
   },
   {
     name: 'FACTURACIÓN',
@@ -199,7 +217,7 @@ export const RadarTotalFunctionalities = [
     id: 9,
     iconoActivo: 'assets/versionesFuncionalidadFacturacion-activo.svg',
     hover: false,
-    margin: '65px',
+    margin: '45px',
   },
   {
     name: 'E-TOOLS',
@@ -209,7 +227,7 @@ export const RadarTotalFunctionalities = [
     id: 10,
     iconoActivo: 'assets/versionesFuncionalidadETools-activo.svg',
     hover: false,
-    margin: '80px',
+    margin: '60px',
   },
   {
     name: 'VALUACIÓN',
@@ -219,7 +237,7 @@ export const RadarTotalFunctionalities = [
     id: 11,
     iconoActivo: 'assets/versionesFuncionalidadValuacion-activo.svg',
     hover: false,
-    margin: '95px',
+    margin: '90px',
   },
 ];
 
@@ -295,5 +313,3 @@ export const RadarLiteFunctionalities = [
     margin: '60px',
   },
 ];
-
-

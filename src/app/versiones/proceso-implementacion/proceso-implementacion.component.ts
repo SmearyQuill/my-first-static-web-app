@@ -12,6 +12,8 @@ export class ProcesoImplementacionComponent implements OnInit {
     processInformation: string;
     processDuration: string;
     imageSrc: string;
+    optional: boolean;
+    clicked: boolean;
   }[] = [
     {
       processNumber: '',
@@ -19,10 +21,18 @@ export class ProcesoImplementacionComponent implements OnInit {
       processInformation: '',
       processDuration: '',
       imageSrc: '',
+      optional: false,
+      clicked: false,
     },
   ];
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  changeView(i: number) {
+    this.processList[i].clicked == true
+      ? (this.processList[i].clicked = false)
+      : (this.processList[i].clicked = true);
+  }
 }
