@@ -40,7 +40,7 @@
 .process-number {
   display: inline-block;
   color: #ffffff;
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: bold;
   margin: 0;
   letter-spacing: 3.44pt;
@@ -48,7 +48,7 @@
 
 .process-name {
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 0;
   padding-bottom: 5%;
   letter-spacing: 0.72px;
@@ -59,7 +59,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -70,7 +70,7 @@
 .process-information__text,
 .process-information__duration {
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-align: center;
 }
 
@@ -107,10 +107,10 @@
 
 @media (max-width: 700px) {
   .process-number {
-    font-size: 5.3rem;
+    font-size: 6rem;
   }
   .process-name {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .title-column {
     padding: 15% 7%;
@@ -181,7 +181,7 @@
 @media (min-width: 1151px) and (max-width: 1300px) {
   .process-information__text,
   .process-information__duration {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .process-information__optional {
     font-size: 0.8rem;
@@ -198,25 +198,28 @@
 
 @media (min-width: 1400px) {
   .process-number {
-    font-size: 6rem;
+    font-size: 5rem;
   }
   .process-name {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   .process-information__text,
   .process-information__duration {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 
 @media (min-width: 1600px) {
+  .process-number {
+    font-size: 6rem;
+  }
   .process-name {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .process-information__text,
   .process-information__duration {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
 }

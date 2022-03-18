@@ -11,7 +11,8 @@
                 *ngFor="let processInformation of processList; let i = index;" (click)="changeView(i)">
                 <img class="process-image" src="{{processInformation.imageSrc}}">
                 <!-- Div con el texto -->
-                <div class="text-container" style="position: absolute;" *ngIf="!processInformation.clicked">
+                <div class="text-container" style="position: absolute;" *ngIf="!processInformation.clicked"
+                    [@showNumber]>
                     <div class="text-information">
                         <!-- Numero de proceso -->
                         <p class="process-number">{{processInformation.processNumber}}</p>
@@ -20,7 +21,7 @@
                     </div>
                 </div>
                 <!-- Informacion del proceso (Solo se muestra cuando se da click) -->
-                <div class="process-information px-3 py-3" *ngIf="processInformation.clicked">
+                <div class="process-information px-3 py-3" *ngIf="processInformation.clicked" [@showDetail]>
                     <div>
                         <!-- Numero de proceso -->
                         <p class="process-number">{{processInformation.processNumber}}</p>
