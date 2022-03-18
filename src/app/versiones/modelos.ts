@@ -50,7 +50,7 @@ export const RadarControlTotalProcessList = [
       'Se realiza el alta del taller en RADAR, y se configura según las necesidades.',
     processDuration: '1 Semana',
     optional: false,
-    imageSrc: 'assets/Grupo-750.png',
+    imageSrc: 'assets/Grupo-749.png',
     clicked: false,
   },
   {
@@ -103,7 +103,7 @@ export const RadarLiteProcessList = [
       'Se realiza el alta del taller en RADAR, y se configura según las necesidades.',
     processDuration: '1 Semana',
     optional: false,
-    imageSrc: 'assets/Grupo-750.png',
+    imageSrc: 'assets/Grupo-749.png',
     clicked: false,
   },
   {
