@@ -24,6 +24,10 @@
 
   
 }
+.collapse:not(.show) {
+  display: none;
+  transition: display .5s;
+}
 .navbar{
   z-index: 3;
   width: 100%;
@@ -94,12 +98,22 @@
   text-align: left;
   padding-left: 0;
 }
+
+/*Navbar*/
 .navbar-brand{
   background: none;
   opacity: 1;
   width: 0px;
   height: 0px;
 }
+
+.navbar-brand.show{
+  background: transparent url('/assets/Grupo 2883.png') 0% 0% no-repeat padding-box;
+  background-size: cover;
+  width: 92px;
+  height: 40px;
+}
+
 .navbar-toggler-icon{
   width: 70%;
 }

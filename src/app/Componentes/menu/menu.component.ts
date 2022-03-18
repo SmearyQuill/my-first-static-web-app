@@ -12,8 +12,11 @@ import { HostListener } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+  toogled : boolean = false;
   constructor(public _router : Router) { }
-
+  toogle(){
+    this.toogled = !this.toogled;
+  }
   ngOnInit(): void {
     this.checkCurrentPage();
   }
