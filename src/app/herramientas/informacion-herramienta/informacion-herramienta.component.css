@@ -1,0 +1,121 @@
+#info-herramienta{
+    margin-top: 80px;
+    margin-bottom: 90px;
+    padding: 0%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#info-herramienta .row{
+    margin: 0%;
+}
+#info-title{
+    font: normal normal bold 28px/38px Segoe UI;
+    color: #022644;
+    letter-spacing: 1.92px;
+    text-transform: uppercase;
+    opacity: 1;
+}
+#info-text{
+    /* UI Properties */
+    text-align: center;
+    font: normal normal normal 18px/24px Segoe UI;
+    letter-spacing: 0px;
+    color: #191919;
+    opacity: 1;
+}
+#info-btn{
+    height: 48px;
+    margin-top: 55px;
+    width: 100%;
+    background: #AFD625 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    opacity: 1;
+    border: none;
+}
+#info-btn span{
+    text-align: center;
+    font: normal normal 600 16px/22px Segoe UI;
+    letter-spacing: 0.66px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+}
+#btn-div{
+    padding: 0%;
+}
+#video{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+#video iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+@media screen and (min-width: 380px) {
+    
+     
+    #info-btn span{
+        
+        font: normal normal 600 20px/28px Segoe UI
+    }
+}
+
+@media screen and (min-width: 576px) {
+    #titles h1 {
+        font: normal normal 600 34px/45px Segoe UI;
+    }
+    #info-title{
+        font: normal normal 600 34px/45px Segoe UI;
+    }
+        
+    #info-text{
+        font: normal normal 600 20px/28px Segoe UI;
+    }
+    
+    #info-btn{
+        height: 58px;
+        width: 90%;
+    }
+        
+}
+
+@media screen and (min-width: 768px) {
+    #titles h1 {
+        font: normal normal 600 48px/64px Segoe UI;
+    }
+    #info-title{
+        font: normal normal 600 48px/64px Segoe UI;
+    }
+    
+    #info-text{
+        font: normal normal 600 22px/30px Segoe UI;
+    }
+        
+    #info-btn span{
+        font: normal normal 600 22px/30px Segoe UI;
+    }
+    #info-btn{
+        width: 80%;
+    }
+}
+@media screen and (min-width: 992px) {
+    #info-btn{
+        width: 65%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #info-btn{
+        width: 50%;
+    }
+}
+@media screen and (min-width: 1400px) {
+    #info-btn{
+        width: 40%;
+    }
+}

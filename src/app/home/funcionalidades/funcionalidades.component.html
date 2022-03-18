@@ -1,0 +1,94 @@
+<section id="funcionalidadesRadar">\
+    <div class="container-lg py-5">
+        <div class="row justify-content-center">
+            <div class="col-12 pb-5">
+                <p class="section__Subtitle">ÚNETE A LA REVOLUCIÓN DIGITAL</p>
+                <p class="section__Title">CONOCE NUESTROS BENEFICIOS</p>
+            </div>
+            <!-- Card (Version Movil)-->
+            <div class="col-11 card d-lg-none">
+                <div class="row justify-content-center h-100" style="align-content:space-around;">
+                    <!-- Icono y nombre del beneficio -->
+                    <div class="col-11 py-2">
+                        <div class="row align-items-center">
+                            <div class="col-4 col-sm-3"><img class="img-fluid" src="{{selectedBenefit.iconInactive}}">
+                            </div>
+                            <div class="col-7" style="padding-left:0;">
+                                <p class="mobile__benefit-name">{{selectedBenefit.name}}</p>
+                            </div>
+                        </div>
+                    </div>\
+                    <div class="col-10">
+                        <p class="mobile__benefit-subtitle">
+                            {{selectedBenefit.subtitle}}</p>
+                    </div>
+                    <!-- Texto del beneficio -->
+                    <div class="col-10">
+                        <p class="mobile__benefit-text"
+                            [ngClass]="{'mobile__benefit-text-long' : selectedBenefit.id == 6}">
+                            {{selectedBenefit.text}}
+                        </p>
+                    </div>
+                    <div class="col-11">
+                        <!-- Flecha -->
+                        <img (click)="goToNextFunctionality()" src="assets/arrow_forward_black_24dp.svg"
+                            class="card__arrow-button">
+                    </div>
+                </div>
+            </div>
+            <!-- Botones (Versión Móvil)-->
+            <div class="row d-lg-none">
+                <div class="col-12 d-flex justify-content-center pt-5 pb-4">
+                    <!-- Flecha Izquierda -->
+                    <img src="assets/flecha-izquierda-funcionalidades.svg" (click)="goToPreviousFunctionality()">
+                    <!-- Botones -->
+                    <div *ngFor="let element of list; let i = index;" (click)="selectFunctionality(i)">
+                        <img *ngIf="selectedBenefit.id != element.id" src="assets/Elipse340.svg"
+                            class="mobile-card__ellipsebutton">
+                        <img *ngIf="selectedBenefit.id == element.id" src="assets/Elipse338.svg"
+                            class="mobile-card__ellipsebutton">
+                    </div>
+                    <!-- Flecha Derecha -->
+                    <img src="assets/flecha-derecha-funcionalidades.svg" (click)="goToNextFunctionality()">
+                </div>
+            </div>
+
+            <!-- Version WEB -->
+
+            <!-- Lista de iconos con las funcionalidades -->
+            <div class="col-3 col-xl d-none d-lg-flex flex-column justify-content-center align-items-center"
+                *ngFor="let element of list; let i = index;">
+                <img class="web__icon" src="{{element.over ? element.iconActive : element.iconInactive}}"
+                    (mouseover)="element.over = true;" (mouseout)="checkMouseOut(i)" (click)="selectFunctionality(i)">
+                <p class="web__benefit-title">{{element.name}}</p>
+            </div>
+            <!-- Tarjeta de Funcionalidad seleccionada -->
+            <div class="col-10 d-none d-lg-block my-5 web__benefit-container"
+                style="background-image: url('{{selectedBenefit.image}}');">
+                <div class="row h-100">
+                    <div class="col-6 h-100">
+                        <div class="row h-100 align-content-around">
+                            <div class="col-12">
+                                <p class="web__name">{{selectedBenefit.name}}</p>
+                            </div>
+                            <div class="col-12">
+                                <p class="web__subtitle">{{selectedBenefit.subtitle}}</p>
+                            </div>
+                            <div class="col-12 col-xl-10">
+                                <p class="web__text">{{selectedBenefit.text}}</p>
+                            </div>
+                            <div class="col-12 d-flex align-items-center">
+                                <img (click)="goToPreviousFunctionality()"
+                                    style="max-height: 80%; width: auto; margin: 0 1rem 0 0; cursor: pointer;"
+                                    src="assets/flechaIzq-beneficios-home.svg">
+                                <img (click)="goToNextFunctionality()"
+                                    style="max-height: 80%; width: auto; cursor: pointer;"
+                                    src="assets/flechaDer-beneficios-home.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,30 @@
+<section id="versionInformation">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                <img src="{{imageSrc}}" class="img-fluid" style="max-width:80%">
+            </div>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-10 p-3 d-flex justify-content-xs-center justify-content-lg-start ">
+                        <p class="text-xs-center text-lg-start" style="font-size:20px; text-align: center;">
+                            {{informationText}}</p>
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-xs-8 col-lg-3 col-xl-2 d-flex justify-content-center">
+                                <img src="assets/Grupo582.png"
+                                    style="max-width: 100%; height: auto; object-fit: contain;">
+                            </div>
+                            <div class="col-xs-10 col-lg-9 d-flex justify-content-center justify-content-lg-start p-3">
+                                <ul>
+                                    <li *ngFor="let point of informationPoints"><span>{{point}}</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

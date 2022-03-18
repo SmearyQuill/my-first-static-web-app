@@ -1,0 +1,68 @@
+
+#radar-academy-capacitacion{
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    background: #CFCFCF29 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+#capacitacion-card{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 24px #00000029;
+    opacity: 1;
+    border-radius: 6px;
+}
+#capacitacion-card-text{
+    margin-bottom: 22px;
+    margin-top: 38px;
+    margin-left: 21px;
+    margin-right: 21px;
+}
+#capacitacion-card-text h1{
+    text-align: left;
+    font: normal normal 300 30px/48px Segoe UI;
+    letter-spacing: 0px;
+    color: #022644;
+    text-transform: uppercase;
+}
+#capacitacion-card-text h2{
+    text-align: left;
+    font: normal normal bold 30px/48px Segoe UI;
+    letter-spacing: 0px;
+    color: #022644;
+    text-transform: uppercase;
+}
+
+#capacitacion-card-container{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+#capacitacion-imgs{
+    background: url('/assets/radar-logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+@media screen and (min-width: 576px) {
+}
+@media screen and (min-width: 760px) {
+}
+@media screen and (min-width: 992px){
+}
+@media screen and (min-width: 1200px) {
+    #capacitacion-card-text h1{
+        font: normal normal 300 38px/52px Segoe UI;
+    }
+    #capacitacion-card-text h2{
+        font: normal normal bold 38px/52px Segoe UI;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #capacitacion-card-text h1{
+        font: normal normal 300 43px/57px Segoe UI;
+    }
+    #capacitacion-card-text h2{
+        font: normal normal bold 43px/57px Segoe UI;
+    }
+}

@@ -1,0 +1,83 @@
+#fotografias-container{
+    padding: 10%
+}
+#fotografias-container h1{
+    text-align: left;
+    font-style: normal;
+    font-weight: 600;
+    font-variant: normal;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: #022644;
+    text-transform: uppercase;
+    opacity: 1;
+}
+#fotografias-container p{
+
+    text-align: left;
+    font-style: normal;
+    font-weight: 300;
+    font-variant: normal;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #022644;
+    opacity: 1;
+}
+#compromisos-img{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    background: linear-gradient(180deg, #AFD625 0%, #AFD62500 100%) no-repeat;
+    background-size: 100% 100%;
+    background-position: right bottom;
+    opacity: 1;
+    margin-left: 12px;
+    margin-top: 13px;
+}
+#compromisos-img img{
+    position: relative;
+    top: -13px;
+    left: -12px;
+}
+@media screen and (min-width: 576px) {
+    
+    #fotografias-container h1{
+        font-size: 37px;
+        line-height: 49px;
+    }
+    #fotografias-container p{
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+@media screen and (min-width:992px) {
+        
+    #compromisos-img{
+        margin-left: 18px;
+        margin-top: 30px;
+    }
+    #compromisos-img img{
+        top: -30px;
+        left: -18px;
+    }
+    #fotografias-container h1{
+        font-size: 32px;
+        line-height: 42px;
+    }
+    #fotografias-container p{
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #fotografias-container h1{
+        font-size: 37px;
+        line-height: 49px;
+    }
+    #fotografias-container p{
+        font-size: 24px;
+        line-height: 32px;
+    }
+}

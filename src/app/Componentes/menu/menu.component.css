@@ -1,0 +1,265 @@
+#navbar{
+  height: 100%;
+  padding: 0;
+}
+#navbarNavAltMarkup{
+  min-height: 204px;
+  border: none;
+  position: relative; 
+  background: rgb(2, 38, 68,.05);
+}
+#navbarNavAltMarkup ul{
+  height: 100%;
+}
+.nav-item{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+  min-height: 50px;
+  padding-left: 8.5%;
+
+  
+}
+.collapse:not(.show) {
+  display: none;
+  transition: display .5s;
+}
+.navbar{
+  z-index: 3;
+  width: 100%;
+  position: absolute !important;
+  height: 64px;
+  padding-top: 0;
+  padding-bottom: 0;
+  background: rgb(2, 38, 68,.15) !important;
+  padding-left: 0px;
+  padding-right: 0px;
+  opacity: 1;
+}
+
+.blur{
+  backdrop-filter: blur(7px);
+}
+.navbarLink{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  letter-spacing: 0.91px;
+  color: #FFFFFF !important;
+  text-transform: uppercase;
+  opacity: 1;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+
+  width: 100%;
+  text-align: left;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon {
+  color: #4f4f4f;
+}
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+  background-color: #fff;
+}
+.dropdown-menu{
+  top: 47.9px;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  opacity: 1;
+  border: none;
+}
+.dropdown-toggle::after {
+  content: none;
+}
+.dropdown-item{
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.91px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  opacity: 1;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: left;
+  padding-left: 0;
+}
+
+/*Navbar*/
+.navbar-brand{
+  background: none;
+  opacity: 1;
+  width: 0px;
+  height: 0px;
+}
+
+.navbar-brand.show{
+  background: transparent url('/assets/Grupo 2883.png') 0% 0% no-repeat padding-box;
+  background-size: cover;
+  width: 92px;
+  height: 40px;
+}
+
+.navbar-toggler-icon{
+  width: 70%;
+}
+.navbar-toggler{
+  right: 10px;
+  border: none;
+  height: 100%;
+  width: 73px;
+}
+.navbar-nav.mr-auto{
+  align-items: left;
+  
+}
+.navbar-nav.mr-auto::before{
+  width: 95%;
+  content: '';
+  border-top: 1px solid #AFD625;
+  margin-left: 2.5%;
+}
+
+.dropdown.show{
+  background: rgb(2, 38, 68,.28);
+}
+
+.blur.navbar-bg{
+  position:absolute;
+  top: 0;
+  width: 100%;
+  height: 64px;
+}
+.blur.navbar-nav-bg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.blur.dropdown-menu-bg{
+  display: none;
+}
+.nav-item img{
+  content: url('/assets/keyboard_arrow_down_black_-1.svg');
+  position: absolute;
+  right: 39px;
+}
+
+.nav-item.dropdown.show img{
+  content: url('/assets/keyboard_arrow_down_black_24dp (1).svg');
+}
+@media screen and (min-width: 992px) {
+  .navbar-nav.mr-auto::before{
+    display: none;
+  }
+  .nav-item img{
+    display: none;
+  }
+  .dropdown-menu{
+    background: rgb(2, 38, 68,.15);
+  }
+  .navbarLink{
+    font-size: 16px;
+    line-height: 21px;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: auto;
+    text-align: center;
+  }
+  .nav-item{
+    display: flex;
+    align-items: center;
+    width: 198px;
+    padding-left: 0;
+  }
+  li.is-active{
+    background-image: linear-gradient(rgb(175, 214, 37) , rgb(175, 214, 37));
+    background-repeat: no-repeat;
+    background-size: 100% 3px;
+    background-position: center bottom;
+  }
+  #navbarNavAltMarkup{
+    min-height: 72px;  
+    padding: 0;
+    background: none;
+  }
+  .dropdown-menu.show{
+    top: 72px;
+  }
+  .blur.navbar-bar-bg{
+    display: none;
+  }
+  #navbarNavAltMarkup{
+    height: 100%;
+    background: none;
+  }
+  .navbar-nav.mr-auto{
+    align-items: center;    
+    border-top: none;
+  }
+  .blur.navbar-nav-bg{
+    display: none;
+  }
+  .navbar{
+    border-bottom: 1px solid #FFFFFF;
+    height: 73px;
+  }
+  .blur.navbar-bg{
+    position:absolute;
+    top: 0;
+    width: 100%;
+    height: 73px;
+  }
+  .blur.dropdown-menu-bg{
+    display: block;
+    z-index: -1;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .navbar-brand{
+    background: transparent url('/assets/Grupo 2883.png') 0% 0% no-repeat padding-box;
+    width: 122px;
+    height: 52px;
+  }
+  .dropdown-item{
+    font-size: 16px;
+    line-height: 21px;  
+    min-width: 198px;
+    /* margin: auto; */
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .dropdown-item:hover{
+    background-color: rgb(0, 0, 0,.15);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navbar{
+    padding-left: 100px;
+    padding-right: 80px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .navbar{
+    padding-left: 140px;
+    padding-right: 132px;
+  }
+}

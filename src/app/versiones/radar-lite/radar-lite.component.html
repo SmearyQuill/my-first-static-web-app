@@ -1,1 +1,22 @@
-<p>radar-lite works!</p>
+<!-- Sección general -->
+<section class="pageContainer">
+    <div class="containerFluid">
+        <!-- Hero de la página de versiones-->
+        <app-hero-versiones [title1]="heroInformation.title1" [title2]="heroInformation.title2"
+            [btn1Text]="heroInformation.btn1Text" [btn2Text]="heroInformation.btn2Text"
+            [backgroundImage]="heroInformation.backgroundImage" [btn1Route]="heroInformation.btn1Route">
+        </app-hero-versiones>
+        <!-- Información de Radar Control Total -->
+        <app-informacion-version [informationText]="informationObject.informationText"
+            [informationPoints]="informationObject.informationPoints" [imageSrc]="informationObject.imageSrc">
+        </app-informacion-version>
+        <!-- Componente con las funciones de Radar -->
+        <app-funcionalidades [list]="functionalitiesList"></app-funcionalidades>
+        <!-- Procesos de Implementación -->
+        <app-proceso-implementacion [processList]=processList></app-proceso-implementacion>
+        <!-- Compromiso -->
+        <app-compromiso></app-compromiso>
+        <!-- Tabla de precios -->
+        <app-comparativa-versiones [initialOption]=selectedComparativeColumn></app-comparativa-versiones>
+    </div>
+</section>

@@ -1,0 +1,40 @@
+<section class="sectionContainer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col d-flex justify-content-center title-column">
+                <p class="title" style="text-align: center;"> ¿CÓMO ES EL PROCESO DE IMPLEMENTACIÓN?</p>
+            </div>
+        </div>
+        <div class="row images-row">
+            <div class="col-md imageColumn d-flex align-items-center justify-content-center"
+                style="position: relative; cursor: pointer;"
+                *ngFor="let processInformation of processList; let i = index;" (click)="changeView(i)">
+                <img class="process-image" src="{{processInformation.imageSrc}}">
+                <!-- Div con el texto -->
+                <div class="text-container" style="position: absolute;" *ngIf="!processInformation.clicked"
+                    [@showNumber]>
+                    <div class="text-information">
+                        <!-- Numero de proceso -->
+                        <p class="process-number">{{processInformation.processNumber}}</p>
+                        <!-- Nombre del proceso -->
+                        <p class="process-name">{{processInformation.processName}}</p>
+                    </div>
+                </div>
+                <!-- Informacion del proceso (Solo se muestra cuando se da click) -->
+                <div class="process-information px-3 py-3" *ngIf="processInformation.clicked" [@showDetail]>
+                    <div>
+                        <!-- Numero de proceso -->
+                        <p class="process-number">{{processInformation.processNumber}}</p>
+                        <!-- Nombre del proceso -->
+                        <p class="process-name">{{processInformation.processName}}</p>
+                    </div>
+                    <div>
+                        <p class="process-information__text">{{processInformation.processInformation}}</p>
+                        <p class="process-information__duration">{{processInformation.processDuration}}</p>
+                        <p *ngIf="processInformation.optional" class="process-information__optional">Opcional*</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,40 +1,51 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">IMAGEN RADAR</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+<div class="blur navbar-bg" >
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-light" >
+    <div class="container-fluid" id="navbar">
+        <a class="navbar-brand" [ngClass]="toogled? 'show':'hiden'"  href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" (click)="toogle()">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse text-sm-center justify-content-end" id="navbarNavAltMarkup">
+            <div class="blur navbar-nav-bg" ></div>
             <ul class="navbar-nav  mr-auto">
                 <!-- Versiones -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarVersionesDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <li class="nav-item dropdown"  routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
+                    <a class="nav-link dropdown-toggle navbarLink"  id="navbarVersionesDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         VERSIONES
+                        <img class="dropdown-icon">
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarVersionesDropdown">
-                        <a class="dropdown-item" routerLink="versiones">Radar Control Total</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="blur dropdown-menu-bg"></div>
                         <a class="dropdown-item" routerLink="versiones/radarLite">Radar Lite</a>
+                        <a class="dropdown-item" routerLink="versiones">Radar Control Total</a>
                     </div>
                 </li>
                 <!-- Herrramientas -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarHerramientasDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        HERRAMIENTAS
-                    </a>
+                <li class="nav-item dropdown"  routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
+                    <a class="nav-link dropdown-toggle navbarLink" id="navbarHerramientasDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        HERRAMIENTAS               
+                        <img class="dropdown-icon">
+                    </a>     
                     <div class="dropdown-menu" aria-labelledby="navbarHerramientasDropdown">
+                        <div class="blur dropdown-menu-bg"></div>
                         <a class="dropdown-item" routerLink="herramientas">Radar Consulting</a>
                         <a class="dropdown-item" routerLink="herramientas/radarAcademy">Radar Academy</a>
                         <a class="dropdown-item" routerLink="herramientas/radarConnect">Radar Connect</a>
                     </div>
                 </li>
                 <!-- Testimonios -->
-                <li class="nav-item"><a class="nav-link" routerLink="testimonios" routerLinkActive="active" href="#"
-                        [routerLinkActiveOptions]="{exact : true}">TESTIMONIOS</a></li>
+                <li class="nav-item" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
+                    <a class="nav-link navbarLink" routerLink="testimonios" routerLinkActive="is-active" href="#"
+                        [routerLinkActiveOptions]="{exact : true}">TESTIMONIOS</a>
+                </li>
                 <!-- Contactanos -->
-                <li class="nav-item"><a class="nav-link" routerLink="contactanos" routerLinkActive="active"
-                        [routerLinkActiveOptions]="{exact : true}">CONTACTANOS</a></li>
+                <li class="nav-item" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
+                    <a class="nav-link navbarLink" routerLink="contactanos" routerLinkActive="is-active"
+                        [routerLinkActiveOptions]="{exact : true}">CONTACTANOS</a>
+                </li>
             </ul>
         </div>
     </div>

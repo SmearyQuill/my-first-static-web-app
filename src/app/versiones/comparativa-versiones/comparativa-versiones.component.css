@@ -1,0 +1,305 @@
+#price-section {
+  padding: 5% 0%;
+}
+
+p {
+  color: #022644;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.section-div {
+  border-bottom: 2px solid #a7a7a7;
+  cursor: pointer;
+}
+
+.selected-section-div {
+  border-bottom: 4px solid #afd625;
+}
+
+.span-comparative {
+  display: flex;
+  border: 2px solid #afd625;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2em;
+  padding: 7% 20%;
+  border-radius: 0.4em;
+}
+
+.card-container {
+  width: 100%;
+  height: 700px;
+  border: 1px solid #c2c2c2;
+  border-radius: 10px;
+  box-shadow: 4px 1px 30px #00000029;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.option-list {
+  margin-bottom: 3em;
+}
+
+.card-column {
+  padding: 0% 2% 5% 2%;
+}
+
+.card-header {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #022644;
+  min-height: 22%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-header__text {
+  margin: 0;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-content {
+  height: 58%;
+  padding: 2em 3em 1em 3em;
+  width: 100%;
+}
+
+.card-separator {
+  width: 80%;
+  border-top: 3px solid #d5d5d5;
+}
+
+.card-content > ul {
+  padding: 0;
+}
+.card-content > ul > li {
+  font-size: 16px;
+  color: #707070;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+.price-content {
+  padding: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.price-content__number,
+.price-content__currency {
+  color: #afd625;
+}
+.price-content__number {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.price-content__currency {
+  font-size: 20px;
+  font-weight: lighter;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.table-container {
+  padding: 2% 0 0.5% 0;
+  border: 1px solid #c2c2c2;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 4px 1px 30px #00000029;
+  margin-bottom: 4%;
+}
+
+.table-header,
+.table-row__check {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table-row__title {
+  vertical-align: middle;
+}
+
+.table-header {
+  color: #707070;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 1em;
+}
+
+.table-header-empty {
+  border-width: 0 0.5px 0.5px 0;
+}
+
+.table-header-complete {
+  border-width: 0 0.5px 0.5px 0.5px;
+}
+
+.table-header-empty-left {
+  border-width: 0 0 1px 1px;
+}
+
+.table-last-column {
+  border-width: 0.5px 0 0.5px 0.5px;
+}
+
+.table-middle-cost-column {
+  border-width: 0 1px 0 1px;
+}
+
+.table-header-empty,
+.table-header-complete,
+.table-header-emtpy-left,
+.table-last-column,
+.table-middle-cost-column {
+  border-style: solid;
+  border-color: #d5d5d5;
+}
+
+.table-row__title {
+  font-size: 16px;
+  color: #707070;
+}
+
+.checkMark {
+  color: #afd625;
+  font-size: 1.5em;
+}
+
+.table__price-column {
+  text-align: center;
+}
+
+.table__price-column__total {
+  color: #3f51b5;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.table__price-column__iva {
+  vertical-align: top;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.price-mobile-title {
+  color: #022644;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.price-mobile-column {
+  color: #3f51b5;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.price-mobile-column__iva {
+  font-size: 20px;
+  font-weight: 400;
+  vertical-align: top;
+}
+
+.dropdown-content-selector {
+  margin-bottom: 2%;
+  padding: 3%;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 1px solid #cfcfcf;
+  color: #022644;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  background-image: url("../../../assets/Arrow-down.png");
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+}
+
+.dropdown-selected {
+  background-color: #afd625;
+  color: #ffffff;
+  background-image: url("../../../assets/Arrow-up.png");
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+}
+
+@media (min-width: 1280px) {
+  .card-container {
+    height: 700px;
+  }
+  #price-section {
+    padding: 5% 0 0 0;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  .card-content {
+    padding: 1.5em 2em 1.5em 2em;
+  }
+  .price-content__number {
+    font-size: 32px;
+  }
+  .price-content__currency {
+    font-size: 12px;
+  }
+
+  #price-section {
+    padding: 5% 0 3% 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .card-content {
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .card-container {
+    height: auto;
+  }
+
+  .card-header {
+    padding: 10% 0;
+  }
+
+  .price-content {
+    padding: 1%;
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 32px;
+  }
+  #price-section {
+    padding: 10% 0%;
+  }
+}

@@ -1,0 +1,103 @@
+<section id="funcionalidades">
+    <div class="container d-none d-lg-block container-funcionalidades">
+        <!-- Contenido que se muestra en caso de que sea una tableta o computadora-->
+        <div class="row d-none d-lg-flex justify-content-center">
+            <div class="col-12 col-title">
+                <p class="section__title">TE PRESENTAMOS ALGUNAS DE LAS <span
+                        class="section__title-span">FUNCIONES</span></p>
+            </div>
+            <!-- Renglón con la barra de funcionalidades y la información-->
+            <div class="row align-items-center py-2" style="height: 90%;">
+                <!-- Lista de funcionalidades del sistema -->
+                <div class="col-6 curved-div">
+                    <ng-container *ngFor="let element of list; let i = index; ">
+                        <div class="row functionality-row" [ngStyle]="{'margin-left':element.margin}" (click)="selectFunctionality(i)"
+                            (mouseover)="element.hover = true;" (mouseout)="checkMouseOut(i)">
+                            <div class="col-3 col-lg-2  d-flex align-items-center justify-content-end">
+                                <img src="assets/Elipse338.svg" [ngClass]="{'ellipse' : selectedFunctionality.id == element.id}">
+                                <img src="{{element.hover ? element.iconoActivo : element.icon}}"
+                                    class="functionality-list__icon"
+                                    [ngClass]="{'functionality-list__icon-selected' : selectedFunctionality.id == element.id}">
+                            </div>
+                            <div class="col-md-9 col-lg-10 d-flex align-items-center p-2">
+                                <p class="functionality-list__name"
+                                    [ngClass]="{'functionality-list__name-selected' : selectedFunctionality.id == element.id}">
+                                    {{element.name}}</p>
+                            </div>
+                        </div>
+                    </ng-container>
+                </div>
+                <!-- Sección con la información de la funcionalidad seleccionada (Su imagen y su descripción) -->
+                <div class="col-6 information-column">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <p class="information-column__title">{{selectedFunctionality.name + ' :'}}</p>
+                        </div>
+                        <div class="col-10">
+                            <img src="{{selectedFunctionality.gif}}" class="information-column__image">
+                        </div>
+                        <div class="col-12 px-5">
+                            <p class="information-column__description">{{selectedFunctionality.text}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Botón para agendar reunión -->
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <button class="principal-button">
+                        <a routerLink="/contactanos">AGENDA UNA REUNIÓN WEB</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido que se muestra en caso de que sea un celular -->
+    <div class="container-fluid d-lg-none">
+        <div class="row d-lg-none justify-content-center">
+            <div class="col-11 d-flex align-items-center justify-content-center">
+                <p class="mobile-title">ÚNETE A LA REVOLUCIÓN DIGITAL </p>
+            </div>
+            <!-- Card de la funcionalidad seleccionada -->
+            <div class="col-11 mobile-card">
+                <div class="row">
+                    <!-- Texto e Icono -->
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 d-flex align-items-center">
+                                <img src="{{selectedFunctionality.icon}}">
+                                <p class="mobile-card__name">{{selectedFunctionality.name}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Imagen -->
+                    <div class="col-12 d-flex justify-content-center align-items-center">
+                        <img src="{{selectedFunctionality.gif}}" class="mobile-card__image">
+                    </div>
+                    <!-- Información -->
+                    <div class="col-12">
+                        <p class="mobile-card__text">{{selectedFunctionality.text}}</p>
+                    </div>
+                    <!-- Flecha -->
+                    <img src="assets/arrow_forward_black_24dp.svg" class="card__arrow-button"
+                        (click)="goToNextFunctionality()">
+                </div>
+            </div>
+            <!-- Botones -->
+            <div class="col-12 d-flex justify-content-center py-4">
+                <!-- Flecha Izquierda -->
+                <img src="assets/flecha-izquierda-funcionalidades.svg" (click)="goToPreviousFunctionality()">
+                <!-- Botones -->
+                <div *ngFor="let element of list; let i = index;" (click)="selectFunctionality(i)">
+                    <img *ngIf="selectedFunctionality.id != element.id" src="assets/Elipse340.svg"
+                        class="mobile-card__ellipsebutton">
+                    <img *ngIf="selectedFunctionality.id == element.id" src="assets/Elipse338.svg"
+                        class="mobile-card__ellipsebutton">
+                </div>
+                <!-- Flecha Derecha -->
+                <img src="assets/flecha-derecha-funcionalidades.svg" (click)="goToNextFunctionality()">
+            </div>
+        </div>
+    </div>
+</section>

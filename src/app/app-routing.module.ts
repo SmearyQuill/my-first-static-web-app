@@ -1,14 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { VersionesComponent } from './Componentes/versiones/versiones.component';
-import { HerramientasComponent } from './Componentes/herramientas/herramientas.component';
-import { TestimoniosComponent } from './testimonios/testimonios.component';
-import { ContactanosComponent } from './Componentes/contactanos/contactanos.component';
-import { HomeComponent } from './home/home.component';
+import { ContactanosComponent } from './contactanos/contactanos.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
+    loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
   },
   {
     path: 'versiones',
@@ -26,7 +22,10 @@ const routes: Routes = [
   },
   {
     path: 'testimonios',
-    component: TestimoniosComponent,
+    loadChildren: () =>
+      import('./testimonios/testimonios.module').then(
+        (m) => m.TestimoniosModule
+      ),
   },
   {
     path: 'contactanos',
@@ -35,7 +34,12 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, {
+      anchorScrolling: 'enabled',
+      scrollPositionRestoration: 'enabled',
+    }),
+  ],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

@@ -1,0 +1,41 @@
+<div class="col-12 card-container">
+    <div class="row align-items-center justify-content-around">
+        <!-- Información de la persona del testimonio -->
+        <div class="col-md-3">
+            <div class="row">
+                <div class="col-12 d-none d-md-block" *ngIf="cardInformation.first">
+                    <img class="main-card__quotes" src="assets/Trazado331@2x.png">
+                    <p class="first-card__text">RESEÑAS DE</p>
+                    <p class="first-card__second-text"> CLIENTES </p>
+                </div>
+                <div class="col-12 d-none d-md-block" *ngIf="!cardInformation.first">
+                    <img class="normal-card__quotes" src="assets/Trazado331@2x.png">
+                </div>
+                <div class="col-12">
+                    <p class="person-name">{{cardInformation.name}}</p>
+                </div>
+                <div class="col-12 col-md-11">
+                    <p class="person-position">{{cardInformation.position}}</p>
+                </div>
+            </div>
+        </div>
+        <!-- Imagen de la persona del testimonio -->
+        <div class="col-6 col-md-3 d-flex justify-content-center">
+            <img class="card__person-image" src="{{cardInformation.image}}">
+        </div>
+        <!-- Contenido del testimonio (Negocio, Ubicación y Texto) -->
+        <div class="col-md-4">
+            <div class="row justify-content-center justify-content-md-start">
+                <div class="col-10 col-md-12 d-flex justify-content-center justify-content-md-start">
+                    <p class="card__title">{{cardInformation.TITLE}}</p>
+                </div>
+                <div class="col-10 col-md-12 d-flex justify-content-center justify-content-md-start">
+                    <p class="card__location">{{cardInformation.location}}</p>
+                </div>
+                <div class="col-10 col-md-12 d-flex justify-content-center justify-content-md-start">
+                    <p class="card__text">{{cardInformation.text}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

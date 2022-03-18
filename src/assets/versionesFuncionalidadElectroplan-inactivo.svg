@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="89.997" height="98.926" viewBox="0 0 89.997 98.926">
+  <defs>
+    <filter id="Trazado_47" x="0" y="0" width="89.997" height="98.926" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_715" data-name="Grupo 715" transform="translate(9 6)">
+    <g id="Grupo_588" data-name="Grupo 588" transform="translate(0 0)">
+      <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Trazado_47)">
+        <path id="Trazado_47-2" data-name="Trazado 47" d="M-1076.453,309.989V342.9a7.551,7.551,0,0,0,3.767,6.535l28.46,16.458a7.524,7.524,0,0,0,7.541,0l28.46-16.458a7.546,7.546,0,0,0,3.77-6.535V309.989a7.552,7.552,0,0,0-3.77-6.538l-28.46-16.457a7.54,7.54,0,0,0-7.541,0l-28.46,16.457A7.556,7.556,0,0,0-1076.453,309.989Z" transform="translate(1085.45 -279.98)" fill="#022644"/>
+      </g>
+    </g>
+    <g id="Grupo_712" data-name="Grupo 712" transform="translate(17.689 22.194)">
+      <g id="Grupo_708" data-name="Grupo 708" transform="translate(0 0)">
+        <path id="Trazado_78132" data-name="Trazado 78132" d="M2667.636,257.789H2641.4a5.158,5.158,0,0,1-5.153-5.153V226.4a5.158,5.158,0,0,1,5.153-5.153h26.232a5.157,5.157,0,0,1,5.153,5.153v26.233A5.157,5.157,0,0,1,2667.636,257.789ZM2641.4,224.061a2.345,2.345,0,0,0-2.342,2.342v26.233a2.345,2.345,0,0,0,2.342,2.342h26.232a2.345,2.345,0,0,0,2.342-2.342V226.4a2.345,2.345,0,0,0-2.342-2.342Z" transform="translate(-2636.25 -221.25)" fill="#0a3b64"/>
+      </g>
+      <g id="Grupo_709" data-name="Grupo 709" transform="translate(8.9 14.522)">
+        <rect id="Rectángulo_524" data-name="Rectángulo 524" width="3.748" height="13.116" fill="#0a3b64"/>
+      </g>
+      <g id="Grupo_710" data-name="Grupo 710" transform="translate(16.396 8.9)">
+        <rect id="Rectángulo_525" data-name="Rectángulo 525" width="3.748" height="18.738" fill="#0a3b64"/>
+      </g>
+      <g id="Grupo_711" data-name="Grupo 711" transform="translate(23.891 20.143)">
+        <rect id="Rectángulo_526" data-name="Rectángulo 526" width="3.748" height="7.495" fill="#0a3b64"/>
+      </g>
+    </g>
+  </g>
+</svg>

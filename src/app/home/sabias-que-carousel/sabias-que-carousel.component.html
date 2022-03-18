@@ -1,0 +1,34 @@
+<section>
+    <div class="container-fluid" id="sabias-que-carousel">
+        <div class="example">
+            <div id="carouselExampleIndicators" class="carousel slide h-100 show-neighbors" data-ride="carousel" data-bs-interval="false">
+                <!-- Carousel indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <!-- Carousel -->
+                <div class="carousel-inner">
+                        <div class="carousel-item" *ngFor="let element of sabiasQueList; let i = index" [ngClass]="{'active': i==0}">
+                            <div class="_item item__third">
+                                <app-sabias-que-card [specialCaseText]="element.specialCaseText" [questionText]="element.questionText"
+                                    [informationText]="element.informationText" [buttonText]="element.buttonText" [imageSrc]="element.imageSrc">
+                                </app-sabias-que-card>
+                            </div>
+                        </div>
+                </div>               
+                <!-- Carousel arrows -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>    
+        </div>
+                    
+    </div>
+</section>
