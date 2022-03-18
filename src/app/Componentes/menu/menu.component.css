@@ -180,12 +180,12 @@
     background-position: center bottom;
   }
   #navbarNavAltMarkup{
-    min-height: 73px;  
+    min-height: 72px;  
     padding: 0;
     background: none;
   }
   .dropdown-menu.show{
-    top: 74px;
+    top: 72px;
   }
   .blur.navbar-bar-bg{
     display: none;
