@@ -1,9 +1,28 @@
 import { Component, OnInit, Input } from '@angular/core';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition,
+  keyframes,
+} from '@angular/animations';
 
 @Component({
   selector: 'app-comparativa-versiones',
   templateUrl: './comparativa-versiones.component.html',
   styleUrls: ['./comparativa-versiones.component.css'],
+  animations: [
+    trigger('showTableMobile', [
+      transition(':enter', [
+        style({
+          height: '0',
+        }),
+        // animate('100ms ease-in-out'),
+      ]),
+      transition(':leave', []),
+    ]),
+  ],
 })
 export class ComparativaVersionesComponent implements OnInit {
   @Input() initialOption = '';

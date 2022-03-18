@@ -130,7 +130,7 @@
                 (click)="checkLiteVersion()">
                 RADAR LITE</div>
             <!-- Tabla de información de Radar Lite -->
-            <div *ngIf="liteVersionActive" class="row justify-content-center">
+            <div *ngIf="liteVersionActive" [@showTableMobile] class="row justify-content-center">
                 <!-- Sección de tarjetas -->
                 <div *ngFor="let card of cardsLite" class="col-lg-4 card-column">
                     <div class="card-container">
@@ -160,7 +160,7 @@
                 (click)="checkTotalVersion()">
                 RADAR CONTROL TOTAL</div>
             <!--  Tabla de información de Radar Total -->
-            <div *ngIf="totalVersionActive" class="row justify-content-center">
+            <div *ngIf="totalVersionActive" [@showTableMobile] class="row justify-content-center">
                 <div *ngFor="let card of cardsTotal" class="col-lg-4 card-column">
                     <div class="card-container">
                         <!-- Titulo de la tarjeta -->
@@ -189,7 +189,7 @@
                 (click)="checkTable()">
                 COMPARATIVO</div>
             <!-- Tabla Comparativa -->
-            <div *ngIf="tableActive" class="row justify-content-center">
+            <div *ngIf="tableActive" [@showTableMobile] class="row justify-content-center">
                 <div class="col-lg-8 col-md-10  table-container">
                     <!-- Tabla -->
                     <table class="table table-borderless">
