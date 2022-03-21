@@ -45,7 +45,7 @@ export const RadarControlTotalProcessList = [
   },
   {
     processNumber: '02',
-    processName: 'CONFIGURACION',
+    processName: 'CONFIGURACIÓN',
     processInformation:
       'Se realiza el alta del taller en RADAR, y se configura según las necesidades.',
     processDuration: '1 Semana',
@@ -65,7 +65,7 @@ export const RadarControlTotalProcessList = [
   },
   {
     processNumber: '04',
-    processName: 'IMPLEMENTACION',
+    processName: 'IMPLEMENTACIÓN',
     processInformation:
       'Se activa el ambiente de producción real, se dan de alta el 100% de órdenes en taller.',
     processDuration: '1 Semana',
@@ -98,7 +98,7 @@ export const RadarLiteProcessList = [
   },
   {
     processNumber: '02',
-    processName: 'CONFIGURACION',
+    processName: 'CONFIGURACIÓN',
     processInformation:
       'Se realiza el alta del taller en RADAR, y se configura según las necesidades.',
     processDuration: '1 Semana',
@@ -108,7 +108,7 @@ export const RadarLiteProcessList = [
   },
   {
     processNumber: '03',
-    processName: 'IMPLEMENTACION',
+    processName: 'IMPLEMENTACIÓN',
     processInformation:
       'Se activa el ambiente de producción real, se dan de alta el 100% de órdenes en taller.',
     processDuration: '1 Semana',
