@@ -15,6 +15,7 @@ export class FuncionalidadesComponent implements OnInit {
     text: '',
     id: 0,
     hover: false,
+    iconoActivo : ''
   };
   constructor() {}
 

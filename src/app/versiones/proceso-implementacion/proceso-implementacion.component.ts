@@ -77,7 +77,6 @@ import {
           style({
             width: '100%',
             height: '100%',
-            transform: 'translateY: 100%',
             bottom: 0,
           })
         ),
