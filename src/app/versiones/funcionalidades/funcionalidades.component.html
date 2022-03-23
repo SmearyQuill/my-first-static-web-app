@@ -7,7 +7,7 @@
                         class="section__title-span">FUNCIONES</span></p>
             </div>
             <!-- Renglón con la barra de funcionalidades y la información-->
-            <div class="row align-items-center py-2" style="height: 90%;">
+            <div class="row align-items-center py-2 information-container">
                 <!-- Lista de funcionalidades del sistema -->
                 <div class="col-6 curved-div">
                     <ng-container *ngFor="let element of list; let i = index; ">
@@ -35,7 +35,7 @@
                         <div class="col-12">
                             <p class="information-column__title">{{selectedFunctionality.name + ' :'}}</p>
                         </div>
-                        <div class="col-10">
+                        <div class="col-10 d-flex justify-content-center">
                             <img src="{{selectedFunctionality.gif}}" class="information-column__image">
                         </div>
                         <div class="col-12 px-5">
@@ -57,7 +57,7 @@
 
     <!-- Contenido que se muestra en caso de que sea un celular -->
     <div class="container-fluid d-lg-none">
-        <div class="row d-lg-none justify-content-center">
+        <div class="row d-lg-none justify-content-center align-content-around" style="height : 100%">
             <div class="col-11 d-flex align-items-center justify-content-center">
                 <p class="mobile-title">ÚNETE A LA REVOLUCIÓN DIGITAL </p>
             </div>
