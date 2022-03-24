@@ -81,6 +81,7 @@
         line-height: 46px;
     }
     #compromisos-container{
+        padding: 0;
         padding-top: 129px;
         padding-bottom: 129px;
     }
