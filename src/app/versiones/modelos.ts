@@ -137,7 +137,8 @@ export const RadarTotalFunctionalities = [
     id: 1,
     iconoActivo: 'assets/versionesFuncionalidadPanelCliente-activo.svg',
     hover: false,
-    margin: '90px',
+    margin: '88px',
+    margin2 : '90px'
   },
   {
     name: 'INFORMACION EN TIEMPO REAL',
@@ -148,6 +149,7 @@ export const RadarTotalFunctionalities = [
     iconoActivo: 'assets/versionesFuncionalidadTiempoReal-activo.svg',
     hover: false,
     margin: '60px',
+    margin2: '68px'
   },
   {
     name: 'ELECTROPLAN',
@@ -158,6 +160,7 @@ export const RadarTotalFunctionalities = [
     iconoActivo: 'assets/versionesFuncionalidadElectroplan-activo.svg',
     hover: false,
     margin: '45px',
+    margin2 : '47px'
   },
   {
     name: 'INTERFACES',
@@ -168,6 +171,7 @@ export const RadarTotalFunctionalities = [
     iconoActivo: 'assets/versionesFuncionalidadInterfaces-activo.svg',
     hover: false,
     margin: '30px',
+    margin2 : '32px'
   },
   {
     name: 'GESTIÓN DE REFACCIONES',

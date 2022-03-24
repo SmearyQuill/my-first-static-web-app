@@ -6,6 +6,11 @@
   padding: 3% 8% 2% 8%;
 }
 
+.curved-div {
+  background-image: url("../../../assets/Curva.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .col-title {
   margin-bottom: 4%;
 }
@@ -198,16 +203,34 @@
   }
 }
 
-@media(min-width : 767px) and (max-width : 900px){
-  #funcionalidades{
+@media (min-width: 767px) and (max-width: 900px) {
+  #funcionalidades {
     min-height: 840px;
     display: flex;
   }
 }
 
-@media(max-width : 500px){
-  #funcionalidades{
+@media (max-width: 500px) {
+  #funcionalidades {
     min-height: 900px;
     display: flex;
   }
 }
+
+@media (max-width: 1200px) {
+  .curved-div {
+    background-position: 33px;
+  }
+}
+
+@media (min-width : 1400px){
+  .curved-div{
+    background-position: 31px;
+  }
+}
+@media(min-width : 1000px){
+  /* .curved-div{
+    background-position: 10px;
+  } */
+}
+
