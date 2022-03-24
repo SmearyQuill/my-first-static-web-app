@@ -7,14 +7,16 @@
                         class="section__title-span">FUNCIONES</span></p>
             </div>
             <!-- Renglón con la barra de funcionalidades y la información-->
-            <div class="row align-items-center py-2" style="height: 90%;">
+            <div class="row align-items-center py-2 information-container">
                 <!-- Lista de funcionalidades del sistema -->
                 <div class="col-6 curved-div">
                     <ng-container *ngFor="let element of list; let i = index; ">
-                        <div class="row functionality-row" [ngStyle]="{'margin-left':element.margin}" (click)="selectFunctionality(i)"
-                            (mouseover)="element.hover = true;" (mouseout)="checkMouseOut(i)">
+                        <div class="row functionality-row" [ngStyle]="{'margin-left':element.margin}"
+                            (click)="selectFunctionality(i)" (mouseover)="element.hover = true;"
+                            (mouseout)="checkMouseOut(i)">
                             <div class="col-3 col-lg-2  d-flex align-items-center justify-content-end">
-                                <img src="assets/Elipse338.svg" [ngClass]="{'ellipse' : selectedFunctionality.id == element.id}">
+                                <img src="assets/Elipse338.svg"
+                                    [ngClass]="{'ellipse' : selectedFunctionality.id == element.id}">
                                 <img src="{{element.hover ? element.iconoActivo : element.icon}}"
                                     class="functionality-list__icon"
                                     [ngClass]="{'functionality-list__icon-selected' : selectedFunctionality.id == element.id}">
@@ -33,7 +35,7 @@
                         <div class="col-12">
                             <p class="information-column__title">{{selectedFunctionality.name + ' :'}}</p>
                         </div>
-                        <div class="col-10">
+                        <div class="col-10 d-flex justify-content-center">
                             <img src="{{selectedFunctionality.gif}}" class="information-column__image">
                         </div>
                         <div class="col-12 px-5">
@@ -55,7 +57,7 @@
 
     <!-- Contenido que se muestra en caso de que sea un celular -->
     <div class="container-fluid d-lg-none">
-        <div class="row d-lg-none justify-content-center">
+        <div class="row d-lg-none justify-content-center align-content-around" style="height : 100%">
             <div class="col-11 d-flex align-items-center justify-content-center">
                 <p class="mobile-title">ÚNETE A LA REVOLUCIÓN DIGITAL </p>
             </div>
@@ -66,7 +68,7 @@
                     <div class="col-12">
                         <div class="row">
                             <div class="col-12 d-flex align-items-center">
-                                <img src="{{selectedFunctionality.icon}}">
+                                <img src="{{selectedFunctionality.iconoActivo}}">
                                 <p class="mobile-card__name">{{selectedFunctionality.name}}</p>
                             </div>
                         </div>
@@ -80,8 +82,10 @@
                         <p class="mobile-card__text">{{selectedFunctionality.text}}</p>
                     </div>
                     <!-- Flecha -->
-                    <img src="assets/arrow_forward_black_24dp.svg" class="card__arrow-button"
-                        (click)="goToNextFunctionality()">
+                    <div class="col-12 d-flex justify-content-end">
+                        <img src="assets/arrow_forward_black_24dp.svg" class="card__arrow-button"
+                            style="align-self: end;" (click)="goToNextFunctionality()">
+                    </div>
                 </div>
             </div>
             <!-- Botones -->

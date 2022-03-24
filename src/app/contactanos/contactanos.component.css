@@ -96,7 +96,7 @@ input:focus::placeholder, textarea:focus::placeholder
     font-variant: normal;
     font-style: normal;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 30px;
     letter-spacing: 0.66px;
     color: #FFFFFF;
@@ -106,7 +106,7 @@ input:focus::placeholder, textarea:focus::placeholder
 @media screen and (min-width: 1200px) {
     
     .input-contactanos{  
-        font-size: 24px;
+        font-size: 20px;
         line-height: 29px;
     }
     #formulario-form h1{
@@ -114,7 +114,7 @@ input:focus::placeholder, textarea:focus::placeholder
         line-height: 64px;
     }
     #form-card p{
-        font-size: 24px;
+        font-size: 20px;
         line-height: 29px;
     }
     #formulario-container{
