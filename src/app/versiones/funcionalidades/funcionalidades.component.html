@@ -11,7 +11,8 @@
                 <!-- Lista de funcionalidades del sistema -->
                 <div class="col-6 curved-div">
                     <ng-container *ngFor="let element of list; let i = index; ">
-                        <div class="row functionality-row" [ngStyle]="{'margin-left':element.margin}"
+                        <div class="row functionality-row"
+                            [ngStyle]="{'margin-left': selectedFunctionality.id == element.id ? element.margin2 : element.margin}"
                             (click)="selectFunctionality(i)" (mouseover)="element.hover = true;"
                             (mouseout)="checkMouseOut(i)">
                             <div class="col-3 col-lg-2  d-flex align-items-center justify-content-end">
