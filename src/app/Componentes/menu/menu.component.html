@@ -10,9 +10,9 @@
             <div class="blur navbar-nav-bg" ></div>
             <ul class="navbar-nav  mr-auto">
                 <!-- Versiones -->
-                <li class="nav-item dropdown"  routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
+                <li class="nav-item dropdown"  routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}"  [ngClass]="{'dd-shown':dropdowns[0]}">
                     <a class="nav-link dropdown-toggle navbarLink"  id="navbarVersionesDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="dropdownClicked('0')">
                         VERSIONES
                         <img class="dropdown-icon">
                     </a>
@@ -23,9 +23,9 @@
                     </div>
                 </li>
                 <!-- Herrramientas -->
-                <li class="nav-item dropdown"  routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
+                <li class="nav-item dropdown"  routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}"  [ngClass]="{'dd-shown':dropdowns[1]}">
                     <a class="nav-link dropdown-toggle navbarLink" id="navbarHerramientasDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="dropdownClicked('1')">
                         HERRAMIENTAS               
                         <img class="dropdown-icon">
                     </a>     

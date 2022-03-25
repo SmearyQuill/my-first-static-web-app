@@ -193,6 +193,12 @@
     background-size: 100% 3px;
     background-position: center bottom;
   }
+  li.dd-shown{
+    background-image: linear-gradient(rgb(175, 214, 37) , rgb(175, 214, 37));
+    background-repeat: no-repeat;
+    background-size: 100% 3px;
+    background-position: center bottom;
+  }
   #navbarNavAltMarkup{
     min-height: 72px;  
     padding: 0;

@@ -43,7 +43,7 @@
     color: #FFFFFF;
     text-transform: uppercase;
 }
-#content-hero img{
+#content-hero .hero-logo{
     width: 60%;
     height: auto;
 }
@@ -71,7 +71,18 @@
     opacity: 1;
 
 }
-
+#scroll-gif{
+    width: 40px;
+    height: 80px;
+    padding: 0;
+    position: absolute;
+    bottom: 10px;
+    left:50%;
+    margin-left:-20px;
+}
+#scroll-gif img{
+    width: 100%;
+}
 @media screen and (min-width: 576px) {
     
     #hero{
@@ -80,7 +91,7 @@
         padding-bottom: 130px;
     }
     
-    #content-hero img{
+    #content-hero .hero-logo{
         width: 45%;
     }
        

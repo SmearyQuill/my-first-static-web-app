@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router,Event, NavigationStart } from '@angular/router';
 import { RouterLinkActive } from '@angular/router';
 import { HostListener } from '@angular/core';
 
@@ -11,17 +11,35 @@ import { HostListener } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-
+  dropdowns = [false, false]
   toogled : boolean = false;
-  constructor(public _router : Router) { }
+  constructor(public _router : Router) { 
+    this._router.events.subscribe((event: Event) => {
+      if (event instanceof NavigationStart) {
+        this.dropdowns = [false, false]        
+      }
+    });
+  }
   toogle(){
     this.toogled = !this.toogled;
   }
   ngOnInit(): void {
     this.checkCurrentPage();
   }
-
   checkCurrentPage(){
+  }
+  dropdownClicked(index : string){
+    for(var i in this.dropdowns){
+      console.log (i+"-"+index)
+      if(i == index){
+        this.dropdowns[i] = !this.dropdowns[i]
+        console.log(i+":"+this.dropdowns[i])
+      }else{
+        this.dropdowns[i] = false
+      }
+    }
+    
+    console.log(this.dropdowns)
   }
   @HostListener('window:scroll', ['$event']) onScroll() {
     let element = document.querySelector('.navbar') as HTMLElement;
