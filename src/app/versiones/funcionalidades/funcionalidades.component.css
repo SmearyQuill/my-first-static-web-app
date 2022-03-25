@@ -2,14 +2,20 @@
   background-image: url("../../../assets/fondo_herramientas@2x.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 5% 8%;
+  background-position: center;
+  padding: 3% 8% 2% 8%;
 }
 
+.curved-div {
+  background-image: url("../../../assets/Curva.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .col-title {
   margin-bottom: 4%;
 }
 .section__title {
-  font-size: 40px;
+  font-size: 36px;
   color: #ffffff;
   text-align: center;
   margin: 0;
@@ -20,7 +26,6 @@
 }
 
 .functionality-row {
-  margin: 1em 0;
   cursor: pointer;
 }
 
@@ -32,13 +37,13 @@
   font-size: 18px;
 } */
 .functionality-list__icon {
-  width: 70px;
-  height: 80px;
+  width: 55px;
+  height: 65px;
 }
 
 .functionality-list__icon-selected {
-  width: 75px;
-  height: 85px;
+  width: 70px;
+  height: 80px;
 }
 
 .functionality-list__name {
@@ -60,19 +65,19 @@
 
 .information-column__title {
   color: #afd625;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 500;
   text-align: center;
   margin: 0;
 }
 
 .information-column__image {
-  max-width: 100%;
+  max-width: 70%;
   filter: drop-shadow(0 0 30px #dbf57d);
 }
 
 .information-column__description {
-  font-size: 22px;
+  font-size: 20px;
   color: #ffffff;
   text-align: center;
 }
@@ -112,7 +117,7 @@
 }
 
 .mobile-card__name {
-  font-size: 16px;
+  font-size: 14px;
   color: #ffffff;
   letter-spacing: 1.28px;
   display: inline-block;
@@ -124,15 +129,15 @@
   text-align: center;
   color: #ffffff;
   letter-spacing: 0.54px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .mobile-card__image {
-  max-width: 100%;
+  max-width: 80%;
   filter: drop-shadow(0 0 30px #dbf57d);
 }
 .card__arrow-button {
-  width: 70px;
+  width: 46px;
   height: 70px;
   cursor: pointer;
 }
@@ -163,13 +168,13 @@
 }
 @media (min-width: 1000px) {
   .col-title {
-    margin-bottom: 3%;
+    margin-bottom: 1%;
   }
   .functionality-list__name {
-    font-size: 16px;
+    font-size: 14px;
   }
   .functionality-list__name-selected {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -178,9 +183,84 @@
     max-width: 60%;
   }
 }
+
+@media (min-width: 1400px) {
+  #funcionalidades {
+    min-height: 960px;
+  }
+  .information-container {
+    min-height: 720px;
+  }
+
+  .mobile-card__image {
+    max-width: 70%;
+  }
+}
 @media (min-width: 400px) and (max-width: 767px) {
   .mobile-card__name,
   .mobile-card__text {
     font-size: 17px;
   }
 }
+
+@media (min-width: 767px) and (max-width: 900px) {
+  #funcionalidades {
+    min-height: 840px;
+    display: flex;
+  }
+}
+
+@media (max-width: 500px) {
+  #funcionalidades {
+    min-height: 900px;
+    display: flex;
+  }
+}
+
+
+@media(min-width : 1200px){
+  #funcionalidades{
+    min-height: 800px;
+  }
+}
+/* Breakpoints para la curva */
+@media(min-width : 976px){
+  .curved-div{
+    background-position: 7px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .curved-div {
+    background-position: 13px;
+  }
+}
+
+@media(min-width : 1200px){
+  .curved-div{
+    background-position: 24px;
+  }
+}
+
+@media(min-width : 1300px){
+  .curved-div{
+    background-position: 27px;
+  }
+}
+@media(min-width : 1400px){
+  .curved-div{
+    background-position: 33px;
+  }
+}
+
+@media(min-width : 1450px){
+  .curved-div{
+    background-position: 38px;
+  }
+}
+@media (min-width : 1550px){
+  .curved-div{
+    background-position: 44px;
+  }
+}
+
