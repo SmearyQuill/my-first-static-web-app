@@ -1,5 +1,5 @@
 .card-container {
-  padding: 6% 3%;
+  padding: 3% 3%;
 }
 
 .main-card__quotes {
@@ -13,20 +13,20 @@
 }
 .first-card__text {
   color: #464646;
-  font-size: 38px;
+  font-size: 30px;
   font-weight: 400;
   margin: 0;
 }
 
 .first-card__second-text {
   color: #464646;
-  font-size: 38px;
+  font-size: 30px;
   font-weight: bold;
   margin: 0;
 }
 .person-name,
 .person-position {
-  font-size: 20px;
+  font-size: 16px;
   margin: 0;
   letter-spacing: 0.8px;
 }
@@ -42,7 +42,7 @@
 }
 
 .card__person-image {
-  max-width: 95%;
+  max-width: 85%;
   height: auto;
   object-fit: cover;
 }
@@ -55,37 +55,37 @@
 }
 
 .card__title {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
   letter-spacing: 1.7px;
 }
 
 .card__location {
-  font-size: 26px;
+  font-size: 21px;
   letter-spacing: 1.5px;
   margin-bottom: 20px;
 }
 
 .card__text {
   font-style: italic;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 0.9px;
 }
 
 @media screen and (max-width: 1200px) {
   .card__text {
-    font-size: 18px;
+    font-size: 14px;
   }
   .card__title {
-    font-size: 26px;
+    font-size: 21px;
   }
   .card__location {
-    font-size: 24px;
+    font-size: 19px;
   }
 
   .person-name,
   .person-position {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .card-container {
@@ -95,6 +95,7 @@
 
 @media screen and (max-width: 767px) {
   .card__title {
+    margin-top: 1rem;
     text-align: center;
   }
   .card__location {
