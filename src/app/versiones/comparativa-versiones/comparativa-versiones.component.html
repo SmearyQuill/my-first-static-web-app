@@ -32,7 +32,7 @@
                 <!-- Div de tarjetas con los precios de la versión LITE o la versión completa -->
                 <ng-container *ngIf="selectedOption == 'LITE' || selectedOption == 'TOTAL'">
                     <!-- Sección de tarjetas -->
-                    <div *ngFor="let card of selectedCard" class="col-lg-4 col-xxl-3 card-column">
+                    <div *ngFor="let card of selectedCard" class="col-md-5 col-lg-4 col-xxl-3 card-column">
                         <div class="card-container">
                             <!-- Titulo de la tarjeta -->
                             <div class="card-header">
@@ -57,7 +57,7 @@
 
                 <!-- Div de la tabla de comparativo entre las diferentes versiones de Radar -->
                 <ng-container *ngIf="selectedOption == 'COMPARATIVO'">
-                    <div class="col-lg-7 col-md-10  table-container">
+                    <div class="col-lg-6 col-md-10  table-container">
                         <!-- Tabla -->
                         <table class="table table-borderless">
                             <thead>
@@ -132,7 +132,7 @@
             <!-- Tabla de información de Radar Lite -->
             <div *ngIf="liteVersionActive" [@showTableMobile] class="row justify-content-center">
                 <!-- Sección de tarjetas -->
-                <div *ngFor="let card of cardsLite" class="col-lg-4 card-column">
+                <div *ngFor="let card of cardsLite" class="col-sm-11 card-column">
                     <div class="card-container">
                         <!-- Titulo de la tarjeta -->
                         <div class="card-header">
@@ -161,7 +161,7 @@
                 RADAR CONTROL TOTAL</div>
             <!--  Tabla de información de Radar Total -->
             <div *ngIf="totalVersionActive" [@showTableMobile] class="row justify-content-center">
-                <div *ngFor="let card of cardsTotal" class="col-lg-4 card-column">
+                <div *ngFor="let card of cardsTotal" class="col-sm-11 card-column">
                     <div class="card-container">
                         <!-- Titulo de la tarjeta -->
                         <div class="card-header">
@@ -190,7 +190,7 @@
                 COMPARATIVO</div>
             <!-- Tabla Comparativa -->
             <div *ngIf="tableActive" [@showTableMobile] class="row justify-content-center">
-                <div class="col-lg-8 col-md-10  table-container">
+                <div class="col-12 col-sm-10 table-container">
                     <!-- Tabla -->
                     <table class="table table-borderless">
                         <thead>

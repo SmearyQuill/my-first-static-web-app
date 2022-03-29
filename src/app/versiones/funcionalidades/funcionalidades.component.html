@@ -7,7 +7,7 @@
                         class="section__title-span">FUNCIONES</span></p>
             </div>
             <!-- Renglón con la barra de funcionalidades y la información-->
-            <div class="row align-items-center py-2 information-container">
+            <div class="row align-items-center py-3 information-container">
                 <!-- Lista de funcionalidades del sistema -->
                 <div class="col-6 curved-div">
                     <ng-container *ngFor="let element of list; let i = index; ">
@@ -22,7 +22,7 @@
                                     class="functionality-list__icon"
                                     [ngClass]="{'functionality-list__icon-selected' : selectedFunctionality.id == element.id}">
                             </div>
-                            <div class="col-md-9 col-lg-10 d-flex align-items-center p-2">
+                            <div class="col-md-9 col-lg-10 d-flex align-items-center p-start-2">
                                 <p class="functionality-list__name"
                                     [ngClass]="{'functionality-list__name-selected' : selectedFunctionality.id == element.id}">
                                     {{element.name}}</p>
@@ -64,7 +64,7 @@
             </div>
             <!-- Card de la funcionalidad seleccionada -->
             <div class="col-11 mobile-card">
-                <div class="row">
+                <div class="row h-100 align-content-around">
                     <!-- Texto e Icono -->
                     <div class="col-12">
                         <div class="row">
