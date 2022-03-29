@@ -2,7 +2,7 @@
   padding-left: 10vw;
   padding-right: 10vw;
   padding-top: 154px;
-  padding-bottom: 154px;
+  padding-bottom: 114px;
 }
 #content-hero {
   width: 100%;
@@ -30,13 +30,13 @@
   text-align: left;
   color: #ffffff;
   text-transform: uppercase;
-  font: normal normal 300 28px/32px Segoe UI;
+  font: normal normal 300 23px/26px Segoe UI;
 }
 #titles h2 {
   margin: 0px;
   width: 100%;
   text-align: left;
-  font: normal normal 600 28px/32px Segoe UI;
+  font: normal normal 600 23px/26px Segoe UI;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -71,7 +71,7 @@ button .hero-btn {
 
 .hero-text {
   color: #ffffff;
-  font-size: 19px;
+  font-size: 17px;
   opacity: 1;
   text-align: start;
 }
@@ -88,10 +88,10 @@ button .hero-btn {
     padding-bottom: 140px;
   }
   #titles h1 {
-    font: normal normal 300 34px/45px Segoe UI;
+    font: normal normal 300 27px/36px Segoe UI;
   }
   #titles h2 {
-    font: normal normal 600 34px/45px Segoe UI;
+    font: normal normal 600 27px/36px Segoe UI;
   }
 
   #fst-btn {
@@ -104,10 +104,10 @@ button .hero-btn {
 
 @media screen and (min-width: 768px) {
   #titles h1 {
-    font: normal normal 300 48px/64px Segoe UI;
+    font: normal normal 300 39px/52px Segoe UI;
   }
   #titles h2 {
-    font: normal normal 600 48px/64px Segoe UI;
+    font: normal normal 600 39px/52px Segoe UI;
   }
   #btns {
     display: block;
@@ -118,8 +118,8 @@ button .hero-btn {
   #hero {
     padding-left: 15vw;
     padding-right: 15vw;
-    padding-top: 250px;
-    padding-bottom: 250px;
+    padding-top: 220px;
+    padding-bottom: 200px;
   }
   button .hero-btn {
     font: normal normal 600 22px/30px Segoe UI;

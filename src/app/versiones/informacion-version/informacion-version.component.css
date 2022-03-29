@@ -1,39 +1,11 @@
 #versionInformation {
   padding: 6% 0;
 }
-.containerInformacion {
-  height: 500px;
-  display: flex;
-  align-items: center;
-}
-
-.img-container {
-  width: 45%;
-}
-
-.information-container {
-  width: 55%;
-  padding: 2rem;
-  color: #191919;
-  font-size: 18px;
-  margin-left: 20px;
-}
-
-.information-points {
-  display: flex;
-  flex-direction: row;
-  margin-top: 15px;
-}
-
-.information-img {
-  width: 25%;
-  text-align: center;
-}
 
 li {
   color: #afd625;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 li span {

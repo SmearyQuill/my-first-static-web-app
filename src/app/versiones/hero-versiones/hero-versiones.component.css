@@ -54,7 +54,7 @@
   width: 100%;
 }
 #snd-btn {
-  padding: 0 4%;
+  padding: 0 2%;
   height: 58px;
   background: #afd625 0% 0% no-repeat padding-box;
   border-radius: 6px;
@@ -78,10 +78,10 @@ button .hero-btn {
     padding-bottom: 200px;
   }
   #titles h1 {
-    font: normal normal 300 34px/45px Segoe UI;
+    font: normal normal 300 27px/36px Segoe UI;
   }
   #titles h2 {
-    font: normal normal 600 34px/45px Segoe UI;
+    font: normal normal 600 27px/36px Segoe UI;
   }
 
   #fst-btn {
@@ -94,10 +94,10 @@ button .hero-btn {
 
 @media screen and (min-width: 768px) {
   #titles h1 {
-    font: normal normal 300 48px/64px Segoe UI;
+    font: normal normal 300 38px/50px Segoe UI;
   }
   #titles h2 {
-    font: normal normal 600 48px/64px Segoe UI;
+    font: normal normal 600 38px/50px Segoe UI;
   }
   #btns {
     display: block;
@@ -108,10 +108,10 @@ button .hero-btn {
   #hero {
     padding-left: 15vw;
     padding-right: 15vw;
-    padding-top: 314px;
-    padding-bottom: 314px;
+    padding-top: 280px;
+    padding-bottom: 280px;
   }
   button .hero-btn {
-    font: normal normal 600 22px/30px Segoe UI;
+    font: normal normal 600 17px/24px Segoe UI;
   }
 }
