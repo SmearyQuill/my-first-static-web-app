@@ -8,7 +8,7 @@
         <div class="row images-row">
             <div class="col-md imageColumn d-flex align-items-center justify-content-center"
                 style="position: relative; cursor: pointer;"
-                *ngFor="let processInformation of processList; let i = index;" (click)="changeView(i)">
+                *ngFor="let processInformation of processList; let i = index;" (mouseenter)="processInformation.clicked = true;" (mouseleave)="processInformation.clicked = false;">
                 <img class="process-image" src="{{processInformation.imageSrc}}">
                 <!-- Div con el texto -->
                 <div class="text-container" style="position: absolute;" *ngIf="!processInformation.clicked"

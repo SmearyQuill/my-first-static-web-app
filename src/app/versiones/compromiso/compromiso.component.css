@@ -1,5 +1,5 @@
 .main-container {
-  padding: 8%;
+  padding: 6%;
   background-color: #022644;
   background-image: url("../../../assets/FONDO_COMPROMISO.png");
   background-size: cover;
@@ -9,7 +9,7 @@
 .title {
   color: #ffffff;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 32px;
   text-align: center;
 }
 
@@ -30,31 +30,31 @@
 .card__subtitle {
   margin: 0;
   text-align: center;
-  font-size: 20px;
+  font-size: 17px;
   color: #ffffff;
 }
 
 .card__title {
   font-weight: bold;
-  margin-top: 2em;
+  margin-top: 1.6em;
 }
 
 .gif {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 60%;
+  height: auto;
   object-fit: cover;
 }
 
 .commitment-text__sub {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   margin-bottom: 0.5rem;
 }
 
 .commitment-text__principal {
   color: #afd625;
-  font-size: 38px;
+  font-size: 31px;
   text-align: center;
   margin-bottom: 0.5rem;
   font-weight: bold;
@@ -65,12 +65,12 @@
     padding: 1em;
   }
   .gif {
-    max-height: 50%;
+    max-height: 60%;
   }
 
   .card__title,
   .card__subtitle {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .card__title {
@@ -78,19 +78,19 @@
   }
 
   .main-container {
-    padding: 20% 8%;
+    padding: 14% 8%;
   }
 }
 
 @media (max-width: 700px) {
   .card-container {
-    padding: 0;
+    padding: 1.2em 0;
   }
   .commitment-text__sub {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 0;
   }
   .commitment-text__principal {
-    font-size: 30px;
+    font-size: 24px;
   }
 }

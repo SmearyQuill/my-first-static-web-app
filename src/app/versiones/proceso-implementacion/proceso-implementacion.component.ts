@@ -17,7 +17,7 @@ import {
       transition(':enter', [
         style({ width: '100%', height: '0%', bottom: 0, left: 0 }),
         animate(
-          '300ms ease-in-out',
+          '400ms ease-in-out',
           keyframes([
             style({
               width: '100%',
@@ -73,7 +73,7 @@ import {
           top: 0,
         }),
         animate(
-          '300ms ease-in-out',
+          '400ms ease-in-out',
           style({
             width: '100%',
             height: '100%',
@@ -109,10 +109,4 @@ export class ProcesoImplementacionComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
-
-  changeView(i: number) {
-    this.processList[i].clicked == true
-      ? (this.processList[i].clicked = false)
-      : (this.processList[i].clicked = true);
-  }
 }
