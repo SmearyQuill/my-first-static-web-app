@@ -7,13 +7,13 @@
             <div class="col-10 col-lg-9">
                 <div class="row justify-content-center justify-content-lg-around">
                     <!-- Lista de Beneficios -->
-                    <div class="col-5 col-lg-2 m-2 px-lg-2" *ngFor="let element of listaBeneficios">
+                    <div class="col-5 col-md-2 m-2 px-lg-2" *ngFor="let element of listaBeneficios">
                         <div class="row justify-content-center">
                             <div class="col d-flex justify-content-center">
                                 <img class="img" src="{{element.imagen}}">
                             </div>
                             <div class="separador"></div>
-                            <div class="col p-0">
+                            <div class="col p-0 text-md-center text-lg-start">
                                 <p class="texto-beneficio">{{element.texto}}</p>
                             </div>
                         </div>
