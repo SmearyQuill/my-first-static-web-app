@@ -1,6 +1,6 @@
 .presentation-title,
 .presentation-title2 {
-  font-size: 28px;
+  font-size: 22px;
 }
 
 .presentation-title {
@@ -15,25 +15,25 @@
 
 .presentation-text {
   color: #191919;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .youtube-video {
-  max-width: 90%;
+  max-width: 70%;
   height: auto;
 }
 
 .presentation-container {
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 @media (min-width: 1200px) {
   .presentation-title,
   .presentation-title2 {
-    font-size: 45px;
+    font-size: 36px;
   }
   .presentation-text {
-    font-size: 22px;
+    font-size: 18px;
   }
 }

@@ -7,14 +7,14 @@
 
 .section__Subtitle {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 17px;
   margin: 0;
   text-align: center;
 }
 
 .section__Title {
   color: #afd625;
-  font-size: 28px;
+  font-size: 24px;
   margin: 0;
   text-align: center;
 }
@@ -63,14 +63,14 @@
 
 .web__benefit-title {
   margin: 0;
-  font-size: 14px;
+  font-size: 12px;
   color: #ffffff;
   letter-spacing: 1.44px;
   text-align: center;
 }
 
 .web__icon {
-  max-width: 70%;
+  max-width: 60%;
   height: auto;
 }
 
@@ -82,7 +82,7 @@
   background-position: right;
   background-size: contain;
   padding: 8% 5%;
-  height: 390px;
+  height: 300px;
 }
 
 .web__name {
@@ -94,7 +94,7 @@
 
 .web__subtitle {
   color: #afd625;
-  font-size: 31px;
+  font-size: 25px;
   font-weight: 600;
   letter-spacing: 1.2px;
   margin-bottom: 0.5rem;
@@ -102,22 +102,17 @@
 
 .web__text {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 15px;
   margin: 0;
-}
-@media (max-width: 1199px) {
-  .web__icon {
-    max-width: 60%;
-  }
 }
 
 @media (min-width: 1200px) {
   .section__Title {
-    font-size: 34px;
+    font-size: 27px;
   }
 
   .section__Subtitle {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -126,13 +121,9 @@
     height: 290px;
   }
   .web__subtitle{
-    font-size: 25px;
+    font-size: 20px;
   }
   .web__name{
     font-size: 12px;
-  }
-
-  .web__text{
-    font-size: 15px;
   }
 }

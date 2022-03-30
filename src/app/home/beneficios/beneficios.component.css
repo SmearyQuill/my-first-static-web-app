@@ -1,6 +1,6 @@
 .title1,
 .title2 {
-  font-size: 32px;
+  font-size: 26px;
   color: #022644;
   text-align: center;
 }
@@ -17,12 +17,12 @@
 
 .texto-beneficio {
   color: #022644;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
 }
 
 .principal-button {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 500;
   color: #ffffff;
   background-color: #afd625;
@@ -31,17 +31,17 @@
 }
 
 .img {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
   object-fit: cover;
 }
 @media (min-width: 1200px) {
   .title1,
   .title2 {
-    font-size: 40px;
+    font-size: 32px;
   }
 
   .img {
-    width: 100%;
+    width: 90%;
   }
 }
