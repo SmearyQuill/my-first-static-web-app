@@ -15,8 +15,17 @@ export class MenuComponent implements OnInit {
   toogled : boolean = false;
   constructor(public _router : Router) { 
     this._router.events.subscribe((event: Event) => {
+      var navbarBrand = document.getElementsByClassName('navbar-brand')[0]
+      var navbarToggler = document.getElementsByClassName('navbar-toggler')[0]
+      var navbarCollapse = document.getElementsByClassName('navbar-collapse')[0]
       if (event instanceof NavigationStart) {
         this.dropdowns = [false, false]        
+        navbarBrand.classList.remove('show')
+        navbarBrand.classList.add('hiden')
+        this.toogled = false;
+        navbarToggler.classList.add('collapsed')
+        navbarToggler.setAttribute('aria-expanded','false')
+        navbarCollapse.classList.remove('show')
       }
     });
   }
