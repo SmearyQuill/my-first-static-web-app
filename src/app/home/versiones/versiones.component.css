@@ -6,10 +6,10 @@
 }
 
 .page-container {
-  padding: 9rem 3rem 9rem 3rem;
+  padding: 9rem 4rem 9rem 4rem;
 }
 .text {
-  font-size: 30px;
+  font-size: 24px;
   color: #ffffff;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .principal-button {
-  font-size: 20px;
+  font-size: 18px;
   width: 100%;
   font-weight: 400;
   color: #ffffff;
@@ -29,19 +29,19 @@
 
 @media (min-width: 1200px) {
   .page-container {
-    padding: 13% 8%;
+    padding: 10% 10%;
   }
 
   .text {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .principal-button{
-    font-size: 28px;
+    font-size: 22px;
   }
 }
 
-@media (max-width : 768px){
+@media (max-width : 600px){
   #versiones{
     background-image: url("/assets/VersionesHome-Movil.png");
   }
