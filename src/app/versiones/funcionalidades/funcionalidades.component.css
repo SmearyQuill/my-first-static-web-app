@@ -15,27 +15,23 @@
   margin-bottom: 4%;
 }
 .section__title {
-  font-size: 36px;
+  font-size: 29px;
   color: #ffffff;
   text-align: center;
-  margin: 0;
+  margin-bottom: 1.5;
   letter-spacing: 1.92px;
 }
 .section__title-span {
   font-weight: bold;
 }
 
-.functionality-row {
+.functionality-row{
   cursor: pointer;
 }
-
 .functionality-row:hover p {
   font-weight: bold;
 }
 
-/* .functionality-row:hover .functionality-list__name {
-  font-size: 18px;
-} */
 .functionality-list__icon {
   width: 55px;
   height: 65px;
@@ -65,19 +61,19 @@
 
 .information-column__title {
   color: #afd625;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
   text-align: center;
   margin: 0;
 }
 
 .information-column__image {
-  max-width: 70%;
+  max-width: 60%;
   filter: drop-shadow(0 0 30px #dbf57d);
 }
 
 .information-column__description {
-  font-size: 20px;
+  font-size: 16px;
   color: #ffffff;
   text-align: center;
 }
@@ -95,9 +91,9 @@
 .principal-button > a {
   display: inline-block;
   color: #ffffff;
-  font-weight: 500;
+  font-weight: bold;
   letter-spacing: 0.66px;
-  font-size: 22px;
+  font-size: 20px;
   text-decoration: none;
   height: 100%;
   width: 100%;
@@ -114,10 +110,11 @@
   border: 1px solid #3f51b5;
   border-radius: 9px;
   padding: 2em 1em 0 1em;
+  min-height: 665px;
 }
 
 .mobile-card__name {
-  font-size: 14px;
+  font-size: 16px;
   color: #ffffff;
   letter-spacing: 1.28px;
   display: inline-block;
@@ -129,7 +126,7 @@
   text-align: center;
   color: #ffffff;
   letter-spacing: 0.54px;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .mobile-card__image {
@@ -148,7 +145,7 @@
 
 @media (max-width: 991px) {
   .information-column__title {
-    font-size: 26px;
+    font-size: 18px;
   }
   .functionality-list__name {
     font-size: 14px;
@@ -157,7 +154,7 @@
     font-size: 21px;
   }
   .section__title {
-    font-size: 36px;
+    font-size: 29px;
   }
 }
 
@@ -186,10 +183,10 @@
 
 @media (min-width: 1400px) {
   #funcionalidades {
-    min-height: 960px;
+    min-height: 800px;
   }
   .information-container {
-    min-height: 720px;
+    min-height: 600px;
   }
 
   .mobile-card__image {
@@ -264,3 +261,14 @@
   }
 }
 
+@media(max-width : 650px){
+  .mobile-card{
+    min-height: 650px;
+  }
+}
+
+@media(min-width : 651px) and (max-width : 767px){
+  .mobile-card{
+    min-height: 700px;
+  }
+}
