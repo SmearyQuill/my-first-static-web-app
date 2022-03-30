@@ -76,9 +76,10 @@
     height: 80px;
     padding: 0;
     position: absolute;
-    bottom: 10px;
-    left:50%;
-    margin-left:-20px;
+    bottom: 130px;
+    left: 50%;
+    margin-left: -20px;
+    display: none;
 }
 #scroll-gif img{
     width: 100%;
@@ -96,42 +97,44 @@
     }
        
     #fst-btn {   
-        padding-top: 15px;
-        padding-bottom: 15px;
-        padding-left: 22px;
-        padding-right: 22px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 18px;
+        padding-right: 18px;
     }
     
     #fst-btn span{
-        font-size: 22px;
-        line-height: 30px;
+        font-size: 18px;
+        line-height: 24px;
     }
     #content-hero h1{
-        font-size: 40px;
-        line-height: 60px;
+        font-size: 32px;
+        line-height: 48px;
     }
     #content-hero h2{
             
-        font-size: 40px;
-        line-height: 60px;
+        font-size: 32px;
+        line-height: 48px;
     }
 }
 @media screen and (min-width: 992px) {  
-    
+    #scroll-gif{
+        display: block;
+    }
     #hero{
         background: none;
         width: 100%;
         height: auto;
-        padding-top: 290px;
-        padding-bottom: 284px;
+        padding-top: 232px;
+        padding-bottom: 227px;
     }
     #video-bg{
         display: block;    
-        top: -56px;    
+        top: -255px;    
         height: 1080px;  
     }  
     #content-hero{
-        width: 812px;     
+        width: 650px;     
     }
     
 }
@@ -141,12 +144,12 @@
     }
     
     #content-hero h1{
-        font-size: 48px;
-        line-height: 64px;
+        font-size: 38px;
+        line-height: 51px;
     }
     #content-hero h2{
-        font-size: 48px;
-        line-height: 64px;
+        font-size: 38px;
+        line-height: 51px;
     }
     
 }
