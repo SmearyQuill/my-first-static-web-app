@@ -3,20 +3,20 @@
 }
 #radar-academy-visitar .row{
     margin: 0%;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .resolver-dudas{
     width: 80%;
     text-align: left;
-    font: normal normal normal 28px/40px Segoe UI;
+    font: normal normal normal 18px/24px Segoe UI;
     letter-spacing: 1.4px;
     color: #FFFFFF;
     opacity: 1;
 }
 #visitar-academy button{
     display: block;
-    height: 48px;
+    height: 38px;
     width: 100%;
     margin:auto;
     margin-top: 1rem;
@@ -32,7 +32,7 @@
     padding: 0%;
     padding-bottom: 16px;
     padding-top: 16px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 #visitar-academy {
     padding-left: 22px;
@@ -41,7 +41,7 @@
 }
 #visitar-academy button span{
     text-align: center;
-    font: normal normal 600 20px/28px Segoe UI;
+    font: normal normal 600 16px/22px Segoe UI;
     letter-spacing: 0.66px;
     color: #FFFFFF;
     text-transform: uppercase;
@@ -49,20 +49,20 @@
 }
 #visitar-academy-img{
     margin: auto;
-    margin-top: 16px;
-    margin-bottom:  16px;
+    margin-top: 13px;
+    margin-bottom:  13px;
     display: block;
 }
 #movil.resolver-dudas{
     width: 100%;
-    font: normal normal normal 18px/30px Segoe UI;
+    font: normal normal normal 14px/24px Segoe UI;
     margin: auto;
-    margin-top: 16px;
-    margin-bottom:  16px;
+    margin-top: 13px;
+    margin-bottom:  13px;
     display: block;
     text-align: center;
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-left: 18px;
+    padding-right: 18px;
 }
 
 @media screen and (min-width: 576px) {
@@ -71,13 +71,13 @@
     }
     #visitar-academy button{
         
-        height: 58px;
+        height: 46px;
         width: 70%;
         display: block;
     }
     #radar-academy-visitar{
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
 }
 @media screen and (min-width: 760px) {
@@ -92,7 +92,7 @@
         display: inline;
     }
     #visitar-academy button span{
-        font: normal normal 600 22px/30px Segoe UI;
+        font: normal normal 600 18px/24px Segoe UI;
     }
 }
 @media screen and (min-width: 1200px) {
