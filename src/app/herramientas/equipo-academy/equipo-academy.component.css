@@ -21,10 +21,10 @@
 }
 @media screen and (min-width: 576px) {
     #equipo-titles h1{        
-        font: normal normal 300 30px/40px Segoe UI;
+        font: normal normal 300 24px/30px Segoe UI;
     }
     #equipo-titles h1{  
-        font: normal normal 600 30px/40px Segoe UI;
+        font: normal normal 600 24px/30px Segoe UI;
     }
 }
 @media screen and (min-width:992px){
@@ -34,11 +34,11 @@
     }
     #equipo-titles h2{
         
-        font: normal normal 600 35px/47px Segoe UI;
+        font: normal normal 600 28px/38px Segoe UI;
         width: 120%;
     }
     #equipo-titles h1{
-        font: normal normal 300 35px/47px Segoe UI;
+        font: normal normal 300 28px/38px Segoe UI;
         width: 120%;
     }
 }
