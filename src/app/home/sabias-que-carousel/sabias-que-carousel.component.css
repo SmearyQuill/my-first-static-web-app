@@ -42,18 +42,18 @@
         height: 550px;
     }
     .show-neighbors .carousel-indicators {
-        margin-right: 15%;
-        margin-left: 15%;
+        margin-right: 25%;
+        margin-left:  25%;
    }
     .show-neighbors .carousel-control-prev, .show-neighbors .carousel-control-next {
         background: rgba(255, 255, 255, 0.3);
-        width: 15%;
+        width: 25%;
         z-index: 11;
        /* .carousel-caption has z-index 10 */
    }
     .show-neighbors .carousel-inner {
-        width: 210%;
-        left: -55%;
+        width: 150%;
+        left: -25%;
    }
     .show-neighbors .carousel-item-next:not(.carousel-item-start), .show-neighbors .carousel-item-end.active {
         -webkit-transform: translate3d(33%, 0, 0);

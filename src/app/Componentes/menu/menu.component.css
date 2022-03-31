@@ -121,7 +121,7 @@
   right: 10px;
   border: none;
   height: 100%;
-  width: 73px;
+  width: 58px;
 }
 .navbar-nav.mr-auto{
   align-items: left;
@@ -174,8 +174,8 @@
     background: rgb(2, 38, 68,.15);
   }
   .navbarLink{
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 13px;
+    line-height: 17px;
     margin-top: 0;
     margin-bottom: 0;
     width: auto;
@@ -184,7 +184,7 @@
   .nav-item{
     display: flex;
     align-items: center;
-    width: 198px;
+    width: 158px;
     padding-left: 0;
   }
   li.is-active{
@@ -200,12 +200,12 @@
     background-position: center bottom;
   }
   #navbarNavAltMarkup{
-    min-height: 72px;  
+    min-height: 57px;  
     padding: 0;
     background: none;
   }
   .dropdown-menu.show{
-    top: 72px;
+    top: 57px;
   }
   .blur.navbar-bar-bg{
     display: none;
@@ -223,13 +223,13 @@
   }
   .navbar{
     border-bottom: 1px solid #FFFFFF;
-    height: 73px;
+    height: 58px;
   }
   .blur.navbar-bg{
     position:absolute;
     top: 0;
     width: 100%;
-    height: 73px;
+    height: 58px;
   }
   .blur.dropdown-menu-bg{
     display: block;
@@ -240,13 +240,14 @@
   }
   .navbar-brand{
     background: transparent url('/assets/Grupo 2883.png') 0% 0% no-repeat padding-box;
-    width: 122px;
-    height: 52px;
+    background-size: cover;
+    width: 98px;
+    height: 42px;
   }
   .dropdown-item{
-    font-size: 16px;
-    line-height: 21px;  
-    min-width: 198px;
+    font-size: 13px;
+    line-height: 17px;  
+    min-width: 158px;
     /* margin: auto; */
     text-align: center;
     padding-left: 0;
@@ -258,14 +259,14 @@
 }
 @media screen and (min-width: 1200px) {
   .navbar{
-    padding-left: 100px;
-    padding-right: 80px;
+    padding-left: 80px;
+    padding-right: 64px;
   }
 }
 
 @media screen and (min-width: 1400px) {
   .navbar{
-    padding-left: 140px;
-    padding-right: 132px;
+    padding-left: 112px;
+    padding-right: 106px;
   }
 }
