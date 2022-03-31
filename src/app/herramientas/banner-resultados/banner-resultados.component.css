@@ -6,7 +6,7 @@
 }
 #banner-resultados h1{
     text-align: center;
-    font: normal normal 300 28px/37px Segoe UI;
+    font: normal normal 300 22px/30px Segoe UI;
     letter-spacing: 1.36px;
     color: #FFFFFF;
     padding: 0%;
@@ -14,7 +14,7 @@
 }
 #banner-resultados h2{
     text-align: center;
-    font: normal normal bold 28px/37px Segoe UI;
+    font: normal normal bold 22px/30px Segoe UI;
     letter-spacing: 2.28px;
     color: #AFD625;
     padding: 0%;
@@ -22,13 +22,13 @@
 }
 @media screen and (min-width: 992px) {
     #banner-resultados h1{
-        font: normal normal 300 34px/46px Segoe UI;
+        font: normal normal 300 27px/37px Segoe UI;
     }
     #banner-resultados h2{
-        font: normal normal bold 57px/76px Segoe UI;    
+        font: normal normal bold 45px/61px Segoe UI;    
     }   
     #banner-resultados{
-        padding-top: 200px;
-        padding-bottom: 200px;
+        padding-top: 180px;
+        padding-bottom: 180px;
     }
 }
