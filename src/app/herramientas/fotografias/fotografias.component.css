@@ -1,13 +1,15 @@
 #fotografias-container{
-    padding: 10%
+    padding: 5%;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 #fotografias-container h1{
     text-align: left;
     font-style: normal;
     font-weight: 600;
     font-variant: normal;
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 22px;
+    line-height: 26px;
     letter-spacing: 0px;
     color: #022644;
     text-transform: uppercase;
@@ -19,8 +21,8 @@
     font-style: normal;
     font-weight: 300;
     font-variant: normal;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 19px;
     letter-spacing: 0px;
     color: #022644;
     opacity: 1;
@@ -44,40 +46,40 @@
 @media screen and (min-width: 576px) {
     
     #fotografias-container h1{
-        font-size: 37px;
-        line-height: 49px;
+        font-size: 30px;
+        line-height: 39px;
     }
     #fotografias-container p{
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 19px;
+        line-height: 26px;
     }
 }
 @media screen and (min-width:992px) {
         
     #compromisos-img{
-        margin-left: 18px;
-        margin-top: 30px;
+        margin-left: 14px;
+        margin-top: 24px;
     }
     #compromisos-img img{
-        top: -30px;
-        left: -18px;
+        top: -24px;
+        left: -14px;
     }
     #fotografias-container h1{
-        font-size: 32px;
-        line-height: 42px;
+        font-size: 26px;
+        line-height: 34px;
     }
     #fotografias-container p{
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 19px;
+        line-height: 26px;
     }
 }
 @media screen and (min-width: 1200px) {
     #fotografias-container h1{
-        font-size: 37px;
-        line-height: 49px;
+        font-size: 30px;
+        line-height: 39px;
     }
     #fotografias-container p{
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 19px;
+        line-height: 26px;
     }
 }
