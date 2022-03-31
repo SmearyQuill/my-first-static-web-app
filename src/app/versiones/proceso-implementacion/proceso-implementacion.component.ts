@@ -17,7 +17,7 @@ import {
       transition(':enter', [
         style({ width: '100%', height: '0%', bottom: 0, left: 0 }),
         animate(
-          '400ms ease-in-out',
+          '800ms ease-in-out',
           keyframes([
             style({
               width: '100%',
@@ -73,7 +73,7 @@ import {
           top: 0,
         }),
         animate(
-          '400ms ease-in-out',
+          '500ms ease-in-out',
           style({
             width: '100%',
             height: '100%',

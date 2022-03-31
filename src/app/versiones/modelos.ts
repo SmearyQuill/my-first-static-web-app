@@ -11,7 +11,7 @@ export const versionesHero = {
 
 export const RadarControlTotalInformationObject = {
   informationText:
-    'Es la opción perfecta para talleres de bajo volumen con personal administrativo limitado, ya que no sobrecarga de actividades dentro del sistema a los pocos usuarios que operan en el taller.',
+    'Es la opción perfecta para talleres de alta productividad, obteniendo mediciones e indicadores de alto valor para tomar decisiones de alto impacto.',
   informationPoints: [
     'Volumen de rep: +100 Unidades mensuales',
     'Plantilla laboral alta',
