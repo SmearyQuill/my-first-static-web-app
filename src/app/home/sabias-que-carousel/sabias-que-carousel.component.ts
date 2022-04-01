@@ -11,8 +11,6 @@ export class SabiasQueCarouselComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    
-  console.log(this.sabiasQueList)
   }
     
   ngAfterViewInit():void {
