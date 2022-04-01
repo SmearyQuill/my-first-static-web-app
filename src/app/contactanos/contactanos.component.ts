@@ -12,7 +12,7 @@ import { JsonpClientBackend } from '@angular/common/http';
 })
 export class ContactanosComponent implements OnInit {
 
-  constructor(private service : ContactanosServiceService) { }  
+  constructor(private service : ContactanosServiceService) { }
   exform: any;
   ngOnInit(): void {
     this.exform = new FormGroup({

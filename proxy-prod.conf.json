@@ -1,8 +1,0 @@
-{
-    "/api/*" : {
-        "target" : "https://happy-desert-0ec476f10.1.azurestaticapps.net:3000",
-        "pathRewrite" : {
-            "^/api" : ""
-        }
-    }
-}
