@@ -1,12 +1,13 @@
 const exp = require('constants');
 const express = require('express');
-const { appendFile } = require('fs');
-const http = require('http');
-const path = require('path');
+const cors = (require("cors"))
 
 const app = express();
+app.use(cors());
+app.use(express.json({ limit:"100mb"}));
 
 app.post('/send',(req, res) => {
+    console.log(req.body);
     res.json({
         'statusCode': 200,
         'statusMessage': 'SUCCESS'

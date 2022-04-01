@@ -11,6 +11,7 @@ import { SabiasQueCardComponent } from './Componentes/sabias-que-card/sabias-que
 import { TestimonioCardComponent } from './Componentes/testimonio-card/testimonio-card.component';
 import { FooterComponent } from './Componentes/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,9 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule, 
     AppRoutingModule, 
     BrowserAnimationsModule,
-    HttpClientModule,],
+    HttpClientModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
