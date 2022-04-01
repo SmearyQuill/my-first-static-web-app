@@ -10,7 +10,7 @@ import { MenuComponent } from './Componentes/menu/menu.component';
 import { SabiasQueCardComponent } from './Componentes/sabias-que-card/sabias-que-card.component';
 import { TestimonioCardComponent } from './Componentes/testimonio-card/testimonio-card.component';
 import { FooterComponent } from './Componentes/footer/footer.component';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +22,11 @@ import { FooterComponent } from './Componentes/footer/footer.component';
     TestimonioCardComponent,
     FooterComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule, 
+    AppRoutingModule, 
+    BrowserAnimationsModule,
+    HttpClientModule,],
   providers: [],
   bootstrap: [AppComponent],
 })
