@@ -32,8 +32,8 @@
 }
 @media screen and (min-width: 768px) {
     #android-inner-row h1, #android-inner-row h2{        
-        font-size: 24px;
-        line-height: 36px;  
+        font-size: 19px;
+        line-height: 29px;  
     }
     .left img, .right img{
         max-height: 74px;
