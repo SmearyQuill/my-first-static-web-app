@@ -45,8 +45,6 @@ export class MenuComponent implements OnInit {
         this.dropdowns[i] = false
       }
     }
-    
-    console.log(this.dropdowns)
   }
   @HostListener('window:scroll', ['$event']) onScroll() {
     let element = document.querySelector('.navbar') as HTMLElement;
