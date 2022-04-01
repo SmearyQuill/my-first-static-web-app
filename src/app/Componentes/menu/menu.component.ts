@@ -39,10 +39,8 @@ export class MenuComponent implements OnInit {
   }
   dropdownClicked(index : string){
     for(var i in this.dropdowns){
-      console.log (i+"-"+index)
       if(i == index){
         this.dropdowns[i] = !this.dropdowns[i]
-        console.log(i+":"+this.dropdowns[i])
       }else{
         this.dropdowns[i] = false
       }
