@@ -103,6 +103,14 @@ input:focus::placeholder, textarea:focus::placeholder
     text-transform: uppercase;
     opacity: 1;
 }
+.input{
+    position:relative;
+}
+small{
+    position:absolute;
+    left: 15px;
+    bottom: 45px;
+}
 @media screen and (min-width: 1200px) {
     
     .input-contactanos{  

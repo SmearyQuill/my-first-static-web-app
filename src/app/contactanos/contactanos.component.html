@@ -12,35 +12,40 @@
                     <div class="col-lg-7 col-xxl-6">
                         <div class="card text-start">
                             <div class="card-body">
-                            <form action="">
+                            <form name="contactanos-form" [formGroup]="exform">
                                     <p>Envíanos un mensaje y nosotros nos pondremos en contacto contigo</p>
                                     <div class="row">
-                                        <div class="col-xl">
-                                            <input type="text" class="input-contactanos nombre" placeholder="Nombre">
+                                        <div class="col-xl input">                                            
+                                            <input type="text" class="input-contactanos nombre" placeholder="Nombre" formControlName = "name" required>
+                                            <small *ngIf="exform.get('name').invalid && exform.get('name').touched" class="text-danger">Campo requerido</small>
                                         </div>
-                                        <div class="col-xl">                                     
-                                            <input type="text" class="input-contactanos apellido" placeholder="Apellido">
+                                        <div class="col-xl input">                                     
+                                            <input type="text" class="input-contactanos apellido" placeholder="Apellido" formControlName="lastname">
+                                            <small *ngIf="exform.get('lastname').invalid && exform.get('lastname').touched" class="text-danger">Campo requerido</small>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-xl">
+                                        <div class="col-xl input">
                                             <label for=""></label>
-                                            <input type="text" class="input-contactanos email" placeholder="Email">
+                                            <input type="text" class="input-contactanos email" placeholder="Email" formControlName="email">
+                                            <small *ngIf="exform.get('email').invalid && exform.get('email').touched"  class="text-danger">Dirección correcta requerida</small>
                                         </div>
-                                        <div class="col-xl">  
+                                        <div class="col-xl input">  
                                             <label for=""></label>                                      
-                                            <input type="tel" class="input-contactanos telefono" placeholder="Teléfono">
+                                            <input type="tel" class="input-contactanos telefono" placeholder="Teléfono" formControlName="phone">
+                                            <small *ngIf="exform.get('phone').invalid && exform.get('phone').touched" class="text-danger">Número requerido</small>
                                         </div>                                
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col input">
                                             <label for=""></label>
-                                            <textarea type="text" class="input-contactanos mensaje" placeholder="Mensaje"></textarea>
+                                            <textarea type="text" class="input-contactanos mensaje" placeholder="Mensaje" formControlName="message"></textarea>
+                                            <small *ngIf="exform.get('message').invalid && exform.get('message').touched" class="text-danger">Campo requerido (máximo 254 caracteres)</small>
                                         </div>                                    
                                     </div>
                                     <div class="row justify-content-center">
                                         <div class="col-xxl-3 col-xl-4 col-lg-5 col-md-6 col-sm-7">
-                                            <button id="contactanos-button"><span>ENVIAR</span></button>
+                                            <button (click)="sendInfo()" [disabled]="exform.invalid" id="contactanos-button"><span>ENVIAR</span></button>
                                         </div>
                                     </div>
                             </form>
