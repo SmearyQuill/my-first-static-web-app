@@ -5,9 +5,9 @@ var cors = require('cors')
 
 const app = express();
 
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 4200;
 
-var allowedOrigins = ['http://localhost:3000',
+var allowedOrigins = ['http://localhost:4200',
                       'https://main.radarcontroltotal.com/'];
 app.use(cors({
   origin: function(origin, callback){
@@ -25,13 +25,18 @@ app.use(cors({
 app.use(express.json({ limit:"100mb"}));
 
 app.post('/api/send',(req, res) => {
-    console.log(req.body);
-    res.json({
+  console.log(req.body);
+  res.json({
       'statusCode': 200,
       'statusMessage': 'SUCCESS'
   });
 });
-
+app.get('/api/test', (req,res) => {
+  res.json({
+    'statusCode': 200,
+    'statusMessage': 'SUCCESS'
+  });
+});
 
 app.use(express.static(__dirname+'/dist/radar-web-page'));
 
