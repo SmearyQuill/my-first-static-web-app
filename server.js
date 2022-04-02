@@ -1,13 +1,13 @@
 const express = require('express');
 const http = require('http');
 const path = require('path');
-
+var cors = require('cors')
 
 const app = express();
 
 const port = process.env.PORT || 3001;
 
-
+app.use(cors());
 app.use(express.json({ limit:"100mb"}));
 
 app.post('/api/send',(req, res) => {
