@@ -32,13 +32,21 @@
   text-align: left;
   color: #ffffff;
   text-transform: uppercase;
-  font: normal normal 300 28px/32px Segoe UI;
+  font-size: 28px;
+  line-height: 32px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
 }
 #titles h2 {
   margin: 0px;
   width: 100%;
   text-align: left;
-  font: normal normal 600 28px/32px Segoe UI;
+  font-size: 28px;
+  line-height: 32px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -65,7 +73,11 @@
 }
 button .hero-btn {
   text-align: center;
-  font: normal normal 600 20px/28px Segoe UI;
+  font-size: 20px;
+  line-height: 28px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
   color: #ffffff;
   text-transform: uppercase;
   opacity: 1;
@@ -78,10 +90,18 @@ button .hero-btn {
     padding-bottom: 200px;
   }
   #titles h1 {
-    font: normal normal 300 27px/36px Segoe UI;
+    font-size: 27px;
+    line-height: 36px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
   }
   #titles h2 {
-    font: normal normal 600 27px/36px Segoe UI;
+    font-size: 27px;
+    line-height: 36px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
   }
 
   #fst-btn {
@@ -94,10 +114,18 @@ button .hero-btn {
 
 @media screen and (min-width: 768px) {
   #titles h1 {
-    font: normal normal 300 38px/50px Segoe UI;
+    font-size: 38px;
+    line-height: 50px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
   }
   #titles h2 {
-    font: normal normal 600 38px/50px Segoe UI;
+    font-size: 38px;
+    line-height: 50px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
   }
   #btns {
     display: block;
@@ -112,6 +140,10 @@ button .hero-btn {
     padding-bottom: 280px;
   }
   button .hero-btn {
-    font: normal normal 600 17px/24px Segoe UI;
+    font-size: 17px;
+    line-height: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
   }
 }

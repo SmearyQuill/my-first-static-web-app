@@ -9,7 +9,11 @@
 .resolver-dudas{
     width: 80%;
     text-align: left;
-    font: normal normal normal 18px/24px Segoe UI;
+    font-size: 18px;
+    line-height: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
     letter-spacing: 1.4px;
     color: #FFFFFF;
     opacity: 1;
@@ -24,7 +28,7 @@
     border-radius: 6px;
     opacity: 1;
     border: none;
-    
+
     margin-top: 16px;
     margin-bottom:  16px;
 }
@@ -41,7 +45,11 @@
 }
 #visitar-academy button span{
     text-align: center;
-    font: normal normal 600 16px/22px Segoe UI;
+    font-size: 16px;
+    line-height: 22px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight:600;
     letter-spacing: 0.66px;
     color: #FFFFFF;
     text-transform: uppercase;
@@ -55,7 +63,11 @@
 }
 #movil.resolver-dudas{
     width: 100%;
-    font: normal normal normal 14px/24px Segoe UI;
+    font-size: 14px;
+    line-height: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
     margin: auto;
     margin-top: 13px;
     margin-bottom:  13px;
@@ -70,7 +82,7 @@
         width: 100%;
     }
     #visitar-academy button{
-        
+
         height: 46px;
         width: 70%;
         display: block;
@@ -92,7 +104,11 @@
         display: inline;
     }
     #visitar-academy button span{
-        font: normal normal 600 18px/24px Segoe UI;
+        font-size: 18px;
+        line-height: 24px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 600;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -107,5 +123,5 @@
         width: 60%;
         display: inline;
     }
-        
+
 }

@@ -1,6 +1,6 @@
 #gradient-bg{
-    padding-left: 8vw; 
-    padding-right: 8vw; 
+    padding-left: 8vw;
+    padding-right: 8vw;
     padding-top: 123px;
     padding-bottom: 123px;
     background: transparent linear-gradient(90deg, #022644 0%, #02264400 83%) 0% 0% no-repeat padding-box;
@@ -11,7 +11,7 @@
     padding: 0;
 }
 #title{
-    
+
     transform: matrix(1, 0, 0, 1, 0, 0);
     /* UI Properties */
     width: 100%;
@@ -21,7 +21,7 @@
     text-transform: uppercase;
     opacity: 1;
 }
- 
+
 #btns{
     display: block;
     position: relative;
@@ -32,7 +32,11 @@
     margin: 0px;
     width: 100%;
     text-align: left;
-    font: normal normal 600 22px/26px Segoe UI;
+    font-size: 22px;
+    line-height: 26px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
     letter-spacing: 2.88px;
     color: #FFFFFF;
     text-transform: uppercase;
@@ -41,7 +45,11 @@
     margin: 0px;
     width: 100%;
     text-align: left;
-    font: normal normal 300 22px/26px Segoe UI;
+    font-size: 22px;
+    line-height: 26px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
     letter-spacing: 2.88px;
     color: #FFFFFF;
     text-transform: uppercase;
@@ -70,7 +78,11 @@
 }
 button .hero-btn{
     text-align: center;
-    font: normal normal 600 16px/22px Segoe UI;
+    font-size: 16px;
+    line-height: 22px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
     letter-spacing: 0.66px;
     color: #FFFFFF;
     text-transform: uppercase;
@@ -78,19 +90,27 @@ button .hero-btn{
 }
 @media screen and (min-width: 576px) {
     #gradient-bg{
-        padding-left: 10vw; 
-        padding-right: 10vw; 
+        padding-left: 10vw;
+        padding-right: 10vw;
         padding-top: 160px;
         padding-bottom: 160px;
     }
     #titles h1 {
-        font: normal normal 600 34px/45px Segoe UI;
+      font-size: 34px;
+      line-height: 45px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 600;
     }
     #titles h2 {
-        font: normal normal 300 34px/45px Segoe UI;
+      font-size: 34px;
+      line-height: 45px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 300;
     }
-    
-    #fst-btn{        
+
+    #fst-btn{
         height: 46px;
         width: auto;
         padding-left: 18px;
@@ -100,10 +120,18 @@ button .hero-btn{
 
 @media screen and (min-width: 768px) {
     #titles h1 {
-        font: normal normal 600 38px/51px Segoe UI;
+      font-size: 38px;
+      line-height: 51px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 600;
     }
     #titles h2 {
-        font: normal normal 300 38px/51px Segoe UI;
+      	font-size: 38px;
+      	line-height: 51px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 300;
     }
     #btns{
         display: block;
@@ -112,13 +140,17 @@ button .hero-btn{
         margin-top: 34px;
     }
     #gradient-bg{
-        padding-left: 12vw; 
-        padding-right: 12vw; 
+        padding-left: 12vw;
+        padding-right: 12vw;
         padding-top: 251px;
         padding-bottom: 251px;
     }
-    button .hero-btn{   
-        font: normal normal 600 18px/24px Segoe UI;
+    button .hero-btn{
+        font-size: 18px;
+        line-height: 24px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 600;
     }
 }
 
