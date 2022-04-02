@@ -20,14 +20,22 @@
 }
 #capacitacion-card-text h1{
     text-align: left;
-    font: normal normal bold 24px/38px Segoe UI;
+    font-size: 24px;
+    line-height: 38px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
     letter-spacing: 0px;
     color: #022644;
     text-transform: uppercase;
 }
 #capacitacion-card-text h2{
     text-align: left;
-    font: normal normal normal 14px/18px Segoe UI;
+    font-size: 14px;
+    line-height: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
     letter-spacing: 0px;
     color: #191919;
 }
@@ -51,18 +59,34 @@
 }
 @media screen and (min-width: 1200px) {
     #capacitacion-card-text h1{
-        font: normal normal bold 30px/42px Segoe UI;
+        font-size: 30px;
+        line-height: 42px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
     }
     #capacitacion-card-text h2{
-        font: normal normal normal 16px/22px Segoe UI;
+        font-size: 16px;
+        line-height: 22px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
     }
 }
 
 @media screen and (min-width: 1400px) {
     #capacitacion-card-text h1{
-        font: normal normal bold 34px/46px Segoe UI;
+        font-size: 34px;
+        line-height: 46px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
     }
     #capacitacion-card-text h2{
-        font: normal normal normal 18px/24px Segoe UI;
+        font-size: 18px;
+        line-height: 24px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
     }
 }

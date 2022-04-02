@@ -1,14 +1,22 @@
 #equipo-titles h1{
     width: auto;
     text-align: left;
-    font: normal normal 300 20px/28px Segoe UI;
+    font-size: 20px;
+    line-height: 28px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
     letter-spacing: 0.35px;
     color: #0A3B64;
 }
 #equipo-titles h2{
     width: auto;
     text-align: left;
-    font: normal normal 600 20px/28px Segoe UI;
+    font-size: 20px;
+    line-height: 28px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
     letter-spacing: 0.35px;
     color: #0A3B64;
 }
@@ -20,25 +28,40 @@
     margin-top: 76px;
 }
 @media screen and (min-width: 576px) {
-    #equipo-titles h1{        
-        font: normal normal 300 24px/30px Segoe UI;
+    #equipo-titles h1{
+        font-size: 24px;
+        line-height: 30px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 300;
     }
-    #equipo-titles h1{  
-        font: normal normal 600 24px/30px Segoe UI;
+    #equipo-titles h1{
+        font-size: 24px;
+        line-height: 30px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 600;
     }
 }
 @media screen and (min-width:992px){
-    
+
     #equipo-titles{
         padding-left: 12px;
     }
     #equipo-titles h2{
-        
-        font: normal normal 600 28px/38px Segoe UI;
+        font-size: 28px;
+        line-height: 38px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 600;
         width: 120%;
     }
     #equipo-titles h1{
-        font: normal normal 300 28px/38px Segoe UI;
+        font-size: 28px;
+        line-height: 38px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 300;
         width: 120%;
     }
 }

@@ -1,10 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500,700");
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
 html, body{
     height: 100%;
     width: 100%;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', 'Poppins',Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .pageContainer{

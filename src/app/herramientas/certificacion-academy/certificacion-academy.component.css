@@ -20,7 +20,11 @@
 }
 #visitar-certificacion span{
     text-align: center;
-    font: normal normal 600 18px/24px Segoe UI;
+    font-size: 18px;
+    line-height: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
     letter-spacing: 0.66px;
     color: #FFFFFF;
     text-transform: uppercase;
@@ -41,7 +45,11 @@
 }
 .bottom-text h1{
     text-align: center;
-    font: normal normal bold 13px/18px Segoe UI;
+    font-size: 13px;
+    line-height: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
     letter-spacing: 0.28px;
     color: #FFFFFF;
     opacity: 1;
@@ -55,20 +63,24 @@
 }
 @media screen and (min-width: 576px) {
     .bottom-text h1{
-        font: normal normal bold 22px/30px Segoe UI;
+        font-size: 22px;
+        line-height: 30px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
     }
     #certificacion-container{
         padding-bottom: 40px;
         padding-top: 112px;
     }
-    
+
     .bottom-text{
         padding-top: 56px;
         padding-bottom: 56px;
     }
 }
 @media screen and (min-width: 992px) {
-    
+
     .certificacion-card.left{
         padding-right: 34px;
     }

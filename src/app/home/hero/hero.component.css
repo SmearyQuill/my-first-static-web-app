@@ -73,8 +73,8 @@
 
 }
 #scroll-gif{
-    width: 40px;
-    height: 80px;
+    width: 32px;
+    height: auto;
     padding: 0;
     position: absolute;
     bottom: 50px;

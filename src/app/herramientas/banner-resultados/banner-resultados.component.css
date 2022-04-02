@@ -6,7 +6,11 @@
 }
 #banner-resultados h1{
     text-align: center;
-    font: normal normal 300 22px/30px Segoe UI;
+    font-size: 22px;
+    line-height: 30px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
     letter-spacing: 1.36px;
     color: #FFFFFF;
     padding: 0%;
@@ -14,7 +18,11 @@
 }
 #banner-resultados h2{
     text-align: center;
-    font: normal normal bold 22px/30px Segoe UI;
+    font-size: 22px;
+    line-height: 30px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
     letter-spacing: 2.28px;
     color: #AFD625;
     padding: 0%;
@@ -22,11 +30,19 @@
 }
 @media screen and (min-width: 992px) {
     #banner-resultados h1{
-        font: normal normal 300 27px/37px Segoe UI;
+        font-size: 27px;
+        line-height: 37px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 300;
     }
     #banner-resultados h2{
-        font: normal normal bold 45px/61px Segoe UI;    
-    }   
+        font-size: 45px;
+        line-height: 61px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+    }
     #banner-resultados{
         padding-top: 180px;
         padding-bottom: 180px;
