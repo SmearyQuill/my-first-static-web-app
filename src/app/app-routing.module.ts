@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ContactanosComponent } from './contactanos/contactanos.component';
 const routes: Routes = [
   {
     path: '',
@@ -29,7 +28,10 @@ const routes: Routes = [
   },
   {
     path: 'contactanos',
-    component: ContactanosComponent,
+    loadChildren: () =>
+      import('./contactanos/contactanos.module').then(
+        (m) => m.ContactanosModule
+      ),
   },
 ];
 

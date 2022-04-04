@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { ContactanosServiceService } from './contactanos-service.service';
+import { ContactanosServiceService } from '../contactanos-service.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 @Component({
-  selector: 'app-contactanos',
-  templateUrl: './contactanos.component.html',
-  styleUrls: ['./contactanos.component.css'],
+  selector: 'app-main',
+  templateUrl: './main.component.html',
+  styleUrls: ['./main.component.css'],
 })
-export class ContactanosComponent implements OnInit {
+export class MainComponent implements OnInit {
   constructor(private service: ContactanosServiceService) {}
   exform: any;
+
   ngOnInit(): void {
     // Se agregan las validaciones al formulario
     this.exform = new FormGroup({
@@ -28,7 +29,6 @@ export class ContactanosComponent implements OnInit {
 
   sendInfo() {
     const data = JSON.parse(JSON.stringify(this.exform.getRawValue()));
-    console.log(data);
     this.service.sendMail(data).subscribe((response) => {
       if (response.status == 200) {
         this.exform.reset();
