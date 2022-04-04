@@ -21,7 +21,6 @@
     "@angular/platform-browser-dynamic": "~13.2.0",
     "@angular/router": "~13.2.0",
     "@popperjs/core": "^2.10.2",
-    "nodemailer": "^6.7.3",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
     "rxjs": "~7.5.0",
