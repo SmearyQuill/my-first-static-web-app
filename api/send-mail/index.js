@@ -23,7 +23,7 @@ module.exports = async function (context, req) {
   mailOptions.text = `Un cliente ha enviado su informacion de contacto.Nombre : ${req.body.name}.Apellido: ${req.body.lastname}.Email: ${req.body.email}.Teléfono: ${req.body.phone}.Mensaje : ${req.body.message}`
   transporter.sendMail(mailOptions, function (err, data) {
     if (err) {
-      context.res.status(500).json({
+      context.res.status(200).json({
         text: "Error: "+err
       });
     } else {
