@@ -8,9 +8,12 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class MainComponent implements OnInit {
   constructor(private service: ContactanosServiceService) {}
+
   exform: any;
+  captchaKey: any;
 
   ngOnInit(): void {
+    this.captchaKey = '6LejDEYfAAAAAO12Zp-iuTvpyRjAdmZ7Yq8TAIvL';
     // Se agregan las validaciones al formulario
     this.exform = new FormGroup({
       name: new FormControl(null, Validators.required),
@@ -24,6 +27,7 @@ export class MainComponent implements OnInit {
         Validators.required,
         Validators.maxLength(254),
       ]),
+      captcha : new FormControl(null, Validators.required)
     });
   }
 
@@ -36,5 +40,9 @@ export class MainComponent implements OnInit {
         console.log('Salió mal el envio de correo');
       }
     });
+  }
+
+  resolved(captchaResponse: string) {
+    console.log('Se resolvio: ', captchaResponse);
   }
 }

@@ -55,9 +55,18 @@
                                                 class="text-danger">Campo requerido (máximo 254 caracteres)</small>
                                         </div>
                                     </div>
+
+                                    <div class="row my-4">
+                                        <div class="col d-flex justify-content-center">
+                                            <re-captcha (resolved)="resolved($event)" formControlName="captcha"
+                                                [siteKey]="captchaKey"></re-captcha>
+                                        </div>
+                                    </div>
                                     <div class="row justify-content-center">
                                         <div class="col-xxl-3 col-xl-4 col-lg-5 col-md-6 col-sm-7">
-                                            <button (click)="sendInfo()" [disabled]="exform.invalid"
+                                            <button (click)="sendInfo()"
+                                                [ngClass]="{'disabledButton' : exform.invalid, 'enabledButton' : !exform.invalid}"
+                                                [disabled]="exform.invalid"
                                                 id="contactanos-button"><span>ENVIAR</span></button>
                                         </div>
                                     </div>
