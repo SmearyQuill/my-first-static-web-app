@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ContactanosServiceService } from '../contactanos-service.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import Swal from 'sweetalert2';
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -27,22 +28,30 @@ export class MainComponent implements OnInit {
         Validators.required,
         Validators.maxLength(254),
       ]),
-      captcha : new FormControl(null, Validators.required)
+      captcha: new FormControl(null, Validators.required),
     });
   }
 
   sendInfo() {
-    const data = JSON.parse(JSON.stringify(this.exform.getRawValue()))
+    const data = JSON.parse(JSON.stringify(this.exform.getRawValue()));
     this.service.sendMail(data).subscribe((response) => {
-      if (response.status == 200) {
-        this.exform.reset()
+      console.log(response);
+      if (response.ok == true) {
+        this.exform.reset();
+        Swal.fire({
+          title: 'Información enviada',
+          text: 'Su información fue enviada correctamente. El departamento de ventas pronto se comunicará con usted.',
+          icon: 'success',
+        });
       } else {
-        console.log('Salió mal el envio de correo')
+        Swal.fire({
+          icon: 'error',
+          title: 'Error',
+          text: 'Algo salió mal al enviar su información de contacto, intentelo de nuevo más tarde',
+        });
       }
     });
   }
 
-  resolved(captchaResponse: string) {
-    console.log('Se resolvio: ', captchaResponse);
-  }
+  resolved(captchaResponse: string) {}
 }
