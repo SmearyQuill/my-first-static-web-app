@@ -22,7 +22,7 @@
     height: 6px;
     background: #BEBEBE 0% 0% no-repeat padding-box;
     border-radius: 15px;
-    opacity: 1; 
+    opacity: 1;
 }
 .carousel-indicators .active {
     background: #AFD625 0% 0% no-repeat padding-box;
@@ -35,12 +35,14 @@
 .show-neighbors .item__third:first-child, .show-neighbors .item__third:last-child {
     display: none;
 }
+@media (min-width: 1200px) {
+  ._item, .example{
+    height: 532px;
+}
+}
+@media (min-width: 992px) {
 
-@media (min-width: 767px) {
 
-    ._item, .example{
-        height: 532px;
-    }
     .show-neighbors .carousel-indicators {
         margin-right: 25%;
         margin-left: 25%;
