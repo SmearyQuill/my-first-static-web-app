@@ -1,131 +1,144 @@
-#formulario-bg{
-    background: transparent url('/assets/Enmascarar grupo 52.png') 0% 0% no-repeat padding-box;
-    background-size: cover;
-    min-height: 459px;
-    width: 100%;
+#formulario-bg {
+  background: transparent url("/assets/Enmascarar grupo 52.png") 0% 0% no-repeat
+    padding-box;
+  background-size: cover;
+  min-height: 459px;
+  width: 100%;
 }
-section{
-    width: 100%;
+section {
+  width: 100%;
 }
-#formulario-form{
-    position: absolute;
-    top: 218px;
+#formulario-form {
+  position: absolute;
+  top: 218px;
 }
-#formulario-form h1{
-    text-align: center;
-    font-weight: bold;
-    font-variant: normal;
-    font-style: normal;
-    letter-spacing: 2.88px;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    opacity: 1;
-    
-    margin-bottom: 29px;
+#formulario-form h1 {
+  text-align: center;
+  font-weight: bold;
+  font-variant: normal;
+  font-style: normal;
+  letter-spacing: 2.88px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
+
+  margin-bottom: 29px;
 }
-#form-card p{
-    text-align: left;
-    font-family: Montserrat;
-    font-variant: normal;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0px;
-    color: #2E2D35;
-    opacity: 1;
-    margin-bottom: 66px;
+#form-card p {
+  text-align: left;
+  font-family: Montserrat;
+  font-variant: normal;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #2e2d35;
+  opacity: 1;
+  margin-bottom: 66px;
 }
-::placeholder,  :-ms-input-placeholder, ::-ms-input-placeholder 
-{/* Firefox */
-    text-align: left;
-    font-family: Montserrat;
-    font-variant: normal;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0px;
-    color: #2E2D35;
-    opacity: 1;
+::placeholder,
+:-ms-input-placeholder,
+::-ms-input-placeholder {
+  /* Firefox */
+  text-align: left;
+  font-family: Montserrat;
+  font-variant: normal;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #2e2d35;
+  opacity: 1;
 }
-input:focus::placeholder, textarea:focus::placeholder
-{
-    color:transparent;
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: transparent;
 }
 
-.card{
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 0px 40px #0226444A;
-    padding-top: 60px;
-    padding-left: 42px;
-    padding-right: 42px;
-    padding-bottom: 43px;
+.card {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 40px #0226444a;
+  padding-top: 60px;
+  padding-left: 42px;
+  padding-right: 42px;
+  padding-bottom: 43px;
 }
-.input-contactanos{
-    width: 100%;
-    margin-bottom: 64px;
-    min-height: 42px;
-    font-family: Montserrat;
-    font-variant: normal;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 22px;
-    border: none;
-    border-bottom: 1px solid #B8B8B8;
+.input-contactanos {
+  width: 100%;
+  margin-bottom: 64px;
+  min-height: 42px;
+  font-family: Montserrat;
+  font-variant: normal;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  border: none;
+  border-bottom: 1px solid #b8b8b8;
 }
-#formulario-container{
-    min-height: 1400px;
-    padding: 0;
+#formulario-container {
+  min-height: 1400px;
+  padding: 0;
 }
-.input-contactanos.mensaje{
-    min-height: 150px;
+.input-contactanos.mensaje {
+  min-height: 150px;
 }
-#contactanos-button{
-    background: #AFD625 0% 0% no-repeat padding-box;
-    border-radius: 6px;
-    border: none;
-    opacity: 1;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 100%;
+#contactanos-button {
+  background: #afd625 0% 0% no-repeat padding-box;
+  border-radius: 6px;
+  border: none;
+  opacity: 1;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
 }
-#contactanos-button span{
-    text-align: center;
-    font-variant: normal;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 30px;
-    letter-spacing: 0.66px;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    opacity: 1;
+#contactanos-button span {
+  text-align: center;
+  font-variant: normal;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.66px;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 1;
 }
-.input{
-    position:relative;
+.input {
+  position: relative;
 }
-small{
-    position:absolute;
-    left: 15px;
-    bottom: 45px;
+small {
+  position: absolute;
+  left: 15px;
+  bottom: 45px;
 }
 @media screen and (min-width: 1200px) {
-    
-    .input-contactanos{  
-        font-size: 20px;
-        line-height: 29px;
-    }
-    #formulario-form h1{
-        font-size: 48px;
-        line-height: 64px;
-    }
-    #form-card p{
-        font-size: 20px;
-        line-height: 29px;
-    }
-    #formulario-container{
-        min-height: 1200px;
-    }
+  .input-contactanos {
+    font-size: 20px;
+    line-height: 29px;
+  }
+  #formulario-form h1 {
+    font-size: 48px;
+    line-height: 64px;
+  }
+  #form-card p {
+    font-size: 20px;
+    line-height: 29px;
+  }
+  #formulario-container {
+    min-height: 1200px;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
