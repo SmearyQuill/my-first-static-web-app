@@ -7,7 +7,7 @@ export const HeroLite = {
   btn2Text: 'COMPARAR VERSIONES',
   btn1Route: '/contactanos',
   backgroundImage: 'assets/ImagenPrincipalVersiones.png',
-  iconImage: 'assets/Grupo 2883-1@2x.png',
+  iconImage: 'assets/RadarHeroLite.png',
 };
 
 export const HeroTotal = {
