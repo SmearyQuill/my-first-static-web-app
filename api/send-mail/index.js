@@ -14,23 +14,24 @@ var transporter = nodemailer.createTransport({
 });
 var mailOptions = {
   from: "no-reply@radarcontroltotal.com",
-  to: "axel.lopez@aumenta.mx",
+  to: "raul.argott@aumenta.mx",
   subject: "Información contacto",
   text: ``,
 };
 module.exports = async function (context, req) {
-  console.log(req.body)
-  mailOptions.text = `Un cliente ha enviado su informacion de contacto.Nombre : ${req.body.name}.Apellido: ${req.body.lastname}.Email: ${req.body.email}.Teléfono: ${req.body.phone}.Mensaje : ${req.body.message}`
-  transporter.sendMail(mailOptions, function (err, data) {
-    if (err) {
-      context.res.status(200).json({
-        text: "Error: "+err
-      });
-    } else {
-      context.res.status(200).json({
-        text: "Success"
-      });
-    }
-  });
+  try{
+    context.log('JavaScript HTTP trigger function processed a request.');
+    mailOptions.text = `Un cliente ha enviado su informacion de contacto.Nombre : ${req.body.name}.Apellido: ${req.body.lastname}.Email: ${req.body.email}.Teléfono: ${req.body.phone}.Mensaje : ${req.body.message}`
+    transporter.sendMail(mailOptions, function (err, data) {});
+    context.res.json({
+      text: "SENT",
+      success : true
+    });
+  }catch(err){
+    context.res.json({
+      text: "ERROR",
+      success : false
+    });
+  }
 
 }
