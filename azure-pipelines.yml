@@ -23,6 +23,7 @@ steps:
 - task: AzureStaticWebApp@0
   inputs:
       app_location: "/"
+      api_location: "api"
       output_location: "dist/radar-web-page"
 
   env:
