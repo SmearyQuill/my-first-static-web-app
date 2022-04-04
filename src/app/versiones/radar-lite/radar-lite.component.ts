@@ -7,7 +7,7 @@ import * as radarModel from '../modelos';
   styleUrls: ['./radar-lite.component.css'],
 })
 export class RadarLiteComponent implements OnInit {
-  heroInformation = radarModel.versionesHero;
+  heroInformation = radarModel.HeroLite;
   informationObject = radarModel.RadarLiteInformationObject;
   functionalitiesList = radarModel.RadarLiteFunctionalities;
   processList = radarModel.RadarLiteProcessList;

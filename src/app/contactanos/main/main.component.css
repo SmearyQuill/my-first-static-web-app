@@ -84,9 +84,9 @@ textarea:focus::placeholder {
 }
 .input-contactanos.mensaje {
   min-height: 150px;
+  margin-bottom: 0;
 }
 #contactanos-button {
-  background: #afd625 0% 0% no-repeat padding-box;
   border-radius: 6px;
   border: none;
   opacity: 1;
@@ -141,4 +141,11 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
+}
+
+.enabledButton{
+    background-color: #afd625;
+}
+.disabledButton{
+    background-color: gray;
 }

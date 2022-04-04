@@ -1,12 +1,23 @@
 // Archivo donde se declaran todos los objetos que se utilizan para darle estructura a componentes ( Cards, numero de subprocesos, etc)
 
-export const versionesHero = {
+export const HeroLite = {
   title1: 'ESCOGE LA VERSIÓN QUE MÁS SE',
   title2: 'ADAPTE A TU TALLER',
   btn1Text: 'SOLICITAR UN DEMO',
   btn2Text: 'COMPARAR VERSIONES',
   btn1Route: '/contactanos',
   backgroundImage: 'assets/ImagenPrincipalVersiones.png',
+  iconImage: 'assets/RadarHeroLite.png',
+};
+
+export const HeroTotal = {
+  title1: 'ESCOGE LA VERSIÓN QUE MÁS SE',
+  title2: 'ADAPTE A TU TALLER',
+  btn1Text: 'SOLICITAR UN DEMO',
+  btn2Text: 'COMPARAR VERSIONES',
+  btn1Route: '/contactanos',
+  backgroundImage: 'assets/ImagenPrincipalVersiones.png',
+  iconImage: 'assets/Grupo 2883-1@2x.png',
 };
 
 export const RadarControlTotalInformationObject = {
@@ -138,7 +149,7 @@ export const RadarTotalFunctionalities = [
     iconoActivo: 'assets/versionesFuncionalidadPanelCliente-activo.svg',
     hover: false,
     margin: '80px',
-    margin2 : '94px'
+    margin2: '94px',
   },
   {
     name: 'INFORMACION EN TIEMPO REAL',
@@ -149,7 +160,7 @@ export const RadarTotalFunctionalities = [
     iconoActivo: 'assets/versionesFuncionalidadTiempoReal-activo.svg',
     hover: false,
     margin: '48px',
-    margin2: '68px'
+    margin2: '68px',
   },
   {
     name: 'ELECTROPLAN',
@@ -160,7 +171,7 @@ export const RadarTotalFunctionalities = [
     iconoActivo: 'assets/versionesFuncionalidadElectroplan-activo.svg',
     hover: false,
     margin: '27px',
-    margin2 : '47px'
+    margin2: '47px',
   },
   {
     name: 'INTERFACES',
@@ -171,7 +182,7 @@ export const RadarTotalFunctionalities = [
     iconoActivo: 'assets/versionesFuncionalidadInterfaces-activo.svg',
     hover: false,
     margin: '10px',
-    margin2 : '32px'
+    margin2: '32px',
   },
   {
     name: 'GESTIÓN DE REFACCIONES',
@@ -182,7 +193,7 @@ export const RadarTotalFunctionalities = [
     iconoActivo: 'assets/versionesFuncionalidadRefacciones-activo.svg',
     hover: false,
     margin: '2px',
-    margin2 : '22px'
+    margin2: '22px',
   },
   {
     name: 'INVENTARIO',
@@ -193,7 +204,7 @@ export const RadarTotalFunctionalities = [
     iconoActivo: 'assets/versionesFuncionalidadInventario-activo.svg',
     hover: false,
     margin: '0px',
-    margin2:'18px'
+    margin2: '18px',
   },
   {
     name: 'NÓMINA',
@@ -204,7 +215,7 @@ export const RadarTotalFunctionalities = [
     iconoActivo: 'assets/versionesFuncionalidadNomina-activo.svg',
     hover: false,
     margin: '2px',
-    margin2 : '22px'
+    margin2: '22px',
   },
   {
     name: 'LABORATORIO',
@@ -215,7 +226,7 @@ export const RadarTotalFunctionalities = [
     iconoActivo: 'assets/versionesFuncionalidadLaboratorio-activo.svg',
     hover: false,
     margin: '10px',
-    margin2 : '32px'
+    margin2: '32px',
   },
   {
     name: 'FACTURACIÓN',
@@ -226,7 +237,7 @@ export const RadarTotalFunctionalities = [
     iconoActivo: 'assets/versionesFuncionalidadFacturacion-activo.svg',
     hover: false,
     margin: '27px',
-    margin2 : '47px'
+    margin2: '47px',
   },
   {
     name: 'E-TOOLS',
@@ -237,7 +248,7 @@ export const RadarTotalFunctionalities = [
     iconoActivo: 'assets/versionesFuncionalidadETools-activo.svg',
     hover: false,
     margin: '48px',
-    margin2 : '68px'
+    margin2: '68px',
   },
   {
     name: 'VALUACIÓN',
@@ -248,7 +259,7 @@ export const RadarTotalFunctionalities = [
     iconoActivo: 'assets/versionesFuncionalidadValuacion-activo.svg',
     hover: false,
     margin: '80px',
-    margin2 : '94px'
+    margin2: '94px',
   },
 ];
 
@@ -262,7 +273,7 @@ export const RadarLiteFunctionalities = [
     iconoActivo: 'assets/versionesFuncionalidadPanelCliente-activo.svg',
     hover: false,
     margin: '42px',
-    margin2 : '58px'
+    margin2: '58px',
   },
   {
     name: 'CREACION DE REPORTES',
@@ -273,7 +284,7 @@ export const RadarLiteFunctionalities = [
     iconoActivo: 'assets/versionesFuncionalidadReportes-activo.svg',
     hover: false,
     margin: '17px',
-    margin2 : '36px'
+    margin2: '36px',
   },
   {
     name: 'VSM',
@@ -284,7 +295,7 @@ export const RadarLiteFunctionalities = [
     iconoActivo: 'assets/versionesFuncionalidadVSM-activo.svg',
     hover: false,
     margin: '2px',
-    margin2 : '22px'
+    margin2: '22px',
   },
   {
     name: 'MONTOS AUTORIZADOS',
@@ -295,7 +306,7 @@ export const RadarLiteFunctionalities = [
     iconoActivo: 'assets/versionesFuncionalidadMontosAutorizados-activo.svg',
     hover: false,
     margin: '0px',
-    margin2:'18px'
+    margin2: '18px',
   },
   {
     name: 'INTERFACES',
@@ -306,7 +317,7 @@ export const RadarLiteFunctionalities = [
     iconoActivo: 'assets/versionesFuncionalidadInterfaces-activo.svg',
     hover: false,
     margin: '2px',
-    margin2 : '22px'
+    margin2: '22px',
   },
   {
     name: 'E-TOOLS',
@@ -317,7 +328,7 @@ export const RadarLiteFunctionalities = [
     iconoActivo: 'assets/versionesFuncionalidadETools-activo.svg',
     hover: false,
     margin: '18px',
-    margin2 : '36px'
+    margin2: '36px',
   },
   {
     name: 'VALUACIÓN',
@@ -328,6 +339,6 @@ export const RadarLiteFunctionalities = [
     iconoActivo: 'assets/versionesFuncionalidadValuacion-activo.svg',
     hover: false,
     margin: '42px',
-    margin2 : '58px'
+    margin2: '58px',
   },
 ];

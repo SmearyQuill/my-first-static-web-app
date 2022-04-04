@@ -6,7 +6,7 @@ import * as radarModel from '../modelos';
   styleUrls: ['./radar-control-total.component.css'],
 })
 export class RadarControlTotalComponent implements OnInit {
-  heroInformation = radarModel.versionesHero;
+  heroInformation = radarModel.HeroTotal;
   informationObject = radarModel.RadarControlTotalInformationObject;
   functionalitiesList = radarModel.RadarTotalFunctionalities;
   processList = radarModel.RadarControlTotalProcessList;

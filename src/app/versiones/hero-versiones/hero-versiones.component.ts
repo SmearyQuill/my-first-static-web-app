@@ -13,6 +13,7 @@ export class HeroVersionesComponent implements OnInit {
   @Input() backgroundImage: string = '';
   @Input() btn1Route: string = '';
   @Input() btn2Route: string = '';
+  @Input() heroIcon : string = '';
   constructor(private viewPortScroller: ViewportScroller) {}
   ngOnInit(): void {}
   
