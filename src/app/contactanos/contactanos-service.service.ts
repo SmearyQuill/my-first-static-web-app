@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
@@ -8,14 +7,14 @@ import { map } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class ContactanosServiceService {
-  private url: string;
+  private http: HttpClient;
   constructor(private _http: HttpClient) {
-    this.url = environment.apiUrl;
+    this.http = _http;
   }
 
   sendMail(data: JSON): Observable<any> {
     return this._http
-      .post(this.url + 'informacionContacto', data, { observe: 'response' })
+      .post('/api/send-mail',data,{observe:'response'})
       .pipe(map((res) => res));
   }
 }
