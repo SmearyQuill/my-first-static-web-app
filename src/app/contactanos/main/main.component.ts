@@ -35,8 +35,7 @@ export class MainComponent implements OnInit {
   sendInfo() {
     const data = JSON.parse(JSON.stringify(this.exform.getRawValue()));
     this.service.sendMail(data).subscribe((response) => {
-      console.log(response);
-      if (response.ok == true) {
+      if (response.emailSended == true) {
         this.exform.reset();
         Swal.fire({
           title: 'Información enviada',
