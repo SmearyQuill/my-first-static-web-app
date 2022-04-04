@@ -28,12 +28,12 @@ export class MainComponent implements OnInit {
   }
 
   sendInfo() {
-    const data = JSON.parse(JSON.stringify(this.exform.getRawValue()));
+    const data = JSON.parse(JSON.stringify(this.exform.getRawValue()))
     this.service.sendMail(data).subscribe((response) => {
       if (response.status == 200) {
-        this.exform.reset();
+        this.exform.reset()
       } else {
-        console.log('Salió mal el envio de correo');
+        console.log('Salió mal el envio de correo')
       }
     });
   }
