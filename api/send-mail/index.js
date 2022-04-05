@@ -14,7 +14,7 @@ var transporter = nodemailer.createTransport({
 });
 var mailOptions = {
   from: "no-reply@radarcontroltotal.com",
-  to: "raul.argott@aumenta.mx",
+  to: "ventas@radarcontroltotal.com",
   subject: "Información contacto",
   text: ``,
 };
