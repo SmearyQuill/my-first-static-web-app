@@ -17,11 +17,13 @@ var mailOptions = {
   to: "ventas@radarcontroltotal.com",
   subject: "Información contacto",
   text: ``,
+  html: '',
 };
 module.exports = async function (context, req) {
   try{
     context.log('JavaScript HTTP trigger function processed a request.');
-    mailOptions.text = `Un cliente ha enviado su informacion de contacto.Nombre : ${req.body.name}.Apellido: ${req.body.lastname}.Email: ${req.body.email}.Teléfono: ${req.body.phone}.Mensaje : ${req.body.message}`
+    mailOptions.text = `Un cliente ha enviado su informacion de contacto.<brNombre : ${req.body.name}.Apellido: ${req.body.lastname}.Email: ${req.body.email}.Teléfono: ${req.body.phone}.Mensaje : ${req.body.message}`
+    mailOptions.html = `<p>Un cliente ha enviado su informacion de contacto.</p><p>Nombre : ${req.body.name}.</p><p>Apellido: ${req.body.lastname}.</p><p>Email: ${req.body.email}.</p><p>Teléfono: ${req.body.phone}.</p><p>Mensaje : ${req.body.message}</p>`
     transporter.sendMail(mailOptions, function (err, data) {});
     context.res.json({
       text: "SENT",
