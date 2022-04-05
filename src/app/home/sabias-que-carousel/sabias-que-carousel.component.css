@@ -37,7 +37,6 @@
 }
 
 @media (min-width: 992px) {
-
     ._item, .example{
         height: 550px;
     }
