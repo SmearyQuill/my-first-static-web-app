@@ -23,7 +23,7 @@ export class MainComponent implements OnInit {
       phone: new FormControl(null, [
         Validators.required,
         Validators.pattern('[- +()0-9]+'),
-        Validators.maxLength(254)
+        Validators.maxLength(15)
       ]),
       message: new FormControl(null, [
         Validators.required,
