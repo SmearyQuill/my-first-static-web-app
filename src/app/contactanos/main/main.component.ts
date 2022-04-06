@@ -17,12 +17,13 @@ export class MainComponent implements OnInit {
     this.captchaKey = '6LejDEYfAAAAAO12Zp-iuTvpyRjAdmZ7Yq8TAIvL';
     // Se agregan las validaciones al formulario
     this.exform = new FormGroup({
-      name: new FormControl(null, Validators.required),
-      lastname: new FormControl(null, Validators.required),
-      email: new FormControl(null, [Validators.required, Validators.email]),
+      name: new FormControl(null, [Validators.required, Validators.maxLength(50)]),
+      lastname: new FormControl(null, [Validators.required, Validators.maxLength(60)]),
+      email: new FormControl(null, [Validators.required, Validators.email, Validators.maxLength(50)]),
       phone: new FormControl(null, [
         Validators.required,
         Validators.pattern('[- +()0-9]+'),
+        Validators.maxLength(254)
       ]),
       message: new FormControl(null, [
         Validators.required,
@@ -34,6 +35,11 @@ export class MainComponent implements OnInit {
 
   sendInfo() {
     const data = JSON.parse(JSON.stringify(this.exform.getRawValue()));
+    Swal.fire({
+      title: 'Enviando información.',
+      didOpen: () => { Swal.showLoading() }
+    })
+
     this.service.sendMail(data).subscribe((response) => {
       if (response.body.success == true) {
         this.exform.reset();

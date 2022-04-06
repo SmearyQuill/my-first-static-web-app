@@ -14,15 +14,17 @@ var transporter = nodemailer.createTransport({
 });
 var mailOptions = {
   from: "no-reply@radarcontroltotal.com",
-  to: "ventas@radarcontroltotal.com",
+  to: "raul.argott@aumenta.mx",
   subject: "Información contacto",
   text: ``,
+  html: ``,
 };
 module.exports = async function (context, req) {
   try{
     context.log('JavaScript HTTP trigger function processed a request.');
     mailOptions.text = `Un cliente ha enviado su informacion de contacto.Nombre : ${req.body.name}.Apellido: ${req.body.lastname}.Email: ${req.body.email}.Teléfono: ${req.body.phone}.Mensaje : ${req.body.message}`
-    transporter.sendMail(mailOptions, function (err, data) {});
+    mailOptions.html = `<p>Un cliente ha enviado su informacion de contacto.</p><p>Nombre : ${req.body.name}</p><p>Apellido: ${req.body.lastname}.</p><p>Email: ${req.body.email}.</p><p>Teléfono: ${req.body.phone}.</p><p>Mensaje : ${req.body.message}</p>`
+    await transporter.sendMail(mailOptions);
     context.res.json({
       text: "SENT",
       success : true
