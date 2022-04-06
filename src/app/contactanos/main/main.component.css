@@ -84,7 +84,7 @@ textarea:focus::placeholder {
 }
 .input-contactanos.mensaje {
   min-height: 150px;
-  margin-bottom: 0;
+  margin-bottom: 25px;
 }
 #contactanos-button {
   border-radius: 6px;
@@ -112,7 +112,7 @@ textarea:focus::placeholder {
 small {
   position: absolute;
   left: 15px;
-  bottom: 45px;
+  bottom: 0px;
 }
 @media screen and (min-width: 1200px) {
   .input-contactanos {
