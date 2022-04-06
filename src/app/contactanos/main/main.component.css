@@ -112,6 +112,10 @@ textarea:focus::placeholder {
 small {
   position: absolute;
   left: 15px;
+  bottom: 45px;
+}
+
+#small-ta{
   bottom: 0px;
 }
 @media screen and (min-width: 1200px) {
