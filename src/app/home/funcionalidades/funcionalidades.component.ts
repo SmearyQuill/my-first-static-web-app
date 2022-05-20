@@ -29,7 +29,7 @@ export class FuncionalidadesComponent implements OnInit {
     },
     {
       id: 3,
-      name: 'CALCULA AUTOMATICAMENTE LA NÓMINA',
+      name: 'CALCULA AUTOMÁTICAMENTE LA NÓMINA',
       subtitle: 'TODA LA NÓMINA EN UN SOLO LUGAR',
       text: 'Calcula los montos que tienes que pagar por orden, por operario, por proceso y saca reportes de lo que necesites.',
       iconInactive: 'assets/home_nomina-inactivo.svg',
