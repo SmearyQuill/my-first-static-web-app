@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
+var modernizer = require('modernizr');
 @Component({
   selector: 'app-sabias-que-card',
   templateUrl: './sabias-que-card.component.html',
