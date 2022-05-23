@@ -14,7 +14,7 @@ export class FuncionalidadesComponent implements OnInit {
       text: 'Controla y monitorea tu taller desde cualquier parte del mundo, puedes ingresar desde cualquier dispositivo móvil.',
       iconInactive: 'assets/home_accedeIcon-inactivo.svg',
       iconActive: 'assets/home_accedeIcon-activo.svg',
-      image: '/assets/WEB-BasedHome.png',
+      image: '/assets/WEB-BasedHome.webp',
       over: false,
     },
     {

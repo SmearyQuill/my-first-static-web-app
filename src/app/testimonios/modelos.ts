@@ -14,7 +14,7 @@ export const ListaTestimonios = [
     name: 'Marco Espinosa',
     position: 'Volkswagen y seat potosina',
     first: true,
-    image2: 'assets/MarcoEspinosa.png',
+    image2: 'assets/MarcoEspinosa.webp',
   },
   {
     image: 'assets/MauricioHerrera-Testimonio.png',
@@ -23,7 +23,7 @@ export const ListaTestimonios = [
     text: '"Radar es control a tu alcance"',
     name: 'Mauricio Herrera',
     position: 'Director de VW Rafedher, Aguascalientes',
-    image2: 'assets/MauricioHerrera.png',
+    image2: 'assets/MauricioHerrera.webp',
   },
   {
     image: 'assets/WalterArcusin-Testimonio.png',
@@ -32,6 +32,6 @@ export const ListaTestimonios = [
     text: '"Una herramienta ágil, intuitiva y completa con la que se puede controlar y medir todo el proceso de un CDR desde la recepción hasta la entrega de los vehículos, asegurando la interacción con los clientes, proveedores y aseguradoras"',
     name: 'Walter Arcusin',
     position: 'Consultor PPG, programa MVP',
-    image2: 'assets/WalterArcusin.png',
+    image2: 'assets/WalterArcusin.webp',
   },
 ];
