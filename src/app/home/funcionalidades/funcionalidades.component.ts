@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { WebpSupportService } from 'src/app/webp-support.service';
 @Component({
   selector: 'app-funcionalidades',
   templateUrl: './funcionalidades.component.html',
@@ -89,8 +89,10 @@ export class FuncionalidadesComponent implements OnInit {
     image: '',
     over: false,
   };
-  constructor() {}
-
+  webpSupport : boolean
+  constructor(private webpSupportService : WebpSupportService) {
+    this.webpSupport = this.webpSupportService.GetWebpSupport()
+  }
   ngOnInit(): void {
     this.selectFunctionality(0);
   }
