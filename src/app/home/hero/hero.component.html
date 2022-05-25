@@ -1,5 +1,5 @@
 <section>
-    <div class="container-flluid" id="hero">
+    <div class="container-flluid" id="hero" [ngClass]="webpSupport ? 'webp':'no-webp'">
         <video id="video-bg" loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true"
             poster="/assets/webradra_video2.mp4">
             <source src="/assets/webradra_video2.mp4" type="video/mp4">

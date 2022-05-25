@@ -1,4 +1,10 @@
-#funcionalidadesRadar {
+#funcionalidadesRadar.webp{
+  background-image: url("/assets/FondoFuncionalidadesHome.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+#funcionalidadesRadar.no-webp{
   background-image: url("/assets/FondoFuncionalidadesHome.png");
   background-size: cover;
   background-repeat: no-repeat;

@@ -1,4 +1,10 @@
-#versiones {
+#versiones.webp{
+  background-image: url("/assets/Grupo476.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#versiones.no-webp{
   background-image: url("/assets/Grupo476.png");
   background-position: center;
   background-size: cover;
@@ -42,7 +48,7 @@
 }
 
 @media (max-width : 600px){
-  #versiones{
+  #versiones.webp, #versiones.no-webp{
     background-image: url("/assets/VersionesHome-Movil.png");
   }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { WebpSupportService } from 'src/app/webp-support.service';
 
 @Component({
   selector: 'app-hero',
@@ -6,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hero.component.css']
 })
 export class HeroComponent implements OnInit {
-
-  constructor() { }
+  webpSupport:boolean
+  constructor(private webpSupportService : WebpSupportService) {
+    this.webpSupport = this.webpSupportService.GetWebpSupport()
+  }
 
   ngOnInit(): void {
   }
