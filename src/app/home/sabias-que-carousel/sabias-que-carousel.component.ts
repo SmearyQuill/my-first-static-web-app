@@ -1,4 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { WebpSupportService } from 'src/app/webp-support.service';
 import * as model from '../modelos';
 declare var $: any;
 @Component({
@@ -8,11 +9,14 @@ declare var $: any;
 })
 export class SabiasQueCarouselComponent implements OnInit {
   sabiasQueList = model.SabiasQueCards;
-  constructor() { }
+  imgFormat : string
+  constructor(private webpServiceSupport : WebpSupportService) {
+    this.imgFormat = this.webpServiceSupport.GetWebpSupport()? '.webp':'.png'
+  }
 
   ngOnInit(): void {
   }
-    
+
   ngAfterViewInit():void {
 
     $('.carousel-item', '.show-neighbors').each(function(this: any){
