@@ -48,7 +48,7 @@
 }
 
 @media (max-width : 600px){
-  #versiones{
+  #versiones.webp, #versiones.no-webp{
     background-image: url("/assets/VersionesHome-Movil.png");
   }
 }
