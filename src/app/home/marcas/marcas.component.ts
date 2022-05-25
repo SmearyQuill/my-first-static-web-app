@@ -13,7 +13,9 @@ export class MarcasComponent implements OnInit {
     'assets/Grupo532.svg',
     'assets/Grupo529.svg',
     'assets/Grupo531.svg',
-    'assets/Grupo530.svg',
+    'assets/Grupo 1.svg',
+    'assets/Grupo 2.svg',
+    'assets/Grupo 3.svg',
   ];
 
   listaImagenes2 = [
@@ -22,8 +24,10 @@ export class MarcasComponent implements OnInit {
     'assets/Grupo528.svg',
     'assets/Grupo532.svg',
     'assets/Grupo529.svg',
-    'assets/Grupo530.svg',
     'assets/Grupo531.svg',
+    'assets/Grupo 1.svg',
+    'assets/Grupo 2.svg',
+    'assets/Grupo 3.svg',
   ]
   constructor() {}
 
