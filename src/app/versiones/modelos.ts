@@ -152,7 +152,7 @@ export const RadarTotalFunctionalities = [
     margin2: '94px',
   },
   {
-    name: 'INFORMACION EN TIEMPO REAL',
+    name: 'INFORMACIÓN EN TIEMPO REAL',
     icon: 'assets/versionesFuncionalidadTiempoReal-inactivo.svg',
     gif: 'assets/tiempo_real.gif',
     text: 'Creación de reportes, indicadores, VSM (Tiempo de ciclo, WIP, vehículos promedio), Analytics con Power BI.',
