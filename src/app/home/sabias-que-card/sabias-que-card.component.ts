@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-
 @Component({
   selector: 'app-sabias-que-card',
   templateUrl: './sabias-que-card.component.html',

@@ -13,11 +13,11 @@
                         <div class="carousel-item" *ngFor="let element of sabiasQueList; let i = index" [ngClass]="{'active': i==0}">
                             <div class="_item item__third">
                                 <app-sabias-que-card [specialCaseText]="element.specialCaseText" [questionText]="element.questionText"
-                                    [informationText]="element.informationText" [buttonText]="element.buttonText" [imageSrc]="element.imageSrc">
+                                    [informationText]="element.informationText" [buttonText]="element.buttonText" [imageSrc]="element.imageSrc+imgFormat">
                                 </app-sabias-que-card>
                             </div>
                         </div>
-                </div>               
+                </div>
                 <!-- Carousel arrows -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -27,8 +27,8 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-            </div>    
+            </div>
         </div>
-                    
+
     </div>
 </section>
