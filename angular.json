@@ -17,14 +17,16 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/radar-web-page",
+            "outputPath": "dist/RadarWebPage/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/assets",
-              "src/web.config"
+              "src/web.config",
+              "src/robots.txt",
+              "src/sitemap.xml"
             ],
             "styles": [
               "src/styles.css"
@@ -97,6 +99,64 @@
             ],
             "scripts": ["./node_modules/jquery/dist/jquery.min.js"]
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/RadarWebPage/server",
+            "main": "server.ts",
+            "tsConfig": "tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ]
+            },
+            "development": {
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "configurations": {
+            "development": {
+              "browserTarget": "RadarWebPage:build:development",
+              "serverTarget": "RadarWebPage:server:development"
+            },
+            "production": {
+              "browserTarget": "RadarWebPage:build:production",
+              "serverTarget": "RadarWebPage:server:production"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "RadarWebPage:build:production",
+              "serverTarget": "RadarWebPage:server:production"
+            },
+            "development": {
+              "browserTarget": "RadarWebPage:build:development",
+              "serverTarget": "RadarWebPage:server:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
