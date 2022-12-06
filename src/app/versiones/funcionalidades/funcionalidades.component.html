@@ -17,14 +17,14 @@
                             (mouseout)="checkMouseOut(i)">
                             <div class="col-3 col-lg-2  d-flex align-items-center justify-content-end">
                                 <img src="assets/Elipse338.svg"
-                                    [ngClass]="{'ellipse' : selectedFunctionality.id == element.id}">
+                                    [ngClass]="{'ellipse' : selectedFunctionality.id == element.id}"alt="ellipse" >
                                 <img src="{{element.hover ? element.iconoActivo : element.icon}}"
                                     class="functionality-list__icon"
-                                    [ngClass]="{'functionality-list__icon-selected' : selectedFunctionality.id == element.id}">
+                                    [ngClass]="{'functionality-list__icon-selected' : selectedFunctionality.id == element.id}" alt="functionality-list__icon">
                             </div>
                             <div class="col-md-9 col-lg-10 d-flex align-items-center p-start-2">
                                 <p class="functionality-list__name"
-                                    [ngClass]="{'functionality-list__name-selected' : selectedFunctionality.id == element.id}">
+                                    [ngClass]="{'functionality-list__name-selected' : selectedFunctionality.id == element.id}" alt="unctionality-list__name-selected" >
                                     {{element.name}}</p>
                             </div>
                         </div>
@@ -37,7 +37,7 @@
                             <p class="information-column__title">{{selectedFunctionality.name + ' :'}}</p>
                         </div>
                         <div class="col-10 d-flex justify-content-center">
-                            <img src="{{selectedFunctionality.gif}}" class="information-column__image">
+                            <img src="{{selectedFunctionality.gif}}" class="information-column__image" alt="information-column__image">
                         </div>
                         <div class="col-12 px-5">
                             <p class="information-column__description">{{selectedFunctionality.text}}</p>
@@ -69,14 +69,14 @@
                     <div class="col-12">
                         <div class="row">
                             <div class="col-12 d-flex align-items-center">
-                                <img src="{{selectedFunctionality.iconoActivo}}">
+                                <img src="{{selectedFunctionality.iconoActivo}}" alt="icono activo">
                                 <p class="mobile-card__name">{{selectedFunctionality.name}}</p>
                             </div>
                         </div>
                     </div>
                     <!-- Imagen -->
                     <div class="col-12 d-flex justify-content-center align-items-center">
-                        <img src="{{selectedFunctionality.gif}}" class="mobile-card__image">
+                        <img src="{{selectedFunctionality.gif}}" class="mobile-card__image" alt="mobile-card__image">
                     </div>
                     <!-- Información -->
                     <div class="col-12">
@@ -85,7 +85,7 @@
                     <!-- Flecha -->
                     <div class="col-12 d-flex justify-content-end">
                         <img src="assets/arrow_forward_black_24dp.svg" class="card__arrow-button"
-                            style="align-self: end;" (click)="goToNextFunctionality()">
+                            style="align-self: end;" (click)="goToNextFunctionality()" alt="flecha derecha radar control total">
                     </div>
                 </div>
             </div>
@@ -96,12 +96,12 @@
                 <!-- Botones -->
                 <div *ngFor="let element of list; let i = index;" (click)="selectFunctionality(i)">
                     <img *ngIf="selectedFunctionality.id != element.id" src="assets/Elipse340.svg"
-                        class="mobile-card__ellipsebutton">
+                        class="mobile-card__ellipsebutton" alt="mobile-card__ellipsebutton">
                     <img *ngIf="selectedFunctionality.id == element.id" src="assets/Elipse338.svg"
-                        class="mobile-card__ellipsebutton">
+                        class="mobile-card__ellipsebutton" alt="mobile-card__ellipsebutton">
                 </div>
                 <!-- Flecha Derecha -->
-                <img src="assets/flecha-derecha-funcionalidades.svg" (click)="goToNextFunctionality()">
+                <img src="assets/flecha-derecha-funcionalidades.svg" (click)="goToNextFunctionality()" alt="flecha derecha radar control total">
             </div>
         </div>
     </div>
