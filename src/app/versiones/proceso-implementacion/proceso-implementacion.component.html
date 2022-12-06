@@ -9,7 +9,7 @@
             <div class="col-md imageColumn d-flex align-items-center justify-content-center"
                 style="position: relative; cursor: pointer;"
                 *ngFor="let processInformation of processList; let i = index;" (mouseenter)="processInformation.clicked = true;" (mouseleave)="processInformation.clicked = false;">
-                <img class="process-image" src="{{processInformation.imageSrc}}" alt="proceso radar control total {{processInformation.processName}}">
+                <img loading="lazy" class="process-image" src="{{processInformation.imageSrc}}" alt="proceso radar control total {{processInformation.processName}}">
                 <!-- Div con el texto -->
                 <div class="text-container" style="position: absolute;" *ngIf="!processInformation.clicked"
                     [@showNumber]>

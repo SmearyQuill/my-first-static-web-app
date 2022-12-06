@@ -11,7 +11,7 @@
                     <!-- Icono y nombre del beneficio -->
                     <div class="col-11 py-2">
                         <div class="row align-items-center">
-                            <div class="col-4 col-sm-3"><img class="img-fluid" src="{{selectedBenefit.iconInactive}}">
+                            <div class="col-4 col-sm-3"><img loading="lazy" class="img-fluid" src="{{selectedBenefit.iconInactive}}">
                             </div>
                             <div class="col-7" style="padding-left:0;">
                                 <p class="mobile__benefit-name">{{selectedBenefit.name}}</p>
@@ -31,7 +31,7 @@
                     </div>
                     <div class="col-11">
                         <!-- Flecha -->
-                        <img (click)="goToNextFunctionality()" src="assets/arrow_forward_black_24dp.svg"
+                        <img loading="lazy" (click)="goToNextFunctionality()" src="assets/arrow_forward_black_24dp.svg"
                             class="card__arrow-button" alt="Radar Control Total Flecha Atras">
                     </div>
                 </div>
@@ -40,16 +40,16 @@
             <div class="row d-lg-none">
                 <div class="col-12 d-flex justify-content-center pt-5 pb-4">
                     <!-- Flecha Izquierda -->
-                    <img src="assets/flecha-izquierda-funcionalidades.svg" (click)="goToPreviousFunctionality()" alt="Radar Control Total Flecha Izquierda">
+                    <img loading="lazy" src="assets/flecha-izquierda-funcionalidades.svg" (click)="goToPreviousFunctionality()" alt="Radar Control Total Flecha Izquierda">
                     <!-- Botones -->
                     <div *ngFor="let element of list; let i = index;" (click)="selectFunctionality(i)">
-                        <img *ngIf="selectedBenefit.id != element.id" src="assets/Elipse340.svg"
+                        <img loading="lazy" *ngIf="selectedBenefit.id != element.id" src="assets/Elipse340.svg"
                             class="mobile-card__ellipsebutton" alt="Radar Control Total Versión Móvil">
-                        <img *ngIf="selectedBenefit.id == element.id" src="assets/Elipse338.svg"
+                        <img loading="lazy" *ngIf="selectedBenefit.id == element.id" src="assets/Elipse338.svg"
                             class="mobile-card__ellipsebutton" alt="Radar Control Total Versión Móvil">
                     </div>
                     <!-- Flecha Derecha -->
-                    <img src="assets/flecha-derecha-funcionalidades.svg" (click)="goToNextFunctionality()" alt="Radar Control Total Flecha Derecha">
+                    <img loading="lazy" src="assets/flecha-derecha-funcionalidades.svg" (click)="goToNextFunctionality()" alt="Radar Control Total Flecha Derecha">
                 </div>
             </div>
 
@@ -58,7 +58,7 @@
             <!-- Lista de iconos con las funcionalidades -->
             <div class="col d-none d-lg-flex flex-column justify-content-center align-items-center"
                 *ngFor="let element of list; let i = index;">
-                <img style="cursor:pointer;" class="web__icon" src="{{element.over ? element.iconActive : element.iconInactive}}"
+                <img loading="lazy" style="cursor:pointer;" class="web__icon" src="{{element.over ? element.iconActive : element.iconInactive}}"
                     (mouseover)="element.over = true;" (mouseout)="checkMouseOut(i)" (click)="selectFunctionality(i)" alt="Radar Control Total Icono Funcionalidad">
                 <p class="web__benefit-title">{{element.name}}</p>
             </div>
@@ -78,10 +78,10 @@
                                 <p class="web__text">{{selectedBenefit.text}}</p>
                             </div>
                             <div class="col-12 mt-1 d-flex align-items-center">
-                                <img (click)="goToPreviousFunctionality()"
+                                <img loading="lazy" (click)="goToPreviousFunctionality()"
                                     style="max-height: 80%; width: auto; margin: 0 1rem 0 0; cursor: pointer;"
                                     src="assets/flechaIzq-beneficios-home.svg" alt="Radar Control Total Funcionalidad Anterior">
-                                <img (click)="goToNextFunctionality()"
+                                <img loading="lazy" (click)="goToNextFunctionality()"
                                     style="max-height: 80%; width: auto; cursor: pointer;"
                                     src="assets/flechaDer-beneficios-home.svg" alt="Radar Control Total Funcionalidad Siguiente">
                             </div>
