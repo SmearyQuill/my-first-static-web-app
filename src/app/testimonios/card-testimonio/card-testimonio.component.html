@@ -5,12 +5,12 @@
             <div class="col-md-3">
                 <div class="row">
                     <div class="col-12 d-none d-md-block" *ngIf="cardInformation.first">
-                        <img class="main-card__quotes" src="assets/Trazado331@2x.png" alt="main-card__quotes">
+                        <img loading="lazy" class="main-card__quotes" src="assets/Trazado331@2x.png" alt="main-card__quotes">
                         <p class="first-card__text">RESEÑAS DE</p>
                         <p class="first-card__second-text"> CLIENTES </p>
                     </div>
                     <div class="col-12 d-none d-md-block" *ngIf="!cardInformation.first">
-                        <img class="normal-card__quotes" src="assets/Trazado331@2x.png" alt="normal-card__quotes">
+                        <img loading="lazy" class="normal-card__quotes" src="assets/Trazado331@2x.png" alt="normal-card__quotes">
                     </div>
                     <div class="col-12">
                         <p class="person-name">{{cardInformation.name}}</p>
@@ -22,7 +22,7 @@
             </div>
             <!-- Imagen de la persona del testimonio -->
             <div class="col-6 col-md-3 d-flex justify-content-center">
-                <img class="card__person-image" src="{{cardInformation.image}}" alt="Radar Control Total {{cardInformation.name}}">
+                <img loading="lazy" class="card__person-image" src="{{cardInformation.image}}" alt="Radar Control Total {{cardInformation.name}}">
             </div>
             <!-- Contenido del testimonio (Negocio, Ubicación y Texto) -->
             <div class="col-md-4">
