@@ -11,44 +11,44 @@
             <ul class="navbar-nav  mr-auto">
                 <!-- Inicio -->
                 <li class="nav-item" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
-                    <a class="nav-link navbarLink" routerLink="" routerLinkActive="is-active"
-                        [routerLinkActiveOptions]="{exact : true}">INICIO</a>
+                    <a class="nav-link navbarLink ga-call-to-action" routerLink="" routerLinkActive="is-active"
+                        [routerLinkActiveOptions]="{exact : true}" data-ga-element="INICIO">INICIO</a>
                 </li>
                 <!-- Versiones -->
                 <li class="nav-item dropdown"  routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}"  [ngClass]="{'dd-shown':dropdowns[0]}">
-                    <a class="nav-link dropdown-toggle navbarLink"  id="navbarVersionesDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="dropdownClicked('0')">
+                    <a class="nav-link dropdown-toggle navbarLink ga-call-to-action"  id="navbarVersionesDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="dropdownClicked('0')" data-ga-element="VERSIONES">
                         VERSIONES
                         <img loading="lazy" class="dropdown-icon" alt="Radar Control Total Dropdown Icon">
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <div class="blur dropdown-menu-bg"></div>
-                        <a class="dropdown-item" routerLink="versiones/radarLite">Radar Lite</a>
-                        <a class="dropdown-item" routerLink="versiones">Radar Control Total</a>
+                        <a class="dropdown-item ga-call-to-action" routerLink="versiones/radarLite" data-ga-element="Radar Lite">Radar Lite</a>
+                        <a class="dropdown-item ga-call-to-action" routerLink="versiones" data-ga-element="Radar Control Total">Radar Control Total</a>
                     </div>
                 </li>
                 <!-- Herrramientas -->
                 <li class="nav-item dropdown"  routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}"  [ngClass]="{'dd-shown':dropdowns[1]}">
-                    <a class="nav-link dropdown-toggle navbarLink" id="navbarHerramientasDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="dropdownClicked('1')">
+                    <a class="nav-link dropdown-toggle navbarLink ga-call-to-action" id="navbarHerramientasDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="dropdownClicked('1')" data-ga-element="HERRAMIENTAS">
                         HERRAMIENTAS               
                         <img loading="lazy" class="dropdown-icon" alt="Radar Control Total Dropdown Icon">
                     </a>     
                     <div class="dropdown-menu" aria-labelledby="navbarHerramientasDropdown">
                         <div class="blur dropdown-menu-bg"></div>
-                        <a class="dropdown-item" routerLink="herramientas">Radar Consulting</a>
-                        <a class="dropdown-item" routerLink="herramientas/radarAcademy">Radar Academy</a>
-                        <a class="dropdown-item" routerLink="herramientas/radarConnect">Radar Connect</a>
+                        <a class="dropdown-item ga-call-to-action" routerLink="herramientas" data-ga-element="Radar Consulting">Radar Consulting</a>
+                        <a class="dropdown-item ga-call-to-action" routerLink="herramientas/radarAcademy" data-ga-element="Radar Academy">Radar Academy</a>
+                        <a class="dropdown-item ga-call-to-action" routerLink="herramientas/radarConnect" data-ga-element="Radar Connect">Radar Connect</a>
                     </div>
                 </li>
                 <!-- Testimonios -->
                 <li class="nav-item" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
-                    <a class="nav-link navbarLink" routerLink="testimonios" routerLinkActive="is-active" href="#"
+                    <a class="nav-link navbarLink ga-call-to-action" routerLink="testimonios" routerLinkActive="is-active" href="#" data-ga-element="TESTIMONIOS"
                         [routerLinkActiveOptions]="{exact : true}">TESTIMONIOS</a>
                 </li>
                 <!-- Contactanos -->
                 <li class="nav-item" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">
-                    <a class="nav-link navbarLink" routerLink="contactanos" routerLinkActive="is-active"
+                    <a class="nav-link navbarLink ga-call-to-action" routerLink="contactanos" data-ga-element="CONTÁCTANOS" routerLinkActive="is-active"
                         [routerLinkActiveOptions]="{exact : true}">CONTÁCTANOS</a>
                 </li>
             </ul>
