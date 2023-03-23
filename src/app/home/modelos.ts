@@ -2,7 +2,7 @@ export const SabiasQueCards = [
   {
     specialCaseText: '¿SABÍAS QUE...',
     questionText:
-      'el 60% de la estadías de un vehículo es en actividades administrativas que nadie te paga?',
+      'el 60% de la estadía de un vehículo es en actividades administrativas que nadie te paga?',
     informationText:
       'Mide y controla tus tiempos por procesos y así aumenta tu productividad.',
     buttonText: 'AGENDA UNA REUNIÓN WEB',

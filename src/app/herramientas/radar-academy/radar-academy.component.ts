@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./radar-academy.component.css']
 })
 export class RadarAcademyComponent implements OnInit {
-  heroTitle1 = "CAPACITA A TUS COLABORADORES"
+  heroTitle1 = "CAPACITAMOS A TUS COLABORADORES"
   heroTitle2 = "EN CUESTIÓN DE HORAS"
   btn1Text = "SOLICITAR UN DEMO"
   btn2Text = "CONOCE LA VERSION RADAR CONTROL TOTAL"

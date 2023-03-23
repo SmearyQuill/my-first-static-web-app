@@ -24,10 +24,11 @@ export const RadarControlTotalInformationObject = {
   informationText:
     'Es la opción perfecta para talleres de alta productividad, obteniendo mediciones e indicadores de alto valor para tomar decisiones de alto impacto.',
   informationPoints: [
-    'Volumen de rep: +100 Unidades mensuales',
+    'Volumen de rep: +40 Unidades mensuales',
     'Plantilla laboral alta',
     'Funciones especificas',
     'Contabilidad interna',
+    'Talleres de agencia, multimarcas e híbridos',
   ],
   imageSrc: 'assets/RadarControlTotal.png',
 };
