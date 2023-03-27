@@ -9,9 +9,9 @@
                 <img loading="lazy" class="main-card__quotes" src="assets/Trazado331@2x.png" alt="main-card__quotes">
             </p>
         </div>
-        <div class="row mt-5 rows-cards">
+        <div class="row mt-5 rows-cards justify-content-center">
             <ng-container *ngFor="let element of cardList; let i = index;">
-                <div class="col-4 col-card d-flex align-items-stretch mb-5">
+                <div class="col-10 col-md-6 col-lg-4 col-card d-flex align-items-stretch mb-5">
                     <app-card-testimonio [cardInformation]="element"></app-card-testimonio>
                 </div>
             </ng-container>
