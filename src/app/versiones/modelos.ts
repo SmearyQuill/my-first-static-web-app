@@ -22,7 +22,11 @@ export const HeroTotal = {
 
 export const RadarControlTotalInformationObject = {
   informationText:
-    'Es la opción perfecta para talleres de alta productividad, obteniendo mediciones e indicadores de alto valor para tomar decisiones de alto impacto.',
+    `La opción perfecta para cualquier taller de
+    laminado y pintura, brindando control desde la
+    administración y operación, hasta la contabilidad.
+    Obteniendo mediciones e indicadores de grán valor
+    para tomar decisiones de alto impacto.`,
   informationPoints: [
     'Volumen de rep: +40 Unidades mensuales',
     'Plantilla laboral alta',
