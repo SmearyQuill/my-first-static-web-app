@@ -65,6 +65,7 @@
 
 .mobile-card__ellipsebutton {
   margin: 0 8px;
+  cursor: pointer;
 }
 
 .web__benefit-title {
@@ -132,4 +133,8 @@
   .web__name{
     font-size: 12px;
   }
+}
+
+.arrow-mobile{
+  cursor: pointer;
 }
