@@ -35,7 +35,6 @@
 #visitar-img{
     padding: 0%;
     padding-bottom: 16px;
-    padding-top: 16px;
     margin-bottom: 20px;
 }
 #visitar-academy {
@@ -82,8 +81,8 @@
         width: 100%;
     }
     #visitar-academy button{
-
-        height: 46px;
+        min-height: 46px;
+        height: auto;
         width: 70%;
         display: block;
     }
@@ -109,7 +108,7 @@
         font-style: normal;
         font-variant: normal;
         font-weight: 600;
-    }
+    }    
 }
 @media screen and (min-width: 1200px) {
     #visitar-academy button{

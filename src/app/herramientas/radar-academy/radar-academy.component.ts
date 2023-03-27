@@ -9,7 +9,7 @@ export class RadarAcademyComponent implements OnInit {
   heroTitle1 = "CAPACITAMOS A TUS COLABORADORES"
   heroTitle2 = "EN CUESTIÓN DE HORAS"
   btn1Text = "SOLICITAR UN DEMO"
-  btn2Text = "CONOCE LA VERSION RADAR CONTROL TOTAL"
+  btn2Text = "CONOCE LA VERSION FULL"
   btn2 = true
   bgImg = '/assets/Grupo 541.png'
   btn1Route = "/contactanos"
