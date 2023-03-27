@@ -45,18 +45,20 @@
     margin-left: 8px;
     margin-right: 8px;
 }
+
 #capacitacion-imgs{
     background: url('/assets/radar-logo.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
 }
-@media screen and (min-width: 576px) {
+
+@media screen and (max-width: 991px) {    
+    #capacitacion-imgs{
+        text-align: center;
+    }
 }
-@media screen and (min-width: 760px) {
-}
-@media screen and (min-width: 992px){
-}
+
 @media screen and (min-width: 1200px) {
     #capacitacion-card-text h1{
         font-size: 30px;
