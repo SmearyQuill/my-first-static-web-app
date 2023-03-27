@@ -23,8 +23,6 @@
 }
 
 .main-card__quotes {
-  max-width: 91px;
+  width: 70px;
   height: auto;
-}
-.rows-cards .col-card{
 }
