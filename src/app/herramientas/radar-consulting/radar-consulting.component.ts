@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RadarConsultingComponent implements OnInit {
   heroTitle1 = "MÁS QUE UN SOFTWARE,"
-  heroTitle2 = "SOMO UNA METODOLOGÍA DEL TRABAJO"
+  heroTitle2 = "SOMOS UNA METODOLOGÍA DE TRABAJO"
   btn1Text = "SOLICITAR UN DEMO"
-  btn2Text = "CONOCE LA VERSION RADAR CONTROL TOTAL"
+  btn2Text = "CONOCE LA VERSION FULL"
   btn2 = true
   bgImg = "/assets/campaign-creators-pypeCEaJeZY-unsplash.png"
   btn1Route = "/contactanos"
