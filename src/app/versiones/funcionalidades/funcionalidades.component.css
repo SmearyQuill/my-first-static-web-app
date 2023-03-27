@@ -141,6 +141,7 @@
 
 .mobile-card__ellipsebutton {
   margin: 0 8px;
+  cursor: pointer;
 }
 
 @media (max-width: 991px) {
@@ -271,4 +272,8 @@
   .mobile-card{
     min-height: 700px;
   }
+}
+
+.arrow-mobile{
+  cursor: pointer;
 }
