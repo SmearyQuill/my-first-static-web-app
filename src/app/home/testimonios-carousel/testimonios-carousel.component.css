@@ -40,7 +40,8 @@
     height: 532px;
 }
 }
-@media (min-width: 992px) {
+
+/* @media (min-width: 992px) {
 
 
     .show-neighbors .carousel-indicators {
@@ -51,7 +52,6 @@
         background: rgba(255, 255, 255, 0.3);
         width: 25%;
         z-index: 11;
-       /* .carousel-caption has z-index 10 */
    }
     .show-neighbors .carousel-inner {
         width: 150%;
@@ -69,8 +69,7 @@
         display: block !important;
         float: left;
         position: relative;
-       /* captions can now be added */
         width: 33.33333333%;
    }
-}
+} */
 /* Multi Item Carousel */

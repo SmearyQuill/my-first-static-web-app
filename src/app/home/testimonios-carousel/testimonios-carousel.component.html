@@ -1,35 +1,29 @@
 <section>
     <div class="container-fluid" id="testimonios-carousel">
         <div class="example">
-            <div id="testimonios-slider-carousel" class="carousel slide h-100 show-neighbors" data-ride="carousel" data-bs-interval="false">
+            <div id="testimonios-slider-carousel" class="carousel slide h-100" data-ride="carousel"
+                data-bs-interval="false">
                 <!-- Carousel indicators -->
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#testimonios-slider-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#testimonios-slider-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#testimonios-slider-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#testimonios-slider-carousel"
+                        *ngFor="let number of [].constructor(NumberOfBlocks); let i = index"
+                        [ngClass]="{'active' : i == 0}" attr.data-bs-slide-to="{{i}}" attr.aria-label="Slide {{i}}"
+                        attr.aria-current="{{i == 0 ? 'true' : 'false'}}"></button>
                 </div>
                 <!-- Carousel -->
                 <div class="carousel-inner">
-                        <div class="carousel-item" *ngFor="let element of testimonios; let i = index" [ngClass]="{'active': i==0}">
-                            <div class="_item item__third">
-                                <app-testimonio-card [cardInformation]="element"></app-testimonio-card>
-                            </div>
-                        </div><!-- 
-                        <ng-container *ngFor="let element of testimonios">
-                            <app-testimonio-card [cardInformation]="element"></app-testimonio-card>
-                        </ng-container> -->
-                </div>               
-                <!-- Carousel arrows -->
-                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-slider-carousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#testimonios-slider-carousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button> -->
-            </div>    
+                    <div class="carousel-item container-fluid"
+                        *ngFor="let number of [].constructor(NumberOfBlocks); let j = index;"
+                        [ngClass]="{'active': j == 0}">
+                        <div class="row h-100">
+                            <app-testimonio-card class="col-10 col-md-6 col-lg-4"
+                                *ngFor="let number of [].constructor(CardsPerBlock); let z = index;"
+                                [cardInformation]="testimonios[(j * CardsPerBlock) + z]">
+                            </app-testimonio-card>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-                    
     </div>
 </section>
