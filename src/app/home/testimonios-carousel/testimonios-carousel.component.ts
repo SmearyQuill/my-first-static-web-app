@@ -23,11 +23,10 @@ export class TestimoniosCarouselComponent implements OnInit {
   }
 
   CalculateCarrouselDimensions() {
-    console.log('Calculando tamaño');
     const WindowWidth = window.innerWidth;
     if (WindowWidth < 768) {
       this.CardsPerBlock = 1;
-    } else if (WindowWidth < 992) {
+    } else if (WindowWidth < 1200) {
       this.CardsPerBlock = 2;
     } else {
       this.CardsPerBlock = 3;
