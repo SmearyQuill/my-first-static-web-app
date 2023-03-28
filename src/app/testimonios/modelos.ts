@@ -7,12 +7,12 @@ export const heroInformation = {
 
 export const ListaTestimonios = [
   {
-    image: 'assets/IsabelCumbres.png',
+    image: 'assets/MarioCorrea.png',
     workshop: 'AUTOCRAFT',
     text: '“Radar es una herramienta indispensable para todo centro de reparación automotriz de alta productividad. Es muy intuitiva, y genera información valiosa para la correcta planeación de los procesos de reparación y para el preciso servicio al cliente”.',
     name: 'Mario Correa Canto',
     position: 'Dueño de taller',
-    image2: 'assets/IsabelCumbres',
+    image2: 'assets/MarioCorrea',
     location: 'Mérida, Yucatán',
   },
   {
