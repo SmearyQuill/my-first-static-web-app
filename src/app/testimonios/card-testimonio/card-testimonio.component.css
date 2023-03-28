@@ -15,7 +15,7 @@
 
 .person-name,
 .person-position {
-  font-size: 16px;
+  font-size: 17px;
   margin: 0;
   letter-spacing: 0.8px;
 }
@@ -97,7 +97,7 @@
 
   .person-name,
   .person-position {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .card-container {
@@ -137,4 +137,10 @@
   width: 50px;
   height: auto;
   margin-top: 25px;
+}
+
+.location{
+  font-size: 18px;
+  color: #022644;
+  margin-top: 20px;
 }

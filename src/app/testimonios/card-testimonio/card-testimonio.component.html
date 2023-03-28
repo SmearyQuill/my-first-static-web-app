@@ -11,14 +11,17 @@
             <div class="text-center">
                 <p class="person-name">{{cardInformation.name}}</p>
                 <p class="person-position">{{cardInformation.position}}</p>
-                <p class="card__location">{{cardInformation.location}}</p>
+                <p class="card__location">{{cardInformation.workshop}}</p>
             </div>
             <!-- Contenido del testimonio (Negocio, Ubicación y Texto) -->
             <div class="text-center flex-grow-1">
                 <p class="card__text">{{cardInformation.text}}</p>
             </div>
 
-            <img class="card-icon" loading="lazy" src="assets/Icono-Testimonio.svg" alt="Radar Control Total Icono Testimonio">
+            <img class="card-icon" loading="lazy" src="assets/Icono-Testimonio.svg"
+                alt="Radar Control Total Icono Testimonio">
+
+            <p class="text-center location">{{cardInformation.location}}</p>
         </div>
     </div>
 </div>
