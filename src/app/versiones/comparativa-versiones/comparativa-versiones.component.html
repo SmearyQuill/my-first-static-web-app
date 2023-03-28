@@ -7,56 +7,44 @@
         <div class="row justify-content-center d-none d-md-flex">
             <!-- Sección con la lista de opciones (Se oculta cuando el dispositivo es un celular)-->
             <div class="col-10 col-xxl-8 option-list d-none d-md-block">
-                <div class="row justify-content-center">
-                    <div class="col-3 d-flex justify-content-center section-div"
-                        [ngClass]="{'selected-section-div' : selectedOption == 'LITE'}" (click)="selectOption('LITE')">
-                        <p class="section-title"> RADAR LITE </p>
+                <div class="row justify-content-evenly">
+                    <div class="col-6 col-lg-4">
+                        <div class="d-flex justify-content-center section-div">
+                            <p class="section-title"> RADAR CONTROL TOTAL </p>
+                        </div>
+                        <div class="section-div__price-container">
+                            <p class="section-div__price-container__title">DESDE...</p>
+                            <div class="price-content">
+                                <p class="price-content__number">$5,000 MXN</p>
+                                <p class="price-content__currency">+IVA</p>
+                            </div>
+                            <button class="contact-button" routerLink="/contactanos">¡Contrata ya!</button>
+                        </div>
                     </div>
-                    <div class="col-3 d-flex justify-content-center section-div"
-                        [ngClass]="{'selected-section-div' : selectedOption == 'TOTAL'}"
-                        (click)="selectOption('TOTAL')">
-                        <p class="section-title"> RADAR CONTROL TOTAL </p>
-                    </div>
-                    <div class="col-3 d-flex justify-content-center section-div"
-                        [ngClass]="{'selected-section-div' : selectedOption == 'COMPARATIVO'}"
-                        (click)="selectOption('COMPARATIVO')">
-                        <span class="span-comparative">
-                            <p class="section-title">COMPARATIVO</p>
-                        </span>
+                    <div class="col-6 col-lg-4">
+                        <div class="d-flex justify-content-center section-div">
+                            <p class="section-title"> RADAR LITE </p>
+                        </div>
+                        <div class="section-div__price-container">
+                            <p class="section-div__price-container__title">DESDE...</p>
+                            <div class="price-content">
+                                <p class="price-content__number">$3,000 MXN</p>
+                                <p class="price-content__currency">+IVA</p>
+                            </div>
+                            <button class="contact-button" routerLink="/contactanos">¡Contrata ya!</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Contenedor de contenido de la opción seleccionada -->
+            <!-- Div de la tabla de comparativo entre las diferentes versiones de Radar -->
             <div class="row justify-content-center">
-                <!-- Div de tarjetas con los precios de la versión LITE o la versión completa -->
-                <ng-container *ngIf="selectedOption == 'LITE' || selectedOption == 'TOTAL'">
-                    <!-- Sección de tarjetas -->
-                    <div *ngFor="let card of selectedCard" class="col-md-5 col-lg-4 col-xxl-3 card-column">
-                        <div class="card-container">
-                            <!-- Titulo de la tarjeta -->
-                            <div class="card-header">
-                                <p class="card-header__text"> {{card.cardHeader}} </p>
-                            </div>
-                            <!-- Información de la tarjeta -->
-                            <div class="card-content">
-                                <ul>
-                                    <li *ngFor="let listElement of card.cardContent">{{listElement}}</li>
-                                </ul>
-                            </div>
-                            <!-- Separador de la tarjeta -->
-                            <hr class="card-separator">
-                            <!-- Costo del servicio en la tarjeta -->
-                            <div class="price-content">
-                                <p class="price-content__number">{{card.price}}</p>
-                                <p class="price-content__currency">{{card.currency}}</p>
-                            </div>
-                        </div>
-                    </div>
-                </ng-container>
-
-                <!-- Div de la tabla de comparativo entre las diferentes versiones de Radar -->
-                <ng-container *ngIf="selectedOption == 'COMPARATIVO'">
+                <div class="col-3 d-flex justify-content-center">
+                    <span class="span-comparative">
+                        <p class="section-title">COMPARATIVO</p>
+                    </span>
+                </div>
+                <ng-container>
                     <div class="col-lg-6 col-md-10  table-container">
                         <!-- Tabla -->
                         <table class="table table-borderless">
@@ -70,10 +58,12 @@
                                 <tr *ngFor="let row of tableRows">
                                     <th class="table-row__title table-header-empty" scope="row">{{row.rowTitle}}</th>
                                     <td class="table-row__check table-header-complete checkMark">
-                                        <img loading="lazy" *ngIf="row.lite" src="assets/paloma-tabla.svg" alt="paloma tabla">
+                                        <img loading="lazy" *ngIf="row.lite" src="assets/paloma-tabla.svg"
+                                            alt="paloma tabla">
                                     </td>
                                     <td class="table-row__check col- table-last-column checkMark">
-                                        <img loading="lazy" *ngIf="row.total" src="assets/paloma-tabla.svg" alt="paloma tabla">
+                                        <img loading="lazy" *ngIf="row.total" src="assets/paloma-tabla.svg"
+                                            alt="paloma tabla">
                                     </td>
                                 </tr>
                                 <!-- Renglón con los precios de Radar Lite y Total en versión web -->
@@ -202,11 +192,11 @@
                             <!-- Renglones con los valores  -->
                             <tr *ngFor="let row of tableRows">
                                 <th class="table-row__title table-header-empty" scope="row">{{row.rowTitle}}</th>
-                                <td class="table-row__check table-header-complete checkMark"> <img loading="lazy" *ngIf="row.lite"
-                                        src="assets/paloma-tabla.svg" alt="paloma tabla">
+                                <td class="table-row__check table-header-complete checkMark"> <img loading="lazy"
+                                        *ngIf="row.lite" src="assets/paloma-tabla.svg" alt="paloma tabla">
                                 </td>
-                                <td class="table-row__check col- table-last-column checkMark"> <img loading="lazy" *ngIf="row.total"
-                                        src="assets/paloma-tabla.svg" alt="paloma tabla">
+                                <td class="table-row__check col- table-last-column checkMark"> <img loading="lazy"
+                                        *ngIf="row.total" src="assets/paloma-tabla.svg" alt="paloma tabla">
                                 </td>
                             </tr>
                             <!-- Renglón con los precios de Radar Lite y Total en versión web -->

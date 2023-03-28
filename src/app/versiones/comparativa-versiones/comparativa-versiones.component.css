@@ -24,11 +24,35 @@ p {
 
 .section-div {
   border-bottom: 2px solid #a7a7a7;
-  cursor: pointer;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 4px solid #afd625;
+  margin: 0 10px;
 }
 
-.selected-section-div {
-  border-bottom: 4px solid #afd625;
+.section-div__price-container {
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-div__price-container__title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.contact-button {
+  color: #ffffff;
+  border-radius: 23px;
+  background-color: #022644;
+  border: 1px solid #022644;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 25px;
 }
 
 .span-comparative {
@@ -54,7 +78,7 @@ p {
 }
 
 .option-list {
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 
 .card-column {
@@ -91,12 +115,13 @@ p {
   border-top: 3px solid #d5d5d5;
 }
 
-.card-content > ul {
+.card-content>ul {
   padding: 0;
-  text-indent:-10px; 
-  margin-left:10px;
+  text-indent: -10px;
+  margin-left: 10px;
 }
-.card-content > ul > li {
+
+.card-content>ul>li {
   font-size: 14px;
   color: #707070;
   font-weight: bold;
@@ -104,7 +129,7 @@ p {
 }
 
 .price-content {
-  padding: 5%;
+  padding: 0 5% 0 5%;
   display: flex;
   align-items: center;
 }
@@ -113,6 +138,7 @@ p {
 .price-content__currency {
   color: #afd625;
 }
+
 .price-content__number {
   font-weight: bold;
   font-size: 32px;
@@ -258,6 +284,7 @@ p {
   .card-container {
     height: 550px;
   }
+
   #price-section {
     padding: 3% 0 0 0;
   }
@@ -267,9 +294,11 @@ p {
   .card-content {
     padding: 1.5em 2em 1.5em 2em;
   }
+
   .price-content__number {
     font-size: 28px;
   }
+
   .price-content__currency {
     font-size: 12px;
   }
@@ -279,21 +308,23 @@ p {
   }
 }
 
-@media (min-width : 1600px){
-  .card-content > ul > li {
+@media (min-width : 1600px) {
+  .card-content>ul>li {
     font-size: 14px;
   }
 
-  .table-row__title{
+  .table-row__title {
     padding-left: 2em;
   }
 }
+
 @media (max-width: 991px) {
   .card-content {
     height: 60%;
     display: flex;
     justify-content: center;
   }
+
   .card-container {
     min-height: 550px;
   }
@@ -311,6 +342,7 @@ p {
   .title {
     font-size: 26px;
   }
+
   #price-section {
     padding: 10% 0%;
   }

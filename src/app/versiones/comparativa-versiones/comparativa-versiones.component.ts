@@ -34,20 +34,6 @@ export class ComparativaVersionesComponent implements OnInit {
   tableActive = false;
   cardsLite = [
     {
-      cardHeader: 'Consultoría e implementación',
-      cardContent: [
-        '- Seguimiento y presentaciones semanales de resultados',
-        '- Instalación e implementación del sistema',
-        '- Acceso a Radar Academy',
-        '- Know How de operación de taller',
-        '- Acompañamiento personalizado con un experto durante 6 semanas',
-        '- Estrategias para incrementar volumen de venta.',
-        '- Sin costo por viáticos',
-      ],
-      price: '$75,000 MXN',
-      currency: '+IVA',
-    },
-    {
       cardHeader: 'Mensualidad',
       cardContent: [
         '- Licencia de uso del sistema sin límite de usuarios',
@@ -64,20 +50,6 @@ export class ComparativaVersionesComponent implements OnInit {
   ];
 
   cardsTotal = [
-    {
-      cardHeader: 'Consultoría e implementación',
-      cardContent: [
-        '- Seguimiento y presentaciones semanales de resultados',
-        '- Instalación e implementación del sistema',
-        '- Acceso a Radar Academy ',
-        '- Know How de operación de taller',
-        '- Acompañamiento personalizado con un experto durante 6 semanas',
-        '- Estrategias para incrementar volumen de venta.',
-        '- Sin costo por viáticos',
-      ],
-      price: '$75,000 MXN',
-      currency: '+IVA',
-    },
     {
       cardHeader: 'Mensualidad',
       cardContent: [
