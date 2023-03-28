@@ -1,11 +1,23 @@
 <!-- El margen y el contenedor se pueden eliminar cuando se utilicen en el carrusel -->
 <div class="card-container">
-    {{cardInformation.name}}
-    <!-- <div class="row h-100 justify-content-center card-row">
-            Contenedor de la tarjeta
-            <div class="col-10 col-md-6 col-lg-4 card-container py-4 py-md-5">
-                <div class="row h-100">         
-                </div>
+    <div class="d-flex flex-column align-items-center h-100">
+
+        <div class="text-center">
+            <p class="card__location">{{cardInformation.location}}</p>
+            <p class="card__workshop">{{cardInformation.workshop}}</p>
+        </div>
+
+        <div class="text-center card__image-container">
+            <img class="card__person-image" src="{{cardInformation.image2 + imgFormat}}" alt='Radar Control Total'>
+            <div class="card__person-data-container">
+                <p class="card__person-name">{{cardInformation.name}}</p>
+                <p class="card__person-position">{{cardInformation.position}}</p>
             </div>
-        </div> -->
+        </div>
+
+        <div class="text-center card__testimony-container">
+            <p>{{cardInformation.text}}</p>
+        </div>
+
+    </div>
 </div>
