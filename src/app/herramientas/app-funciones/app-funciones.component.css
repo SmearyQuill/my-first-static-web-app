@@ -1,4 +1,4 @@
-#funciones-app-container{
+#funciones-app-container {
     padding-top: 111px;
     padding-bottom: 111px;
     background: transparent url('/assets/fondo_herramientas.png') 0% 0% no-repeat padding-box;
@@ -6,125 +6,96 @@
     opacity: 1;
 }
 
-.right, .left{
-    margin-bottom: 49px;
-    margin-left: 13px;
-    margin-right: 13px;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
 }
-#funciones-app-container div.row div.row{
-    margin: 0;
-}
-.funcion-card{
-    padding: 0%;
-    background: #022644 0% 0% no-repeat padding-box;
+
+.function-card {
     border: 1px solid #3F51B5;
-    border-radius: 9px;
-    opacity: 1;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    align-items: end;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
 }
-.funcion-card .bg{
-    min-height: 246px;
-    padding-top: 0px;
-    padding-left: 0px;
-    padding-bottom: 0px;
-    border-radius: 0px;
-    opacity: 1;
-    height: 100%;
+
+.capture {
+    background-image: linear-gradient(180deg, #02264400 0%, #022644 100%), url('/assets/captura.png');
 }
-.funcion-card h1{
-    text-align: left;
-    font-size: normal;
-    font-variant: normal;
-    font-weight: 600;
-    font-size: 19px;
-    line-height: 26px;
-    letter-spacing: 1.2px;
+
+.edit {
+    background-image: linear-gradient(180deg, #02264400 0%, #022644 100%), url('/assets/edita.png');
+}
+
+.share {
+    background-image: linear-gradient(180deg, #02264400 0%, #022644 100%), url('/assets/comparte.png');
+}
+
+.scan {
+    background-image: linear-gradient(180deg, #02264400 0%, #022644 100%), url('/assets/escanea.png');
+}
+
+.function-card__text-container {
+    position: relative;
+    min-height: 40%;
+    border: 1px solid #3F51B5;
+    border-radius: 8px;
+    padding: 20px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.function-card__text-container__title {
     color: #AFD625;
+    font-weight: 500;
     text-transform: uppercase;
-    opacity: 1;
+    margin-bottom: 8px;
+    font-size: 18px;
 }
-.funcion-card p{
-    text-align: left;
-    font-size: normal;
-    font-variant: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 19px;
-    letter-spacing: 0.72px;
+
+.function-card__text-container__text {
     color: #FFFFFF;
+    font-size: 13px;
+    letter-spacing: 0.6px;
     margin-bottom: 0;
 }
 
-.funcion-card p:nth-child(3){
-    font-weight: bold;
-}
-.funcion-card h1, .funcion-card p{
-    text-align: center;
-}
-.funciones-card-text{
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-@media screen and (min-width: 576px) {
-    
-      
-}
-@media screen and (min-width: 768px) {
-    .funciones-card-text{
-        padding-right: 2%;
-    }
-    .funcion-card h1, .funcion-card p{
-        text-align: left;
-    }   
-    .funcion-card .bg{
-        background-size: cover;
-    }
-    .bg.captura{        
-        background: transparent url('/assets/captura.png') top right no-repeat padding-box;
-    }
-    .bg.edita{
-        background: transparent url('/assets/edita_3.png') top left no-repeat padding-box;
-    }
-    .bg.comparte{
-        background: transparent url('/assets/comparte.png') top left no-repeat padding-box;
-    }
-    .funcion-card .bg{
-        padding-bottom: 8px;
-        padding-top: 8px;
-    } 
-    .funcion-card h1{
-        font-size: 29px;
-        line-height: 38px;
-    }
-    .funcion-card p{
-        font-size: 18px;
-        line-height: 22px;        
+@media(max-width: 767px) {
+    .function-card {
+        height: 420px;
     }
 }
 
-@media screen and (min-width: 1200px) {
-    .funcion-card .bg{
-        padding-bottom: 40px;
-        padding-top: 40px;
+@media(min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
     }
-    
-    .funcion-card h1{
-        font-size: 32px;
-        line-height: 42px;
-    }
-    
-    .funcion-card p{
-        font-size: 19px;
-        line-height: 26px;        
+
+    .function-card {
+        height: 450px;
     }
 }
 
-@media screen and (min-width: 1400px) {
-    
-    .funcion-card .bg{
-        padding-bottom: 100px;
-        padding-top: 100px;
+@media(min-width: 992px) {
+    .function-card__text-container__title {
+        font-size: 20px;
     }
-    .funciones-card-text{
-        padding-right: 5%;
+
+    .function-card__text-container__text {
+        font-size: 14px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .function-card__text-container__title {
+        font-size: 22px;
+    }
+
+    .function-card__text-container__text {
+        font-size: 15px;
     }
 }
