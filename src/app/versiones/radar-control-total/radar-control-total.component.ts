@@ -10,7 +10,6 @@ export class RadarControlTotalComponent implements OnInit {
   informationObject = radarModel.RadarControlTotalInformationObject;
   functionalitiesList = radarModel.RadarTotalFunctionalities;
   processList = radarModel.RadarControlTotalProcessList;
-  selectedComparativeColumn = 'TOTAL';
   constructor() {}
 
   ngOnInit(): void {}

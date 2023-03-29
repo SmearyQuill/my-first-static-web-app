@@ -4,48 +4,74 @@
             <p class="title"> PRECIOS </p>
         </div>
         <!-- Sección de comparativa para tablets / computadoras -->
-        <div class="row justify-content-center d-none d-md-flex">
+        <div class="row justify-content-center d-flex">
             <!-- Sección con la lista de opciones (Se oculta cuando el dispositivo es un celular)-->
-            <div class="col-10 col-xxl-8 option-list d-none d-md-block">
-                <div class="row justify-content-evenly">
-                    <div class="col-6 col-lg-4">
-                        <div class="d-flex justify-content-center section-div">
-                            <p class="section-title"> RADAR CONTROL TOTAL </p>
-                        </div>
-                        <div class="section-div__price-container">
-                            <p class="section-div__price-container__title">DESDE...</p>
-                            <div class="price-content">
-                                <p class="price-content__number">$5,000 MXN</p>
-                                <p class="price-content__currency">+IVA</p>
-                            </div>
-                            <button class="contact-button" routerLink="/contactanos">¡Contrata ya!</button>
-                        </div>
+            <div class="col-12 col-sm-10 col-md-6 col-lg-4 col-xxl-3">
+                <div class="d-flex justify-content-center section-div">
+                    <p class="section-title"> RADAR CONTROL TOTAL </p>
+                </div>
+                <div class="section-div__price-container">
+                    <p class="section-div__price-container__title">DESDE...</p>
+                    <div class="price-content">
+                        <p class="price-content__number">$5,000 MXN</p>
+                        <p class="price-content__currency">+IVA</p>
                     </div>
-                    <div class="col-6 col-lg-4">
-                        <div class="d-flex justify-content-center section-div">
-                            <p class="section-title"> RADAR LITE </p>
-                        </div>
-                        <div class="section-div__price-container">
-                            <p class="section-div__price-container__title">DESDE...</p>
-                            <div class="price-content">
-                                <p class="price-content__number">$3,000 MXN</p>
-                                <p class="price-content__currency">+IVA</p>
-                            </div>
-                            <button class="contact-button" routerLink="/contactanos">¡Contrata ya!</button>
-                        </div>
+                    <button class="contact-button" routerLink="/contactanos">¡Contrata ya!</button>
+                </div>
+            </div>
+            <div class="col-12 col-sm-10 col-md-6 col-lg-4 col-xxl-3">
+                <div class="d-flex justify-content-center section-div">
+                    <p class="section-title"> RADAR LITE </p>
+                </div>
+                <div class="section-div__price-container">
+                    <p class="section-div__price-container__title">DESDE...</p>
+                    <div class="price-content">
+                        <p class="price-content__number">$3,000 MXN</p>
+                        <p class="price-content__currency">+IVA</p>
                     </div>
+                    <button class="contact-button" routerLink="/contactanos">¡Contrata ya!</button>
                 </div>
             </div>
 
-            <!-- Div de la tabla de comparativo entre las diferentes versiones de Radar -->
-            <div class="row justify-content-center">
+            <div class="row version__content-container justify-content-evenly justify-content-lg-center">
+                <p class="title">¿QUE INCLUYE?</p>
+                <div class="col-12 col-sm-10 col-md-5 col-lg-4 col-xl-3">
+                    <ul>
+                        <li>Seguimiento y presentaciones semanales de resultados</li>
+                        <li>Instalación e implementación del sistema</li>
+                        <li>Acceso a Radar Academy</li>
+                        <li>Know How de operación de taller</li>
+                        <li>Acompañamiento personalizado con un experto durante 6 semanas</li>
+                        <li>Estrategias para incrementar volumen de venta</li>
+                        <li>Sin costo por viáticos</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-10 col-md-5 col-lg-4 col-xl-3">
+                    <ul>
+                        <li>Licencia de uso del sistema sin límite de usuarios</li>
+                        <li>Espacio de almacenamiento en la nube</li>
+                        <li>Carga y descarga de archivos</li>
+                        <li>Uso de interfaces</li>
+                        <li>Mantenimiento y soporte</li>
+                        <li>Actualizaciones</li>
+                        <li>App de Radar Connect</li>
+                    </ul>
+                </div>
+                <p class="text-center more-functions-label mb-0">y más...</p>
+            </div>
+
+            <div class="d-flex justify-content-center mb-4">
                 <div class="col-3 d-flex justify-content-center">
                     <span class="span-comparative">
                         <p class="section-title">COMPARATIVO</p>
                     </span>
                 </div>
+            </div>
+
+            <!-- Div de la tabla de comparativo entre las diferentes versiones de Radar -->
+            <div class="row justify-content-center">
                 <ng-container>
-                    <div class="col-lg-6 col-md-10  table-container">
+                    <div class="col-md-10 col-lg-8 col-xxl-6  table-container">
                         <!-- Tabla -->
                         <table class="table table-borderless">
                             <thead>
@@ -78,7 +104,6 @@
                                                 class="table__price-column__iva">+IVA</span></p>
                                     </td>
                                 </tr>
-
                             </tbody>
                         </table>
                         <!-- Columnas con los precios de Radar Lite y Total en versión movil -->
@@ -111,32 +136,32 @@
                     </div>
                 </ng-container>
             </div>
-
         </div>
+
         <!-- Sección de comparativa para celular -->
-        <div class="row justify-content-center d-md-none d-md-flex">
-            <!-- Botón para mostrar la tabla de Radar Lite en dispositivos moviles -->
+        <!-- <div class="row justify-content-center d-none d-md-none d-md-flex">
+            Botón para mostrar la tabla de Radar Lite en dispositivos moviles
             <div class="col-11 dropdown-content-selector" [ngClass]="{'dropdown-selected' : liteVersionActive}"
                 (click)="checkLiteVersion()">
                 RADAR LITE</div>
-            <!-- Tabla de información de Radar Lite -->
+            Tabla de información de Radar Lite
             <div *ngIf="liteVersionActive" [@showTableMobile] class="row justify-content-center">
-                <!-- Sección de tarjetas -->
+                Sección de tarjetas
                 <div *ngFor="let card of cardsLite" class="col-sm-11 card-column">
                     <div class="card-container">
-                        <!-- Titulo de la tarjeta -->
+                        Titulo de la tarjeta
                         <div class="card-header">
                             <p class="card-header__text"> {{card.cardHeader}} </p>
                         </div>
-                        <!-- Información de la tarjeta -->
+                        Información de la tarjeta
                         <div class="card-content">
                             <ul>
                                 <li *ngFor="let listElement of card.cardContent">{{listElement}}</li>
                             </ul>
                         </div>
-                        <!-- Separador de la tarjeta -->
+                        Separador de la tarjeta
                         <hr class="card-separator">
-                        <!-- Costo del servicio en la tarjeta -->
+                        Costo del servicio en la tarjeta
                         <div class="price-content">
                             <p class="price-content__number">{{card.price}}</p>
                             <p class="price-content__currency">{{card.currency}}</p>
@@ -145,27 +170,27 @@
                 </div>
             </div>
 
-            <!-- Botón para mostrar la tabla de Radar Total en dispositivos moviles -->
+            Botón para mostrar la tabla de Radar Total en dispositivos moviles
             <div class="col-11 dropdown-content-selector" [ngClass]="{'dropdown-selected' : totalVersionActive}"
                 (click)="checkTotalVersion()">
                 RADAR CONTROL TOTAL</div>
-            <!--  Tabla de información de Radar Total -->
+             Tabla de información de Radar Total
             <div *ngIf="totalVersionActive" [@showTableMobile] class="row justify-content-center">
                 <div *ngFor="let card of cardsTotal" class="col-sm-11 card-column">
                     <div class="card-container">
-                        <!-- Titulo de la tarjeta -->
+                        Titulo de la tarjeta
                         <div class="card-header">
                             <p class="card-header__text"> {{card.cardHeader}} </p>
                         </div>
-                        <!-- Información de la tarjeta -->
+                        Información de la tarjeta
                         <div class="card-content">
                             <ul>
                                 <li *ngFor="let listElement of card.cardContent">{{listElement}}</li>
                             </ul>
                         </div>
-                        <!-- Separador de la tarjeta -->
+                        Separador de la tarjeta
                         <hr class="card-separator">
-                        <!-- Costo del servicio en la tarjeta -->
+                        Costo del servicio en la tarjeta
                         <div class="price-content">
                             <p class="price-content__number">{{card.price}}</p>
                             <p class="price-content__currency">{{card.currency}}</p>
@@ -174,14 +199,14 @@
                 </div>
             </div>
 
-            <!-- Botón para mostrar la tabla comparativa en dispositivos moviles -->
+            Botón para mostrar la tabla comparativa en dispositivos moviles
             <div class="col-11 dropdown-content-selector" [ngClass]="{'dropdown-selected' : tableActive}"
                 (click)="checkTable()">
                 COMPARATIVO</div>
-            <!-- Tabla Comparativa -->
+            Tabla Comparativa
             <div *ngIf="tableActive" [@showTableMobile] class="row justify-content-center">
                 <div class="col-12 col-sm-10 table-container">
-                    <!-- Tabla -->
+                    Tabla
                     <table class="table table-borderless">
                         <thead>
                             <th scope="col" class="table-header-empty"></th>
@@ -189,7 +214,7 @@
                             <th class="table-header table-header-empty-left" scope="col">RADAR CONTROL TOTAL</th>
                         </thead>
                         <tbody>
-                            <!-- Renglones con los valores  -->
+                            Renglones con los valores 
                             <tr *ngFor="let row of tableRows">
                                 <th class="table-row__title table-header-empty" scope="row">{{row.rowTitle}}</th>
                                 <td class="table-row__check table-header-complete checkMark"> <img loading="lazy"
@@ -199,7 +224,7 @@
                                         *ngIf="row.total" src="assets/paloma-tabla.svg" alt="paloma tabla">
                                 </td>
                             </tr>
-                            <!-- Renglón con los precios de Radar Lite y Total en versión web -->
+                            Renglón con los precios de Radar Lite y Total en versión web
                             <tr class="d-none d-lg-table-row">
                                 <th></th>
                                 <td class="table__price-column table-middle-cost-column">
@@ -214,7 +239,7 @@
 
                         </tbody>
                     </table>
-                    <!-- Columnas con los precios de Radar Lite y Total en versión movil -->
+                    Columnas con los precios de Radar Lite y Total en versión movil
                     <div class="row justify-content-center d-lg-none">
                         <div class="col-10">
                             <div class="row">
@@ -243,6 +268,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </section>

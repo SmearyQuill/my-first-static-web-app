@@ -25,47 +25,7 @@ import {
   ],
 })
 export class ComparativaVersionesComponent implements OnInit {
-  @Input() initialOption = '';
-  selectedOption = '';
-
-  // Banderas para saber que información se muestra en la versión de movil.
-  liteVersionActive = false;
-  totalVersionActive = false;
-  tableActive = false;
-  cardsLite = [
-    {
-      cardHeader: 'Mensualidad',
-      cardContent: [
-        '- Licencia de uso del sistema sin límite de usuarios',
-        '- Espacio de almacenamiento en la nube',
-        '- Carga y descarga de archivos',
-        '- Uso de interfaces',
-        '- Mantenimiento y soporte',
-        '- Actualizaciones',
-        '- App de Radar Connect',
-      ],
-      price: '$3,000 MXN',
-      currency: '+IVA',
-    },
-  ];
-
-  cardsTotal = [
-    {
-      cardHeader: 'Mensualidad',
-      cardContent: [
-        '- Licencia de uso del sistema sin límite de usuarios',
-        '- Espacio de almacenamiento en la nube',
-        '- Carga y descarga de archivos',
-        '- Uso de interfaces',
-        '- Mantenimiento y soporte',
-        '- Actualizaciones',
-        '- App de Radar Connect',
-      ],
-      price: '$5,000 MXN',
-      currency: '+IVA',
-    },
-  ];
-
+  
   tableRows = [
     {
       rowTitle: 'APERTURA DE ÓRDENES (DMS)',
@@ -159,46 +119,8 @@ export class ComparativaVersionesComponent implements OnInit {
     },
   ];
 
-  selectedCard = this.cardsLite;
-
   constructor() {}
 
   ngOnInit(): void {
-    this.selectOption(this.initialOption);
-  }
-
-  selectOption(option: string) {
-    this.selectedOption = option;
-
-    switch (this.selectedOption) {
-      case 'LITE':
-        this.selectedCard = this.cardsLite;
-        break;
-      case 'TOTAL':
-        this.selectedCard = this.cardsTotal;
-        break;
-    }
-  }
-
-  checkLiteVersion() {
-    if (this.liteVersionActive) {
-      this.liteVersionActive = false;
-    } else {
-      this.liteVersionActive = true;
-    }
-  }
-  checkTotalVersion() {
-    if (this.totalVersionActive) {
-      this.totalVersionActive = false;
-    } else {
-      this.totalVersionActive = true;
-    }
-  }
-  checkTable() {
-    if (this.tableActive) {
-      this.tableActive = false;
-    } else {
-      this.tableActive = true;
-    }
-  }
+  }  
 }
