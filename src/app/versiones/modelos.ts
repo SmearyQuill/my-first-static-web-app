@@ -21,8 +21,7 @@ export const HeroTotal = {
 };
 
 export const RadarControlTotalInformationObject = {
-  informationText:
-    `La opción perfecta para cualquier taller de
+  informationText: `La opción perfecta para cualquier taller de
     laminado y pintura, brindando control desde la
     administración y operación, hasta la contabilidad.
     Obteniendo mediciones e indicadores de grán valor
@@ -51,50 +50,40 @@ export const RadarLiteInformationObject = {
 export const RadarControlTotalProcessList = [
   {
     processNumber: '01',
-    processName: 'LEVANTAMIENTO',
+    processName: 'KICKOFF',
     processInformation:
-      'Lectura de datos como: usuarios, procesos, permisos, etc.',
-    processDuration: '1 Semana',
+      'Se establecen metas en conjunto a lograr en este periodo.',
+    processDuration: '40 minutos',
     optional: false,
     imageSrc: 'assets/Grupo-751.png',
     clicked: false,
   },
   {
     processNumber: '02',
-    processName: 'CONFIGURACIÓN',
+    processName: 'CAPACITACIÓN',
     processInformation:
-      'Se realiza el alta del taller en RADAR, y se configura según las necesidades.',
-    processDuration: '1 Semana',
+      'Se dan de alta todos los usuarios en nuestra plataforma de e-learning RadarAcademy.',
+    processDuration: '2 semanas',
     optional: false,
     imageSrc: 'assets/Grupo-750.png',
     clicked: false,
   },
   {
     processNumber: '03',
-    processName: 'AMBIENTE DE PRUEBA',
+    processName: 'ENTRENAMIENTO',
     processInformation:
-      'Se realizan los cursos de capacitación y se activa una simulación del taller en el sistema.',
-    processDuration: '2 Semanas',
+      'Sesiones uno a uno con nuestros expertos para poner en práctica la teoría.',
+    processDuration: '1 Semana',
     optional: false,
     imageSrc: 'assets/Grupo-749.png',
     clicked: false,
   },
   {
     processNumber: '04',
-    processName: 'IMPLEMENTACIÓN',
-    processInformation:
-      'Se activa el ambiente de producción real, se dan de alta el 100% de órdenes en taller.',
-    processDuration: '1 Semana',
-    optional: false,
-    imageSrc: 'assets/Grupo-748.png',
-    clicked: false,
-  },
-  {
-    processNumber: '05',
-    processName: 'CONSULTORIA',
+    processName: 'CONSULTORÍAS',
     processInformation:
       'Monitoreo con desempeño con metas a cumplir. Acompañados por expertos en RADAR.',
-    processDuration: '6 Semanas',
+    processDuration: '12 Semanas',
     optional: false,
     imageSrc: 'assets/Grupo-747.png',
     clicked: false,
@@ -104,41 +93,41 @@ export const RadarControlTotalProcessList = [
 export const RadarLiteProcessList = [
   {
     processNumber: '01',
-    processName: 'LEVANTAMIENTO',
+    processName: 'KICKOFF',
     processInformation:
-      'Lectura de datos como: usuarios, procesos, permisos, etc.',
-    processDuration: '1 Semana',
+      'Se establecen metas en conjunto a lograr en este periodo.',
+    processDuration: '40 minutos',
     optional: false,
     imageSrc: 'assets/Grupo-751.png',
     clicked: false,
   },
   {
     processNumber: '02',
-    processName: 'CONFIGURACIÓN',
+    processName: 'CAPACITACIÓN',
     processInformation:
-      'Se realiza el alta del taller en RADAR, y se configura según las necesidades.',
-    processDuration: '1 Semana',
+      'Se dan de alta todos los usuarios en nuestra plataforma de e-learning RadarAcademy.',
+    processDuration: '2 semanas',
     optional: false,
     imageSrc: 'assets/Grupo-750.png',
     clicked: false,
   },
   {
     processNumber: '03',
-    processName: 'IMPLEMENTACIÓN',
+    processName: 'ENTRENAMIENTO',
     processInformation:
-      'Se activa el ambiente de producción real, se dan de alta el 100% de órdenes en taller.',
+      'Sesiones uno a uno con nuestros expertos para poner en práctica la teoría.',
     processDuration: '1 Semana',
     optional: false,
-    imageSrc: 'assets/Grupo-748.png',
+    imageSrc: 'assets/Grupo-749.png',
     clicked: false,
   },
   {
     processNumber: '04',
-    processName: 'CONSULTORIA',
+    processName: 'CONSULTORÍAS',
     processInformation:
       'Monitoreo con desempeño con metas a cumplir. Acompañados por expertos en RADAR.',
-    processDuration: '6 Semanas',
-    optional: true,
+    processDuration: '12 Semanas',
+    optional: false,
     imageSrc: 'assets/Grupo-747.png',
     clicked: false,
   },
