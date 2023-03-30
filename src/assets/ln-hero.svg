@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_588" data-name="Rectángulo 588" width="19.916" height="19.862" transform="translate(0 0)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_1091" data-name="Grupo 1091" transform="translate(0.368 0.276)">
+    <g id="Grupo_1085" data-name="Grupo 1085" transform="translate(7.358 7.385)">
+      <g id="Grupo_1084" data-name="Grupo 1084" transform="translate(0 0)" clip-path="url(#clip-path)">
+        <path id="Trazado_78154" data-name="Trazado 78154" d="M32.245,27.3c.276-.31.5-.625.787-.892a4.317,4.317,0,0,1,3.106-1.226,7.18,7.18,0,0,1,1.953.238,3.817,3.817,0,0,1,2.71,2.851,11.947,11.947,0,0,1,.361,3.266c0,2.322-.007,4.643,0,6.964,0,.217-.06.274-.274.273q-1.794-.015-3.588,0c-.211,0-.256-.063-.255-.262q.01-3.313,0-6.626a5.953,5.953,0,0,0-.192-1.645A1.85,1.85,0,0,0,34.817,28.8a2.223,2.223,0,0,0-2.336,2.219,8.282,8.282,0,0,0-.063,1.036c0,2.148,0,4.3.006,6.444,0,.214-.053.277-.272.276q-1.807-.016-3.614,0c-.193,0-.249-.051-.249-.246q.008-6.38,0-12.759c0-.21.069-.259.268-.258q1.716.013,3.432,0c.211,0,.265.066.26.266-.012.508,0,1.017,0,1.525" transform="translate(-21.246 -18.914)" fill="#fff"/>
+        <path id="Trazado_78155" data-name="Trazado 78155" d="M5.4,33.147c0,2.1,0,4.208,0,6.312,0,.234-.057.3-.3.3-1.2-.013-2.391-.01-3.586,0-.191,0-.249-.047-.249-.244q.009-6.39,0-12.78c0-.176.043-.239.23-.238,1.213.008,2.426.01,3.638,0,.233,0,.265.088.264.288q-.009,3.182,0,6.364" transform="translate(-0.955 -19.899)" fill="#fff"/>
+        <path id="Trazado_78156" data-name="Trazado 78156" d="M4.776,2.376A2.388,2.388,0,1,1,2.392,0,2.4,2.4,0,0,1,4.776,2.376" transform="translate(0 0)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Rectángulo_590" data-name="Rectángulo 590" transform="translate(-0.368 -0.276)" fill="none" stroke="#fff" stroke-width="2">
+      <rect width="35" height="35" rx="7" stroke="none"/>
+      <rect x="1" y="1" width="33" height="33" rx="6" fill="none"/>
+    </g>
+  </g>
+</svg>

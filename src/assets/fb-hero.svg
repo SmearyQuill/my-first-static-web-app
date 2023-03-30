@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+  <g id="Grupo_1090" data-name="Grupo 1090" transform="translate(0.338 0.276)">
+    <rect id="Rectángulo_392" data-name="Rectángulo 392" width="29.866" height="29.866" transform="translate(4.285 4.766)" fill="none"/>
+    <path id="Trazado_1" data-name="Trazado 1" d="M89.812,28.954V15.764h4.5l.643-5.147H89.812V7.4c0-1.448.483-2.574,2.574-2.574H95.12V.161C94.477.161,92.868,0,91.1,0c-3.861,0-6.6,2.413-6.6,6.756v3.861H80v5.147h4.5v13.19Z" transform="translate(-68.477 4.767)" fill="#fff" fill-rule="evenodd"/>
+    <g id="Rectángulo_589" data-name="Rectángulo 589" transform="translate(-0.338 -0.276)" fill="none" stroke="#fff" stroke-width="2">
+      <rect width="35" height="35" rx="7" stroke="none"/>
+      <rect x="1" y="1" width="33" height="33" rx="6" fill="none"/>
+    </g>
+  </g>
+</svg>

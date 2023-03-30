@@ -163,3 +163,11 @@
     }
 
 }
+
+.icons-container {
+    margin-top: 25px;
+}
+
+.icons-container>a {
+    margin-right: 20px;
+}
