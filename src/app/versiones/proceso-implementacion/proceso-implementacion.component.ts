@@ -94,6 +94,8 @@ export class ProcesoImplementacionComponent implements OnInit {
     imageSrc: string;
     optional: boolean;
     clicked: boolean;
+    link: string;
+    linkText: string;
   }[] = [
     {
       processNumber: '',
@@ -103,10 +105,14 @@ export class ProcesoImplementacionComponent implements OnInit {
       imageSrc: '',
       optional: false,
       clicked: false,
+      link: '',
+      linkText: '',
     },
   ];
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log("Lista de procesos: ", this.processList);
+  }
 }

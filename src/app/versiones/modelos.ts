@@ -58,6 +58,8 @@ export const RadarControlTotalProcessList = [
     optional: false,
     imageSrc: 'assets/Grupo-751.png',
     clicked: false,
+    link: '',
+    linkText: '',
   },
   {
     processNumber: '02',
@@ -68,6 +70,8 @@ export const RadarControlTotalProcessList = [
     optional: false,
     imageSrc: 'assets/Grupo-750.png',
     clicked: false,
+    link: '/herramientas/radarAcademy',
+    linkText: 'Conoce más',
   },
   {
     processNumber: '03',
@@ -78,6 +82,8 @@ export const RadarControlTotalProcessList = [
     optional: false,
     imageSrc: 'assets/Grupo-749.png',
     clicked: false,
+    link: '',
+    linkText: '',
   },
   {
     processNumber: '04',
@@ -88,6 +94,8 @@ export const RadarControlTotalProcessList = [
     optional: false,
     imageSrc: 'assets/Grupo-747.png',
     clicked: false,
+    link: '',
+    linkText: '',
   },
 ];
 
@@ -101,6 +109,8 @@ export const RadarLiteProcessList = [
     optional: false,
     imageSrc: 'assets/Grupo-751.png',
     clicked: false,
+    link: '',
+    linkText: '',
   },
   {
     processNumber: '02',
@@ -111,6 +121,8 @@ export const RadarLiteProcessList = [
     optional: false,
     imageSrc: 'assets/Grupo-750.png',
     clicked: false,
+    link: '/herramientas/radarAcademy',
+    linkText: 'Conoce más',
   },
   {
     processNumber: '03',
@@ -121,6 +133,8 @@ export const RadarLiteProcessList = [
     optional: false,
     imageSrc: 'assets/Grupo-749.png',
     clicked: false,
+    link: '',
+    linkText: '',
   },
   {
     processNumber: '04',
@@ -131,6 +145,8 @@ export const RadarLiteProcessList = [
     optional: false,
     imageSrc: 'assets/Grupo-747.png',
     clicked: false,
+    link: '',
+    linkText: '',
   },
 ];
 

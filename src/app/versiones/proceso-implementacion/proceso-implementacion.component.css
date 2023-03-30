@@ -15,6 +15,7 @@
 .imageColumn {
   padding: 0;
 }
+
 .process-image {
   max-width: 100%;
   max-height: 100%;
@@ -28,8 +29,7 @@
   bottom: 0;
   left: 0;
   transform: matrix(-1, 0, 0, -1, 0, 0);
-  background: transparent linear-gradient(180deg, #022644 0%, #02264400 100%) 0%
-    0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, #022644 0%, #02264400 100%) 0% 0% no-repeat padding-box;
   opacity: 1;
 }
 
@@ -68,10 +68,15 @@
 }
 
 .process-information__text,
-.process-information__duration {
+.process-information__duration,
+.process-information__link {
   color: #ffffff;
   font-size: 1rem;
   text-align: center;
+}
+
+.process-information__link > a{
+  color: inherit;
 }
 
 .process-information__duration {
@@ -89,6 +94,7 @@
     max-height: 800px;
   }
 }
+
 @media (min-width: 992px) {
   .sectionContainer {
     min-height: 600px;
@@ -109,9 +115,11 @@
   .process-number {
     font-size: 4.8rem;
   }
+
   .process-name {
     font-size: 1.2rem;
   }
+
   .title-column {
     padding: 15% 7%;
   }
@@ -125,10 +133,13 @@
   .text-container {
     height: 60%;
   }
+
   .process-information__text,
-  .process-information__duration {
+  .process-information__duration,
+  .process-information__link {
     font-size: 2rem;
   }
+
   .process-information__optional {
     font-size: 1.5rem;
   }
@@ -143,10 +154,13 @@
 }
 
 @media (min-width: 1000px) and (max-width: 1150px) {
+
   .process-information__text,
-  .process-information__duration {
+  .process-information__duration,
+  .process-information__link {
     font-size: .8rem;
   }
+
   .process-information__optional {
     font-size: 0.8rem;
   }
@@ -161,10 +175,13 @@
 }
 
 @media (min-width: 767px) and (max-width: 999px) {
+
   .process-information__text,
-  .process-information__duration {
+  .process-information__duration,
+  .process-information__link {
     font-size: 0.8em;
   }
+
   .process-information__optional {
     font-size: 0.6rem;
   }
@@ -179,10 +196,13 @@
 }
 
 @media (min-width: 1151px) and (max-width: 1400px) {
+
   .process-information__text,
-  .process-information__duration {
+  .process-information__duration,
+  .process-information__link {
     font-size: 1rem;
   }
+
   .process-information__optional {
     font-size: 0.8rem;
   }
@@ -200,12 +220,14 @@
   .process-number {
     font-size: 4rem;
   }
+
   .process-name {
     font-size: 1.2rem;
   }
 
   .process-information__text,
-  .process-information__duration {
+  .process-information__duration,
+  .process-information__link {
     font-size: 1.3rem;
   }
 }
@@ -214,12 +236,14 @@
   .process-number {
     font-size: 4.8rem;
   }
+
   .process-name {
     font-size: 1.3rem;
   }
 
   .process-information__text,
-  .process-information__duration {
+  .process-information__duration,
+  .process-information__link {
     font-size: 1.5rem;
   }
 }
