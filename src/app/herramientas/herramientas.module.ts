@@ -18,6 +18,7 @@ import { AppFuncionesComponent } from './app-funciones/app-funciones.component';
 import { NuestroCompromisoComponent } from './nuestro-compromiso/nuestro-compromiso.component';
 import { SeccionAndroidComponent } from './seccion-android/seccion-android.component';
 import { FotografiasComponent } from './fotografias/fotografias.component';
+import { MiniHeroConnectComponent } from './mini-hero-connect/mini-hero-connect.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { FotografiasComponent } from './fotografias/fotografias.component';
     AppFuncionesComponent,
     NuestroCompromisoComponent,
     SeccionAndroidComponent,
-    FotografiasComponent
+    FotografiasComponent,
+    MiniHeroConnectComponent
   ],
   imports: [
     CommonModule,
