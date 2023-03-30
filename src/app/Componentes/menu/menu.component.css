@@ -270,3 +270,12 @@
     padding-right: 106px;
   }
 }
+
+.login-button {
+  color: #FFFFFF !important;
+  background-color: #AFD625;
+  border-radius: 30px;
+  padding: 8px 15px !important;
+  font-size: 14px;
+  line-height: 19px;
+}
