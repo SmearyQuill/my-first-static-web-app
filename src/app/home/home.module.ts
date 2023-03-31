@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { GeneralComponentsModule } from '../Componentes/generals/general-components.module';
 import { HomeRoutingModule } from './home-routing.module';
 import { MainPageComponent } from './main-page/main-page.component';
 import { PresentacionComponent } from './presentacion/presentacion.component';
@@ -33,7 +33,8 @@ import { TestimoniosCarouselComponent } from './testimonios-carousel/testimonios
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    GeneralComponentsModule
   ]
 })
 export class HomeModule { }

@@ -1,43 +1,27 @@
-<div class="row justify-content-center">
-    <div class="col-12 col-lg-10 card-container">
-        <div class="row align-items-center justify-content-around">
+<div class="card-main-container">
+    <div class="card-container px-5 pb-5">
+        <!-- Imagen de la persona del testimonio -->
+        <div class="position-relative card__person-image-container">
+            <img loading="lazy" class="card__person-image" src="{{cardInformation.image}}"
+                alt="Radar Control Total {{cardInformation.name}}">
+        </div>
+
+        <div class="d-flex flex-column align-items-center flex-grow-1">
             <!-- Información de la persona del testimonio -->
-            <div class="col-md-3">
-                <div class="row">
-                    <div class="col-12 d-none d-md-block" *ngIf="cardInformation.first">
-                        <img loading="lazy" class="main-card__quotes" src="assets/Trazado331@2x.png" alt="main-card__quotes">
-                        <p class="first-card__text">RESEÑAS DE</p>
-                        <p class="first-card__second-text"> CLIENTES </p>
-                    </div>
-                    <div class="col-12 d-none d-md-block" *ngIf="!cardInformation.first">
-                        <img loading="lazy" class="normal-card__quotes" src="assets/Trazado331@2x.png" alt="normal-card__quotes">
-                    </div>
-                    <div class="col-12">
-                        <p class="person-name">{{cardInformation.name}}</p>
-                    </div>
-                    <div class="col-12 col-md-11">
-                        <p class="person-position">{{cardInformation.position}}</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Imagen de la persona del testimonio -->
-            <div class="col-6 col-md-3 d-flex justify-content-center">
-                <img loading="lazy" class="card__person-image" src="{{cardInformation.image}}" alt="Radar Control Total {{cardInformation.name}}">
+            <div class="text-center">
+                <p class="person-name">{{cardInformation.name}}</p>
+                <p class="person-position">{{cardInformation.position}}</p>
+                <p class="card__location">{{cardInformation.workshop}}</p>
             </div>
             <!-- Contenido del testimonio (Negocio, Ubicación y Texto) -->
-            <div class="col-md-4">
-                <div class="row justify-content-center justify-content-md-start">
-                    <div class="col-10 col-md-12 d-flex justify-content-center justify-content-md-start">
-                        <p class="card__title">{{cardInformation.TITLE}}</p>
-                    </div>
-                    <div class="col-10 col-md-12 d-flex justify-content-center justify-content-md-start">
-                        <p class="card__location">{{cardInformation.location}}</p>
-                    </div>
-                    <div class="col-10 col-md-12 d-flex justify-content-center justify-content-md-start">
-                        <p class="card__text">{{cardInformation.text}}</p>
-                    </div>
-                </div>
+            <div class="text-center flex-grow-1">
+                <p class="card__text">{{cardInformation.text}}</p>
             </div>
+
+            <img class="card-icon" loading="lazy" src="assets/Icono-Testimonio.svg"
+                alt="Radar Control Total Icono Testimonio">
+
+            <p class="text-center location">{{cardInformation.location}}</p>
         </div>
     </div>
 </div>

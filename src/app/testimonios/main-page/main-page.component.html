@@ -2,10 +2,19 @@
     <!-- Hero -->
     <app-hero></app-hero>
     <!-- Tarjetas con la información de los clientes -->
-    <div class="container-xl cards-container">
-        <ng-container *ngFor="let element of cardList; let i = index;">
-            <app-card-testimonio [cardInformation]="element"></app-card-testimonio>
-            <hr class="card-separator" *ngIf="i != cardList.length - 1">
-        </ng-container>
+    <div class="container-xl cards-container my-5">
+        <div class="row mb-5">
+            <p class="first-card__text text-center text-lg-start">RESEÑAS DE NUESTROS</p>
+            <p class="first-card__second-text text-center text-lg-start">CLIENTES 
+                <img loading="lazy" class="main-card__quotes" src="assets/Trazado331@2x.png" alt="main-card__quotes">
+            </p>
+        </div>
+        <div class="row mt-5 rows-cards justify-content-center">
+            <ng-container *ngFor="let element of cardList; let i = index;">
+                <div class="col-10 col-md-6 col-lg-4 col-card d-flex align-items-stretch mb-2 mb-lg-5">
+                    <app-card-testimonio class="w-100" [cardInformation]="element"></app-card-testimonio>
+                </div>
+            </ng-container>
+        </div>
     </div>
 </section>

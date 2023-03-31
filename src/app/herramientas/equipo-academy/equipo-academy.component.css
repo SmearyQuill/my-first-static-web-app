@@ -1,4 +1,4 @@
-#equipo-titles h1{
+#equipo-titles h1 {
     width: auto;
     text-align: left;
     font-size: 20px;
@@ -9,7 +9,8 @@
     letter-spacing: 0.35px;
     color: #0A3B64;
 }
-#equipo-titles h2{
+
+#equipo-titles h2 {
     width: auto;
     text-align: left;
     font-size: 20px;
@@ -20,48 +21,36 @@
     letter-spacing: 0.35px;
     color: #0A3B64;
 }
-#img-col{
-    padding:0%;
-}
-#equipo-titles{
-    padding-left: 10%;
-    margin-top: 76px;
-}
-@media screen and (min-width: 576px) {
-    #equipo-titles h1{
-        font-size: 24px;
-        line-height: 30px;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: 300;
-    }
-    #equipo-titles h1{
-        font-size: 24px;
-        line-height: 30px;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: 600;
-    }
-}
-@media screen and (min-width:992px){
 
-    #equipo-titles{
-        padding-left: 12px;
+#img-col {
+    padding: 0%;
+}
+
+#equipo-titles{
+    margin-top: 30px;
+}
+
+#equipo-titles h1 {
+    font-size: 26px;
+    line-height: 30px;
+    font-style: normal;
+    font-variant: normal;
+}
+
+#equipo-titles h1 > b {
+    font-weight: 600;
+}
+
+@media screen and (min-width: 992px) {
+
+    #equipo-titles {
+        padding-left: 4%;
+        margin-top: 0;
     }
-    #equipo-titles h2{
+
+    #equipo-titles h1 {
         font-size: 28px;
         line-height: 38px;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: 600;
-        width: 120%;
     }
-    #equipo-titles h1{
-        font-size: 28px;
-        line-height: 38px;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: 300;
-        width: 120%;
-    }
+
 }

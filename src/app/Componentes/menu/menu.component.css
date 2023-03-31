@@ -163,6 +163,34 @@
 .nav-item.dropdown.show img{
   content: url('/assets/keyboard_arrow_down_black_24dp (1).svg');
 }
+
+.login-button__container{
+  display: flex;
+  padding-left: 8.5%;
+  margin: 5px 0 10px 0;
+  width: fit-content;
+  max-height: 80%;
+}
+
+.login-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #FFFFFF !important;
+  background-color: #AFD625;
+  border-radius: 30px;
+  padding: 8px 15px !important;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.login-button > img{  
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+}
+
+
 @media screen and (min-width: 992px) {
   .navbar-nav.mr-auto::before{
     display: none;
@@ -256,6 +284,11 @@
   .dropdown-item:hover{
     background-color: rgb(0, 0, 0,.15);
   }
+
+  .login-button__container{
+    padding-left: 0;
+    margin: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .navbar{
@@ -270,3 +303,4 @@
     padding-right: 106px;
   }
 }
+

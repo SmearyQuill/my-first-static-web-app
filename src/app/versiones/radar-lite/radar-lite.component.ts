@@ -11,7 +11,6 @@ export class RadarLiteComponent implements OnInit {
   informationObject = radarModel.RadarLiteInformationObject;
   functionalitiesList = radarModel.RadarLiteFunctionalities;
   processList = radarModel.RadarLiteProcessList;
-  selectedComparativeColumn = 'LITE';
 
   constructor(private viewPortScroller: ViewportScroller) {}
 

@@ -2,14 +2,16 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col d-flex justify-content-center title-column">
-                <p class="title" style="text-align: center;"> ¿CÓMO ES EL PROCESO DE IMPLEMENTACIÓN?</p>
+                <p class="title" style="text-align: center;"> ¿CUÁL ES EL PROCESO DE IMPLEMENTACIÓN?</p>
             </div>
         </div>
         <div class="row images-row">
             <div class="col-md imageColumn d-flex align-items-center justify-content-center"
                 style="position: relative; cursor: pointer;"
-                *ngFor="let processInformation of processList; let i = index;" (mouseenter)="processInformation.clicked = true;" (mouseleave)="processInformation.clicked = false;">
-                <img loading="lazy" class="process-image" src="{{processInformation.imageSrc}}" alt="proceso radar control total {{processInformation.processName}}">
+                *ngFor="let processInformation of processList; let i = index;"
+                (mouseenter)="processInformation.clicked = true;" (mouseleave)="processInformation.clicked = false;">
+                <img loading="lazy" class="process-image" src="{{processInformation.imageSrc}}"
+                    alt="proceso radar control total {{processInformation.processName}}">
                 <!-- Div con el texto -->
                 <div class="text-container" style="position: absolute;" *ngIf="!processInformation.clicked"
                     [@showNumber]>
@@ -30,6 +32,11 @@
                     </div>
                     <div>
                         <p class="process-information__text">{{processInformation.processInformation}}</p>
+                        <p class="process-information__link" *ngIf="processInformation.link !== ''">
+                            <a routerLink="{{processInformation.link}}">
+                                {{processInformation.linkText}}
+                            </a>
+                        </p>
                         <p class="process-information__duration">{{processInformation.processDuration}}</p>
                         <p *ngIf="processInformation.optional" class="process-information__optional">Opcional*</p>
                     </div>

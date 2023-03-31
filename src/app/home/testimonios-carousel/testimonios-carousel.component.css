@@ -1,19 +1,35 @@
-._item, .example{
-    height: 651px;
+.section-title {
+    color: #6C6C6C;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-top: 25px;
 }
-#testimonios-carousel{
-    padding-top: 60px;
-    padding-bottom: 60px;
+
+._item,
+.example {
+    min-height: 700px;
+}
+
+#testimonios-carousel {
+    padding-top: 0px;
+    padding-bottom: 15px;
     padding-left: 0;
     padding-right: 0;
 }
-.carousel-item{
+
+.carousel-item {
     background: #FFFFFF 0% 0% no-repeat padding-box;
 }
+
 /* Carousel indicators */
-.carousel-indicators{
+.carousel-indicators {
+    margin-top: 15px;
     margin-bottom: 0;
 }
+
 .carousel-indicators button {
     border-top: none;
     border-bottom: none;
@@ -24,53 +40,69 @@
     border-radius: 15px;
     opacity: 1;
 }
+
 .carousel-indicators .active {
-    background: #AFD625 0% 0% no-repeat padding-box;
+    background: #3F51B5 0% 0% no-repeat padding-box;
 }
 
-/* Multi item carousel */
-.show-neighbors {
-    overflow: hidden;
+.card-row {
+    padding-top: 20px;
+    padding-bottom: 60px;
 }
-.show-neighbors .item__third:first-child, .show-neighbors .item__third:last-child {
-    display: none;
+
+.button-container {
+    margin: 25px 0px 20px 0px;
 }
+
+.button-container .button {
+    border: 1px solid #3F51B5;
+    background: #3F51B5 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    min-width: 250px;
+    width: auto;
+    padding: 10px 0;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: .66px;
+    font-size: 19px;
+}
+
+@media(min-width: 768px) {
+
+    ._item,
+    .example {
+        height: 800px;
+    }
+}
+
+@media(min-width: 992px) {
+
+    ._item,
+    .example {
+        height: 750px;
+    }
+}
+
 @media (min-width: 1200px) {
-  ._item, .example{
-    height: 532px;
-}
-}
-@media (min-width: 992px) {
 
-
-    .show-neighbors .carousel-indicators {
-        margin-right: 25%;
-        margin-left: 25%;
-   }
-    .show-neighbors .carousel-control-prev, .show-neighbors .carousel-control-next {
-        background: rgba(255, 255, 255, 0.3);
-        width: 25%;
-        z-index: 11;
-       /* .carousel-caption has z-index 10 */
-   }
-    .show-neighbors .carousel-inner {
-        width: 150%;
-        left: -25%;
-   }
-    .show-neighbors .carousel-item-next:not(.carousel-item-start), .show-neighbors .carousel-item-end.active {
-        -webkit-transform: translate3d(33%, 0, 0);
-        transform: translate3d(33%, 0, 0);
-   }
-    .show-neighbors .carousel-item-prev:not(.carousel-item-end), .show-neighbors .carousel-item-start.active {
-        -webkit-transform: translate3d(-33%, 0, 0);
-        transform: translate3d(-33%, 0, 0);
-   }
-    .show-neighbors .item__third {
-        display: block !important;
-        float: left;
-        position: relative;
-       /* captions can now be added */
-        width: 33.33333333%;
-   }
+    ._item,
+    .example {
+        height: 755px;
+    }
 }
-/* Multi Item Carousel */
+
+@media(min-width: 1400px) {
+
+    ._item,
+    .example {
+        height: 820px;
+    }
+}
+
+@media(min-width: 1600px) {
+
+    ._item,
+    .example {
+        height: 750px;
+    }
+}

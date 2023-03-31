@@ -1,8 +1,8 @@
 // Archivo donde se declaran todos los objetos que se utilizan para darle estructura a componentes ( Cards, numero de subprocesos, etc)
 
 export const HeroLite = {
-  title1: 'ESCOGE LA VERSIÓN QUE MÁS SE',
-  title2: 'ADAPTE A TU TALLER',
+  title1: '',
+  title2: 'MÁS QUE UN CRM',
   btn1Text: 'SOLICITAR UN DEMO',
   btn2Text: 'COMPARAR VERSIONES',
   btn1Route: '/contactanos',
@@ -11,8 +11,8 @@ export const HeroLite = {
 };
 
 export const HeroTotal = {
-  title1: 'ESCOGE LA VERSIÓN QUE MÁS SE',
-  title2: 'ADAPTE A TU TALLER',
+  title1: 'MÍDELO,PARA QUE LO PUEDAS',
+  title2: 'MEJORAR',
   btn1Text: 'SOLICITAR UN DEMO',
   btn2Text: 'COMPARAR VERSIONES',
   btn1Route: '/contactanos',
@@ -21,8 +21,11 @@ export const HeroTotal = {
 };
 
 export const RadarControlTotalInformationObject = {
-  informationText:
-    'Es la opción perfecta para talleres de alta productividad, obteniendo mediciones e indicadores de alto valor para tomar decisiones de alto impacto.',
+  informationText: `La opción perfecta para cualquier taller de
+    <b>laminado y pintura</b>, brindando control desde la
+    <b>administración y operación, hasta la contabilidad.</b>
+    Obteniendo mediciones e indicadores de grán valor
+    para tomar <b>decisiones de alto impacto.</b>`,
   informationPoints: [
     'Volumen de rep: +40 Unidades mensuales',
     'Plantilla laboral alta',
@@ -35,11 +38,12 @@ export const RadarControlTotalInformationObject = {
 
 export const RadarLiteInformationObject = {
   informationText:
-    'Es la opción perfecta para talleres de bajo volumen con personal administrativo limitado, ya que no sobrecarga de actividades dentro del sistema a los pocos usuarios que operan en el taller.',
+    'Es la opción perfecta para talleres de <b>bajo volumen</b> con <b> personal administrativo limitado</b>, ya que no sobrecarga de actividades dentro del sistema a los pocos usuarios que operan en el taller.',
   informationPoints: [
     'Volumen de rep: 0-50 Unidades mensuales',
     'Poco personal',
     'Multifuncionales',
+    'Talleres de agencia, multimarcas e híbridos',
   ],
   imageSrc: 'assets/RadarLite.png',
 };
@@ -47,96 +51,102 @@ export const RadarLiteInformationObject = {
 export const RadarControlTotalProcessList = [
   {
     processNumber: '01',
-    processName: 'LEVANTAMIENTO',
+    processName: 'KICKOFF',
     processInformation:
-      'Lectura de datos como: usuarios, procesos, permisos, etc.',
-    processDuration: '1 Semana',
+      'Se establecen metas en conjunto a lograr en este periodo.',
+    processDuration: '40 minutos',
     optional: false,
     imageSrc: 'assets/Grupo-751.png',
     clicked: false,
+    link: '',
+    linkText: '',
   },
   {
     processNumber: '02',
-    processName: 'CONFIGURACIÓN',
+    processName: 'CAPACITACIÓN',
     processInformation:
-      'Se realiza el alta del taller en RADAR, y se configura según las necesidades.',
-    processDuration: '1 Semana',
+      'Se dan de alta todos los usuarios en nuestra plataforma de e-learning RadarAcademy.',
+    processDuration: '2 semanas',
     optional: false,
     imageSrc: 'assets/Grupo-750.png',
     clicked: false,
+    link: '/herramientas/radarAcademy',
+    linkText: 'Conoce más',
   },
   {
     processNumber: '03',
-    processName: 'AMBIENTE DE PRUEBA',
+    processName: 'ENTRENAMIENTO',
     processInformation:
-      'Se realizan los cursos de capacitación y se activa una simulación del taller en el sistema.',
-    processDuration: '2 Semanas',
+      'Sesiones uno a uno con nuestros expertos para poner en práctica la teoría.',
+    processDuration: '1 Semana',
     optional: false,
     imageSrc: 'assets/Grupo-749.png',
     clicked: false,
+    link: '',
+    linkText: '',
   },
   {
     processNumber: '04',
-    processName: 'IMPLEMENTACIÓN',
-    processInformation:
-      'Se activa el ambiente de producción real, se dan de alta el 100% de órdenes en taller.',
-    processDuration: '1 Semana',
-    optional: false,
-    imageSrc: 'assets/Grupo-748.png',
-    clicked: false,
-  },
-  {
-    processNumber: '05',
-    processName: 'CONSULTORIA',
+    processName: 'CONSULTORÍAS',
     processInformation:
       'Monitoreo con desempeño con metas a cumplir. Acompañados por expertos en RADAR.',
-    processDuration: '6 Semanas',
+    processDuration: '12 Semanas',
     optional: false,
     imageSrc: 'assets/Grupo-747.png',
     clicked: false,
+    link: '',
+    linkText: '',
   },
 ];
 
 export const RadarLiteProcessList = [
   {
     processNumber: '01',
-    processName: 'LEVANTAMIENTO',
+    processName: 'KICKOFF',
     processInformation:
-      'Lectura de datos como: usuarios, procesos, permisos, etc.',
-    processDuration: '1 Semana',
+      'Se establecen metas en conjunto a lograr en este periodo.',
+    processDuration: '40 minutos',
     optional: false,
     imageSrc: 'assets/Grupo-751.png',
     clicked: false,
+    link: '',
+    linkText: '',
   },
   {
     processNumber: '02',
-    processName: 'CONFIGURACIÓN',
+    processName: 'CAPACITACIÓN',
     processInformation:
-      'Se realiza el alta del taller en RADAR, y se configura según las necesidades.',
-    processDuration: '1 Semana',
+      'Se dan de alta todos los usuarios en nuestra plataforma de e-learning RadarAcademy.',
+    processDuration: '2 semanas',
     optional: false,
     imageSrc: 'assets/Grupo-750.png',
     clicked: false,
+    link: '/herramientas/radarAcademy',
+    linkText: 'Conoce más',
   },
   {
     processNumber: '03',
-    processName: 'IMPLEMENTACIÓN',
+    processName: 'ENTRENAMIENTO',
     processInformation:
-      'Se activa el ambiente de producción real, se dan de alta el 100% de órdenes en taller.',
+      'Sesiones uno a uno con nuestros expertos para poner en práctica la teoría.',
     processDuration: '1 Semana',
     optional: false,
-    imageSrc: 'assets/Grupo-748.png',
+    imageSrc: 'assets/Grupo-749.png',
     clicked: false,
+    link: '',
+    linkText: '',
   },
   {
     processNumber: '04',
-    processName: 'CONSULTORIA',
+    processName: 'CONSULTORÍAS',
     processInformation:
       'Monitoreo con desempeño con metas a cumplir. Acompañados por expertos en RADAR.',
-    processDuration: '6 Semanas',
-    optional: true,
+    processDuration: '12 Semanas',
+    optional: false,
     imageSrc: 'assets/Grupo-747.png',
     clicked: false,
+    link: '',
+    linkText: '',
   },
 ];
 

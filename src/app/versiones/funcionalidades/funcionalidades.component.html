@@ -92,7 +92,7 @@
             <!-- Botones -->
             <div class="col-12 d-flex justify-content-center py-4">
                 <!-- Flecha Izquierda -->
-                <img loading="lazy" src="assets/flecha-izquierda-funcionalidades.svg" (click)="goToPreviousFunctionality()">
+                <img loading="lazy" class="arrow-mobile" src="assets/flecha-izquierda-funcionalidades.svg" (click)="goToPreviousFunctionality()">
                 <!-- Botones -->
                 <div *ngFor="let element of list; let i = index;" (click)="selectFunctionality(i)">
                     <img loading="lazy" *ngIf="selectedFunctionality.id != element.id" src="assets/Elipse340.svg"
@@ -101,7 +101,7 @@
                         class="mobile-card__ellipsebutton" alt="mobile-card__ellipsebutton">
                 </div>
                 <!-- Flecha Derecha -->
-                <img loading="lazy" src="assets/flecha-derecha-funcionalidades.svg" (click)="goToNextFunctionality()" alt="flecha derecha radar control total">
+                <img loading="lazy" class="arrow-mobile" src="assets/flecha-derecha-funcionalidades.svg" (click)="goToNextFunctionality()" alt="flecha derecha radar control total">
             </div>
         </div>
     </div>

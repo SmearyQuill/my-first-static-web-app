@@ -40,7 +40,7 @@
             <div class="row d-lg-none">
                 <div class="col-12 d-flex justify-content-center pt-5 pb-4">
                     <!-- Flecha Izquierda -->
-                    <img loading="lazy" src="assets/flecha-izquierda-funcionalidades.svg" (click)="goToPreviousFunctionality()" alt="Radar Control Total Flecha Izquierda">
+                    <img class="arrow-mobile" loading="lazy" src="assets/flecha-izquierda-funcionalidades.svg" (click)="goToPreviousFunctionality()" alt="Radar Control Total Flecha Izquierda">
                     <!-- Botones -->
                     <div *ngFor="let element of list; let i = index;" (click)="selectFunctionality(i)">
                         <img loading="lazy" *ngIf="selectedBenefit.id != element.id" src="assets/Elipse340.svg"
@@ -49,7 +49,7 @@
                             class="mobile-card__ellipsebutton" alt="Radar Control Total Versión Móvil">
                     </div>
                     <!-- Flecha Derecha -->
-                    <img loading="lazy" src="assets/flecha-derecha-funcionalidades.svg" (click)="goToNextFunctionality()" alt="Radar Control Total Flecha Derecha">
+                    <img class="arrow-mobile" loading="lazy" src="assets/flecha-derecha-funcionalidades.svg" (click)="goToNextFunctionality()" alt="Radar Control Total Flecha Derecha">
                 </div>
             </div>
 
@@ -58,8 +58,8 @@
             <!-- Lista de iconos con las funcionalidades -->
             <div class="col d-none d-lg-flex flex-column justify-content-center align-items-center"
                 *ngFor="let element of list; let i = index;">
-                <img loading="lazy" style="cursor:pointer;" class="web__icon" src="{{element.over ? element.iconActive : element.iconInactive}}"
-                    (mouseover)="element.over = true;" (mouseout)="checkMouseOut(i)" (click)="selectFunctionality(i)" alt="Radar Control Total Icono Funcionalidad">
+                <img loading="lazy" style="cursor:pointer;" class="web__icon ga-call-to-action" src="{{element.over ? element.iconActive : element.iconInactive}}"
+                    (mouseover)="element.over = true;" (mouseout)="checkMouseOut(i)" (click)="selectFunctionality(i)" alt="Radar Control Total Icono Funcionalidad" [attr.data-ga-element]="element.name">
                 <p class="web__benefit-title">{{element.name}}</p>
             </div>
             <!-- Tarjeta de Funcionalidad seleccionada -->
@@ -80,10 +80,10 @@
                             <div class="col-12 mt-1 d-flex align-items-center">
                                 <img loading="lazy" (click)="goToPreviousFunctionality()"
                                     style="max-height: 80%; width: auto; margin: 0 1rem 0 0; cursor: pointer;"
-                                    src="assets/flechaIzq-beneficios-home.svg" alt="Radar Control Total Funcionalidad Anterior">
+                                    src="assets/flechaIzq-beneficios-home.svg" alt="Radar Control Total Funcionalidad Anterior" class="ga-call-to-action" data-ga-element="Radar Control Total Funcionalidad Anterior">
                                 <img loading="lazy" (click)="goToNextFunctionality()"
                                     style="max-height: 80%; width: auto; cursor: pointer;"
-                                    src="assets/flechaDer-beneficios-home.svg" alt="Radar Control Total Funcionalidad Siguiente">
+                                    src="assets/flechaDer-beneficios-home.svg" alt="Radar Control Total Funcionalidad Siguiente" class="ga-call-to-action" data-ga-element="Radar Control Total Funcionalidad Siguiente">
                             </div>
                         </div>
                     </div>
