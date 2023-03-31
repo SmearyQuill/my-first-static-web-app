@@ -12,7 +12,7 @@ export const ListaTestimonios = [
     text: '“Radar es una herramienta indispensable para todo centro de reparación automotriz de alta productividad. Es muy intuitiva, y genera información valiosa para la correcta planeación de los procesos de reparación y para el preciso servicio al cliente”.',
     name: 'Mario Correa Canto',
     position: 'Dueño de taller',
-    image2: 'assets/MarioCorrea',
+    image2: 'assets/MarioCorrea-Home',
     location: 'Mérida, Yucatán',
   },
   {
@@ -21,7 +21,7 @@ export const ListaTestimonios = [
     text: '“Nuestra franquicia maneja altos estándares de calidad y un excelente servicio, por lo que buscábamos un aliado para la gestión del taller que estuviera a la vanguardia en la industria y nos permitiera seguir de cerca cada movimiento operativo y financiero. Afortunadamente conocimos a Radar que ha sido el complemento perfecto para nuestro modelo de negocios.”',
     name: 'Daniela Ortiz',
     position: 'Dirección',
-    image2: 'assets/DanielaOrtiz',
+    image2: 'assets/DanielaOrtiz-Home',
     location: 'CDMX',
   },
   {
@@ -30,7 +30,7 @@ export const ListaTestimonios = [
     text: '"Radar... Es nuestra herramienta de confianza. Con la cual podemos llevar a cabo todo el proceso de Carrocería y Pintura. Tiene las cualidades que todo sistema requiere: Es confiable, ágil, óptimo, práctico y, lo mejor es que está al alcance de todas las personas que se involucran en el proceso."',
     name: 'Isabel Barrera Orihuela',
     position: 'RAD',
-    image2: 'assets/IsabelCumbres',
+    image2: 'assets/IsabelCumbres-Home',
     location: 'Cancún, Quintana Roo',
   },
   {
@@ -39,7 +39,7 @@ export const ListaTestimonios = [
     text: '“Es una excelente herramienta para administrar el taller de forma integral. Brinda información en tiempo real y relevante de cada proceso de tal forma que cada usuario puede enfocarse su trabajo para contribuir en el resultado colectivo.”',
     name: 'Yoichi Nagatome',
     position: 'Dirección de taller',
-    image2: 'assets/Yoichi',
+    image2: 'assets/Yoichi-Home',
     location: 'León, Gto',
   },
   {
@@ -57,7 +57,7 @@ export const ListaTestimonios = [
     text: '"RADAR en comparativa al sistema anterior que teníamos es más práctico de usar, puedes medir en tiempo real tu unidad, es un sistema más amigable para nuestros clientes porque los puedes contactar de manera visual por medio de su integración con WhatsApp, me ha ayudado a generar reportes y dejar Excel, puedes ver el taller y sus fallas mediante los Dashboards sin necesidad de trasladarte al taller y las fotos las subes al instante de manera súper práctica."',
     name: 'Irazú González',
     position: 'Asesora de HyP',
-    image2: 'assets/Irazu',
+    image2: 'assets/Irazu-Home',
     location: 'León, Gto',
   },
   {
@@ -66,7 +66,7 @@ export const ListaTestimonios = [
     text: '“RADAR es una plataforma que nos ha ayudado a tener mejor comunicación tanto interna como con nuestros clientes, nos ha facilitado medir todos los procesos del CDR y ahora llevamos un mejor control de cada uno de ellos, considero que es una herramienta muy útil dentro de mi CDR."',
     name: 'Jhonson Vite',
     position: 'Jefe de Taller',
-    image2: 'assets/JohnsonVite',
+    image2: 'assets/JohnsonVite-Home',
     location: 'Pachuca, Hidalgo',
   },      
   {
