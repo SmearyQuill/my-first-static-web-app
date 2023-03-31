@@ -10,10 +10,9 @@ export class TestimonioCardComponent implements OnInit {
   imgFormat: string;
   @Input() cardInformation: any;
   constructor(private webpSupportService: WebpSupportService) {
-    // this.imgFormat = this.webpSupportService.GetWebpSupport()
-    //   ? '.webp'
-    //   : '.png';
-    this.imgFormat = '.png';
+    this.imgFormat = this.webpSupportService.GetWebpSupport()
+      ? '.webp'
+      : '.png';
   }
 
   ngOnInit(): void {}
