@@ -35,14 +35,16 @@
                                             <input type="text" class="input-contactanos email" placeholder="Email"
                                                 formControlName="email">
                                             <small *ngIf="exform.get('email').invalid && exform.get('email').touched"
-                                                class="text-danger">Dirección correcta requerida (máximo 50 caracteres)</small>
+                                                class="text-danger">Dirección correcta requerida (máximo 50
+                                                caracteres)</small>
                                         </div>
                                         <div class="col-xl input">
                                             <label for=""></label>
                                             <input type="number" class="input-contactanos telefono"
                                                 placeholder="Teléfono" formControlName="phone">
-                                            <small  *ngIf="exform.get('phone').invalid && exform.get('phone').touched"
-                                                class="text-danger text-area" >Número requerido (máximo 15 caracteres)</small>
+                                            <small *ngIf="exform.get('phone').invalid && exform.get('phone').touched"
+                                                class="text-danger text-area">Número requerido (máximo 15
+                                                caracteres)</small>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -64,10 +66,13 @@
                                     </div>
                                     <div class="row justify-content-center">
                                         <div class="col-xxl-3 col-xl-4 col-lg-5 col-md-6 col-sm-7">
-                                            <button (click)="sendInfo()"
+                                            <button (click)="sendInfo()" class="ga-call-to-action"
                                                 [ngClass]="{'disabledButton' : exform.invalid, 'enabledButton' : !exform.invalid}"
                                                 [disabled]="exform.invalid"
-                                                id="contactanos-button"><span>ENVIAR</span></button>
+                                                id="contactanos-button"
+                                                data-ga-element="Enviar">
+                                                <span>ENVIAR</span>
+                                            </button>
                                         </div>
                                     </div>
                                 </form>
