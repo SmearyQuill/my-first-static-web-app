@@ -1,7 +1,7 @@
 // Archivo donde se declaran todos los objetos que se utilizan para darle estructura a componentes ( Cards, numero de subprocesos, etc)
 
 export const HeroLite = {
-  title1: '',
+  title1: 'VERSIÓN LITE',
   title2: 'MÁS QUE UN CRM',
   btn1Text: 'SOLICITAR UN DEMO',
   btn2Text: 'COMPARAR VERSIONES',
@@ -11,8 +11,8 @@ export const HeroLite = {
 };
 
 export const HeroTotal = {
-  title1: 'MÍDELO,PARA QUE LO PUEDAS',
-  title2: 'MEJORAR',
+  title1: 'VERSIÓN FULL',
+  title2: 'MÍDELO, PARA QUE LO PUEDAS MEJORAR',
   btn1Text: 'SOLICITAR UN DEMO',
   btn2Text: 'COMPARAR VERSIONES',
   btn1Route: '/contactanos',
