@@ -6,6 +6,7 @@ import { IndexComponent } from './index/index.component';
 import { HeroComponent } from './hero/hero.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { PostCardComponent } from './post-card/post-card.component';
+import { PostGridComponent } from './post-grid/post-grid.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { PostCardComponent } from './post-card/post-card.component';
     IndexComponent,
     HeroComponent,
     PostListComponent,
-    PostCardComponent
+    PostCardComponent,
+    PostGridComponent
   ],
   imports: [
     CommonModule,

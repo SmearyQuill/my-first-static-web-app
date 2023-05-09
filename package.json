@@ -33,6 +33,7 @@
     "express": "^4.15.2",
     "jquery": "^3.6.0",
     "localstorage-polyfill": "^1.0.1",
+    "material-icons": "^1.13.6",
     "ng-recaptcha": "^9.0.0",
     "popper.js": "^1.16.1",
     "rxjs": "~7.5.0",
