@@ -1,11 +1,3 @@
 <div class="post-grid">
-    <blog-post-card></blog-post-card>
-    <blog-post-card></blog-post-card>
-    <blog-post-card></blog-post-card>
-    <blog-post-card></blog-post-card>
-    <blog-post-card></blog-post-card>
-    <blog-post-card></blog-post-card>
-    <blog-post-card></blog-post-card>
-    <blog-post-card></blog-post-card>
-    <blog-post-card></blog-post-card>
+    <blog-post-card *ngFor="let post of Posts" [PostCardData]="post"></blog-post-card>
 </div>

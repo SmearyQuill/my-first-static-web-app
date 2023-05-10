@@ -7,6 +7,7 @@ import { HeroComponent } from './hero/hero.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { PostCardComponent } from './post-card/post-card.component';
 import { PostGridComponent } from './post-grid/post-grid.component';
+import { PostPageComponent } from './post-page/post-page.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { PostGridComponent } from './post-grid/post-grid.component';
     HeroComponent,
     PostListComponent,
     PostCardComponent,
-    PostGridComponent
+    PostGridComponent,
+    PostPageComponent
   ],
   imports: [
     CommonModule,

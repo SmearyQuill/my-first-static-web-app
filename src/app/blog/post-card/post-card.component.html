@@ -1,34 +1,33 @@
 <div class="post-card">
     <!-- Imagen -->
     <div class="img-container">
-
+        <img [src]="PostCardData.Image" alt="Imagen">
     </div>
 
     <div class="card-content">
         <!-- Categoria y Fecha -->
         <div class="metadata">
-            <div class="category-badge blog">
+            <div class="category-badge news">
                 Noticia
             </div>
             <span class="date">
-                12/NOV/2023
+                {{PostCardData.Date.toLocaleDateString('en-GB')}}
             </span>
         </div>
         <!-- Titulo -->
         <p class="title">
-            Presentan hoja de ruta para transición de industria automotriz eléctrica
+            {{PostCardData.Title}}
         </p>
 
         <!-- Descripción corta -->
         <p class="description">
-            El canciller destaca que es una estrategia que beneficiará al sector automotriz y
-            dependerá de nuestra economía para las próximas décadas.
+            <span [innerHTML]="PostCardData.Description"></span>
         </p>
     </div>
 
     <!-- Boton para leer articulo -->
     <div>
-        <a class="button">
+        <a class="button" routerLink="/blog/{{PostCardData.Id}}">
             <span class="text">
                 LEER ARTÍCULO
             </span>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Post } from 'src/app/Services/Blog/Models';
 
 @Component({
   selector: 'blog-post-grid',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostGridComponent implements OnInit {
 
+  @Input() Posts: Post[] = [];
+    
   constructor() { }
 
   ngOnInit(): void {
