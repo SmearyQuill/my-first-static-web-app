@@ -28,6 +28,7 @@
   display: none;
   transition: display .5s;
 }
+
 .navbar{
   z-index: 3;
   width: 100%;
@@ -35,10 +36,13 @@
   height: 64px;
   padding-top: 0;
   padding-bottom: 0;
-  background: rgb(2, 38, 68,.15) !important;
   padding-left: 0px;
   padding-right: 0px;
   opacity: 1;
+}
+
+.menu-navbar-color{
+  background: rgb(2, 38, 68,.15) !important;
 }
 
 .blur{

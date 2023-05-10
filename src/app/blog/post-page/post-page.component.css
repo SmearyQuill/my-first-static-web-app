@@ -1,0 +1,17 @@
+section#post-page-container {
+    margin-top: 64px;
+}
+
+@media screen and (min-width: 992px) {
+    section#post-page-container {
+        margin-top: 58px;
+    }
+}
+
+.blur navbar-bg {
+    backdrop-filter: blur(0px);
+}
+
+.custom-navbar-color {
+    background: #022644 !important;
+}
