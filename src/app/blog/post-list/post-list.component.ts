@@ -32,21 +32,20 @@ export class PostListComponent implements OnInit {
 
   GetPosts() {
     this.blogService.GetPosts().subscribe((response) => {
-      this.Posts = response.map((x) => new Post(x, false));
-      this.SeparatePosts();
+      this.SeparatePosts(response);
     });
   }
 
-  SeparatePosts() {
-    let BlogCategoryId = this.Categories.find((x) => x.Name == 'Blog')?.Id;
-    let NewsCategoryId = this.Categories.find((x) => x.Name == 'Noticias')?.Id;
-    
-    this.BlogPosts = this.Posts.filter((x) =>
-      x.Categories.includes(BlogCategoryId ? BlogCategoryId : -1)
+  SeparatePosts(ApiResponse: any[]) {
+    let BlogCategoryId = this.Categories.find((x) => x.Name == 'Blog')?.Id
+
+    this.Posts = ApiResponse.map(
+      (x) =>
+        new Post(x, x.categories.includes(BlogCategoryId ? BlogCategoryId : -1))
     );
-    this.NewsPosts = this.Posts.filter((x) =>
-      x.Categories.includes(NewsCategoryId ? NewsCategoryId : -1)
-    );
+
+    this.BlogPosts = this.Posts.filter((x) => x.IsBlogPost);
+    this.NewsPosts = this.Posts.filter((x) => !x.IsBlogPost);
   }
 
   RenderTabPosts() {

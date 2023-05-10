@@ -7,8 +7,9 @@
     <div class="card-content">
         <!-- Categoria y Fecha -->
         <div class="metadata">
-            <div class="category-badge news">
-                Noticia
+            <div class="category-badge" [ngClass]="PostCardData.IsBlogPost ? 'blog' : 'news'">
+                <span *ngIf="PostCardData.IsBlogPost ; else elseBlock">Blog</span>
+                <ng-template #elseBlock>Noticia</ng-template>
             </div>
             <span class="date">
                 {{PostCardData.Date.toLocaleDateString('en-GB')}}
