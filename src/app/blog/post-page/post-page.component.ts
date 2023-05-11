@@ -19,6 +19,7 @@ export class PostPageComponent implements OnInit, OnDestroy {
   Loading: boolean = true;
 
   Navbar = document.getElementById('menu-navbar');
+  NavbarMobile = document.getElementById('navbarNavAltMarkup');
 
   constructor(
     private blogService: BlogService,
@@ -39,18 +40,18 @@ export class PostPageComponent implements OnInit, OnDestroy {
   GetPostInfo() {
     this.blogService.GetPost(this.PostId).subscribe((response) => {
       this.PostInfo = new PostInfo(response);
-      console.log('Informacion del post: ', this.PostInfo);
-      this.SanitizePostHtml();
       this.Loading = false;
     });
   }
-
-  SanitizePostHtml() {}
 
   AddClassToNavbar() {
     if (this.Navbar) {
       this.Navbar.classList.remove('menu-navbar-color');
       this.Navbar.classList.add('custom-navbar-color');
+    }
+
+    if (this.NavbarMobile) {
+      this.NavbarMobile.classList.add('custom-navbar-color');
     }
   }
 
@@ -58,6 +59,9 @@ export class PostPageComponent implements OnInit, OnDestroy {
     if (this.Navbar) {
       this.Navbar.classList.remove('custom-navbar-color');
       this.Navbar.classList.add('menu-navbar-color');
+    }
+    if (this.NavbarMobile) {
+      this.NavbarMobile.classList.remove('custom-navbar-color');
     }
   }
 }
