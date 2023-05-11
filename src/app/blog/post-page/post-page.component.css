@@ -63,3 +63,28 @@ p.post-title {
     width: 100%;
     margin-top: 35px;
 }
+
+#post-container .share-post-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+#post-container .share-text {
+    color: #3F51B5;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#post-container .share-icons-container {
+    display: flex;
+}
+
+#post-container .share-icons-container .share-icon {
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    margin-right: 12px;
+}

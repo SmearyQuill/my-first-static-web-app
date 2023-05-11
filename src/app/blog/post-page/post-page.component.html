@@ -2,6 +2,15 @@
     <div class="container-fluid" id="post-container" *ngIf="!Loading">
         <div class="row justify-content-center">
             <div class="col-11 col-md-9 col-lg-8 col-xl-7 col-xxl-5">
+                <div class="share-post-container">
+                    <p class="share-text">Compartir en:</p>
+                    <div class="share-icons-container">
+                        <img src="/assets/share-ln.svg" alt="Linkedin" class="share-icon">
+                        <img src="/assets/share-fb.svg" alt="Facebook" class="share-icon">
+                        <img src="/assets/share-tw.svg" alt="Twitter" class="share-icon">
+                        <img src="/assets/share-wp.svg" alt="Whatsapp" class="share-icon">
+                    </div>
+                </div>
                 <p class="post-title">
                     {{PostInfo.Title}}
                 </p>
