@@ -29,3 +29,13 @@ export class Category {
     this.Id = item.id;
   }
 }
+
+export class PostInfo {
+  Title: string;
+  Content: string;
+
+  constructor(item: any) {
+    this.Title = item.title.rendered;
+    this.Content = item.content.rendered;
+  }
+}

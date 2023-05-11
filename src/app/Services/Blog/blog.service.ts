@@ -13,11 +13,16 @@ export class BlogService {
 
   GetCategories(): Observable<any[]> {
     const URL = `${BlogUrl}/categories`;
-    return this.http.get<any>(URL);    
+    return this.http.get<any>(URL);
   }
 
   GetPosts(): Observable<any[]> {
     const URL = `${BlogUrl}/posts`;
+    return this.http.get<any>(URL);
+  }
+
+  GetPost(id: string): Observable<any> {
+    const URL = `${BlogUrl}/posts/${id}`;
     return this.http.get<any>(URL);
   }
 }

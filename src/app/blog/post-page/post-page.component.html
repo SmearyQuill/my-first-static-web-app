@@ -1,3 +1,13 @@
 <section id="post-page-container">
-
+    <div class="container-fluid" id="post-container" *ngIf="!Loading">
+        <div class="row justify-content-center">
+            <div class="col-11 col-md-9 col-lg-8 col-xl-7 col-xxl-5">
+                <p class="post-title">
+                    {{PostInfo.Title}}
+                </p>
+                <div id="post-html-content" [innerHTML]="PostInfo.Content"></div>
+                <hr class="post-end">
+            </div>
+        </div>
+    </div>
 </section>

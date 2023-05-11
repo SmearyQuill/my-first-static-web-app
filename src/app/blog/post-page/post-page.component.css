@@ -2,6 +2,11 @@ section#post-page-container {
     margin-top: 64px;
 }
 
+#post-container {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
 @media screen and (min-width: 992px) {
     section#post-page-container {
         margin-top: 58px;
@@ -14,4 +19,47 @@ section#post-page-container {
 
 .custom-navbar-color {
     background: #022644 !important;
+}
+
+p.post-title {
+    color: #022644;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    margin-bottom: 5px;
+}
+
+#post-html-content p.post-description {
+    color: #616161;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+#post-html-content p {
+    color: #616161;
+    font-size: 14px;
+}
+
+#post-html-content figure {
+    margin-bottom: 30px;
+}
+
+#post-html-content figure img {
+    width: 100%;
+    height: auto;
+}
+
+#post-html-content .wp-element-caption {
+    font-size: 13px;
+    font-style: italic;
+    color: #616161;
+}
+
+#post-container hr.post-end {
+    border: none;
+    height: 2px;
+    background-color: #616161;
+    width: 100%;
+    margin-top: 35px;
 }
