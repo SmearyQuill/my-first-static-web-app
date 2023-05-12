@@ -88,3 +88,33 @@ p.post-title {
     height: 28px;
     margin-right: 12px;
 }
+
+#post-container .meta-data-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#post-container .meta-data-container .date {
+    color: #7E7E7E;
+    font-size: 17px;
+}
+
+#post-container .meta-data-container .category-badge {
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 15px;
+    padding: 4px 10px;
+    width: fit-content;
+    margin-right: 15px;
+}
+
+#post-container .meta-data-container .category-badge.blog {
+    background-color: #E4FF84;
+    color: #4D5729;
+}
+
+#post-container .meta-data-container .category-badge.news {
+    background-color: #8D9EFF;
+    color: #FFFFFF;
+}

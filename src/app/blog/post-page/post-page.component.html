@@ -2,6 +2,21 @@
     <div class="container-fluid" id="post-container" *ngIf="!Loading">
         <div class="row justify-content-center">
             <div class="col-11 col-md-9 col-lg-8 col-xl-7 col-xxl-5">
+
+                <div class="meta-data-container">
+                    <div class="category-badge" [ngClass]="PostInfo.IsBlogPost ? 'blog' : 'news'">
+                        <span *ngIf="PostInfo.IsBlogPost ; else elseBlock">Blog</span>
+                        <ng-template #elseBlock>Noticia</ng-template>
+                    </div>
+                    <span class="date">
+                        {{PostInfo.Date.toLocaleDateString('en-GB')}}
+                    </span>
+                </div>
+                <p class="post-title">
+                    {{PostInfo.Title}}
+                </p>
+                <div id="post-html-content" [innerHTML]="PostInfo.Content"></div>
+
                 <div class="share-post-container">
                     <p class="share-text">Compartir en:</p>
                     <div class="share-icons-container">
@@ -11,10 +26,7 @@
                         <img src="/assets/share-wp.svg" alt="Whatsapp" class="share-icon">
                     </div>
                 </div>
-                <p class="post-title">
-                    {{PostInfo.Title}}
-                </p>
-                <div id="post-html-content" [innerHTML]="PostInfo.Content"></div>
+
                 <hr class="post-end">
             </div>
         </div>

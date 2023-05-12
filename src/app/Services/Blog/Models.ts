@@ -33,9 +33,13 @@ export class Category {
 export class PostInfo {
   Title: string;
   Content: string;
+  IsBlogPost: boolean;
+  Date: Date;
 
-  constructor(item: any) {
+  constructor(item: any, isBlogPost: boolean) {
+    this.Date = new Date(item.date);
     this.Title = item.title.rendered;
     this.Content = item.content.rendered;
+    this.IsBlogPost = isBlogPost;
   }
 }

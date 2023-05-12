@@ -26,6 +26,7 @@ export class PostListComponent implements OnInit {
   GetCategories() {
     this.blogService.GetCategories().subscribe((response) => {
       this.Categories = response.map((x) => new Category(x));
+      this.blogService.SetCategories(this.Categories);
       this.GetPosts();
     });
   }
@@ -37,20 +38,11 @@ export class PostListComponent implements OnInit {
   }
 
   SeparatePosts(ApiResponse: any[]) {
-    let BlogCategoryId = this.Categories.find((x) => x.Name == 'Blog')?.Id
-
     this.Posts = ApiResponse.map(
-      (x) =>
-        new Post(x, x.categories.includes(BlogCategoryId ? BlogCategoryId : -1))
+      (x) => new Post(x, this.blogService.CheckIfPostIsBlog(x.categories))
     );
 
     this.BlogPosts = this.Posts.filter((x) => x.IsBlogPost);
     this.NewsPosts = this.Posts.filter((x) => !x.IsBlogPost);
   }
-
-  RenderTabPosts() {
-    console.log('Renderizando tab');
-  }
-
-  FilterPostByCategory() {}
 }

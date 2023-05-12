@@ -13,8 +13,10 @@ import { PostInfo } from 'src/app/Services/Blog/Models';
 export class PostPageComponent implements OnInit, OnDestroy {
   PostId: string = '';
   PostInfo: PostInfo = {
+    Date: new Date(Date.now()),
     Title: '',
     Content: '',
+    IsBlogPost: false,
   };
   Loading: boolean = true;
 
@@ -23,8 +25,7 @@ export class PostPageComponent implements OnInit, OnDestroy {
 
   constructor(
     private blogService: BlogService,
-    private route: ActivatedRoute,
-    private domSanitizer: DomSanitizer
+    private route: ActivatedRoute
   ) {}
 
   ngOnInit(): void {
@@ -39,7 +40,10 @@ export class PostPageComponent implements OnInit, OnDestroy {
 
   GetPostInfo() {
     this.blogService.GetPost(this.PostId).subscribe((response) => {
-      this.PostInfo = new PostInfo(response);
+      this.PostInfo = new PostInfo(
+        response,
+        this.blogService.CheckIfPostIsBlog(response.categories)
+      );
       this.Loading = false;
     });
   }
