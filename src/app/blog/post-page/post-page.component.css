@@ -50,6 +50,20 @@ p.post-title {
     height: auto;
 }
 
+#post-html-content figure.wp-block-video.wp-block-embed {
+    text-align: center;
+}
+
+#post-html-content figure.not-full-image {
+    text-align: center;
+}
+
+#post-html-content figure.not-full-image img {
+    width: auto !important;
+    height: auto !important;
+    text-align: center;
+}
+
 #post-html-content .wp-element-caption {
     font-size: 13px;
     font-style: italic;

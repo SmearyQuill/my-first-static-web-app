@@ -25,7 +25,8 @@ export class PostPageComponent implements OnInit, OnDestroy {
 
   constructor(
     private blogService: BlogService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private domSanitizer: DomSanitizer
   ) {}
 
   ngOnInit(): void {
@@ -45,6 +46,9 @@ export class PostPageComponent implements OnInit, OnDestroy {
         this.blogService.CheckIfPostIsBlog(response.categories)
       );
       this.Loading = false;
+      this.PostInfo.Content = this.domSanitizer.bypassSecurityTrustHtml(
+        this.PostInfo.Content
+      ) as string;
     });
   }
 
