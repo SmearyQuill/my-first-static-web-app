@@ -1,6 +1,6 @@
 <div class="blur navbar-bg" >
 </div>
-<nav class="navbar navbar-expand-lg navbar-dark bg-light" >
+<nav class="navbar navbar-expand-lg navbar-dark bg-light menu-navbar-color" id="menu-navbar">
     <div class="container-fluid" id="navbar">
         <a class="navbar-brand" [ngClass]="toogled? 'show':'hiden'"  href="#"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" (click)="toogle()">
@@ -40,6 +40,11 @@
                         <a class="dropdown-item ga-call-to-action" routerLink="herramientas/radarAcademy" data-ga-element="Radar Academy">Radar Academy</a>
                         <a class="dropdown-item ga-call-to-action" routerLink="herramientas/radarConnect" data-ga-element="Radar Connect">Radar Connect</a>
                     </div>
+                </li>
+                <!-- Blog -->
+                <li class="nav-item" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: false}">
+                    <a class="nav-link navbarLink" routerLink="blog" routerLinkActive="is-active" href="#"
+                        [routerLinkActiveOptions]="{exact : true}">BLOG</a>
                 </li>
                 <!-- Testimonios -->
                 <li class="nav-item" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact: true}">

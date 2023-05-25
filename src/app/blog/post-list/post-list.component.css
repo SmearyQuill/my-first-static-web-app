@@ -1,0 +1,18 @@
+#post-grid-section {
+    padding: 35px;
+}
+
+.tab-content {
+    margin-top: 25px;
+}
+
+.nav-link {
+    font-family: 'Segoe UI', 'Poppins', Tahoma, Geneva, Verdana, sans-serif !important;
+    color: #ABABAB !important;
+    font-size: 20px;
+}
+
+.nav-link.active {
+    border: 0;
+    border-bottom: 3px solid #3250B9;
+}

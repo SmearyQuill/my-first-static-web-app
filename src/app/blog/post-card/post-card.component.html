@@ -1,0 +1,40 @@
+<div class="post-card" routerLink="/blog/{{PostCardData.Id}}">
+    <!-- Imagen -->
+    <div class="img-container">
+        <img [src]="PostCardData.Image" alt="Imagen">
+    </div>
+
+    <div class="card-content">
+        <!-- Categoria y Fecha -->
+        <div class="metadata">
+            <div class="category-badge" [ngClass]="PostCardData.IsBlogPost ? 'blog' : 'news'">
+                <span *ngIf="PostCardData.IsBlogPost ; else elseBlock">Blog</span>
+                <ng-template #elseBlock>Noticia</ng-template>
+            </div>
+            <span class="date">
+                {{PostCardData.Date.toLocaleDateString('en-GB')}}
+            </span>
+        </div>
+        <!-- Titulo -->
+        <p class="title">
+            {{PostCardData.Title}}
+        </p>
+
+        <!-- Descripción corta -->
+        <p class="description">
+            <span [innerHTML]="PostCardData.Description"></span>
+        </p>
+    </div>
+
+    <!-- Boton para leer articulo -->
+    <div>
+        <a class="button" routerLink="/blog/{{PostCardData.Id}}">
+            <span class="text">
+                LEER ARTÍCULO
+            </span>
+            <span class="material-icons-outlined">
+                east
+            </span>
+        </a>
+    </div>
+</div>

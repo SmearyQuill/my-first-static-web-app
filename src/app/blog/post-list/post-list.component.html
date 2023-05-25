@@ -1,0 +1,31 @@
+<section id="post-grid-section">
+    <div class="row justify-content-center">
+        <div class="col-12 col-sm-8 col-md-10 col-xl-8">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-entries"
+                        type="button" role="tab" aria-controls="home" aria-selected="true">Todas</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="news-tab" data-bs-toggle="tab" data-bs-target="#news-entries"
+                        type="button" role="tab" aria-controls="profile" aria-selected="false">Noticias</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="blog-tab" data-bs-toggle="tab" data-bs-target="#blog-entries"
+                        type="button" role="tab" aria-controls="contact" aria-selected="false">Blog</button>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="all-entries" role="tabpanel" aria-labelledby="all-tab">
+                    <blog-post-grid [Posts]="Posts"></blog-post-grid>
+                </div>
+                <div class="tab-pane fade" id="news-entries" role="tabpanel" aria-labelledby="news-tab">
+                    <blog-post-grid [Posts]="NewsPosts"></blog-post-grid>
+                </div>
+                <div class="tab-pane fade" id="blog-entries" role="tabpanel" aria-labelledby="blog-tab">
+                    <blog-post-grid [Posts]="BlogPosts"></blog-post-grid>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

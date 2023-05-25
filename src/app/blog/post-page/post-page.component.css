@@ -1,0 +1,134 @@
+section#post-page-container {
+    margin-top: 64px;
+}
+
+#post-container {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+@media screen and (min-width: 992px) {
+    section#post-page-container {
+        margin-top: 58px;
+    }
+}
+
+.blur navbar-bg {
+    backdrop-filter: blur(0px);
+}
+
+.custom-navbar-color {
+    background: #022644 !important;
+}
+
+p.post-title {
+    color: #022644;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    margin-bottom: 5px;
+}
+
+#post-html-content p.post-description {
+    color: #616161;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+#post-html-content p {
+    color: #616161;
+    font-size: 14px;
+}
+
+#post-html-content figure {
+    margin-bottom: 30px;
+}
+
+#post-html-content figure img {
+    width: 100%;
+    height: auto;
+}
+
+#post-html-content figure.wp-block-video.wp-block-embed {
+    text-align: center;
+}
+
+#post-html-content figure.not-full-image {
+    text-align: center;
+}
+
+#post-html-content figure.not-full-image img {
+    width: auto !important;
+    height: auto !important;
+    text-align: center;
+}
+
+#post-html-content .wp-element-caption {
+    font-size: 13px;
+    font-style: italic;
+    color: #616161;
+}
+
+#post-container hr.post-end {
+    border: none;
+    height: 2px;
+    background-color: #616161;
+    width: 100%;
+    margin-top: 35px;
+}
+
+#post-container .share-post-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+#post-container .share-text {
+    color: #3F51B5;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#post-container .share-icons-container {
+    display: flex;
+}
+
+#post-container .share-icons-container .share-icon {
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    margin-right: 12px;
+}
+
+#post-container .meta-data-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#post-container .meta-data-container .date {
+    color: #7E7E7E;
+    font-size: 17px;
+}
+
+#post-container .meta-data-container .category-badge {
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 15px;
+    padding: 4px 10px;
+    width: fit-content;
+    margin-right: 15px;
+}
+
+#post-container .meta-data-container .category-badge.blog {
+    background-color: #E4FF84;
+    color: #4D5729;
+}
+
+#post-container .meta-data-container .category-badge.news {
+    background-color: #8D9EFF;
+    color: #FFFFFF;
+}
