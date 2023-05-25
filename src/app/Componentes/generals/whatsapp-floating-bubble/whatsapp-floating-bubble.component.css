@@ -3,7 +3,7 @@
     display: flex;
     bottom: 20px;
     right: 20px;
-    
+    z-index: 999;
     background-color: #AFD625;
     box-shadow: 0px 0px 4px #00000052;
     border-radius: 30px;
