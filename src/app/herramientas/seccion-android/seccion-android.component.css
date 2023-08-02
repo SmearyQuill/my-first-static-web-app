@@ -14,16 +14,16 @@
     text-transform: uppercase;
     opacity: 1;
 }
-.right h1, .left h2{
+h1{
     font-weight: normal;
 }
-.right h2, .left h1{
+h2{
     font-weight: bold;
 }
 .left img, .right img{
     display:block;
     margin:auto;
-    max-height: 75px;
+    /* max-height: 75px; */
 }
 
 #connect-app-img{
@@ -31,12 +31,15 @@
     padding: 0;
 }
 @media screen and (min-width: 768px) {
+    /* .right img{
+         content: url('/assets/radar_mixed.png') !important;
+    } */
     #android-inner-row h1, #android-inner-row h2{        
-        font-size: 19px;
-        line-height: 29px;  
+        font-size: 25px;
+        line-height: 26px;  
     }
     .left img, .right img{
-        max-height: 58px;
+        max-height: 100%;
     }
     #connect-app-img{
         width: 75%;
@@ -45,30 +48,36 @@
 }
 @media screen and (min-width: 992px) {
     #android-inner-row h1, #android-inner-row h2{        
-        font-size: 24px;
-        line-height: 34px;  
+        font-size: 30px;
+        line-height: 40px;  
     }
     
     #android-row{
-        background-image: url('/assets/Grupo 732.png');
+        /* background-image: url('/assets/base_2x.png');
         background-position: top center;
         background-repeat: no-repeat;
-        background-size: auto 90%;
+        background-size: auto 100%; */
     }
-    .left img, .right img{
-        max-height: 66px;
+    .right img{
+        max-height: 100%;
+    }
+    .left img{
+        max-height: 100%;
     }
     #android-container{
-        padding: 50px 70px;
+        /* padding: 50px 70px; */
     }
 }
 @media screen and (min-width: 1200px) {
     #android-inner-row h1, #android-inner-row h2{        
-        font-size: 27px;
-        line-height: 36px;  
+        font-size: 29px;
+        line-height: 32px;  
     }
-    .left img, .right img{
-        max-height: 80px;
+    .right img{
+        max-height: 100%;
+    }
+    .left img{
+        max-height: 100%;
     }
 }
 @media screen and (min-width: 1400px) {
@@ -77,11 +86,14 @@
         padding-bottom: 8vw;
     }
     #android-inner-row h1, #android-inner-row h2{        
-        font-size: 30px;
-        line-height: 38px;  
+        font-size: 29px;
+        line-height: 32px;  
     }
     
-    .left img, .right img{
-        max-height: 100px;
+    .right img{
+        max-height: 100%;
+    }
+    .left img{
+        max-height: 100%;
     }
 }
