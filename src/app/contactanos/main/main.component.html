@@ -58,18 +58,17 @@
                                         </div>
                                     </div>
 
-                                    <div class="row my-4">
+                                    <!-- <div class="row my-4">
                                         <div class="col d-flex justify-content-center">
                                             <re-captcha (resolved)="resolved($event)" formControlName="captcha"
                                                 [siteKey]="captchaKey"></re-captcha>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="row justify-content-center">
                                         <div class="col-xxl-3 col-xl-4 col-lg-5 col-md-6 col-sm-7">
                                             <button (click)="sendInfo()" class="ga-call-to-action"
                                                 [ngClass]="{'disabledButton' : exform.invalid, 'enabledButton' : !exform.invalid}"
-                                                [disabled]="exform.invalid"
-                                                id="contactanos-button"
+                                                [disabled]="exform.invalid" id="contactanos-button"
                                                 data-ga-element="Enviar">
                                                 <span>ENVIAR</span>
                                             </button>

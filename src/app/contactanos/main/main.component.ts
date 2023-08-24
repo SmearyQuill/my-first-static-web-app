@@ -29,7 +29,7 @@ export class MainComponent implements OnInit {
         Validators.required,
         Validators.maxLength(254),
       ]),
-      captcha: new FormControl(null, Validators.required),
+      // captcha: new FormControl(null, Validators.required),
     });
   }
 
