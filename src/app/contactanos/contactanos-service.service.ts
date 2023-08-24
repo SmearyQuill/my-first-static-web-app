@@ -12,8 +12,11 @@ export class ContactanosServiceService {
   }
 
   sendMail(data: JSON): Observable<any> {
-    return this._http
+    this._http
       .post('/api/send-mail2',data,{observe:'response'})
+      .pipe(map((res) => res));    
+    return this._http
+      .post('/api/send-mail',data,{observe:'response'})
       .pipe(map((res) => res));
   }
 }
