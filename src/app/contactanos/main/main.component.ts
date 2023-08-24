@@ -40,6 +40,22 @@ export class MainComponent implements OnInit {
       didOpen: () => { Swal.showLoading() }
     })
 
+    this.service.sendMail2(data).subscribe((response) => {
+      if (response.body.success == true) {
+        this.exform.reset();
+        Swal.fire({
+          title: 'Información enviada',
+          text: 'Su información fue enviada correctamente. El departamento de ventas pronto se comunicará con usted.',
+          icon: 'success',
+        });
+      } else {
+        Swal.fire({
+          icon: 'error',
+          title: 'Error',
+          text: 'Algo salió mal al enviar su información de contacto, intentelo de nuevo más tarde',
+        });
+      }
+    });
     this.service.sendMail(data).subscribe((response) => {
       if (response.body.success == true) {
         this.exform.reset();
