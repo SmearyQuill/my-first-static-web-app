@@ -14,7 +14,7 @@ export class MainComponent implements OnInit {
   captchaKey: any;
 
   ngOnInit(): void {
-    this.captchaKey = '6LejDEYfAAAAAO12Zp-iuTvpyRjAdmZ7Yq8TAIvL';
+    this.captchaKey = '6LfRX9EnAAAAABEN0xnN12cr2fJD_RuZuaPCjKrI';
     // Se agregan las validaciones al formulario
     this.exform = new FormGroup({
       name: new FormControl(null, [Validators.required, Validators.maxLength(50)]),
