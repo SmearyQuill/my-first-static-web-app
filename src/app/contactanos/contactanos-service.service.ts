@@ -13,12 +13,12 @@ export class ContactanosServiceService {
 
   sendMail(data: JSON): Observable<any> {
     return this._http
-      .post('/api/send-mail',data,{observe:'response'})
+      .post('https://azure-function-test20230824205648.azurewebsites.net/api/send-mail?',{observe:'response'})
       .pipe(map((res) => res));
   }
   sendMail2(data: JSON): Observable<any> {
     return this._http
-      .post('/api/send-mail2',data,{observe:'response'})
+      .post('/api/send-mail2',{observe:'response'})
       .pipe(map((res) => res));
   }
 }
