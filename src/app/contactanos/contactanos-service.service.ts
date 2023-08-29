@@ -13,7 +13,7 @@ export class ContactanosServiceService {
 
   sendMail(data: JSON): Observable<any> {
     return this._http
-      .post('https://azure-function-test20230824205648.azurewebsites.net/api/send-mail?',data,{observe:'response'})
+      .post('https://azure-function-test20230824205648.azurewebsites.net/send-mail',data,{observe:'response'})
       .pipe(map((res) => res));
   }
   sendMail2(data: JSON): Observable<any> {
