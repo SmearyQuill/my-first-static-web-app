@@ -14,18 +14,18 @@ export class MainComponent implements OnInit {
   captchaKey: any;
 
   ngOnInit(): void {
-    this.captchaKey = '6LfRX9EnAAAAABEN0xnN12cr2fJD_RuZuaPCjKrI';
+    this.captchaKey = '6LejDEYfAAAAAO12Zp-iuTvpyRjAdmZ7Yq8TAIvL';
     // Se agregan las validaciones al formulario
     this.exform = new FormGroup({
-      name: new FormControl(null, [Validators.required, Validators.maxLength(50)]),
-      lastname: new FormControl(null, [Validators.required, Validators.maxLength(60)]),
-      email: new FormControl(null, [Validators.required, Validators.email, Validators.maxLength(50)]),
-      phone: new FormControl(null, [
+      contact_name: new FormControl(null, [Validators.required, Validators.maxLength(50)]),
+      contact_lastname: new FormControl(null, [Validators.required, Validators.maxLength(60)]),
+      contact_email: new FormControl(null, [Validators.required, Validators.email, Validators.maxLength(50)]),
+      contact_phone: new FormControl(null, [
         Validators.required,
         Validators.pattern('[- +()0-9]+'),
         Validators.maxLength(15)
       ]),
-      message: new FormControl(null, [
+      contact_message: new FormControl(null, [
         Validators.required,
         Validators.maxLength(254),
       ]),
@@ -39,23 +39,6 @@ export class MainComponent implements OnInit {
       title: 'Enviando información.',
       didOpen: () => { Swal.showLoading() }
     })
-
-    this.service.sendMail2(data).subscribe((response) => {
-      if (response.body.success == true) {
-        this.exform.reset();
-        Swal.fire({
-          title: 'Información enviada',
-          text: 'Su información fue enviada correctamente. El departamento de ventas pronto se comunicará con usted.',
-          icon: 'success',
-        });
-      } else {
-        Swal.fire({
-          icon: 'error',
-          title: 'Error',
-          text: 'Algo salió mal al enviar su información de contacto, intentelo de nuevo más tarde',
-        });
-      }
-    });
     this.service.sendMail(data).subscribe((response) => {
       if (response.body.success == true) {
         this.exform.reset();
