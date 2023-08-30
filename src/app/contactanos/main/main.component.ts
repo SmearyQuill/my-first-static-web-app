@@ -40,7 +40,8 @@ export class MainComponent implements OnInit {
       didOpen: () => { Swal.showLoading() }
     })
     this.service.sendMail(data).subscribe((response) => {
-      if (response.body.success == true) {
+        console.log(response);
+      if (response.status == 200) {
         this.exform.reset();
         Swal.fire({
           title: 'Información enviada',
